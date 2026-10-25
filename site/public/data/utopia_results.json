@@ -1,0 +1,896 @@
+{
+ "_about": "Results package for the VSE demonstrator. Utopia is a fictional place; all stories and figures are invented for demonstration.",
+ "place": {
+  "id": "utopia",
+  "name": "Utopia",
+  "kind": "river-valley bioregion",
+  "summary": "A fictional river valley: hill farms, a market town that floods, and a village school."
+ },
+ "pipeline": [
+  {
+   "stage": "Listening",
+   "detail": "Stories gathered by WhatsApp, voice, web form and sessions",
+   "count": 8,
+   "unit": "stories"
+  },
+  {
+   "stage": "Making sense",
+   "detail": "Each story broken into exact excerpts of what matters",
+   "count": 49,
+   "unit": "excerpts"
+  },
+  {
+   "stage": "Consolidating",
+   "detail": "Excerpts from many voices brought together into what the place is saying",
+   "count": 7,
+   "unit": "signals"
+  },
+  {
+   "stage": "People check",
+   "detail": "The people who told the stories endorse, amend or contest each signal",
+   "count": 52,
+   "unit": "participants"
+  }
+ ],
+ "scale_note": "This demonstration uses 8 stories. The engine is designed for thousands of stories from a whole place.",
+ "stories": [
+  {
+   "id": "s1",
+   "teller_role": "Hill farmer, upper valley",
+   "channel": "voice note",
+   "text": "We run 600 ewes on the hill and the numbers have stopped adding up. The subsidy change means we need another income or we sell. What nobody counts is that the bog above our top field holds water like a sponge. When we blocked the old drains with the river trust, the stream below stopped flashing after rain. I'd farm water if someone paid for it. My son wants to stay but there's no house he can afford, so he's labouring in Cardiff. If he goes, the farm goes, and the knowledge of that hill goes with him. We used to share a contractor and a baler with three neighbours. That's how this valley worked."
+  },
+  {
+   "id": "s2",
+   "teller_role": "Head teacher, village primary",
+   "channel": "session",
+   "text": "Our roll is 38. Ten years ago it was 61, and the county reviews any school under 40. If we close, the nearest school is a 40-minute bus ride and the youngest children will spend more time on the bus than in the yard. The school is the last public building in the village. The hall is where the flood group meets, where the Merched y Wawr meet, where the vaccination clinic ran. The children learn on the river bank every Friday through Welsh, and some of them know more about the otters than I do. Every family we lose to housing costs is one more step towards the review."
+  },
+  {
+   "id": "s3",
+   "teller_role": "Young person, 19",
+   "channel": "WhatsApp",
+   "text": "I'm 19 and I work in the café and on the farm at lambing. Everyone my age is told to leave if you want to get on. Rent for a one-bed in town is £850 and I take home about £1,200. I don't want to leave. My mates who went to Cardiff come back every weekend because this is home. If there were a way to get a small place and some land work that counted for something, half of us would stay. Nobody asks us. The youth club shut in 2019 and since then there's nowhere to be that isn't the bus shelter."
+  },
+  {
+   "id": "s4",
+   "teller_role": "Flood group volunteer, lower town",
+   "channel": "session",
+   "text": "In 2020, 142 homes in the lower town flooded, some for the second time in five years. The insurance went up so much that two of my neighbours can't get cover at all. The flood wall they're proposing protects the high street but pushes the water onto the fields at Pentre. What I've learned is that the river starts up on the hill farms. The years the farmers were paid to keep water on the land, we noticed the difference down here. The flood group is 30 volunteers with a WhatsApp and a pump. We're the first people anyone rings."
+  },
+  {
+   "id": "s5",
+   "teller_role": "Elder, told in Welsh (translated)",
+   "channel": "session (Welsh)",
+   "text": "When I was a girl every field had a name and every name had a story. The names are going because the people who knew them are going. The chapel closed in 2015 but we still meet in the school hall on a Thursday, twelve of us, sometimes more. That is where the young mothers come for the cylch meithrin. If the school goes, the Thursday goes. Nobody would write it down, but that hall holds the valley together. I would teach the field names to anybody who asked."
+  },
+  {
+   "id": "s6",
+   "teller_role": "Community café organiser",
+   "channel": "web form",
+   "text": "The community café feeds about 70 people a week on a pay-what-you-can basis. Half of them come for the company as much as the food. We buy what we can from the valley but most farms here sell lambs to the mart and we buy our vegetables from a wholesaler in Swansea. There's an empty unit on the high street that would make a food hub. If the school kitchen and the café bought together from local growers, there'd be a reason for someone to grow. The young ones who help at the café are the best volunteers I've had."
+  },
+  {
+   "id": "s7",
+   "teller_role": "Social prescriber, GP practice",
+   "channel": "session",
+   "text": "I take about 40 referrals a quarter, mostly loneliness and low mood, a lot of them older men off the farms. What works is getting people doing something with others outside. The river walks and the tree planting days do more for some of my patients than anything I can prescribe. I can't put that in a spreadsheet, but I can tell you who stopped coming to the surgery every week."
+  },
+  {
+   "id": "s8",
+   "teller_role": "Town councillor",
+   "channel": "session",
+   "text": "Every fund we apply to wants a separate bid. Flood money comes from one pot, the school from another, housing from a third, and farm support from Cardiff. Each one asks us to prove the benefit on its own. We spent £60,000 on consultants writing bids last year. Nobody funds the joining up, and the joining up is the whole thing. If I could show a funder one plan that the valley had actually agreed, I think it would move."
+  }
+ ],
+ "claims": [
+  {
+   "id": "c001",
+   "story_id": "s1",
+   "text": "We run 600 ewes on the hill and the numbers have stopped adding up.",
+   "span": [
+    0,
+    67
+   ],
+   "signal_id": "sig4"
+  },
+  {
+   "id": "c049",
+   "story_id": "s1",
+   "text": "The subsidy change means we need another income or we sell.",
+   "span": [
+    68,
+    127
+   ],
+   "signal_id": "sig4"
+  },
+  {
+   "id": "c002",
+   "story_id": "s1",
+   "text": "the bog above our top field holds water like a sponge",
+   "span": [
+    155,
+    208
+   ],
+   "signal_id": "sig2"
+  },
+  {
+   "id": "c003",
+   "story_id": "s1",
+   "text": "When we blocked the old drains with the river trust, the stream below stopped flashing after rain.",
+   "span": [
+    210,
+    308
+   ],
+   "signal_id": "sig2"
+  },
+  {
+   "id": "c004",
+   "story_id": "s1",
+   "text": "I'd farm water if someone paid for it.",
+   "span": [
+    309,
+    347
+   ],
+   "signal_id": "sig4"
+  },
+  {
+   "id": "c005",
+   "story_id": "s1",
+   "text": "My son wants to stay but there's no house he can afford",
+   "span": [
+    348,
+    403
+   ],
+   "signal_id": "sig3"
+  },
+  {
+   "id": "c006",
+   "story_id": "s1",
+   "text": "If he goes, the farm goes, and the knowledge of that hill goes with him.",
+   "span": [
+    435,
+    507
+   ],
+   "signal_id": "sig5"
+  },
+  {
+   "id": "c007",
+   "story_id": "s1",
+   "text": "We used to share a contractor and a baler with three neighbours.",
+   "span": [
+    508,
+    572
+   ],
+   "signal_id": "sig4"
+  },
+  {
+   "id": "c008",
+   "story_id": "s2",
+   "text": "Our roll is 38. Ten years ago it was 61, and the county reviews any school under 40.",
+   "span": [
+    0,
+    84
+   ],
+   "signal_id": "sig1"
+  },
+  {
+   "id": "c009",
+   "story_id": "s2",
+   "text": "the nearest school is a 40-minute bus ride",
+   "span": [
+    98,
+    140
+   ],
+   "signal_id": "sig1"
+  },
+  {
+   "id": "c010",
+   "story_id": "s2",
+   "text": "The school is the last public building in the village.",
+   "span": [
+    217,
+    271
+   ],
+   "signal_id": "sig1"
+  },
+  {
+   "id": "c011",
+   "story_id": "s2",
+   "text": "The hall is where the flood group meets, where the Merched y Wawr meet, where the vaccination clinic ran.",
+   "span": [
+    272,
+    377
+   ],
+   "signal_id": "sig1"
+  },
+  {
+   "id": "c012",
+   "story_id": "s2",
+   "text": "The children learn on the river bank every Friday through Welsh",
+   "span": [
+    378,
+    441
+   ],
+   "signal_id": "sig5"
+  },
+  {
+   "id": "c013",
+   "story_id": "s2",
+   "text": "some of them know more about the otters than I do",
+   "span": [
+    447,
+    496
+   ],
+   "signal_id": "sig5"
+  },
+  {
+   "id": "c014",
+   "story_id": "s2",
+   "text": "Every family we lose to housing costs is one more step towards the review.",
+   "span": [
+    498,
+    572
+   ],
+   "signal_id": "sig3"
+  },
+  {
+   "id": "c015",
+   "story_id": "s3",
+   "text": "Everyone my age is told to leave if you want to get on.",
+   "span": [
+    58,
+    113
+   ],
+   "signal_id": "sig3"
+  },
+  {
+   "id": "c016",
+   "story_id": "s3",
+   "text": "Rent for a one-bed in town is £850 and I take home about £1,200.",
+   "span": [
+    114,
+    178
+   ],
+   "signal_id": "sig3"
+  },
+  {
+   "id": "c017",
+   "story_id": "s3",
+   "text": "My mates who went to Cardiff come back every weekend because this is home.",
+   "span": [
+    202,
+    276
+   ],
+   "signal_id": "sig3"
+  },
+  {
+   "id": "c018",
+   "story_id": "s3",
+   "text": "If there were a way to get a small place and some land work that counted for something, half of us would stay.",
+   "span": [
+    277,
+    387
+   ],
+   "signal_id": "sig3"
+  },
+  {
+   "id": "c019",
+   "story_id": "s3",
+   "text": "Nobody asks us.",
+   "span": [
+    388,
+    403
+   ],
+   "signal_id": "sig3"
+  },
+  {
+   "id": "c020",
+   "story_id": "s3",
+   "text": "The youth club shut in 2019 and since then there's nowhere to be that isn't the bus shelter.",
+   "span": [
+    404,
+    496
+   ],
+   "signal_id": "sig6"
+  },
+  {
+   "id": "c021",
+   "story_id": "s4",
+   "text": "In 2020, 142 homes in the lower town flooded, some for the second time in five years.",
+   "span": [
+    0,
+    85
+   ],
+   "signal_id": "sig2"
+  },
+  {
+   "id": "c022",
+   "story_id": "s4",
+   "text": "two of my neighbours can't get cover at all",
+   "span": [
+    121,
+    164
+   ],
+   "signal_id": "sig2"
+  },
+  {
+   "id": "c023",
+   "story_id": "s4",
+   "text": "The flood wall they're proposing protects the high street but pushes the water onto the fields at Pentre.",
+   "span": [
+    166,
+    271
+   ],
+   "signal_id": "sig2"
+  },
+  {
+   "id": "c024",
+   "story_id": "s4",
+   "text": "What I've learned is that the river starts up on the hill farms.",
+   "span": [
+    272,
+    336
+   ],
+   "signal_id": "sig2"
+  },
+  {
+   "id": "c025",
+   "story_id": "s4",
+   "text": "The years the farmers were paid to keep water on the land, we noticed the difference down here.",
+   "span": [
+    337,
+    432
+   ],
+   "signal_id": "sig2"
+  },
+  {
+   "id": "c026",
+   "story_id": "s4",
+   "text": "The flood group is 30 volunteers with a WhatsApp and a pump.",
+   "span": [
+    433,
+    493
+   ],
+   "signal_id": "sig2"
+  },
+  {
+   "id": "c027",
+   "story_id": "s4",
+   "text": "We're the first people anyone rings.",
+   "span": [
+    494,
+    530
+   ],
+   "signal_id": "sig2"
+  },
+  {
+   "id": "c028",
+   "story_id": "s5",
+   "text": "every field had a name and every name had a story",
+   "span": [
+    18,
+    67
+   ],
+   "signal_id": "sig5"
+  },
+  {
+   "id": "c029",
+   "story_id": "s5",
+   "text": "The names are going because the people who knew them are going.",
+   "span": [
+    69,
+    132
+   ],
+   "signal_id": "sig5"
+  },
+  {
+   "id": "c030",
+   "story_id": "s5",
+   "text": "we still meet in the school hall on a Thursday, twelve of us, sometimes more",
+   "span": [
+    163,
+    239
+   ],
+   "signal_id": "sig1"
+  },
+  {
+   "id": "c031",
+   "story_id": "s5",
+   "text": "That is where the young mothers come for the cylch meithrin.",
+   "span": [
+    241,
+    301
+   ],
+   "signal_id": "sig1"
+  },
+  {
+   "id": "c032",
+   "story_id": "s5",
+   "text": "If the school goes, the Thursday goes.",
+   "span": [
+    302,
+    340
+   ],
+   "signal_id": "sig1"
+  },
+  {
+   "id": "c033",
+   "story_id": "s5",
+   "text": "that hall holds the valley together",
+   "span": [
+    373,
+    408
+   ],
+   "signal_id": "sig1"
+  },
+  {
+   "id": "c034",
+   "story_id": "s5",
+   "text": "I would teach the field names to anybody who asked.",
+   "span": [
+    410,
+    461
+   ],
+   "signal_id": "sig5"
+  },
+  {
+   "id": "c035",
+   "story_id": "s6",
+   "text": "The community café feeds about 70 people a week on a pay-what-you-can basis.",
+   "span": [
+    0,
+    76
+   ],
+   "signal_id": "sig6"
+  },
+  {
+   "id": "c036",
+   "story_id": "s6",
+   "text": "Half of them come for the company as much as the food.",
+   "span": [
+    77,
+    131
+   ],
+   "signal_id": "sig6"
+  },
+  {
+   "id": "c037",
+   "story_id": "s6",
+   "text": "we buy our vegetables from a wholesaler in Swansea",
+   "span": [
+    214,
+    264
+   ],
+   "signal_id": "sig6"
+  },
+  {
+   "id": "c038",
+   "story_id": "s6",
+   "text": "There's an empty unit on the high street that would make a food hub.",
+   "span": [
+    266,
+    334
+   ],
+   "signal_id": "sig6"
+  },
+  {
+   "id": "c039",
+   "story_id": "s6",
+   "text": "If the school kitchen and the café bought together from local growers, there'd be a reason for someone to grow.",
+   "span": [
+    335,
+    446
+   ],
+   "signal_id": "sig4"
+  },
+  {
+   "id": "c040",
+   "story_id": "s6",
+   "text": "The young ones who help at the café are the best volunteers I've had.",
+   "span": [
+    447,
+    516
+   ],
+   "signal_id": "sig3"
+  },
+  {
+   "id": "c041",
+   "story_id": "s7",
+   "text": "I take about 40 referrals a quarter, mostly loneliness and low mood",
+   "span": [
+    0,
+    67
+   ],
+   "signal_id": "sig6"
+  },
+  {
+   "id": "c042",
+   "story_id": "s7",
+   "text": "a lot of them older men off the farms",
+   "span": [
+    69,
+    106
+   ],
+   "signal_id": "sig4"
+  },
+  {
+   "id": "c043",
+   "story_id": "s7",
+   "text": "The river walks and the tree planting days do more for some of my patients than anything I can prescribe.",
+   "span": [
+    174,
+    279
+   ],
+   "signal_id": "sig6"
+  },
+  {
+   "id": "c044",
+   "story_id": "s7",
+   "text": "I can tell you who stopped coming to the surgery every week",
+   "span": [
+    319,
+    378
+   ],
+   "signal_id": "sig6"
+  },
+  {
+   "id": "c045",
+   "story_id": "s8",
+   "text": "Every fund we apply to wants a separate bid.",
+   "span": [
+    0,
+    44
+   ],
+   "signal_id": "sig7"
+  },
+  {
+   "id": "c046",
+   "story_id": "s8",
+   "text": "We spent £60,000 on consultants writing bids last year.",
+   "span": [
+    205,
+    260
+   ],
+   "signal_id": "sig7"
+  },
+  {
+   "id": "c047",
+   "story_id": "s8",
+   "text": "Nobody funds the joining up, and the joining up is the whole thing.",
+   "span": [
+    261,
+    328
+   ],
+   "signal_id": "sig7"
+  },
+  {
+   "id": "c048",
+   "story_id": "s8",
+   "text": "If I could show a funder one plan that the valley had actually agreed, I think it would move.",
+   "span": [
+    329,
+    422
+   ],
+   "signal_id": "sig7"
+  }
+ ],
+ "signals": [
+  {
+   "id": "sig1",
+   "statement": "The school stays open",
+   "supporting_claim_ids": [
+    "c008",
+    "c009",
+    "c010",
+    "c011",
+    "c030",
+    "c031",
+    "c032",
+    "c033"
+   ],
+   "voices": 2,
+   "recurrence": 8,
+   "verification": {
+    "participants": 52,
+    "endorse": 43,
+    "amend": 7,
+    "contest": 2,
+    "amendments": [
+     "The school matters, but the hall matters as much. Fund the building, not just the roll."
+    ],
+    "gate": "not_yet"
+   }
+  },
+  {
+   "id": "sig2",
+   "statement": "The river stops flooding the town",
+   "supporting_claim_ids": [
+    "c002",
+    "c003",
+    "c021",
+    "c022",
+    "c023",
+    "c024",
+    "c025",
+    "c026",
+    "c027"
+   ],
+   "voices": 2,
+   "recurrence": 9,
+   "verification": {
+    "participants": 52,
+    "endorse": 38,
+    "amend": 10,
+    "contest": 4,
+    "amendments": [
+     "Pentre fields flood because of the wall. Do not protect the town by drowning the farms."
+    ],
+    "gate": "may_be_priced"
+   }
+  },
+  {
+   "id": "sig3",
+   "statement": "Young people can afford to stay",
+   "supporting_claim_ids": [
+    "c005",
+    "c014",
+    "c015",
+    "c016",
+    "c017",
+    "c018",
+    "c019",
+    "c040"
+   ],
+   "voices": 4,
+   "recurrence": 8,
+   "verification": {
+    "participants": 52,
+    "endorse": 47,
+    "amend": 4,
+    "contest": 1,
+    "amendments": [],
+    "gate": "may_be_priced"
+   }
+  },
+  {
+   "id": "sig4",
+   "statement": "Farms survive the transition",
+   "supporting_claim_ids": [
+    "c001",
+    "c004",
+    "c007",
+    "c039",
+    "c042",
+    "c049"
+   ],
+   "voices": 3,
+   "recurrence": 6,
+   "verification": {
+    "participants": 52,
+    "endorse": 32,
+    "amend": 14,
+    "contest": 6,
+    "amendments": [
+     "Tenant farms are worse off than owners. Count them separately."
+    ],
+    "gate": "may_be_priced"
+   }
+  },
+  {
+   "id": "sig5",
+   "statement": "Language and knowledge of the land carry on",
+   "supporting_claim_ids": [
+    "c006",
+    "c012",
+    "c013",
+    "c028",
+    "c029",
+    "c034"
+   ],
+   "voices": 3,
+   "recurrence": 6,
+   "verification": {
+    "participants": 52,
+    "endorse": 46,
+    "amend": 5,
+    "contest": 1,
+    "amendments": [
+     "Field names are not for sale. Record them, teach them, never price them."
+    ],
+    "gate": "commons_only"
+   }
+  },
+  {
+   "id": "sig6",
+   "statement": "Food and company",
+   "supporting_claim_ids": [
+    "c020",
+    "c035",
+    "c036",
+    "c037",
+    "c038",
+    "c041",
+    "c043",
+    "c044"
+   ],
+   "voices": 3,
+   "recurrence": 8,
+   "verification": {
+    "participants": 52,
+    "endorse": 41,
+    "amend": 9,
+    "contest": 2,
+    "amendments": [],
+    "gate": "may_be_priced"
+   }
+  },
+  {
+   "id": "sig7",
+   "statement": "Joining it up",
+   "supporting_claim_ids": [
+    "c045",
+    "c046",
+    "c047",
+    "c048"
+   ],
+   "voices": 1,
+   "recurrence": 4,
+   "verification": {
+    "participants": 52,
+    "endorse": 36,
+    "amend": 12,
+    "contest": 4,
+    "amendments": [],
+    "gate": "not_yet"
+   }
+  }
+ ],
+ "interventions": {
+  "from_plans": [
+   {
+    "id": "A1",
+    "name": "Lower-town flood wall",
+    "signal_ids": [
+     "sig2"
+    ],
+    "note": "Appraised on avoided damage in the town; moves water onto the fields upstream."
+   },
+   {
+    "id": "A2",
+    "name": "School estate review",
+    "signal_ids": [
+     "sig1"
+    ],
+    "note": "Cost per pupil against a county benchmark."
+   },
+   {
+    "id": "A3",
+    "name": "Affordable housing allocation",
+    "signal_ids": [
+     "sig3"
+    ],
+    "note": "Units against a county target; no link to work or the school."
+   },
+   {
+    "id": "A4",
+    "name": "Farm diversification grants",
+    "signal_ids": [
+     "sig4"
+    ],
+    "note": "One application per holding, scored on farm income alone."
+   },
+   {
+    "id": "A5",
+    "name": "Food bank provision",
+    "signal_ids": [
+     "sig6"
+    ],
+    "note": "Parcels per week; the company people come for is not counted."
+   }
+  ],
+  "from_place": [
+   {
+    "id": "B1",
+    "name": "Upland water farming",
+    "signal_ids": [
+     "sig2",
+     "sig4",
+     "sig3"
+    ],
+    "sip_id": "sip3",
+    "note": "Hill farms paid to hold water on the land, with land work for young people."
+   },
+   {
+    "id": "B2",
+    "name": "The school as the valley hub",
+    "signal_ids": [
+     "sig1",
+     "sig6",
+     "sig5"
+    ],
+    "sip_id": "sip2",
+    "note": "Keep the building open as the place the valley meets, with a kitchen buying locally and Welsh-medium learning on the river."
+   },
+   {
+    "id": "B3",
+    "name": "Homes with land work",
+    "signal_ids": [
+     "sig3",
+     "sig1",
+     "sig4"
+    ],
+    "sip_id": "sip1",
+    "note": "Community-owned homes for young families, tied to farm and restoration apprenticeships."
+   },
+   {
+    "id": "B4",
+    "name": "High street food hub",
+    "signal_ids": [
+     "sig6",
+     "sig4",
+     "sig3"
+    ],
+    "note": "The empty unit becomes shared buying for the café and the school kitchen."
+   },
+   {
+    "id": "B5",
+    "name": "Field names and river knowledge",
+    "signal_ids": [
+     "sig5",
+     "sig6",
+     "sig1"
+    ],
+    "note": "Elders teach field names on river walks with the school and local health groups."
+   }
+  ]
+ },
+ "sips": [
+  {
+   "id": "sip1",
+   "kind": "threshold",
+   "title": "Keep the school above its review line",
+   "what_changes": "A roll of 38 against a review line of 40: a couple of young families staying keeps the school, and the hall, open.",
+   "time_to_show": "about a year",
+   "evidence_claim_ids": [
+    "c008",
+    "c014",
+    "c018",
+    "c032"
+   ]
+  },
+  {
+   "id": "sip2",
+   "kind": "node",
+   "title": "The school hall",
+   "what_changes": "One building that the flood group, the Thursday meeting, the toddler group and the clinic all depend on.",
+   "time_to_show": "months",
+   "evidence_claim_ids": [
+    "c011",
+    "c030",
+    "c031",
+    "c033"
+   ]
+  },
+  {
+   "id": "sip3",
+   "kind": "window",
+   "title": "The subsidy transition",
+   "what_changes": "Farms are choosing their next income now; paying them to hold water could change flooding downstream for good.",
+   "time_to_show": "three years or more",
+   "evidence_claim_ids": [
+    "c049",
+    "c002",
+    "c003",
+    "c004",
+    "c024",
+    "c025"
+   ]
+  }
+ ],
+ "priorities": {
+  "title": "Where capital is most needed",
+  "intro": "Supplied by the VSE team at deployment.",
+  "items": []
+ }
+}

@@ -1,0 +1,34 @@
+name = "vse-engine"
+main = "src/index.ts"
+compatibility_date = "2025-06-01"
+
+# Relational state (PRD §8): stories, claims, signals, votes, gates, publications.
+[[d1_databases]]
+binding = "DB"
+database_name = "vse"
+database_id = "REPLACE_WITH_D1_ID"
+migrations_dir = "migrations"
+
+# Source audio + published artifacts (results files, manifests).
+[[r2_buckets]]
+binding = "ARTIFACTS"
+bucket_name = "vse-artifacts"
+
+# Async pipeline stages: transcribe, extract.
+[[queues.producers]]
+binding = "PIPELINE"
+queue = "vse-pipeline"
+[[queues.consumers]]
+queue = "vse-pipeline"
+max_batch_size = 5
+max_retries = 2
+
+# Extraction, transcription, embeddings — model ids in src/models.ts.
+# All commercially-usable weights (Apache-2.0/MIT per OSS-STACK.md).
+[ai]
+binding = "AI"
+
+# Secrets (wrangler secret put):
+#   WHATSAPP_VERIFY_TOKEN  — webhook handshake
+#   WHATSAPP_TOKEN         — Cloud API bearer token
+#   ANALYST_KEY            — bearer token for analyst/console routes

@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-teal: #155E6E;
+  --color-teal-deep: #0e3f4b;
+  --color-sage: #2A8A6A;
+  --color-sage-soft: #dff0e8;
+  --color-coral: #C4473F;
+  --color-sand: #EFE4D4;
+  --color-sand-deep: #e3d3bc;
+  --color-paper: #FAF7F2;
+  --color-ink: #1e2a2c;
+  --font-serif: "Source Serif", "Iowan Old Style", Georgia, serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+body {
+  @apply bg-paper text-ink font-sans antialiased;
+}
+.dark body {
+  @apply bg-[#101a1c] text-[#e9e4dc];
+}
+
+.story-text {
+  @apply font-serif leading-relaxed;
+}
+
+.excerpt {
+  @apply bg-sand-deep/60 dark:bg-teal-deep/80 rounded-sm px-0.5 cursor-help
+    decoration-sage underline decoration-2 underline-offset-2;
+}
+.excerpt:focus-visible {
+  @apply outline-2 outline-teal;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .motion-safe-only {
+    transition: none !important;
+    animation: none !important;
+  }
+}

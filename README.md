@@ -30,21 +30,60 @@ README.md               this file
 LICENSE                 Apache-2.0
 data/                   results files (the published contract)
 schema/                 JSON Schema for results files
-tools/                  validator and publisher
+tools/                  results-file validator (schema + semantic invariants)
 docs/source/            original brief + content docs (docx)
 site/                   demonstrator — Vite + React + TypeScript + Tailwind
 engine/                 pipeline + consoles — Cloudflare Workers/D1/R2
 ```
 
-## Validate the data contract
+## Run the demonstrator
 
 ```bash
-npx ajv validate --spec draft2020 \
-  -s schema/results.schema.json -d data/utopia_results.json
+cd site
+npm install
+npm run dev        # → http://localhost:5173
+npm run build      # → dist/ — upload to any static host; works offline (PWA)
 ```
 
-Semantic invariants (verbatim spans, referential integrity, derived counts,
-gate enforcement) are enforced by the validator per PRD §4.1 / FR-E2.
+The site reads `site/public/data/utopia_results.json`. To show a different
+place, drop in another `*_results.json` that passes the validator below —
+nothing else needs to change.
+
+## Validate a results file
+
+```bash
+npm install        # repo root — installs ajv
+npm run validate   # schema (JSON Schema 2020-12) + semantic invariants
+# or: node tools/validate-results.mjs <file.json> [--schema path]
+```
+
+Layer 1 is structural (JSON Schema); layer 2 is `tools/results-lib.mjs` —
+verbatim span slice-equality, bidirectional claim↔signal refs, derived
+voices/recurrence, intervention/sip/evidence references, and gate semantics
+(a `priced` intervention may never answer a `commons_only` signal). The
+engine's publish step runs the same two layers (PRD FR-E24, gates G7–G10).
+
+## Run the engine
+
+```bash
+cd engine
+npm install
+npx wrangler d1 create vse            # put the database_id in wrangler.toml
+npx wrangler d1 migrations apply vse  # schema
+npx wrangler secret put WHATSAPP_VERIFY_TOKEN
+npx wrangler secret put WHATSAPP_TOKEN
+npx wrangler secret put ANALYST_KEY   # gates /api/consolidate, /api/publish, …
+npm run dev                           # local dev (miniflare)
+npm run typecheck && npm test         # tsc + node --test
+npm run deploy                        # wrangler deploy (host security gate runs)
+```
+
+Pipeline: `POST /api/places/:id/stories` (or WhatsApp webhook / voice upload)
+→ queue → Whisper (voice) → Workers-AI extraction → mechanical span check
+(quarantines paraphrases) → `POST /api/consolidate/:place` proposes clusters →
+analyst confirms signals → people-check votes + sticky gates →
+`POST /api/publish/:place` assembles, validates, hashes, and stores a
+versioned results file + manifest in R2 — the exact format `site/` reads.
 
 ## Licence
 

@@ -1,0 +1,24 @@
+{
+  "name": "vse-engine",
+  "private": true,
+  "version": "0.1.0",
+  "description": "VSE upstream engine — intake → extract → consolidate → check → structure → publish.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test test/",
+    "deploy": "wrangler deploy"
+  },
+  "dependencies": {
+    "hono": "^4.7.0",
+    "ml-kmeans": "^6.0.0",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^5.20261019.1",
+    "typescript": "^5.8.0",
+    "wrangler": "^4.0.0"
+  }
+}

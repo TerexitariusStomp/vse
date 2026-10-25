@@ -1,0 +1,16 @@
+{
+  "name": "vse",
+  "private": true,
+  "type": "module",
+  "description": "Value Structuring Engine — demonstrator, engine, and validation tooling.",
+  "license": "Apache-2.0",
+  "scripts": {
+    "validate": "node tools/validate-results.mjs data/utopia_results.json",
+    "site:dev": "npm --prefix site run dev",
+    "site:build": "npm --prefix site run build"
+  },
+  "devDependencies": {
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1"
+  }
+}
