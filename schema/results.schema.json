@@ -1,0 +1,177 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://vse.example/schema/results.schema.json",
+  "title": "VSE results file",
+  "description": "Published results package for one place, consumed by the static demonstrator. Verbatim-span and referential invariants are enforced by the validator (PRD FR-E2), not by this schema alone.",
+  "type": "object",
+  "required": ["place", "pipeline", "stories", "claims", "signals", "interventions", "sips", "priorities"],
+  "additionalProperties": false,
+  "properties": {
+    "_about": { "type": "string" },
+    "place": {
+      "type": "object",
+      "required": ["id", "name", "kind", "summary"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "kind": { "type": "string" },
+        "summary": { "type": "string" }
+      }
+    },
+    "pipeline": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "items": {
+        "type": "object",
+        "required": ["stage", "detail", "count", "unit"],
+        "additionalProperties": false,
+        "properties": {
+          "stage": { "type": "string" },
+          "detail": { "type": "string" },
+          "count": { "type": "integer", "minimum": 0 },
+          "unit": { "type": "string" }
+        }
+      }
+    },
+    "scale_note": { "type": "string" },
+    "stories": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "teller_role", "channel", "text"],
+        "additionalProperties": false,
+        "properties": {
+          "id": { "type": "string" },
+          "teller_role": { "type": "string" },
+          "channel": { "type": "string" },
+          "text": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+    "claims": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "story_id", "text", "span", "signal_id"],
+        "additionalProperties": false,
+        "properties": {
+          "id": { "type": "string" },
+          "story_id": { "type": "string" },
+          "text": { "type": "string", "minLength": 1 },
+          "span": {
+            "type": "array",
+            "minItems": 2,
+            "maxItems": 2,
+            "items": { "type": "integer", "minimum": 0 }
+          },
+          "signal_id": { "type": "string" }
+        }
+      }
+    },
+    "signals": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "statement", "supporting_claim_ids", "voices", "recurrence", "verification"],
+        "additionalProperties": false,
+        "properties": {
+          "id": { "type": "string" },
+          "statement": { "type": "string" },
+          "supporting_claim_ids": { "type": "array", "items": { "type": "string" } },
+          "voices": { "type": "integer", "minimum": 0 },
+          "recurrence": { "type": "integer", "minimum": 0 },
+          "verification": {
+            "type": "object",
+            "required": ["participants", "endorse", "amend", "contest", "amendments", "gate"],
+            "additionalProperties": false,
+            "properties": {
+              "participants": { "type": "integer", "minimum": 0 },
+              "endorse": { "type": "integer", "minimum": 0 },
+              "amend": { "type": "integer", "minimum": 0 },
+              "contest": { "type": "integer", "minimum": 0 },
+              "amendments": { "type": "array", "items": { "type": "string" } },
+              "gate": { "enum": ["may_be_priced", "commons_only", "not_yet"] }
+            }
+          }
+        }
+      }
+    },
+    "interventions": {
+      "type": "object",
+      "required": ["from_plans", "from_place"],
+      "additionalProperties": false,
+      "properties": {
+        "from_plans": { "$ref": "#/$defs/interventionList" },
+        "from_place": { "$ref": "#/$defs/interventionList" }
+      }
+    },
+    "sips": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "kind", "title", "what_changes", "time_to_show", "evidence_claim_ids"],
+        "additionalProperties": false,
+        "properties": {
+          "id": { "type": "string" },
+          "kind": { "enum": ["threshold", "node", "window"] },
+          "title": { "type": "string" },
+          "what_changes": { "type": "string" },
+          "time_to_show": { "type": "string" },
+          "evidence_claim_ids": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    },
+    "priorities": {
+      "type": "object",
+      "required": ["title", "intro", "items"],
+      "additionalProperties": false,
+      "properties": {
+        "title": { "type": "string" },
+        "intro": { "type": "string" },
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["heading", "text"],
+            "additionalProperties": false,
+            "properties": {
+              "heading": { "type": "string" },
+              "text": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    "meta": {
+      "type": "object",
+      "required": ["place_id", "version", "published_at", "manifest_sha256"],
+      "additionalProperties": false,
+      "properties": {
+        "place_id": { "type": "string" },
+        "version": { "type": "string" },
+        "published_at": { "type": "string" },
+        "manifest_sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" }
+      }
+    }
+  },
+  "$defs": {
+    "interventionList": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "signal_ids", "note"],
+        "additionalProperties": false,
+        "properties": {
+          "id": { "type": "string" },
+          "name": { "type": "string" },
+          "signal_ids": { "type": "array", "items": { "type": "string" } },
+          "note": { "type": "string" },
+          "sip_id": { "type": "string" },
+          "priced": { "type": "boolean" }
+        }
+      }
+    }
+  }
+}
