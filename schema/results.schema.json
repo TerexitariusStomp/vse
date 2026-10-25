@@ -16,7 +16,30 @@
         "id": { "type": "string" },
         "name": { "type": "string" },
         "kind": { "type": "string" },
-        "summary": { "type": "string" }
+        "summary": { "type": "string" },
+        "geo": {
+          "type": "object",
+          "required": ["lat", "lon"],
+          "additionalProperties": false,
+          "properties": {
+            "lat": { "type": "number" },
+            "lon": { "type": "number" }
+          }
+        },
+        "readings": {
+          "type": "array",
+          "description": "Official-record readings for the place (e.g. IMD decile, flood warnings) — the 'from the plans' context, assembled at publish time. Evidence for review, never a verdict.",
+          "items": {
+            "type": "object",
+            "required": ["label", "value", "source"],
+            "additionalProperties": false,
+            "properties": {
+              "label": { "type": "string" },
+              "value": { "type": "string" },
+              "source": { "type": "string" }
+            }
+          }
+        }
       }
     },
     "pipeline": {
@@ -46,6 +69,7 @@
           "id": { "type": "string" },
           "teller_role": { "type": "string" },
           "channel": { "type": "string" },
+          "source": { "type": "string", "description": "Provenance of the story text (dataset, document, or feed it was drawn from)." },
           "text": { "type": "string", "minLength": 1 }
         }
       }

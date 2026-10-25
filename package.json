@@ -5,7 +5,8 @@
   "description": "Value Structuring Engine — demonstrator, engine, and validation tooling.",
   "license": "Apache-2.0",
   "scripts": {
-    "validate": "node tools/validate-results.mjs data/utopia_results.json",
+    "validate": "node tools/validate-results.mjs data/thorntree_results.json && node tools/validate-results.mjs data/kenya-coast_results.json",
+    "build-data": "node tools/build-place-data.mjs",
     "site:dev": "npm --prefix site run dev",
     "site:build": "npm --prefix site run build"
   },

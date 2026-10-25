@@ -48,6 +48,11 @@ export function Stories() {
                   <span className="font-serif text-xl">{s.teller_role}</span>
                   <span className="ml-3 text-sm text-muted">told by {s.channel}</span>
                 </span>
+                {s.source && (
+                  <span className="chapter-marker hidden shrink-0 rounded-[3px] border border-line px-2 py-1 sm:inline">
+                    {s.source}
+                  </span>
+                )}
                 <span className="chapter-marker shrink-0">
                   {counts.get(s.id)?.length ?? 0} excerpts
                   <span aria-hidden className="ml-2">{open ? '−' : '+'}</span>
@@ -66,7 +71,8 @@ export function Stories() {
       </ol>
       <Reveal>
         <p className="mt-4 text-sm text-muted">
-          Eight voices — a whole valley, in their own sentences.
+          {r.stories.length} real records — vouchers, hub posts, cards and plan
+          documents, in their own words.
         </p>
       </Reveal>
     </Chapter>

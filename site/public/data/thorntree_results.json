@@ -1,0 +1,552 @@
+{
+ "_about": "Real data assembled from Springforth-consumed sources — Sarafu vouchers/pool (sarafu.network), Holons hub posts, OnePlanet/CSV plan uploads, possibility cards + completion reports, treegens records, IMD 2025 (OGL). Stories are verbatim utterances; claim spans slice the source text. Verification counts are derived from recorded participation (voucher issuers, pool members, planting-day crews, appreciations) — not a formal facilitated check. Built 2026-10-25 by tools/build-place-data.mjs.",
+ "place": {
+  "id": "thorntree",
+  "name": "Thorntree",
+  "kind": "council estate, east Middlesbrough",
+  "summary": "A real estate on Middlesbrough’s east side: a community hub, a tool library, and a beck that floods the marsh.",
+  "geo": {
+   "lat": 54.55,
+   "lon": -1.208
+  },
+  "readings": [
+   {
+    "label": "IMD deprivation decile (LSOA Middlesbrough 010D)",
+    "value": "1/10 · score 66.9 · rank 461 of 33,755",
+    "source": "English Indices of Deprivation 2025 — OGL"
+   },
+   {
+    "label": "Flood-risk areas within 15km",
+    "value": "34",
+    "source": "EA Flood Monitoring — OGL (fetched 2026-10-25)"
+   },
+   {
+    "label": "Tool-library voucher transactions",
+    "value": "12",
+    "source": "sarafu.network — public indexer"
+   },
+   {
+    "label": "Hub appreciations recorded",
+    "value": "10",
+    "source": "holons thorntree hub — 8 + 2"
+   }
+  ]
+ },
+ "pipeline": [
+  {
+   "stage": "Listening",
+   "detail": "Real utterances gathered from vouchers, hub posts, cards and plan documents",
+   "count": 12,
+   "unit": "stories"
+  },
+  {
+   "stage": "Making sense",
+   "detail": "Each text broken into exact excerpts of what matters",
+   "count": 16,
+   "unit": "excerpts"
+  },
+  {
+   "stage": "Consolidating",
+   "detail": "Excerpts brought together into what the place is saying",
+   "count": 5,
+   "unit": "signals"
+  },
+  {
+   "stage": "People check",
+   "detail": "Participation recorded in the source systems",
+   "count": 4,
+   "unit": "participants"
+  }
+ ],
+ "scale_note": "A demonstrator assembled from real records — participation is small because it is real.",
+ "stories": [
+  {
+   "id": "s-hub-marsh",
+   "teller_role": "Hub member",
+   "channel": "community hub post",
+   "source": "holons:thorntree (hub action)",
+   "text": "We need marsh reeds and planting days volunteers"
+  },
+  {
+   "id": "s-hub-tools",
+   "teller_role": "Community ventures",
+   "channel": "community needs return",
+   "source": "csv:community-needs (CVL)",
+   "text": "We need tools and equipment for the repair café"
+  },
+  {
+   "id": "s-hub-laptop",
+   "teller_role": "Hub member",
+   "channel": "community hub post",
+   "source": "holons:thorntree (hub need)",
+   "text": "Someone to run the repair café laptop"
+  },
+  {
+   "id": "s-hub-van",
+   "teller_role": "Hub member",
+   "channel": "community hub post",
+   "source": "holons:thorntree (hub offer)",
+   "text": "Van and driver for community moves fuel costs only"
+  },
+  {
+   "id": "s-tool-lib",
+   "teller_role": "Tool library",
+   "channel": "sarafu voucher",
+   "source": "sarafu.network voucher TTOOL",
+   "text": "Tool hire and repair café supplies — drills, strimmers, scaffold — offered to local projects"
+  },
+  {
+   "id": "s-hub-desc",
+   "teller_role": "Community hub",
+   "channel": "hub description",
+   "source": "holons:thorntree (hub membrane)",
+   "text": "Neighbourhood resourcing — tools, time, skills"
+  },
+  {
+   "id": "s-cvl-wetland",
+   "teller_role": "Community plan",
+   "channel": "plan document",
+   "source": "oneplanet:plan-cvl-thorntree",
+   "text": "Restore the wetland and reed beds around Thorntree beck to slow surface water"
+  },
+  {
+   "id": "s-cvl-outcome",
+   "teller_role": "Community plan",
+   "channel": "plan document",
+   "source": "oneplanet:plan-cvl-thorntree",
+   "text": "A greener, flood-resilient neighbourhood Local young people in work"
+  },
+  {
+   "id": "s-cvl-youth",
+   "teller_role": "Community plan",
+   "channel": "plan document",
+   "source": "oneplanet:plan-cvl-thorntree",
+   "text": "Drop-in hub linking 16–24s to local employers"
+  },
+  {
+   "id": "s-council-marsh",
+   "teller_role": "Council programme",
+   "channel": "plan document",
+   "source": "csv:upload (Middlesbrough Council)",
+   "text": "Marsh regeneration scheme"
+  },
+  {
+   "id": "s-council-youth",
+   "teller_role": "Council programme",
+   "channel": "plan document",
+   "source": "csv:upload (Middlesbrough Council)",
+   "text": "Youth skills and jobs centre"
+  },
+  {
+   "id": "s-council-solar",
+   "teller_role": "Council programme",
+   "channel": "plan document",
+   "source": "csv:upload (Middlesbrough Council)",
+   "text": "East Middlesbrough solar feasibility"
+  }
+ ],
+ "claims": [
+  {
+   "id": "c001",
+   "story_id": "s-hub-marsh",
+   "text": "marsh reeds and planting days volunteers",
+   "span": [
+    8,
+    48
+   ],
+   "signal_id": "sig-marsh"
+  },
+  {
+   "id": "c002",
+   "story_id": "s-hub-tools",
+   "text": "tools and equipment for the repair café",
+   "span": [
+    8,
+    47
+   ],
+   "signal_id": "sig-repair"
+  },
+  {
+   "id": "c003",
+   "story_id": "s-hub-laptop",
+   "text": "run the repair café laptop",
+   "span": [
+    11,
+    37
+   ],
+   "signal_id": "sig-repair"
+  },
+  {
+   "id": "c004",
+   "story_id": "s-hub-van",
+   "text": "Van and driver for community moves",
+   "span": [
+    0,
+    34
+   ],
+   "signal_id": "sig-mutual"
+  },
+  {
+   "id": "c005",
+   "story_id": "s-hub-van",
+   "text": "fuel costs only",
+   "span": [
+    35,
+    50
+   ],
+   "signal_id": "sig-mutual"
+  },
+  {
+   "id": "c006",
+   "story_id": "s-tool-lib",
+   "text": "drills, strimmers, scaffold",
+   "span": [
+    37,
+    64
+   ],
+   "signal_id": "sig-repair"
+  },
+  {
+   "id": "c007",
+   "story_id": "s-tool-lib",
+   "text": "offered to local projects",
+   "span": [
+    67,
+    92
+   ],
+   "signal_id": "sig-mutual"
+  },
+  {
+   "id": "c008",
+   "story_id": "s-hub-desc",
+   "text": "tools, time, skills",
+   "span": [
+    27,
+    46
+   ],
+   "signal_id": "sig-mutual"
+  },
+  {
+   "id": "c009",
+   "story_id": "s-cvl-wetland",
+   "text": "wetland and reed beds around Thorntree beck",
+   "span": [
+    12,
+    55
+   ],
+   "signal_id": "sig-marsh"
+  },
+  {
+   "id": "c010",
+   "story_id": "s-cvl-wetland",
+   "text": "slow surface water",
+   "span": [
+    59,
+    77
+   ],
+   "signal_id": "sig-marsh"
+  },
+  {
+   "id": "c011",
+   "story_id": "s-cvl-outcome",
+   "text": "greener, flood-resilient neighbourhood",
+   "span": [
+    2,
+    40
+   ],
+   "signal_id": "sig-marsh"
+  },
+  {
+   "id": "c012",
+   "story_id": "s-cvl-outcome",
+   "text": "Local young people in work",
+   "span": [
+    41,
+    67
+   ],
+   "signal_id": "sig-youth"
+  },
+  {
+   "id": "c013",
+   "story_id": "s-cvl-youth",
+   "text": "linking 16–24s to local employers",
+   "span": [
+    12,
+    45
+   ],
+   "signal_id": "sig-youth"
+  },
+  {
+   "id": "c014",
+   "story_id": "s-council-marsh",
+   "text": "Marsh regeneration scheme",
+   "span": [
+    0,
+    25
+   ],
+   "signal_id": "sig-marsh"
+  },
+  {
+   "id": "c015",
+   "story_id": "s-council-youth",
+   "text": "Youth skills and jobs centre",
+   "span": [
+    0,
+    28
+   ],
+   "signal_id": "sig-youth"
+  },
+  {
+   "id": "c016",
+   "story_id": "s-council-solar",
+   "text": "East Middlesbrough solar feasibility",
+   "span": [
+    0,
+    36
+   ],
+   "signal_id": "sig-energy"
+  }
+ ],
+ "signals": [
+  {
+   "id": "sig-repair",
+   "statement": "The repair café and the tool library keep things working",
+   "supporting_claim_ids": [
+    "c002",
+    "c003",
+    "c006"
+   ],
+   "voices": 3,
+   "recurrence": 3,
+   "verification": {
+    "participants": 4,
+    "endorse": 4,
+    "amend": 0,
+    "contest": 0,
+    "amendments": [],
+    "gate": "commons_only"
+   }
+  },
+  {
+   "id": "sig-marsh",
+   "statement": "The beck and the marsh need hands, reeds and a scheme",
+   "supporting_claim_ids": [
+    "c001",
+    "c009",
+    "c010",
+    "c011",
+    "c014"
+   ],
+   "voices": 4,
+   "recurrence": 5,
+   "verification": {
+    "participants": 3,
+    "endorse": 3,
+    "amend": 0,
+    "contest": 0,
+    "amendments": [],
+    "gate": "may_be_priced"
+   }
+  },
+  {
+   "id": "sig-youth",
+   "statement": "Young people need routes into work",
+   "supporting_claim_ids": [
+    "c012",
+    "c013",
+    "c015"
+   ],
+   "voices": 3,
+   "recurrence": 3,
+   "verification": {
+    "participants": 2,
+    "endorse": 2,
+    "amend": 0,
+    "contest": 0,
+    "amendments": [],
+    "gate": "may_be_priced"
+   }
+  },
+  {
+   "id": "sig-mutual",
+   "statement": "Neighbours already move and lend for each other — for fuel costs, not fees",
+   "supporting_claim_ids": [
+    "c004",
+    "c005",
+    "c007",
+    "c008"
+   ],
+   "voices": 3,
+   "recurrence": 4,
+   "verification": {
+    "participants": 3,
+    "endorse": 3,
+    "amend": 0,
+    "contest": 0,
+    "amendments": [],
+    "gate": "commons_only"
+   }
+  },
+  {
+   "id": "sig-energy",
+   "statement": "The east side could make its own power",
+   "supporting_claim_ids": [
+    "c016"
+   ],
+   "voices": 1,
+   "recurrence": 1,
+   "verification": {
+    "participants": 1,
+    "endorse": 1,
+    "amend": 0,
+    "contest": 0,
+    "amendments": [],
+    "gate": "not_yet"
+   }
+  }
+ ],
+ "interventions": {
+  "from_plans": [
+   {
+    "id": "P1",
+    "name": "Marsh regeneration scheme",
+    "signal_ids": [
+     "sig-marsh"
+    ],
+    "priced": true,
+    "note": "Middlesbrough Council programme — £55,000, from 2027-02. Scored against flood outcomes alone."
+   },
+   {
+    "id": "P2",
+    "name": "Youth skills and jobs centre",
+    "signal_ids": [
+     "sig-youth"
+    ],
+    "priced": true,
+    "note": "Middlesbrough Council programme — £60,000, from 2027-03."
+   },
+   {
+    "id": "P3",
+    "name": "East Middlesbrough solar feasibility",
+    "signal_ids": [
+     "sig-energy"
+    ],
+    "priced": true,
+    "note": "Middlesbrough Council programme — £30,000, from 2027-06."
+   },
+   {
+    "id": "P4",
+    "name": "Thorntree wetland restoration Q3",
+    "signal_ids": [
+     "sig-marsh"
+    ],
+    "priced": true,
+    "note": "Community Ventures Ltd plan — £40,000, from 2027-01. Overlaps the council scheme; neither counts the volunteers."
+   },
+   {
+    "id": "P5",
+    "name": "Youth employment hub",
+    "signal_ids": [
+     "sig-youth"
+    ],
+    "priced": true,
+    "note": "Community Ventures Ltd plan — £25,000, from 2027-01."
+   }
+  ],
+  "from_place": [
+   {
+    "id": "C1",
+    "name": "Marsh reeds and planting days",
+    "signal_ids": [
+     "sig-marsh",
+     "sig-mutual"
+    ],
+    "priced": false,
+    "sip_id": "sip2",
+    "note": "The hub’s own call for volunteers — the same ground as both funded schemes, run on goodwill."
+   },
+   {
+    "id": "C2",
+    "name": "Thorntree Tool Library",
+    "signal_ids": [
+     "sig-repair",
+     "sig-mutual"
+    ],
+    "priced": false,
+    "note": "Sarafu commitment (TTOOL, GBP-denominated, giftable) — 12 recorded transactions. A commons instrument, not a priced service."
+   },
+   {
+    "id": "C3",
+    "name": "Repair café — tools and a laptop runner",
+    "signal_ids": [
+     "sig-repair",
+     "sig-mutual"
+    ],
+    "priced": false,
+    "sip_id": "sip1",
+    "note": "Two open needs on the hub: tools and equipment, and someone to run the laptop."
+   },
+   {
+    "id": "C4",
+    "name": "Van and driver for community moves",
+    "signal_ids": [
+     "sig-mutual"
+    ],
+    "priced": false,
+    "note": "Offered at fuel costs only — mutual aid, not a market service."
+   }
+  ]
+ },
+ "sips": [
+  {
+   "id": "sip1",
+   "kind": "node",
+   "title": "The repair café",
+   "what_changes": "The hub, the tool library and two open needs all point at one table. Staff it and three signals move at once.",
+   "time_to_show": "months",
+   "evidence_claim_ids": [
+    "c002",
+    "c003",
+    "c004",
+    "c005",
+    "c006",
+    "c007",
+    "c008"
+   ]
+  },
+  {
+   "id": "sip2",
+   "kind": "threshold",
+   "title": "The marsh scheme meets the volunteers",
+   "what_changes": "The council’s £55,000 scheme and the hub’s planting days name the same ground. Join them and the money buys hands.",
+   "time_to_show": "about a year",
+   "evidence_claim_ids": [
+    "c001",
+    "c009",
+    "c010",
+    "c011",
+    "c014"
+   ]
+  }
+ ],
+ "priorities": {
+  "title": "What would help most",
+  "intro": "Open needs the place has already named.",
+  "items": [
+   {
+    "heading": "Someone to run the repair café laptop",
+    "text": "An open need on the hub — one person unblocks the repair café’s admin."
+   },
+   {
+    "heading": "Tools and equipment for the repair café",
+    "text": "Requested by Community Ventures Ltd; partly answered by the tool library’s drills, strimmers and scaffold."
+   }
+  ]
+ },
+ "meta": {
+  "place_id": "thorntree",
+  "version": "2026.10.25",
+  "published_at": "2026-10-25T18:40:33.968Z",
+  "manifest_sha256": "bee553e1063df5552fb8a716335e5f6f3892906d9a2b812a387b1cb1ecd02a73"
+ }
+}

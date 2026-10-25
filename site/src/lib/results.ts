@@ -12,6 +12,10 @@ export const ResultsSchema = z.object({
     name: z.string(),
     kind: z.string(),
     summary: z.string(),
+    geo: z.object({ lat: z.number(), lon: z.number() }).optional(),
+    readings: z
+      .array(z.object({ label: z.string(), value: z.string(), source: z.string() }))
+      .optional(),
   }),
   pipeline: z
     .array(
@@ -29,6 +33,7 @@ export const ResultsSchema = z.object({
       id: z.string(),
       teller_role: z.string(),
       channel: z.string(),
+      source: z.string().optional(),
       text: z.string().min(1),
     }),
   ),
@@ -115,7 +120,21 @@ export type Intervention = Results['interventions']['from_plans'][number]
 export type Sip = Results['sips'][number]
 export type View = keyof Results['interventions']
 
-export async function loadResults(place = 'utopia'): Promise<Results> {
+/** Places with published results files in public/data/. */
+export const PLACES = [
+  { id: 'thorntree', label: 'Thorntree' },
+  { id: 'kenya-coast', label: 'Kenya coast' },
+] as const
+export type PlaceId = (typeof PLACES)[number]['id']
+
+export function currentPlace(): PlaceId {
+  const q = new URLSearchParams(window.location.search).get('place')
+  if (q === 'thorntree' || q === 'kenya-coast') return q
+  const saved = localStorage.getItem('vse-place')
+  return saved === 'kenya-coast' ? 'kenya-coast' : 'thorntree'
+}
+
+export async function loadResults(place: PlaceId = 'thorntree'): Promise<Results> {
   const url = `${import.meta.env.BASE_URL}data/${place}_results.json`
   const res = await fetch(url)
   if (!res.ok) throw new Error(`Could not load results file (${res.status})`)

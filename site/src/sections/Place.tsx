@@ -49,7 +49,7 @@ export function Place() {
     <section id="place" className="scroll-mt-20 pt-14">
       <Reveal>
         <p className="chapter-marker">
-          <span className="text-teal">01</span> · {r.place.kind} · a demonstration
+          <span className="text-teal">01</span> · {r.place.kind} · real data
         </p>
         {/* the one display-type moment the editorial profile allows */}
         <h1 className="font-display mt-4 text-[clamp(3.4rem,11vw,8.5rem)] leading-[0.95] text-ink">
@@ -57,6 +57,23 @@ export function Place() {
         </h1>
         <p className="measure mt-5 text-lg text-muted">{r.place.summary}</p>
       </Reveal>
+
+      {/* the official record — what the plans already know about this place */}
+      {r.place.readings?.length ? (
+        <Reveal delay={60}>
+          <dl className="rule-t mt-8 grid grid-cols-2 gap-x-6 md:grid-cols-4">
+            {r.place.readings.map((rd) => (
+              <div key={rd.label} className="rule-b py-4">
+                <dt className="chapter-marker">{rd.label}</dt>
+                <dd className="font-display mt-1.5 text-2xl tabular-nums leading-tight text-ink">
+                  {rd.value}
+                </dd>
+                <dd className="mt-1 text-xs text-muted">{rd.source}</dd>
+              </div>
+            ))}
+          </dl>
+        </Reveal>
+      ) : null}
 
       <Reveal delay={120}>
         <button

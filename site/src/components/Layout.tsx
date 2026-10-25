@@ -1,5 +1,5 @@
 import { useEffect, useState, type ReactNode } from 'react'
-import { useResults } from '../lib'
+import { PLACES, useResults } from '../lib'
 
 export const CHAPTERS = [
   { id: 'place', n: '01', label: 'Place' },
@@ -43,6 +43,22 @@ export function Layout({ children }: { children: ReactNode }) {
           <a href="#place" className="font-display text-lg text-ink">
             {results.place.name}
           </a>
+          <nav className="flex items-center gap-1" aria-label="Places">
+            {PLACES.map((p) => (
+              <a
+                key={p.id}
+                href={`?place=${p.id}`}
+                aria-current={results.place.id === p.id ? 'true' : undefined}
+                className={`min-h-11 rounded-[3px] px-3 py-2 text-xs font-medium tracking-wide motion-safe-only transition-colors ${
+                  results.place.id === p.id
+                    ? 'bg-teal text-teal-ink'
+                    : 'text-muted hover:text-ink'
+                }`}
+              >
+                {p.label}
+              </a>
+            ))}
+          </nav>
           <nav className="ml-auto hidden items-center gap-5 md:flex" aria-label="Chapters">
             {CHAPTERS.map((c) => (
               <a
@@ -103,7 +119,7 @@ export function Layout({ children }: { children: ReactNode }) {
       <main className="mx-auto max-w-5xl px-5 pb-24">{children}</main>
 
       <footer className="rule-t px-5 py-8 text-center">
-        <p className="chapter-marker">{results.place.name} · a demonstration</p>
+        <p className="chapter-marker">{results.place.name} · assembled from real records</p>
         <p className="mx-auto mt-2 max-w-xl text-sm text-muted">{results._about}</p>
         <p className="mt-2 text-xs text-muted">Value Structuring Engine · Apache-2.0</p>
       </footer>

@@ -11,8 +11,9 @@ export function Check() {
       n="04"
       id="check"
       title="People check"
-      intro="Nothing guides capital until the people who told the stories have
-      checked it. This is what they said — and how you would respond."
+      intro="Nothing guides capital until the place has checked it. These
+      counts come from recorded participation in the source systems — and
+      here is how you would respond."
     >
       <ol className="rule-t mt-6">
         {r.signals.map((s) => (

@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import {
+  currentPlace,
   loadResults,
   ResultsProvider,
   UIProvider,
@@ -19,7 +20,9 @@ export default function App() {
   const [error, setError] = useState<string | null>(null)
 
   useEffect(() => {
-    loadResults()
+    const place = currentPlace()
+    localStorage.setItem('vse-place', place)
+    loadResults(place)
       .then(setResults)
       .catch((e) => setError(e instanceof Error ? e.message : String(e)))
   }, [])
@@ -31,8 +34,9 @@ export default function App() {
           The results file did not load
         </h1>
         <p className="mt-3 text-sm">
-          This site is a pure reader of <code>utopia_results.json</code>. Fix
-          the file and refresh — nothing is sent anywhere.
+          This site is a pure reader of <code>*_results.json</code> files in{' '}
+          <code>data/</code>. Fix the file and refresh — nothing is sent
+          anywhere.
         </p>
         <pre className="mt-4 overflow-x-auto rounded-lg bg-sand p-4 text-xs whitespace-pre-wrap dark:bg-teal-deep">
           {error}

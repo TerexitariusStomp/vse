@@ -4,10 +4,19 @@ Version 0.2 — 2026-10-25. Derived from `VSE_Developer_Brief_v3.docx` (Stuart
 Bond, 25 Oct 2026), `Utopia_Demonstrator_Content.docx`, and
 `utopia_results.json` — all in `docs/source/`. Audience: build agent or human
 implementer (implementable without further guidance) and the VSE team.
-Companion files: `data/utopia_results.json` (the reference data contract),
-`schema/results.schema.json` (machine-checkable form of §7.2),
-`COMPETITORS.md` (landscape + honest gaps), `OSS-STACK.md` (bill of
+Companion files: `schema/results.schema.json` (machine-checkable form of
+§7.2), `COMPETITORS.md` (landscape + honest gaps), `OSS-STACK.md` (bill of
 materials + custom-code accounting).
+
+> **Errata 2026-10-25b.** The demonstrator now ships **real places**, not
+> Utopia: `data/thorntree_results.json` + `data/kenya-coast_results.json`,
+> assembled by `tools/build-place-data.mjs` from Springforth-consumed
+> records (Sarafu, Holons, OnePlanet/CSV plans, treegens, IMD 2025). Every
+> story is a verbatim real utterance; verification counts are derived from
+> recorded participation and labelled as such in `_about`. The schema gains
+> optional `place.geo`, `place.readings` (official-record context) and
+> `stories[].source` (provenance). `data/utopia_results.json` is archived
+> at `docs/source/` — it remains the schema's reference example.
 
 **What the VSE is:** a system that helps a whole place say what it needs, in a
 form that can guide capital to where it is most needed, *without first

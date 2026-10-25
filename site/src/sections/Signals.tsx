@@ -39,8 +39,9 @@ export function Signals() {
       n="03"
       id="signals"
       title="What the place is saying"
-      intro="Seven signals, consolidated from forty-nine excerpts. Every one
-      traces back to the exact words people used — nothing is invented here."
+      intro={`${r.signals.length} signals, consolidated from ${r.claims.length}
+      excerpts. Every one traces back to the exact words in the record —
+      nothing is invented here.`}
     >
       <ol className="rule-t mt-6">
         {r.signals.map((s) => (
