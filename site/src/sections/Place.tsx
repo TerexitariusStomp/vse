@@ -1,7 +1,8 @@
 import { useRef, useState } from 'react'
 import { useResults } from '../lib'
+import { Reveal } from '../components/Reveal'
 
-/** Screen 1 — the place + Run animation over the four stages (FR-D2). */
+/** Chapter 01 — the place + Run animation over the four stages (FR-D2). */
 export function Place() {
   const r = useResults()
   const reduced = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches
@@ -45,53 +46,73 @@ export function Place() {
   }
 
   return (
-    <section id="place" className="scroll-mt-6">
-      <p className="text-sm uppercase tracking-wide text-sage">{r.place.kind}</p>
-      <h1 className="mt-1 font-serif text-4xl font-semibold text-teal dark:text-sand">
-        {r.place.name}
-      </h1>
-      <p className="mt-3 max-w-2xl text-lg">{r.place.summary}</p>
+    <section id="place" className="scroll-mt-20 pt-14">
+      <Reveal>
+        <p className="chapter-marker">
+          <span className="text-teal">01</span> · {r.place.kind} · a demonstration
+        </p>
+        {/* the one display-type moment the editorial profile allows */}
+        <h1 className="font-display mt-4 text-[clamp(3.4rem,11vw,8.5rem)] leading-[0.95] text-ink">
+          {r.place.name}
+        </h1>
+        <p className="measure mt-5 text-lg text-muted">{r.place.summary}</p>
+      </Reveal>
 
-      <button
-        onClick={run}
-        disabled={running}
-        className="mt-6 min-h-11 rounded-full bg-teal px-6 py-2 font-medium text-paper motion-safe-only transition-colors hover:bg-teal-deep disabled:opacity-50"
-      >
-        {done ? 'Run again' : 'Run'}
-      </button>
+      <Reveal delay={120}>
+        <button
+          onClick={run}
+          disabled={running}
+          className="mt-8 min-h-11 rounded-[3px] bg-teal px-7 py-2.5 font-medium text-teal-ink motion-safe-only transition-colors hover:bg-teal-deep disabled:opacity-50"
+        >
+          {done ? 'Run it again' : 'Run the engine'}
+        </button>
+      </Reveal>
 
-      <ol className="mt-8 grid gap-3 sm:grid-cols-2">
-        {r.pipeline.map((p, i) => (
-          <li
-            key={p.stage}
-            className={`rounded-xl border p-4 motion-safe-only transition-colors ${
-              i <= stageIdx
-                ? 'border-teal bg-sand/50 dark:bg-teal-deep/40'
-                : 'border-sand-deep/50 opacity-70'
-            }`}
-          >
-            <div className="flex items-baseline justify-between gap-2">
-              <h2 className="font-medium">{p.stage}</h2>
-              <span className="font-serif text-3xl tabular-nums text-teal dark:text-sand">
+      {/* pipeline: ruled stat strip — numbers are the drama */}
+      <Reveal delay={200}>
+        <ol className="rule-t mt-10 grid grid-cols-2 gap-x-6 md:grid-cols-4">
+          {r.pipeline.map((p, i) => (
+            <li
+              key={p.stage}
+              className={`rule-b py-5 motion-safe-only transition-opacity duration-500 ${
+                i <= stageIdx ? 'opacity-100' : 'opacity-40'
+              }`}
+            >
+              <p className="chapter-marker">{p.stage}</p>
+              <p
+                className={`font-display mt-2 text-5xl tabular-nums leading-none ${
+                  i <= stageIdx ? 'text-teal' : 'text-ink'
+                }`}
+              >
                 {counts[i]}
-                <span className="ml-1 text-sm font-sans opacity-70">{p.unit}</span>
-              </span>
-            </div>
-            <p className="mt-1 text-sm opacity-80">{p.detail}</p>
-          </li>
-        ))}
-      </ol>
+                <span className="ml-1.5 font-sans text-xs font-normal uppercase tracking-wide text-muted">
+                  {p.unit}
+                </span>
+              </p>
+              <p className="mt-2 text-sm text-muted">{p.detail}</p>
+            </li>
+          ))}
+        </ol>
+      </Reveal>
 
       {done && r.scale_note && (
-        <p className="mt-6 border-l-4 border-sage pl-4 font-serif italic">
-          {r.scale_note}
-        </p>
+        <Reveal>
+          <blockquote className="rule-b mt-8 pb-8">
+            <p className="font-serif text-xl italic leading-relaxed text-ink">
+              “{r.scale_note}”
+            </p>
+          </blockquote>
+        </Reveal>
       )}
 
-      <p className="mt-8 text-sm">
-        Next: <a href="#stories" className="text-teal underline underline-offset-2 dark:text-sand">hear the stories</a>
-        {' → '}<a href="#signals" className="text-teal underline underline-offset-2 dark:text-sand">what the place is saying</a>
-      </p>
+      <Reveal>
+        <p className="mt-8 text-sm text-muted">
+          Scroll — or jump:{' '}
+          <a href="#stories" className="a">the stories</a>
+          {' · '}
+          <a href="#signals" className="a">what the place is saying</a>
+        </p>
+      </Reveal>
     </section>
   )
 }

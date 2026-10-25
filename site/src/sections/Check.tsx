@@ -1,33 +1,30 @@
 import { useResults } from '../lib'
+import { Chapter } from '../components/Chapter'
 import { GateControl } from '../components/GateControl'
 import { VerificationBar } from '../components/VerificationBar'
 
-/** Screen 4 — people check: verification bars, amendments, votes, gates (FR-D5). */
+/** Chapter 04 — the constitutional gate, made visible (FR-D5). */
 export function Check() {
   const r = useResults()
   return (
-    <section id="check" className="scroll-mt-6">
-      <h1 className="font-serif text-3xl font-semibold text-teal dark:text-sand">
-        People check
-      </h1>
-      <p className="mt-2 max-w-2xl opacity-80">
-        Nothing guides capital until the people who told the stories have
-        checked it. This is what they said — and how you would respond.
-      </p>
-      <ul className="mt-6 space-y-4">
+    <Chapter
+      n="04"
+      id="check"
+      title="People check"
+      intro="Nothing guides capital until the people who told the stories have
+      checked it. This is what they said — and how you would respond."
+    >
+      <ol className="rule-t mt-6">
         {r.signals.map((s) => (
-          <li
-            key={s.id}
-            className="rounded-xl border border-sand-deep/60 p-4"
-          >
-            <h2 className="font-serif text-xl font-medium">{s.statement}</h2>
-            <div className="mt-3">
+          <li key={s.id} className="rule-b py-6">
+            <h2 className="font-serif text-xl leading-snug">{s.statement}</h2>
+            <div className="mt-4 max-w-2xl">
               <VerificationBar signal={s} />
             </div>
             <GateControl signal={s} />
           </li>
         ))}
-      </ul>
-    </section>
+      </ol>
+    </Chapter>
   )
 }

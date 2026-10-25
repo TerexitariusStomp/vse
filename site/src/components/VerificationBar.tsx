@@ -3,11 +3,11 @@ import { useVisitor, type Vote } from '../lib/store'
 
 const COLORS: Record<Vote, string> = {
   endorse: 'bg-sage',
-  amend: 'bg-sand-deep',
+  amend: 'bg-warn',
   contest: 'bg-coral',
 }
 
-/** Stacked endorse/amend/contest bar + visitor vote on top (FR-D5). */
+/** Stacked endorse/amend/contest band + visitor vote (FR-D5). */
 export function VerificationBar({ signal }: { signal: Signal }) {
   const v = signal.verification
   const { votes, vote } = useVisitor()
@@ -22,7 +22,7 @@ export function VerificationBar({ signal }: { signal: Signal }) {
   return (
     <div>
       <div
-        className="flex h-3 w-full overflow-hidden rounded-full bg-sand dark:bg-teal-deep"
+        className="flex h-2 w-full overflow-hidden rounded-[2px] bg-chrome"
         role="img"
         aria-label={`${tally.endorse} endorse, ${tally.amend} amend, ${tally.contest} contest of ${total}`}
       >
@@ -36,21 +36,27 @@ export function VerificationBar({ signal }: { signal: Signal }) {
           ) : null,
         )}
       </div>
-      <div className="mt-2 flex flex-wrap items-center gap-x-4 gap-y-1 text-sm">
-        <span className="text-sage">{tally.endorse} endorse</span>
-        <span className="text-[#8a6d3b] dark:text-sand-deep">{tally.amend} amend</span>
-        <span className="text-coral">{tally.contest} contest</span>
-        <span className="opacity-60">of {total}</span>
-        <span className="ml-auto flex gap-1" role="group" aria-label="Your response">
+      <div className="mt-2 flex flex-wrap items-baseline gap-x-4 gap-y-1 text-sm">
+        <span className="text-sage">
+          <strong className="tabular-nums">{tally.endorse}</strong> endorse
+        </span>
+        <span className="text-warn">
+          <strong className="tabular-nums">{tally.amend}</strong> amend
+        </span>
+        <span className="text-coral">
+          <strong className="tabular-nums">{tally.contest}</strong> contest
+        </span>
+        <span className="text-muted">of {total}</span>
+        <span className="ml-auto flex gap-1.5" role="group" aria-label="Your response">
           {(['endorse', 'amend', 'contest'] as Vote[]).map((k) => (
             <button
               key={k}
               onClick={() => vote(signal.id, k)}
               aria-pressed={myVote === k}
-              className={`min-h-11 rounded-full border px-3 text-sm motion-safe-only transition-colors ${
+              className={`min-h-11 rounded-[3px] border px-3 text-sm motion-safe-only transition-colors ${
                 myVote === k
-                  ? 'border-teal bg-teal text-paper'
-                  : 'border-sand-deep hover:border-teal'
+                  ? 'border-teal bg-teal text-teal-ink'
+                  : 'border-line text-muted hover:border-teal hover:text-ink'
               }`}
             >
               {k}
@@ -61,13 +67,13 @@ export function VerificationBar({ signal }: { signal: Signal }) {
       {v.amendments.map((a, i) => (
         <blockquote
           key={i}
-          className="mt-3 border-l-2 border-sand-deep pl-3 font-serif italic"
+          className="mt-3 border-l-2 border-line pl-3 font-serif italic text-muted"
         >
           “{a}”
         </blockquote>
       ))}
       {myVote && (
-        <p className="mt-1 text-xs opacity-70">
+        <p className="mt-1.5 text-xs text-muted">
           Your “{myVote}” is counted in this view only — nothing is sent anywhere.
         </p>
       )}

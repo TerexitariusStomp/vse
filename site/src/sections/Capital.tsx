@@ -8,6 +8,7 @@ import {
   type Intervention,
   type View,
 } from '../lib'
+import { Chapter } from '../components/Chapter'
 import { BipartiteGraph } from '../components/BipartiteGraph'
 import { SipBadge } from '../components/SipBadge'
 
@@ -20,7 +21,7 @@ const VIEW_HINT: Record<View, string> = {
   from_place: 'Interventions that answer several needs at once.',
 }
 
-/** Screen 5 — where capital goes: toggle, network, averages, gaps (FR-D6). */
+/** Chapter 05 — the two-way mirror: same signals, structured two ways. */
 export function Capital() {
   const r = useResults()
   const { goToSignal } = useUI()
@@ -34,38 +35,35 @@ export function Capital() {
   const missing = unreachedSignals(r, view)
 
   return (
-    <section id="capital" className="scroll-mt-6">
-      <h1 className="font-serif text-3xl font-semibold text-teal dark:text-sand">
-        Where capital goes
-      </h1>
-      <p className="mt-2 max-w-2xl opacity-80">
-        The same signals, structured two ways. One place can be funded as a
-        list of separate projects — or as a place.
-      </p>
-
-      <div
-        className="mt-5 inline-flex rounded-full border border-sand-deep p-1"
-        role="group"
-        aria-label="View"
-      >
+    <Chapter
+      n="05"
+      id="capital"
+      title="Where capital goes"
+      intro="The same signals, structured two ways. A place can be funded as a
+      list of separate projects — or as a place."
+    >
+      {/* typographic tab — underline marks the live view */}
+      <div className="rule-b mt-6 flex gap-8" role="group" aria-label="View">
         {(['from_plans', 'from_place'] as View[]).map((v) => (
           <button
             key={v}
             onClick={() => setView(v)}
             aria-pressed={view === v}
-            className={`min-h-11 rounded-full px-4 text-sm font-medium motion-safe-only transition-colors ${
-              view === v ? 'bg-teal text-paper' : 'hover:bg-sand dark:hover:bg-teal-deep'
+            className={`min-h-11 pb-3 font-serif text-xl motion-safe-only transition-colors ${
+              view === v
+                ? 'border-b-2 border-teal text-ink -mb-px'
+                : 'text-muted hover:text-ink'
             }`}
           >
             {VIEW_LABEL[v]}
           </button>
         ))}
       </div>
-      <p className="mt-2 text-sm opacity-70">{VIEW_HINT[view]}</p>
+      <p className="mt-3 text-sm text-muted">{VIEW_HINT[view]}</p>
 
-      <div className="mt-6 overflow-x-auto rounded-xl border border-sand-deep/60 p-4">
-        <div className="mb-2 flex justify-between text-xs uppercase tracking-wide opacity-60">
-          <span>What the place is saying</span>
+      <div className="mt-6 overflow-x-auto border border-line p-4">
+        <div className="mb-2 flex justify-between text-[11px] uppercase tracking-[0.18em] text-muted">
+          <span>Signals</span>
           <span>Interventions</span>
         </div>
         <BipartiteGraph
@@ -77,22 +75,26 @@ export function Capital() {
         />
       </div>
 
-      <p className="mt-4 text-sm">
-        Needs answered per intervention: <strong>{avg.toFixed(1)}</strong> on
-        average —{' '}
-        {view === 'from_plans'
-          ? 'each plan reaches exactly one signal.'
-          : 'each intervention answers several.'}
-      </p>
+      <div className="mt-5 flex flex-wrap items-baseline gap-x-8 gap-y-2">
+        <p className="text-sm">
+          Needs answered per intervention:{' '}
+          <span className="font-display text-2xl tabular-nums text-teal">{avg.toFixed(1)}</span>
+        </p>
+        <p className="text-sm text-muted">
+          {view === 'from_plans'
+            ? 'each plan reaches exactly one signal.'
+            : 'each intervention answers several at once.'}
+        </p>
+      </div>
       {missing.length > 0 && (
-        <p className="mt-2 border-l-4 border-coral pl-3 text-sm">
+        <p className="mt-3 border-l-2 border-coral pl-4 text-sm">
           This view never reaches:{' '}
           {missing.map((s, i) => (
             <span key={s.id}>
               {i > 0 && ' · '}
               <button
                 onClick={() => goToSignal(s.id)}
-                className="font-serif italic underline decoration-coral/60 underline-offset-2"
+                className="font-serif italic underline decoration-coral/50 underline-offset-2 hover:decoration-coral"
               >
                 {s.statement}
               </button>
@@ -101,28 +103,28 @@ export function Capital() {
         </p>
       )}
 
-      <ul className="mt-6 grid items-start gap-3 sm:grid-cols-2">
+      <ol className="rule-t mt-8">
         {list.map((i) => (
           <li
             key={i.id}
             ref={open?.id === i.id ? detailRef : undefined}
-            className={`rounded-xl border p-4 motion-safe-only transition-colors ${
-              open?.id === i.id ? 'border-teal bg-sand/40 dark:bg-teal-deep/30' : 'border-sand-deep/60'
+            className={`rule-b py-5 pl-4 -ml-4 border-l-2 motion-safe-only transition-colors ${
+              open?.id === i.id ? 'border-teal bg-chrome/30' : 'border-transparent'
             }`}
           >
             <div className="flex flex-wrap items-baseline justify-between gap-2">
-              <h2 className="font-medium">{i.name}</h2>
-              <span className="text-sm text-sage">
+              <h2 className="font-serif text-xl">{i.name}</h2>
+              <span className="chapter-marker text-sage">
                 {i.signal_ids.length} need{i.signal_ids.length === 1 ? '' : 's'}
               </span>
             </div>
-            <p className="mt-1 text-sm opacity-80">{i.note}</p>
-            <div className="mt-2 flex flex-wrap gap-1">
+            <p className="mt-1 max-w-2xl text-sm text-muted">{i.note}</p>
+            <div className="mt-3 flex flex-wrap gap-2">
               {i.signal_ids.map((sid) => (
                 <button
                   key={sid}
                   onClick={() => goToSignal(sid)}
-                  className="rounded-full bg-sand px-2 py-0.5 text-xs underline-offset-2 hover:underline dark:bg-teal-deep"
+                  className="min-h-11 rounded-[3px] border border-line px-2.5 text-xs text-muted underline-offset-2 motion-safe-only transition-colors hover:border-teal hover:text-ink hover:underline"
                 >
                   {signals.get(sid)?.statement ?? sid}
                 </button>
@@ -132,9 +134,9 @@ export function Capital() {
                   key={sid}
                   onClick={() => goToSignal(sid)}
                   title="Counter-evidence: this intervention harms this signal"
-                  className="rounded-full border border-coral/50 px-2 py-0.5 text-xs text-coral underline-offset-2 hover:underline"
+                  className="min-h-11 rounded-[3px] border border-coral/60 px-2.5 text-xs text-coral underline-offset-2 motion-safe-only transition-colors hover:underline"
                 >
-                  ⚠ {signals.get(sid)?.statement ?? sid}
+                  against · {signals.get(sid)?.statement ?? sid}
                 </button>
               ))}
             </div>
@@ -145,7 +147,7 @@ export function Capital() {
             )}
           </li>
         ))}
-      </ul>
-    </section>
+      </ol>
+    </Chapter>
   )
 }

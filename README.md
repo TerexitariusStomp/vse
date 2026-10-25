@@ -9,8 +9,11 @@ check those signals; and the result helps guide investment.
 This repository holds two products on one data contract:
 
 - **`site/`** — a static, clickable demonstrator that reads a place's results
-  file (`<place>_results.json`) and presents it. No backend, no AI calls, no
-  analytics; works offline on a plain static host.
+  file (`<place>_results.json`) and presents it as one continuous editorial
+  page (place → stories → signals → check → capital → priorities, with a
+  chapter-nav header, scroll-progress rail, Fraunces/Inter bundled fonts,
+  and light/dark themes). No backend, no AI calls, no analytics; works
+  offline on a plain static host. Design lock: `STYLESEED.md`.
 - **`engine/`** — the pipeline that produces results files: listening →
   making sense → consolidating → people check → capital structuring →
   publication.
@@ -49,7 +52,8 @@ The site reads `site/public/data/utopia_results.json`. To show a different
 place, drop in another `*_results.json` that passes the validator below —
 nothing else needs to change.
 
-Deployed on Cloudflare Pages (project `vse-demonstrator`):
+Deployed on Cloudflare Pages (project `vse-demonstrator`) — live at
+**https://vse-demonstrator.pages.dev**:
 
 ```bash
 cd site && npm run build

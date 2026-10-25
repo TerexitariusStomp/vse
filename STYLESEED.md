@@ -1,0 +1,31 @@
+# StyleSeed — Design Lock
+<!-- Locked design decisions for the VSE demonstrator. Re-read every prompt.
+     This file cannot waive StyleSeed core invariants. -->
+- App domain: content
+- Surface: desktop-web
+- Surface adapter: product-ui
+- Page type: landing
+- Output grammar: sequential-story
+- Grammar path: built-in:engine/RULESETS.md
+- Grammar fallback: sequential-story
+- Reference confidence: n/a
+- Brand recipe: editorial-authority
+- Palette recipe: editorial-ink
+- Key color: #155E6E (deep teal — from developer brief, approved)
+- Palette character: balanced
+- Palette mode: light
+- Palette harmony: auto
+- Surface temperature: warm
+- Aesthetic profile: editorial
+- Skin: custom
+- Primary action: #155E6E
+- Color roles: coral #C4473F = contest/warn/SIP · sage #2A8A6A = endorse/commons · teal = action/ink accent
+- Font: Fraunces (display + story serif) / Inter (UI)
+- Radius: soft
+- Elevation: light=tonal grouping + hairlines · dark=tonal ramp + hairlines
+- Density: airy
+- Type scale: desktop (body 17-18px, bounded measure ~66ch for stories)
+- Motion: Silk standard
+- Imagery/data role: typographic + data-forward; numbers are the drama; no stock imagery
+- Signature move: typographic chapter markers (01–06) + scroll-progress rail
+- Locked: 2026-10-25

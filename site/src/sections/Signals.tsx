@@ -5,15 +5,24 @@ import {
   storyMap,
   useResults,
   useUI,
+  type Gate,
   type Signal,
 } from '../lib'
+import { Chapter } from '../components/Chapter'
+import { Reveal } from '../components/Reveal'
 
 const smooth = () =>
   window.matchMedia?.('(prefers-reduced-motion: reduce)').matches
     ? 'instant'
     : ('smooth' as ScrollBehavior)
 
-/** Screen 3 — signal cards that expand to their exact words (FR-D4). */
+const GATE_DOT: Record<Gate, string> = {
+  may_be_priced: 'bg-teal',
+  commons_only: 'bg-sage',
+  not_yet: 'bg-warn',
+}
+
+/** Chapter 03 — signals as pull-quote statements; expand for the exact words. */
 export function Signals() {
   const r = useResults()
   const { openSignal, signalNonce, toggleSignal } = useUI()
@@ -26,23 +35,28 @@ export function Signals() {
   }, [openSignal, signalNonce])
 
   return (
-    <section id="signals" className="scroll-mt-6">
-      <h1 className="font-serif text-3xl font-semibold text-teal dark:text-sand">
-        What the place is saying
-      </h1>
-      <p className="mt-2 opacity-80">
-        Every signal traces back to the exact words people used.
-      </p>
-      <ul className="mt-6 grid items-start gap-3 sm:grid-cols-2">
+    <Chapter
+      n="03"
+      id="signals"
+      title="What the place is saying"
+      intro="Seven signals, consolidated from forty-nine excerpts. Every one
+      traces back to the exact words people used — nothing is invented here."
+    >
+      <ol className="rule-t mt-6">
         {r.signals.map((s) => (
-          <SignalCard key={s.id} signal={s} open={openSignal === s.id} onToggle={() => toggleSignal(s.id)} />
+          <SignalRow
+            key={s.id}
+            signal={s}
+            open={openSignal === s.id}
+            onToggle={() => toggleSignal(s.id)}
+          />
         ))}
-      </ul>
-    </section>
+      </ol>
+    </Chapter>
   )
 }
 
-function SignalCard({
+function SignalRow({
   signal,
   open,
   onToggle,
@@ -57,48 +71,53 @@ function SignalCard({
   const stories = storyMap(r)
 
   return (
-    <li
-      id={`signal-${signal.id}`}
-      className={`rounded-xl border scroll-mt-24 motion-safe-only transition-colors ${
-        open ? 'border-teal bg-sand/40 sm:col-span-2 dark:bg-teal-deep/30' : 'border-sand-deep/60'
-      }`}
-    >
+    <li id={`signal-${signal.id}`} className="rule-b scroll-mt-28">
       <button
         onClick={onToggle}
         aria-expanded={open}
-        className="min-h-11 w-full p-4 text-left"
+        className="flex min-h-11 w-full flex-wrap items-baseline gap-x-6 gap-y-1 py-6 text-left"
       >
-        <h2 className="font-serif text-xl font-medium">{signal.statement}</h2>
-        <p className="mt-2 text-sm opacity-80">
+        <h2 className={`font-display flex-1 basis-80 text-2xl leading-snug md:text-[1.7rem] ${
+          open ? 'text-teal' : 'text-ink'
+        }`}>
+          {signal.statement}
+        </h2>
+        <span className="chapter-marker shrink-0">
           {signal.voices} voices · {signal.recurrence} excerpts
-        </p>
-        <p className="mt-1 text-xs uppercase tracking-wide text-sage">
+        </span>
+        <span className="chapter-marker flex shrink-0 items-center gap-1.5">
+          <span className={`inline-block h-2 w-2 rounded-full ${GATE_DOT[signal.verification.gate]}`} />
           {GATE_LABEL[signal.verification.gate]}
-        </p>
+          <span aria-hidden className="ml-1">{open ? '−' : '+'}</span>
+        </span>
       </button>
       {open && (
-        <div className="border-t border-sand-deep/50 p-4">
-          <p className="text-xs uppercase tracking-wide opacity-70">
+        <div className="pb-8 md:pl-10">
+          <p className="chapter-marker">
             The exact words behind it — tap one to see it in place
           </p>
-          <ul className="mt-3 space-y-3">
+          <ul className="mt-4 space-y-4">
             {claims.map((c) => (
-              <li key={c.id} className="font-serif">
-                <button
-                  onClick={() => goToClaim(c.story_id, c.id)}
-                  className="text-left italic underline decoration-sage underline-offset-2 hover:decoration-teal"
-                >
-                  “{c.text}”
-                </button>{' '}
-                <span className="text-sm not-italic opacity-60">
-                  — {stories.get(c.story_id)?.teller_role}
-                </span>
-              </li>
+              <Reveal as="li" key={c.id}>
+                <figure className="max-w-3xl">
+                  <blockquote className="font-serif text-lg italic leading-relaxed text-ink">
+                    <button
+                      onClick={() => goToClaim(c.story_id, c.id)}
+                      className="text-left underline decoration-line decoration-2 underline-offset-4 motion-safe-only transition-colors hover:decoration-teal"
+                    >
+                      “{c.text}”
+                    </button>
+                  </blockquote>
+                  <figcaption className="mt-1 text-sm text-muted">
+                    — {stories.get(c.story_id)?.teller_role}
+                  </figcaption>
+                </figure>
+              </Reveal>
             ))}
           </ul>
-          <p className="mt-4 text-sm opacity-70">
+          <p className="mt-5 text-sm text-muted">
             Checked by {signal.verification.participants} participants —{' '}
-            <a href="#check" className="underline underline-offset-2">see the people check below</a>.
+            <a href="#check" className="a">see the people check below</a>.
           </p>
         </div>
       )}

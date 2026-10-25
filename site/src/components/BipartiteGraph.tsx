@@ -22,7 +22,7 @@ export function BipartiteGraph({
     const sigNodes = interventions
       .flatMap((i) => i.signal_ids)
       .filter((id, i, a) => a.indexOf(id) === i)
-    const NW = 200
+    const NW = 224
     const nodeH = 44
     const meta = new Map<
       string,
@@ -66,7 +66,7 @@ export function BipartiteGraph({
             key={i}
             d={d}
             fill="none"
-            className="stroke-sand-deep dark:stroke-teal"
+            className="stroke-line"
             strokeWidth={1.5}
           />
         )
@@ -81,11 +81,11 @@ export function BipartiteGraph({
           <rect
             width={n.width}
             height={n.height}
-            rx={10}
+            rx={3}
             className={
               n.kind === 'signal'
-                ? 'fill-sand stroke-sand-deep dark:fill-teal-deep dark:stroke-teal'
-                : 'fill-sage fill-sage/15 stroke-sage dark:fill-sage/20'
+                ? 'fill-chrome stroke-line'
+                : 'fill-sage/10 stroke-sage'
             }
           />
           <text
@@ -93,9 +93,9 @@ export function BipartiteGraph({
             y={n.height / 2}
             textAnchor="middle"
             dominantBaseline="central"
-            className="fill-ink text-[12px] dark:fill-[#e9e4dc]"
+            className="fill-ink text-[12px]"
           >
-            {truncate(String(n.label), 32)}
+            {truncate(String(n.label), 40)}
           </text>
         </g>
       ))}
