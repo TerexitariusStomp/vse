@@ -113,6 +113,30 @@ analyst confirms signals → people-check votes + sticky gates →
 `POST /api/publish/:place` assembles, validates, hashes, and stores a
 versioned results file + manifest in R2 — the exact format `site/` reads.
 
+### Live deployment
+
+The engine is deployed and has completed a real end-to-end run on the
+Pressword Cloudflare account (the demonstrator Pages site lives on the
+Widespread account — R2 was already enabled on Pressword):
+
+- Worker: `https://vse-engine.delta-git.workers.dev` (`GET /health`)
+- Bindings: D1 `vse`, R2 `vse-artifacts`, Queue `vse-pipeline`, Workers AI
+- Extraction model: `@cf/meta/llama-3.3-70b-instruct-fp8-fast` — smaller
+  instruct models (7B/8B tier) reliably *elaborate* short fragments instead
+  of copying them; the span check quarantined every such proposal, which is
+  the gate working as designed. The 70B model copies verbatim and the
+  mechanical heal fixes off-by-one spans.
+- The `thorntree` place ran the full loop: 12 real stories → 11 verified
+  verbatim claims → kmeans clusters → 5 analyst-confirmed signals → 8
+  participants' votes (2 amendments, 2 contests) → gates → publish →
+  `GET /api/published/thorntree` serves the versioned artifact
+- A live enforcement check confirmed a `priced` intervention backed by a
+  `commons_only` signal is rejected 409 by the API (and the `commons_sticky`
+  trigger makes `commons_only → may_be_priced` unrepresentable in D1)
+- The published artifact validates against `tools/validate-results.mjs` and
+  is served in the demonstrator as the **Thorntree · live engine** place —
+  the same place, produced by the pipeline rather than the data builder.
+
 ## Licence
 
 Apache-2.0 — see `LICENSE`. Dependency licences per `OSS-STACK.md`:

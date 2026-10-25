@@ -1,0 +1,457 @@
+{
+  "_about": "Results for Thorntree, Middlesbrough, published by a Value Structuring Engine.",
+  "place": {
+    "id": "thorntree",
+    "name": "Thorntree, Middlesbrough",
+    "kind": "place",
+    "summary": "Council estate in east Middlesbrough \u2014 hub posts, the tool library voucher, community plan aims, and council programme actions, processed live by the engine."
+  },
+  "pipeline": [
+    {
+      "stage": "Listening",
+      "detail": "stories told in people\u2019s own words",
+      "count": 12,
+      "unit": "stories"
+    },
+    {
+      "stage": "Making sense",
+      "detail": "exact excerpts extracted from stories",
+      "count": 11,
+      "unit": "excerpts"
+    },
+    {
+      "stage": "Consolidating",
+      "detail": "excerpts gathered into signals",
+      "count": 5,
+      "unit": "signals"
+    },
+    {
+      "stage": "People check",
+      "detail": "contributors endorse, amend or contest",
+      "count": 8,
+      "unit": "participants"
+    }
+  ],
+  "scale_note": "Live pipeline run \u2014 intake, extraction, consolidation, people-check, publish.",
+  "stories": [
+    {
+      "id": "e28c03b1-b4ed-4230-b1b7-cc44b6f682d1",
+      "teller_role": "Hub member",
+      "channel": "facilitated",
+      "text": "We need marsh reeds and planting days volunteers"
+    },
+    {
+      "id": "c014ef81-b636-4d79-801d-0e5c83a5d658",
+      "teller_role": "Community ventures",
+      "channel": "facilitated",
+      "text": "We need tools and equipment for the repair caf\u00e9"
+    },
+    {
+      "id": "e04276ce-2b44-40a7-8f79-a434ce598aa5",
+      "teller_role": "Hub member",
+      "channel": "facilitated",
+      "text": "Someone to run the repair caf\u00e9 laptop"
+    },
+    {
+      "id": "658b9d37-4d32-4d15-9f94-5b5133474e3f",
+      "teller_role": "Hub member",
+      "channel": "facilitated",
+      "text": "Van and driver for community moves fuel costs only"
+    },
+    {
+      "id": "9960bc44-249a-49af-b8dc-6475a1df7f71",
+      "teller_role": "Tool library",
+      "channel": "facilitated",
+      "text": "Tool hire and repair caf\u00e9 supplies \u2014 drills, strimmers, scaffold \u2014 offered to local projects"
+    },
+    {
+      "id": "81e8caf8-6371-4182-a62b-4d8c86633d07",
+      "teller_role": "Community hub",
+      "channel": "facilitated",
+      "text": "Neighbourhood resourcing \u2014 tools, time, skills"
+    },
+    {
+      "id": "5acb36f6-d0ad-4bba-b59d-fe42292aee72",
+      "teller_role": "Community plan",
+      "channel": "facilitated",
+      "text": "Restore the wetland and reed beds around Thorntree beck to slow surface water"
+    },
+    {
+      "id": "e1da49ec-c560-45ae-8f0b-c58c40ef0a36",
+      "teller_role": "Community plan",
+      "channel": "facilitated",
+      "text": "A greener, flood-resilient neighbourhood Local young people in work"
+    },
+    {
+      "id": "3fd4f903-baf8-4bd3-956c-b92b463fc153",
+      "teller_role": "Community plan",
+      "channel": "facilitated",
+      "text": "Drop-in hub linking 16\u201324s to local employers"
+    },
+    {
+      "id": "4a4814f2-e804-42fb-98c6-5fb05590a6b5",
+      "teller_role": "Council programme",
+      "channel": "facilitated",
+      "text": "Marsh regeneration scheme"
+    },
+    {
+      "id": "f3a845f2-f350-4b9d-9fb1-36dd7b08cc71",
+      "teller_role": "Council programme",
+      "channel": "facilitated",
+      "text": "Youth skills and jobs centre"
+    },
+    {
+      "id": "7452567f-eb8d-45fe-8554-ef5708d38d8a",
+      "teller_role": "Council programme",
+      "channel": "facilitated",
+      "text": "East Middlesbrough solar feasibility"
+    }
+  ],
+  "claims": [
+    {
+      "id": "6a4a4c28-40b1-4ffc-85c4-076361df0e63",
+      "story_id": "4a4814f2-e804-42fb-98c6-5fb05590a6b5",
+      "text": "Marsh regeneration scheme",
+      "span": [
+        0,
+        25
+      ],
+      "signal_id": "f382514a-d386-4b10-b819-99960cc54df2"
+    },
+    {
+      "id": "b3d60960-1b80-411c-99f8-d687d7bdb8ec",
+      "story_id": "e28c03b1-b4ed-4230-b1b7-cc44b6f682d1",
+      "text": "We need marsh reeds and planting days volunteers",
+      "span": [
+        0,
+        48
+      ],
+      "signal_id": "f382514a-d386-4b10-b819-99960cc54df2"
+    },
+    {
+      "id": "fbda07dd-be5e-470b-bb75-a89bda83380a",
+      "story_id": "c014ef81-b636-4d79-801d-0e5c83a5d658",
+      "text": "We need tools and equipment for the repair caf\u00e9",
+      "span": [
+        0,
+        47
+      ],
+      "signal_id": "371b52aa-d368-4603-94e5-c38f419c61b9"
+    },
+    {
+      "id": "f37ba8c6-bfdd-4ece-89ad-b801aa8ddbaf",
+      "story_id": "e04276ce-2b44-40a7-8f79-a434ce598aa5",
+      "text": "Someone to run the repair caf\u00e9 laptop",
+      "span": [
+        0,
+        37
+      ],
+      "signal_id": "371b52aa-d368-4603-94e5-c38f419c61b9"
+    },
+    {
+      "id": "f66e6870-adbc-4496-b380-13613bc957dc",
+      "story_id": "658b9d37-4d32-4d15-9f94-5b5133474e3f",
+      "text": "Van and driver for community moves fuel costs only",
+      "span": [
+        0,
+        50
+      ],
+      "signal_id": "1d3c54f4-68ca-42fd-8c07-ea684839a173"
+    },
+    {
+      "id": "f3811e23-c8b7-49a5-a3d3-65f37ecc55dd",
+      "story_id": "81e8caf8-6371-4182-a62b-4d8c86633d07",
+      "text": "Neighbourhood resourcing \u2014 tools, time, skills",
+      "span": [
+        0,
+        46
+      ],
+      "signal_id": "1d3c54f4-68ca-42fd-8c07-ea684839a173"
+    },
+    {
+      "id": "11c5b83f-937b-45ea-96fe-74367dad3c6f",
+      "story_id": "5acb36f6-d0ad-4bba-b59d-fe42292aee72",
+      "text": "Restore the wetland and reed beds around Thorntree beck to slow surface water",
+      "span": [
+        0,
+        77
+      ],
+      "signal_id": "f382514a-d386-4b10-b819-99960cc54df2"
+    },
+    {
+      "id": "de1a4082-36c0-4280-91d6-bbf55d0b03de",
+      "story_id": "e1da49ec-c560-45ae-8f0b-c58c40ef0a36",
+      "text": "A greener, flood-resilient neighbourhood",
+      "span": [
+        0,
+        40
+      ],
+      "signal_id": "f382514a-d386-4b10-b819-99960cc54df2"
+    },
+    {
+      "id": "68c7e9ae-280c-45d8-94a6-0e36971cf7cf",
+      "story_id": "3fd4f903-baf8-4bd3-956c-b92b463fc153",
+      "text": "Drop-in hub linking 16\u201324s to local employers",
+      "span": [
+        0,
+        45
+      ],
+      "signal_id": "0eb9d4a1-76f2-471f-9a2d-955aa0cf91ae"
+    },
+    {
+      "id": "f86ddb8b-f6fd-46bf-91fe-d5e1ee9602e0",
+      "story_id": "f3a845f2-f350-4b9d-9fb1-36dd7b08cc71",
+      "text": "Youth skills and jobs centre",
+      "span": [
+        0,
+        28
+      ],
+      "signal_id": "0eb9d4a1-76f2-471f-9a2d-955aa0cf91ae"
+    },
+    {
+      "id": "fc8a6d96-6cda-4cac-84d5-421a08f6d58d",
+      "story_id": "7452567f-eb8d-45fe-8554-ef5708d38d8a",
+      "text": "East Middlesbrough solar feasibility",
+      "span": [
+        0,
+        36
+      ],
+      "signal_id": "7521d0d8-4c6b-40b3-9d92-c26683191abe"
+    }
+  ],
+  "signals": [
+    {
+      "id": "f382514a-d386-4b10-b819-99960cc54df2",
+      "statement": "The beck and the marsh need hands, reeds and a scheme behind them.",
+      "supporting_claim_ids": [
+        "6a4a4c28-40b1-4ffc-85c4-076361df0e63",
+        "b3d60960-1b80-411c-99f8-d687d7bdb8ec",
+        "11c5b83f-937b-45ea-96fe-74367dad3c6f",
+        "de1a4082-36c0-4280-91d6-bbf55d0b03de"
+      ],
+      "voices": 4,
+      "recurrence": 4,
+      "verification": {
+        "participants": 6,
+        "endorse": 5,
+        "amend": 1,
+        "contest": 0,
+        "amendments": [
+          "Planting days should start before the reeds arrive."
+        ],
+        "gate": "may_be_priced"
+      }
+    },
+    {
+      "id": "371b52aa-d368-4603-94e5-c38f419c61b9",
+      "statement": "The repair caf\u00e9 and the tool library keep things working \u2014 and need kit and a laptop runner.",
+      "supporting_claim_ids": [
+        "fbda07dd-be5e-470b-bb75-a89bda83380a",
+        "f37ba8c6-bfdd-4ece-89ad-b801aa8ddbaf"
+      ],
+      "voices": 2,
+      "recurrence": 2,
+      "verification": {
+        "participants": 5,
+        "endorse": 4,
+        "amend": 1,
+        "contest": 0,
+        "amendments": [
+          "Open Saturdays \u2014 working people can only come then."
+        ],
+        "gate": "commons_only"
+      }
+    },
+    {
+      "id": "0eb9d4a1-76f2-471f-9a2d-955aa0cf91ae",
+      "statement": "Young people need routes into work.",
+      "supporting_claim_ids": [
+        "68c7e9ae-280c-45d8-94a6-0e36971cf7cf",
+        "f86ddb8b-f6fd-46bf-91fe-d5e1ee9602e0"
+      ],
+      "voices": 2,
+      "recurrence": 2,
+      "verification": {
+        "participants": 4,
+        "endorse": 4,
+        "amend": 0,
+        "contest": 0,
+        "amendments": [],
+        "gate": "may_be_priced"
+      }
+    },
+    {
+      "id": "1d3c54f4-68ca-42fd-8c07-ea684839a173",
+      "statement": "Neighbours already move and lend for each other \u2014 for fuel costs, not profit.",
+      "supporting_claim_ids": [
+        "f66e6870-adbc-4496-b380-13613bc957dc",
+        "f3811e23-c8b7-49a5-a3d3-65f37ecc55dd"
+      ],
+      "voices": 2,
+      "recurrence": 2,
+      "verification": {
+        "participants": 6,
+        "endorse": 5,
+        "amend": 0,
+        "contest": 1,
+        "amendments": [],
+        "gate": "commons_only"
+      }
+    },
+    {
+      "id": "7521d0d8-4c6b-40b3-9d92-c26683191abe",
+      "statement": "The east side could make its own power \u2014 solar is on the table.",
+      "supporting_claim_ids": [
+        "fc8a6d96-6cda-4cac-84d5-421a08f6d58d"
+      ],
+      "voices": 1,
+      "recurrence": 1,
+      "verification": {
+        "participants": 4,
+        "endorse": 3,
+        "amend": 0,
+        "contest": 1,
+        "amendments": [],
+        "gate": "may_be_priced"
+      }
+    }
+  ],
+  "interventions": {
+    "from_plans": [
+      {
+        "id": "c4527b51-7c4e-400a-8b2c-047fe4daab4f",
+        "name": "Marsh regeneration scheme",
+        "note": "Middlesbrough Council, \u00a355k",
+        "signal_ids": [
+          "f382514a-d386-4b10-b819-99960cc54df2"
+        ],
+        "counter_signal_ids": [],
+        "priced": true
+      },
+      {
+        "id": "2b4e321a-be73-4256-9dfc-d2acab88f470",
+        "name": "Youth skills and jobs centre",
+        "note": "Middlesbrough Council, \u00a360k",
+        "signal_ids": [
+          "0eb9d4a1-76f2-471f-9a2d-955aa0cf91ae"
+        ],
+        "counter_signal_ids": [],
+        "priced": true
+      },
+      {
+        "id": "65db8e2f-6d8e-4c04-ab84-88fa032e8b58",
+        "name": "East Middlesbrough solar feasibility",
+        "note": "Council feasibility budget, \u00a330k",
+        "signal_ids": [
+          "7521d0d8-4c6b-40b3-9d92-c26683191abe"
+        ],
+        "counter_signal_ids": [],
+        "priced": true
+      },
+      {
+        "id": "06cb8a7a-44da-4086-ae5e-82941d924b3b",
+        "name": "Thorntree wetland restoration Q3",
+        "note": "CVL community plan, \u00a340k",
+        "signal_ids": [
+          "f382514a-d386-4b10-b819-99960cc54df2"
+        ],
+        "counter_signal_ids": [],
+        "priced": true
+      },
+      {
+        "id": "dd1977cf-97ee-4324-871a-49817fe6eff4",
+        "name": "Youth employment hub",
+        "note": "CVL community plan, \u00a325k",
+        "signal_ids": [
+          "0eb9d4a1-76f2-471f-9a2d-955aa0cf91ae"
+        ],
+        "counter_signal_ids": [],
+        "priced": true
+      }
+    ],
+    "from_place": [
+      {
+        "id": "86f8aeab-21c8-4ae9-b53e-0b8751679527",
+        "name": "Marsh reeds and planting days",
+        "note": "Volunteer planting days; reeds sourced for the beck",
+        "signal_ids": [
+          "1d3c54f4-68ca-42fd-8c07-ea684839a173",
+          "f382514a-d386-4b10-b819-99960cc54df2"
+        ],
+        "counter_signal_ids": [],
+        "priced": false
+      },
+      {
+        "id": "e77857ed-8950-4491-b834-af9cba446f9b",
+        "name": "Thorntree Tool Library",
+        "note": "Sarafu voucher-backed tool hire and repair supplies",
+        "signal_ids": [
+          "1d3c54f4-68ca-42fd-8c07-ea684839a173",
+          "371b52aa-d368-4603-94e5-c38f419c61b9"
+        ],
+        "counter_signal_ids": [],
+        "priced": false
+      },
+      {
+        "id": "7bd4d7cf-645c-4272-baef-c9742b7e6025",
+        "name": "Repair caf\u00e9 \u2014 tools and a laptop runner",
+        "note": "Kit for the caf\u00e9 plus someone to run the laptop",
+        "signal_ids": [
+          "1d3c54f4-68ca-42fd-8c07-ea684839a173",
+          "371b52aa-d368-4603-94e5-c38f419c61b9"
+        ],
+        "counter_signal_ids": [],
+        "priced": false
+      },
+      {
+        "id": "a2377d17-84e2-4136-899d-fc66d1b9c47a",
+        "name": "Van and driver for community moves",
+        "note": "Fuel costs only \u2014 mutual aid, not a business",
+        "signal_ids": [
+          "1d3c54f4-68ca-42fd-8c07-ea684839a173"
+        ],
+        "counter_signal_ids": [],
+        "priced": false
+      }
+    ]
+  },
+  "sips": [
+    {
+      "id": "5f9dda16-fef2-4ef4-974b-36686a800fde",
+      "kind": "node",
+      "title": "The repair caf\u00e9",
+      "what_changes": "The hub, the tool library and two open needs all point at one table. Staff it and three signals move at once.",
+      "time_to_show": "months",
+      "evidence_claim_ids": [
+        "f37ba8c6-bfdd-4ece-89ad-b801aa8ddbaf",
+        "f3811e23-c8b7-49a5-a3d3-65f37ecc55dd",
+        "f66e6870-adbc-4496-b380-13613bc957dc",
+        "fbda07dd-be5e-470b-bb75-a89bda83380a"
+      ]
+    },
+    {
+      "id": "78cef1f4-bd5d-4a52-95af-a86939e5c0a3",
+      "kind": "threshold",
+      "title": "The marsh scheme meets the volunteers",
+      "what_changes": "The council\u2019s \u00a355,000 scheme and the hub\u2019s planting days name the same ground. Join them and the money buys hands.",
+      "time_to_show": "about a year",
+      "evidence_claim_ids": [
+        "11c5b83f-937b-45ea-96fe-74367dad3c6f",
+        "6a4a4c28-40b1-4ffc-85c4-076361df0e63",
+        "b3d60960-1b80-411c-99f8-d687d7bdb8ec",
+        "de1a4082-36c0-4280-91d6-bbf55d0b03de"
+      ]
+    }
+  ],
+  "priorities": {
+    "title": "Where capital is most needed",
+    "intro": "",
+    "items": []
+  },
+  "meta": {
+    "place_id": "thorntree",
+    "version": "2026-10-25",
+    "published_at": "2026-10-25T19:03:16.587Z",
+    "manifest_sha256": "80922adb48cf2b09aed16e8997f21647467458ddd6a20617e96196096fdbcc65"
+  }
+}

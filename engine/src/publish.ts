@@ -127,9 +127,14 @@ export async function publish(env: Env, placeId: string): Promise<PubRow> {
   if (semantics.length) throw new Error(`semantic validation failed: ${semantics.join('; ')}`)
 
   const version = new Date().toISOString().slice(0, 10)
-  const body = JSON.stringify({ ...results, meta: { place_id: placeId, version, published_at: new Date().toISOString() } }, null, 2)
-  const digest = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(body))
+  // Hash the body with the manifest field null, then embed the digest —
+  // a manifest hash cannot include itself.
+  const meta = { place_id: placeId, version, published_at: new Date().toISOString(), manifest_sha256: null as string | null }
+  const canonical = JSON.stringify({ ...results, meta }, null, 2)
+  const digest = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(canonical))
   const sha = [...new Uint8Array(digest)].map((b) => b.toString(16).padStart(2, '0')).join('')
+  meta.manifest_sha256 = sha
+  const body = JSON.stringify({ ...results, meta }, null, 2)
 
   const key = `results/${placeId}/${version}-${sha.slice(0, 12)}.json`
   const manifest = JSON.stringify({ file: key, sha256: sha, version, place: placeId }, null, 2)

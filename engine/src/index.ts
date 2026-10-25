@@ -15,6 +15,18 @@ app.get('/health', (c) => c.json({ ok: true, engine: 'vse' }))
 app.route('/api', intake)
 app.route('/api', check)
 
+// --- published artifacts (public — must register before the analyst
+//     middleware mount so the bearer gate does not intercept this path) ------
+app.get('/api/published/:placeId', async (c) => {
+  const row = await c.env.DB.prepare(
+    'SELECT * FROM publications WHERE place_id = ? ORDER BY published_at DESC LIMIT 1',
+  ).bind(c.req.param('placeId')).first()
+  if (!row) return c.json({ error: 'nothing published' }, 404)
+  const obj = await c.env.ARTIFACTS.get((row as any).r2_key)
+  if (!obj) return c.json({ error: 'artifact missing' }, 404)
+  return c.json({ publication: row, results: await obj.json() })
+})
+
 // --- analyst console (bearer-gated) -----------------------------------------
 const analyst = new Hono<{ Bindings: Env }>()
 analyst.use('*', async (c, next) => {
@@ -26,7 +38,7 @@ analyst.use('*', async (c, next) => {
 analyst.route('/', structure)
 analyst.post('/places/:placeId', async (c) => {
   const { name, kind, summary, scale_note } = await c.req.json()
-  const id = crypto.randomUUID()
+  const id = c.req.param('placeId') || crypto.randomUUID()
   await c.env.DB.prepare(
     'INSERT INTO places (id, name, kind, summary, scale_note) VALUES (?, ?, ?, ?, ?)',
   ).bind(id, name ?? 'unnamed', kind ?? 'place', summary ?? '', scale_note ?? null).run()
@@ -39,6 +51,12 @@ analyst.post('/publish/:placeId', async (c) => {
     return c.json({ error: e instanceof Error ? e.message : String(e) }, 422)
   }
 })
+/** Re-run extraction for one story (analyst console re-drive). */
+analyst.post('/extract/:storyId', async (c) => {
+  await runExtraction(c.env, c.req.param('storyId'))
+  return c.json({ ok: true })
+})
+
 analyst.get('/claims/:placeId', async (c) => {
   const status = c.req.query('status') ?? 'proposed'
   const { results } = await c.env.DB.prepare(
@@ -47,17 +65,6 @@ analyst.get('/claims/:placeId', async (c) => {
   return c.json(results ?? [])
 })
 app.route('/api', analyst)
-
-// --- published artifacts ----------------------------------------------------
-app.get('/api/published/:placeId', async (c) => {
-  const row = await c.env.DB.prepare(
-    'SELECT * FROM publications WHERE place_id = ? ORDER BY published_at DESC LIMIT 1',
-  ).bind(c.req.param('placeId')).first()
-  if (!row) return c.json({ error: 'nothing published' }, 404)
-  const obj = await c.env.ARTIFACTS.get((row as any).r2_key)
-  if (!obj) return c.json({ error: 'artifact missing' }, 404)
-  return c.json({ publication: row, results: await obj.json() })
-})
 
 // --- queue consumer: the pipeline between stages -----------------------------
 export default {

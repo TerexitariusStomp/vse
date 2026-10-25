@@ -6,7 +6,7 @@ compatibility_date = "2025-06-01"
 [[d1_databases]]
 binding = "DB"
 database_name = "vse"
-database_id = "REPLACE_WITH_D1_ID"
+database_id = "577dced5-c84c-47c6-81bf-530bb9c9b356"
 migrations_dir = "migrations"
 
 # Source audio + published artifacts (results files, manifests).

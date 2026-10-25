@@ -18,8 +18,8 @@ export type PipelineJob =
 export const MODELS = {
   // Whisper (MIT) — voice intake transcription.
   whisper: '@cf/openai/whisper',
-  // Mistral-7B Instruct (Apache-2.0) — candidate claim extraction.
-  llm: '@cf/mistral/mistral-7b-instruct-v0.1',
+  // Llama 3.3 70B Instruct fp8-fast (Llama Community License) — claim extraction.
+  llm: '@cf/meta/llama-3.3-70b-instruct-fp8-fast',
   // BGE-base (MIT) — claim embeddings for consolidation clustering.
   embed: '@cf/baai/bge-base-en-v1.5',
 } as const

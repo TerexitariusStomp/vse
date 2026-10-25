@@ -19,10 +19,23 @@ From the story below, extract the passages where the teller expresses a need,
 a value, a change they want, or a harm they fear.
 
 Rules — violate any and the output is discarded:
-- Each "text" must be copied EXACTLY from the story, character for character.
+- Each "text" must be copied EXACTLY from the story, character for character,
+  including capitalisation and punctuation.
 - "span" is the [start, end) character offsets of that text in the story.
-- Never paraphrase, summarise, or invent.
-- 3–10 claims. Return ONLY JSON of the form {"claims":[{"text":...,"span":[a,b]}]}.
+- Never paraphrase, summarise, complete, or infer. If the story does not say
+  it in its own words, it is not a claim. Do not imagine context around the
+  story; only what is written counts.
+- If the whole story is itself a statement of a need, value or want, return
+  the whole story as a single claim.
+- 0–6 claims. A short story may contain only one claim, or none. Do not pad.
+
+Example story: "The bus stop has no shelter and the route was cut last year."
+Example output: {"claims":[{"text":"The bus stop has no shelter","span":[0,27]},{"text":"the route was cut last year","span":[32,59]}]}
+
+Example story: "Marsh regeneration scheme"
+Example output: {"claims":[{"text":"Marsh regeneration scheme","span":[0,25]}]}
+
+Return ONLY JSON of the form {"claims":[{"text":...,"span":[a,b]}]}.
 
 Story:
 """
@@ -46,12 +59,24 @@ export function spanValid(storyText: string, c: CandidateClaim): boolean {
   return a >= 0 && b <= storyText.length && a < b && storyText.slice(a, b) === c.text
 }
 
+/** Models return differently-shaped responses; find the generated text. */
+function responseText(res: unknown): string {
+  const r = res as any
+  if (typeof r?.response === 'string') return r.response
+  if (typeof r?.response?.text === 'string') return r.response.text
+  if (typeof r?.choices?.[0]?.text === 'string') return r.choices[0].text
+  if (typeof r?.choices?.[0]?.message?.content === 'string')
+    return r.choices[0].message.content
+  if (typeof r?.result === 'string') return r.result
+  return ''
+}
+
 export async function extractClaims(ai: Ai, storyText: string): Promise<CandidateClaim[]> {
   const res = (await ai.run(MODELS.llm, {
     prompt: PROMPT.replace('%s', storyText),
     max_tokens: 2048,
   })) as { response?: string }
-  const raw = res.response ?? ''
+  const raw = responseText(res)
   const jsonStart = raw.indexOf('{')
   if (jsonStart === -1) return []
   try {

@@ -48,20 +48,23 @@ const GateIn = z.object({
   set_by: z.string().optional(),
 })
 
-/** Gate transitions. The commons_sticky trigger rejects commons_only→priced. */
+/** Gate transitions. The commons_sticky trigger rejects commons_only→priced.
+ *  Setting the gate is the close of the check: the signal becomes 'checked'
+ *  and is eligible for publication (signals.status: checking → checked). */
 check.post('/check/signals/:signalId/gate', async (c) => {
   const body = GateIn.safeParse(await c.req.json().catch(() => null))
   if (!body.success) return c.json({ error: body.error.flatten() }, 400)
-  const res = await c.env.DB.prepare(
-    `INSERT INTO gates (signal_id, gate, set_by) VALUES (?, ?, ?)
-     ON CONFLICT (signal_id) DO UPDATE SET gate = excluded.gate, set_by = excluded.set_by`,
-  )
-    .bind(c.req.param('signalId'), body.data.gate, body.data.set_by ?? null)
-    .run()
-    .catch((e: Error) => ({ success: false, error: e.message }))
-  return res.success
+  const signalId = c.req.param('signalId')
+  const res = await c.env.DB.batch([
+    c.env.DB.prepare(
+      `INSERT INTO gates (signal_id, gate, set_by) VALUES (?, ?, ?)
+       ON CONFLICT (signal_id) DO UPDATE SET gate = excluded.gate, set_by = excluded.set_by`,
+    ).bind(signalId, body.data.gate, body.data.set_by ?? null),
+    c.env.DB.prepare("UPDATE signals SET status = 'checked' WHERE id = ?").bind(signalId),
+  ]).catch((e: Error) => [{ success: false, error: e.message }])
+  return res.every((r) => r.success)
     ? c.json({ gate: body.data.gate })
-    : c.json({ error: (res as { error?: string }).error ?? 'gate rejected' }, 409)
+    : c.json({ error: (res as { error?: string }[])[0]?.error ?? 'gate rejected' }, 409)
 })
 
 /** Live tally for a place's signals — drives the people-check screen. */

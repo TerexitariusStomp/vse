@@ -123,15 +123,16 @@ export type View = keyof Results['interventions']
 /** Places with published results files in public/data/. */
 export const PLACES = [
   { id: 'thorntree', label: 'Thorntree' },
+  { id: 'thorntree-engine', label: 'Thorntree · live engine' },
   { id: 'kenya-coast', label: 'Kenya coast' },
 ] as const
 export type PlaceId = (typeof PLACES)[number]['id']
 
 export function currentPlace(): PlaceId {
   const q = new URLSearchParams(window.location.search).get('place')
-  if (q === 'thorntree' || q === 'kenya-coast') return q
+  if (PLACES.some((p) => p.id === q)) return q as PlaceId
   const saved = localStorage.getItem('vse-place')
-  return saved === 'kenya-coast' ? 'kenya-coast' : 'thorntree'
+  return (PLACES.some((p) => p.id === saved) ? saved : 'thorntree') as PlaceId
 }
 
 export async function loadResults(place: PlaceId = 'thorntree'): Promise<Results> {
