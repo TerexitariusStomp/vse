@@ -49,6 +49,14 @@ The site reads `site/public/data/utopia_results.json`. To show a different
 place, drop in another `*_results.json` that passes the validator below —
 nothing else needs to change.
 
+Deployed on Cloudflare Pages (project `vse-demonstrator`):
+
+```bash
+cd site && npm run build
+CLOUDFLARE_ACCOUNT_ID=46966abcfb8f1245ec055842177edcb2 \
+  npx wrangler pages deploy dist --project-name vse-demonstrator
+```
+
 ## Validate a results file
 
 ```bash
