@@ -1,10 +1,10 @@
 import { useRef, useState } from 'react'
-import { Link } from 'react-router-dom'
 import {
   avgSignalsPerIntervention,
   signalMap,
   unreachedSignals,
   useResults,
+  useUI,
   type Intervention,
   type View,
 } from '../lib'
@@ -23,6 +23,7 @@ const VIEW_HINT: Record<View, string> = {
 /** Screen 5 — where capital goes: toggle, network, averages, gaps (FR-D6). */
 export function Capital() {
   const r = useResults()
+  const { goToSignal } = useUI()
   const [view, setView] = useState<View>('from_place')
   const [open, setOpen] = useState<Intervention | null>(null)
   const detailRef = useRef<HTMLLIElement>(null)
@@ -33,7 +34,7 @@ export function Capital() {
   const missing = unreachedSignals(r, view)
 
   return (
-    <section>
+    <section id="capital" className="scroll-mt-6">
       <h1 className="font-serif text-3xl font-semibold text-teal dark:text-sand">
         Where capital goes
       </h1>
@@ -89,22 +90,21 @@ export function Capital() {
           {missing.map((s, i) => (
             <span key={s.id}>
               {i > 0 && ' · '}
-              <Link
-                to={`/signals/${s.id}`}
+              <button
+                onClick={() => goToSignal(s.id)}
                 className="font-serif italic underline decoration-coral/60 underline-offset-2"
               >
                 {s.statement}
-              </Link>
+              </button>
             </span>
           ))}
         </p>
       )}
 
-      <ul className="mt-6 grid gap-3 sm:grid-cols-2">
+      <ul className="mt-6 grid items-start gap-3 sm:grid-cols-2">
         {list.map((i) => (
           <li
             key={i.id}
-            id={i.id}
             ref={open?.id === i.id ? detailRef : undefined}
             className={`rounded-xl border p-4 motion-safe-only transition-colors ${
               open?.id === i.id ? 'border-teal bg-sand/40 dark:bg-teal-deep/30' : 'border-sand-deep/60'
@@ -119,23 +119,23 @@ export function Capital() {
             <p className="mt-1 text-sm opacity-80">{i.note}</p>
             <div className="mt-2 flex flex-wrap gap-1">
               {i.signal_ids.map((sid) => (
-                <Link
+                <button
                   key={sid}
-                  to={`/signals/${sid}`}
+                  onClick={() => goToSignal(sid)}
                   className="rounded-full bg-sand px-2 py-0.5 text-xs underline-offset-2 hover:underline dark:bg-teal-deep"
                 >
                   {signals.get(sid)?.statement ?? sid}
-                </Link>
+                </button>
               ))}
               {(i.counter_signal_ids ?? []).map((sid) => (
-                <Link
+                <button
                   key={sid}
-                  to={`/signals/${sid}`}
+                  onClick={() => goToSignal(sid)}
                   title="Counter-evidence: this intervention harms this signal"
                   className="rounded-full border border-coral/50 px-2 py-0.5 text-xs text-coral underline-offset-2 hover:underline"
                 >
                   ⚠ {signals.get(sid)?.statement ?? sid}
-                </Link>
+                </button>
               ))}
             </div>
             {i.sip_id && sipById.get(i.sip_id) && (

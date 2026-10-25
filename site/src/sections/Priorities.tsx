@@ -5,7 +5,7 @@ export function Priorities() {
   const r = useResults()
   const p = r.priorities
   return (
-    <section>
+    <section id="priorities" className="scroll-mt-6">
       <h1 className="font-serif text-3xl font-semibold text-teal dark:text-sand">
         {p.title}
       </h1>

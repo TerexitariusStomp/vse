@@ -6,3 +6,4 @@ export {
   useVisitor,
   type Vote,
 } from './store'
+export { UIProvider, useUI } from './ui'

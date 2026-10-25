@@ -1,6 +1,12 @@
-import { Link } from 'react-router-dom'
-import { claimsByStory, signalMap, storySegments, type Claim, type Story } from '../lib/results'
-import { useResults } from '../lib/store'
+import {
+  claimsByStory,
+  signalMap,
+  storySegments,
+  useResults,
+  useUI,
+  type Claim,
+  type Story,
+} from '../lib'
 
 /** Renders a story's text with each claim highlighted in place (FR-D3). */
 export function StoryText({
@@ -45,16 +51,17 @@ function Excerpt({
   signalStatement?: string
   focused?: boolean
 }) {
+  const { goToSignal } = useUI()
   return (
-    <Link
-      to={`/signals/${claim.signal_id}`}
+    <button
+      onClick={() => goToSignal(claim.signal_id)}
       title={signalStatement ? `Feeds: ${signalStatement}` : undefined}
       id={claim.id}
       className={`excerpt motion-safe-only transition-colors ${
-        focused ? 'bg-coral/30 dark:bg-coral/40' : ''
+        focused ? 'bg-coral/40 dark:bg-coral/50' : ''
       }`}
     >
       {text}
-    </Link>
+    </button>
   )
 }

@@ -1,5 +1,4 @@
 import { useRef, useState } from 'react'
-import { Link } from 'react-router-dom'
 import { useResults } from '../lib'
 
 /** Screen 1 — the place + Run animation over the four stages (FR-D2). */
@@ -46,7 +45,7 @@ export function Place() {
   }
 
   return (
-    <section>
+    <section id="place" className="scroll-mt-6">
       <p className="text-sm uppercase tracking-wide text-sage">{r.place.kind}</p>
       <h1 className="mt-1 font-serif text-4xl font-semibold text-teal dark:text-sand">
         {r.place.name}
@@ -90,8 +89,8 @@ export function Place() {
       )}
 
       <p className="mt-8 text-sm">
-        Next: <Link to="/stories" className="text-teal underline underline-offset-2 dark:text-sand">hear the stories</Link>
-        {' → '}<Link to="/signals" className="text-teal underline underline-offset-2 dark:text-sand">what the place is saying</Link>
+        Next: <a href="#stories" className="text-teal underline underline-offset-2 dark:text-sand">hear the stories</a>
+        {' → '}<a href="#signals" className="text-teal underline underline-offset-2 dark:text-sand">what the place is saying</a>
       </p>
     </section>
   )

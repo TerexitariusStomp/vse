@@ -1,18 +1,18 @@
 import { useEffect, useState } from 'react'
-import { HashRouter, Route, Routes } from 'react-router-dom'
 import {
   loadResults,
   ResultsProvider,
+  UIProvider,
   VisitorProvider,
   type Results,
 } from './lib'
 import { Layout } from './components/Layout'
-import { Place } from './routes/Place'
-import { Stories, StoryDetail } from './routes/Stories'
-import { Signals, SignalDetail } from './routes/Signals'
-import { Check } from './routes/Check'
-import { Capital } from './routes/Capital'
-import { Priorities } from './routes/Priorities'
+import { Place } from './sections/Place'
+import { Stories } from './sections/Stories'
+import { Signals } from './sections/Signals'
+import { Check } from './sections/Check'
+import { Capital } from './sections/Capital'
+import { Priorities } from './sections/Priorities'
 
 export default function App() {
   const [results, setResults] = useState<Results | null>(null)
@@ -44,23 +44,16 @@ export default function App() {
   return (
     <ResultsProvider results={results}>
       <VisitorProvider>
-        {/* HashRouter: the site must run on any static host with no rewrite
-            rules, and deep links keep working offline (PRD FR-D1). */}
-        <HashRouter>
+        <UIProvider>
           <Layout>
-            <Routes>
-              <Route path="/" element={<Place />} />
-              <Route path="/stories" element={<Stories />} />
-              <Route path="/stories/:storyId" element={<StoryDetail />} />
-              <Route path="/signals" element={<Signals />} />
-              <Route path="/signals/:signalId" element={<SignalDetail />} />
-              <Route path="/check" element={<Check />} />
-              <Route path="/capital" element={<Capital />} />
-              <Route path="/priorities" element={<Priorities />} />
-              <Route path="*" element={<p>Page not found.</p>} />
-            </Routes>
+            <Place />
+            <Stories />
+            <Signals />
+            <Check />
+            <Capital />
+            <Priorities />
           </Layout>
-        </HashRouter>
+        </UIProvider>
       </VisitorProvider>
     </ResultsProvider>
   )

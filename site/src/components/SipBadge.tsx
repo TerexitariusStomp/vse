@@ -1,6 +1,5 @@
 import { useRef } from 'react'
-import { Link } from 'react-router-dom'
-import { SIP_KIND_LABEL, storyMap, useResults, type Sip } from '../lib'
+import { SIP_KIND_LABEL, storyMap, useResults, useUI, type Sip } from '../lib'
 
 /** "Could tip the system" badge → dialog with the SIP's detail (FR-D6). */
 export function SipBadge({ sip }: { sip: Sip }) {
@@ -37,14 +36,15 @@ export function SipBadge({ sip }: { sip: Sip }) {
         <p className="mt-2 text-sm">
           <span className="opacity-70">Time to show:</span> {sip.time_to_show}
         </p>
-        <SipEvidence sip={sip} />
+        <SipEvidence sip={sip} close={() => ref.current?.close()} />
       </dialog>
     </>
   )
 }
 
-function SipEvidence({ sip }: { sip: Sip }) {
+function SipEvidence({ sip, close }: { sip: Sip; close: () => void }) {
   const results = useResults()
+  const { goToClaim } = useUI()
   const stories = storyMap(results)
   const claimById = new Map(results.claims.map((c) => [c.id, c]))
   return (
@@ -57,12 +57,15 @@ function SipEvidence({ sip }: { sip: Sip }) {
           const st = stories.get(c.story_id)
           return (
             <li key={cid} className="font-serif text-sm">
-              <Link
-                to={`/stories/${c.story_id}#${cid}`}
-                className="italic underline decoration-sage underline-offset-2"
+              <button
+                onClick={() => {
+                  close()
+                  goToClaim(c.story_id, cid)
+                }}
+                className="text-left italic underline decoration-sage underline-offset-2"
               >
                 “{c.text}”
-              </Link>{' '}
+              </button>{' '}
               <span className="not-italic opacity-60">— {st?.teller_role}</span>
             </li>
           )

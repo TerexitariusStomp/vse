@@ -6,7 +6,7 @@ import { VerificationBar } from '../components/VerificationBar'
 export function Check() {
   const r = useResults()
   return (
-    <section>
+    <section id="check" className="scroll-mt-6">
       <h1 className="font-serif text-3xl font-semibold text-teal dark:text-sand">
         People check
       </h1>
