@@ -24,6 +24,8 @@ vote is invented for demonstration). Its machine-checkable contract is
 
 ```
 PRD.md                  product requirements (source of truth)
+COMPETITORS.md          landscape + honest gaps + surpass properties
+OSS-STACK.md            bill of materials, licences, <5% custom-code accounting
 README.md               this file
 LICENSE                 Apache-2.0
 data/                   results files (the published contract)
@@ -37,12 +39,15 @@ engine/                 pipeline + consoles — Cloudflare Workers/D1/R2
 ## Validate the data contract
 
 ```bash
-npx ajv validate -s schema/results.schema.json -d data/utopia_results.json
+npx ajv validate --spec draft2020 \
+  -s schema/results.schema.json -d data/utopia_results.json
 ```
 
-Semantic invariants (verbatim spans, referential integrity, derived counts)
-are enforced by the validator per PRD §3.1 / FR-E2.
+Semantic invariants (verbatim spans, referential integrity, derived counts,
+gate enforcement) are enforced by the validator per PRD §4.1 / FR-E2.
 
 ## Licence
 
-Apache-2.0 — see `LICENSE`.
+Apache-2.0 — see `LICENSE`. Dependency licences per `OSS-STACK.md`:
+permissive + copyleft acceptable; no SSPL/BSL/Elastic; AI model weights must
+be commercially usable.

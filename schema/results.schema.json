@@ -167,6 +167,11 @@
           "id": { "type": "string" },
           "name": { "type": "string" },
           "signal_ids": { "type": "array", "items": { "type": "string" } },
+          "counter_signal_ids": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "Verified signals this intervention harms or trades off (disvalues); rendered as counter-evidence, never hidden. PRD FR-E27."
+          },
           "note": { "type": "string" },
           "sip_id": { "type": "string" },
           "priced": { "type": "boolean" }
