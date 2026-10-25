@@ -1,826 +1,972 @@
 {
- "_about": "Real data assembled from Springforth-consumed sources — Sarafu vouchers/pool (sarafu.network), Holons hub posts, OnePlanet/CSV plan uploads, possibility cards + completion reports, treegens records, IMD 2025 (OGL). Stories are verbatim utterances; claim spans slice the source text. Verification counts are derived from recorded participation (voucher issuers, pool members, planting-day crews, appreciations) — not a formal facilitated check. Built 2026-10-25 by tools/build-place-data.mjs.",
- "place": {
-  "id": "kenya-coast",
-  "name": "Kenya coast",
-  "kind": "coastal counties — Kwale to Kilifi",
-  "summary": "A real stretch of the Kenyan coast: smallholders, voucher commitments, mangrove nurseries and the ROLA commitment pool.",
-  "geo": {
-   "lat": -4.18,
-   "lon": 39.46
+  "_about": "Results for Kenya coast, published by a Value Structuring Engine.",
+  "place": {
+    "id": "kenya-coast",
+    "name": "Kenya coast",
+    "kind": "coastal counties \u2014 Kwale to Kilifi",
+    "summary": "A real stretch of the Kenyan coast: smallholders, voucher commitments, mangrove nurseries and the ROLA commitment pool.",
+    "geo": {
+      "lat": -4.18,
+      "lon": 39.46
+    },
+    "readings": [
+      {
+        "label": "ROLA commitment pool",
+        "value": "141 vouchers \u00b7 1,640 swaps",
+        "source": "sarafu.network \u2014 public indexer"
+      },
+      {
+        "label": "treegens planting records (Gongoni area)",
+        "value": "141",
+        "source": "treegens.app \u2014 live feed"
+      },
+      {
+        "label": "Kwale shore planting day",
+        "value": "480 seedlings \u00b7 12 people",
+        "source": "possibility completion report"
+      },
+      {
+        "label": "Voucher issuers on this coast",
+        "value": "12",
+        "source": "sarafu.network \u2014 public indexer"
+      }
+    ]
   },
-  "readings": [
-   {
-    "label": "ROLA commitment pool",
-    "value": "141 vouchers · 1,640 swaps",
-    "source": "sarafu.network — public indexer"
-   },
-   {
-    "label": "treegens planting records (Gongoni area)",
-    "value": "141",
-    "source": "treegens.app — live feed"
-   },
-   {
-    "label": "Kwale shore planting day",
-    "value": "480 seedlings · 12 people",
-    "source": "possibility completion report"
-   },
-   {
-    "label": "Voucher issuers on this coast",
-    "value": "12",
-    "source": "sarafu.network — public indexer"
-   }
-  ]
- },
- "pipeline": [
-  {
-   "stage": "Listening",
-   "detail": "Real utterances gathered from vouchers, hub posts, cards and plan documents",
-   "count": 21,
-   "unit": "stories"
-  },
-  {
-   "stage": "Making sense",
-   "detail": "Each text broken into exact excerpts of what matters",
-   "count": 31,
-   "unit": "excerpts"
-  },
-  {
-   "stage": "Consolidating",
-   "detail": "Excerpts brought together into what the place is saying",
-   "count": 7,
-   "unit": "signals"
-  },
-  {
-   "stage": "People check",
-   "detail": "Participation recorded in the source systems",
-   "count": 141,
-   "unit": "participants"
-  }
- ],
- "scale_note": "A demonstrator assembled from real records — participation is small because it is real.",
- "stories": [
-  {
-   "id": "s-kalimbo",
-   "teller_role": "tree nursery keeper",
-   "channel": "sarafu voucher",
-   "source": "sarafu.network voucher KALIMB",
-   "text": "I have a tree nursery that i sell trees"
-  },
-  {
-   "id": "s-luvuno",
-   "teller_role": "smallholder",
-   "channel": "sarafu voucher",
-   "source": "sarafu.network voucher BEJAA",
-   "text": "I sell vegetables from the produce in my farm"
-  },
-  {
-   "id": "s-mwanamisi",
-   "teller_role": "household",
-   "channel": "sarafu voucher",
-   "source": "sarafu.network voucher MWANAM",
-   "text": "Access to charcoal"
-  },
-  {
-   "id": "s-sada",
-   "teller_role": "smallholder",
-   "channel": "sarafu voucher",
-   "source": "sarafu.network voucher SADA",
-   "text": "Access to vegetables and fruits"
-  },
-  {
-   "id": "s-nzara",
-   "teller_role": "household",
-   "channel": "sarafu voucher",
-   "source": "sarafu.network voucher NZARA",
-   "text": "Access to vegetables"
-  },
-  {
-   "id": "s-emily",
-   "teller_role": "voucher issuer, C106",
-   "channel": "sarafu voucher",
-   "source": "sarafu.network voucher EMILY",
-   "text": "Access to Credit,goods and services"
-  },
-  {
-   "id": "s-ndaro",
-   "teller_role": "voucher issuer, C106",
-   "channel": "sarafu voucher",
-   "source": "sarafu.network voucher NDARO",
-   "text": "Access to Credit,goods and services"
-  },
-  {
-   "id": "s-dama",
-   "teller_role": "voucher issuer",
-   "channel": "sarafu voucher",
-   "source": "sarafu.network voucher DAM",
-   "text": "Access to Credit,goods and services"
-  },
-  {
-   "id": "s-geksh",
-   "teller_role": "savings group",
-   "channel": "sarafu voucher",
-   "source": "sarafu.network voucher GE KSH",
-   "text": "Access to Loans and Advances"
-  },
-  {
-   "id": "s-amina",
-   "teller_role": "trader, Mnarani",
-   "channel": "sarafu voucher",
-   "source": "sarafu.network voucher AMI",
-   "text": "selling mangoes"
-  },
-  {
-   "id": "s-santa",
-   "teller_role": "farmer, Kilifi North",
-   "channel": "sarafu voucher",
-   "source": "sarafu.network voucher SAKI",
-   "text": "Farmer"
-  },
-  {
-   "id": "s-jennifer",
-   "teller_role": "farmer, Kilifi North",
-   "channel": "sarafu voucher",
-   "source": "sarafu.network voucher JENNIE",
-   "text": "Farmer"
-  },
-  {
-   "id": "s-rola",
-   "teller_role": "commitment pool",
-   "channel": "sarafu pool",
-   "source": "sarafu.network pool ROLA",
-   "text": "Communities Across Kenya practicing traditional rotating labor. They pool their vouchers to support each other."
-  },
-  {
-   "id": "s-planting-card",
-   "teller_role": "coast collective",
-   "channel": "possibility card",
-   "source": "possibility poss-kwale-mangrove-planting",
-   "text": "Community planting day — bring tools and labour, we need seedlings and lunch"
-  },
-  {
-   "id": "s-planting-report",
-   "teller_role": "coast collective",
-   "channel": "completion report",
-   "source": "possibility poss-kwale-mangrove-planting (report)",
-   "text": "480 seedlings planted by 12 people; nursery voucher covered stock start tool-count earlier — spades ran short"
-  },
-  {
-   "id": "s-mida-card",
-   "teller_role": "conservation group",
-   "channel": "possibility card",
-   "source": "possibility poss-mida-creek-mangrove",
-   "text": "Two planting days on the degraded creek edge — nursery raised 800 propagules, we need 400 more, boat transport, and lunch for the crew"
-  },
-  {
-   "id": "s-appreciation",
-   "teller_role": "coast collective",
-   "channel": "appreciation note",
-   "source": "ledger app-coast-collective-mike",
-   "text": "van run made the tools possible"
-  },
-  {
-   "id": "s-seedlings-need",
-   "teller_role": "community forest group",
-   "channel": "needs return",
-   "source": "csv:community-needs (Kwale Community Forest)",
-   "text": "Tree seedlings needed for community reforestation"
-  },
-  {
-   "id": "s-county-plan",
-   "teller_role": "county government",
-   "channel": "plan document",
-   "source": "csv:kilifi-county",
-   "text": "Shoreline mangrove planting on the creek edge Restored mangrove cover and fish-nursery habitat at Mida Creek"
-  },
-  {
-   "id": "s-treegens-1",
-   "teller_role": "field team record",
-   "channel": "planting record",
-   "source": "treegens:live",
-   "text": "344 mangrove trees planted — Gongoni, Gongoni ward, Magarini, Kilifi County, Kenya"
-  },
-  {
-   "id": "s-treegens-2",
-   "teller_role": "field team record",
-   "channel": "planting record",
-   "source": "treegens:live",
-   "text": "760 mangrove trees planted — Gongoni, Gongoni ward, Magarini, Kilifi County, Kenya"
-  }
- ],
- "claims": [
-  {
-   "id": "c001",
-   "story_id": "s-kalimbo",
-   "text": "a tree nursery",
-   "span": [
-    7,
-    21
-   ],
-   "signal_id": "sig-nursery"
-  },
-  {
-   "id": "c002",
-   "story_id": "s-kalimbo",
-   "text": "sell trees",
-   "span": [
-    29,
-    39
-   ],
-   "signal_id": "sig-livelihood"
-  },
-  {
-   "id": "c003",
-   "story_id": "s-luvuno",
-   "text": "vegetables from the produce in my farm",
-   "span": [
-    7,
-    45
-   ],
-   "signal_id": "sig-livelihood"
-  },
-  {
-   "id": "c004",
-   "story_id": "s-mwanamisi",
-   "text": "charcoal",
-   "span": [
-    10,
-    18
-   ],
-   "signal_id": "sig-charcoal"
-  },
-  {
-   "id": "c005",
-   "story_id": "s-sada",
-   "text": "vegetables and fruits",
-   "span": [
-    10,
-    31
-   ],
-   "signal_id": "sig-livelihood"
-  },
-  {
-   "id": "c006",
-   "story_id": "s-nzara",
-   "text": "vegetables",
-   "span": [
-    10,
-    20
-   ],
-   "signal_id": "sig-livelihood"
-  },
-  {
-   "id": "c007",
-   "story_id": "s-emily",
-   "text": "Credit",
-   "span": [
-    10,
-    16
-   ],
-   "signal_id": "sig-credit"
-  },
-  {
-   "id": "c008",
-   "story_id": "s-ndaro",
-   "text": "Credit",
-   "span": [
-    10,
-    16
-   ],
-   "signal_id": "sig-credit"
-  },
-  {
-   "id": "c009",
-   "story_id": "s-dama",
-   "text": "Credit",
-   "span": [
-    10,
-    16
-   ],
-   "signal_id": "sig-credit"
-  },
-  {
-   "id": "c010",
-   "story_id": "s-geksh",
-   "text": "Loans and Advances",
-   "span": [
-    10,
-    28
-   ],
-   "signal_id": "sig-credit"
-  },
-  {
-   "id": "c011",
-   "story_id": "s-amina",
-   "text": "mangoes",
-   "span": [
-    8,
-    15
-   ],
-   "signal_id": "sig-livelihood"
-  },
-  {
-   "id": "c012",
-   "story_id": "s-santa",
-   "text": "Farmer",
-   "span": [
-    0,
-    6
-   ],
-   "signal_id": "sig-livelihood"
-  },
-  {
-   "id": "c013",
-   "story_id": "s-jennifer",
-   "text": "Farmer",
-   "span": [
-    0,
-    6
-   ],
-   "signal_id": "sig-livelihood"
-  },
-  {
-   "id": "c014",
-   "story_id": "s-rola",
-   "text": "traditional rotating labor",
-   "span": [
-    36,
-    62
-   ],
-   "signal_id": "sig-pool"
-  },
-  {
-   "id": "c015",
-   "story_id": "s-rola",
-   "text": "pool their vouchers to support each other",
-   "span": [
-    69,
-    110
-   ],
-   "signal_id": "sig-pool"
-  },
-  {
-   "id": "c016",
-   "story_id": "s-planting-card",
-   "text": "we need seedlings",
-   "span": [
-    49,
-    66
-   ],
-   "signal_id": "sig-nursery"
-  },
-  {
-   "id": "c017",
-   "story_id": "s-planting-card",
-   "text": "bring tools and labour",
-   "span": [
-    25,
-    47
-   ],
-   "signal_id": "sig-pool"
-  },
-  {
-   "id": "c018",
-   "story_id": "s-planting-report",
-   "text": "480 seedlings planted by 12 people",
-   "span": [
-    0,
-    34
-   ],
-   "signal_id": "sig-mangrove"
-  },
-  {
-   "id": "c019",
-   "story_id": "s-planting-report",
-   "text": "nursery voucher covered stock",
-   "span": [
-    36,
-    65
-   ],
-   "signal_id": "sig-nursery"
-  },
-  {
-   "id": "c020",
-   "story_id": "s-planting-report",
-   "text": "start tool-count earlier — spades ran short",
-   "span": [
-    66,
-    109
-   ],
-   "signal_id": "sig-pool"
-  },
-  {
-   "id": "c021",
-   "story_id": "s-mida-card",
-   "text": "degraded creek edge",
-   "span": [
-    25,
-    44
-   ],
-   "signal_id": "sig-mangrove"
-  },
-  {
-   "id": "c022",
-   "story_id": "s-mida-card",
-   "text": "nursery raised 800 propagules",
-   "span": [
-    47,
-    76
-   ],
-   "signal_id": "sig-nursery"
-  },
-  {
-   "id": "c023",
-   "story_id": "s-mida-card",
-   "text": "boat transport",
-   "span": [
-    96,
-    110
-   ],
-   "signal_id": "sig-transport"
-  },
-  {
-   "id": "c024",
-   "story_id": "s-appreciation",
-   "text": "van run",
-   "span": [
-    0,
-    7
-   ],
-   "signal_id": "sig-transport"
-  },
-  {
-   "id": "c025",
-   "story_id": "s-appreciation",
-   "text": "made the tools possible",
-   "span": [
-    8,
-    31
-   ],
-   "signal_id": "sig-pool"
-  },
-  {
-   "id": "c026",
-   "story_id": "s-seedlings-need",
-   "text": "Tree seedlings needed",
-   "span": [
-    0,
-    21
-   ],
-   "signal_id": "sig-nursery"
-  },
-  {
-   "id": "c027",
-   "story_id": "s-seedlings-need",
-   "text": "community reforestation",
-   "span": [
-    26,
-    49
-   ],
-   "signal_id": "sig-mangrove"
-  },
-  {
-   "id": "c028",
-   "story_id": "s-county-plan",
-   "text": "Shoreline mangrove planting",
-   "span": [
-    0,
-    27
-   ],
-   "signal_id": "sig-mangrove"
-  },
-  {
-   "id": "c029",
-   "story_id": "s-county-plan",
-   "text": "fish-nursery habitat",
-   "span": [
-    74,
-    94
-   ],
-   "signal_id": "sig-mangrove"
-  },
-  {
-   "id": "c030",
-   "story_id": "s-treegens-1",
-   "text": "344 mangrove trees planted",
-   "span": [
-    0,
-    26
-   ],
-   "signal_id": "sig-mangrove"
-  },
-  {
-   "id": "c031",
-   "story_id": "s-treegens-2",
-   "text": "760 mangrove trees planted",
-   "span": [
-    0,
-    26
-   ],
-   "signal_id": "sig-mangrove"
-  }
- ],
- "signals": [
-  {
-   "id": "sig-livelihood",
-   "statement": "People grow, farm and trade to get by",
-   "supporting_claim_ids": [
-    "c002",
-    "c003",
-    "c005",
-    "c006",
-    "c011",
-    "c012",
-    "c013"
-   ],
-   "voices": 7,
-   "recurrence": 7,
-   "verification": {
-    "participants": 7,
-    "endorse": 7,
-    "amend": 0,
-    "contest": 0,
-    "amendments": [],
-    "gate": "may_be_priced"
-   }
-  },
-  {
-   "id": "sig-credit",
-   "statement": "Households need credit, loans and advances",
-   "supporting_claim_ids": [
-    "c007",
-    "c008",
-    "c009",
-    "c010"
-   ],
-   "voices": 4,
-   "recurrence": 4,
-   "verification": {
-    "participants": 4,
-    "endorse": 4,
-    "amend": 0,
-    "contest": 0,
-    "amendments": [],
-    "gate": "may_be_priced"
-   }
-  },
-  {
-   "id": "sig-charcoal",
-   "statement": "Homes still need charcoal for fuel",
-   "supporting_claim_ids": [
-    "c004"
-   ],
-   "voices": 1,
-   "recurrence": 1,
-   "verification": {
-    "participants": 1,
-    "endorse": 1,
-    "amend": 0,
-    "contest": 0,
-    "amendments": [],
-    "gate": "not_yet"
-   }
-  },
-  {
-   "id": "sig-mangrove",
-   "statement": "The coast is replanting its mangroves — and the nursery economy behind it is real",
-   "supporting_claim_ids": [
-    "c018",
-    "c021",
-    "c027",
-    "c028",
-    "c029",
-    "c030",
-    "c031"
-   ],
-   "voices": 6,
-   "recurrence": 7,
-   "verification": {
-    "participants": 17,
-    "endorse": 16,
-    "amend": 1,
-    "contest": 0,
-    "amendments": [
-     "start tool-count earlier — spades ran short"
-    ],
-    "gate": "may_be_priced"
-   }
-  },
-  {
-   "id": "sig-pool",
-   "statement": "The coast pools labour and vouchers to support each other",
-   "supporting_claim_ids": [
-    "c014",
-    "c015",
-    "c017",
-    "c020",
-    "c025"
-   ],
-   "voices": 4,
-   "recurrence": 5,
-   "verification": {
-    "participants": 141,
-    "endorse": 141,
-    "amend": 0,
-    "contest": 0,
-    "amendments": [],
-    "gate": "commons_only"
-   }
-  },
-  {
-   "id": "sig-nursery",
-   "statement": "Nurseries raise the seedlings the planting days run on",
-   "supporting_claim_ids": [
-    "c001",
-    "c016",
-    "c019",
-    "c022",
-    "c026"
-   ],
-   "voices": 5,
-   "recurrence": 5,
-   "verification": {
-    "participants": 4,
-    "endorse": 4,
-    "amend": 0,
-    "contest": 0,
-    "amendments": [],
-    "gate": "may_be_priced"
-   }
-  },
-  {
-   "id": "sig-transport",
-   "statement": "Getting to the creek and the market needs transport",
-   "supporting_claim_ids": [
-    "c023",
-    "c024"
-   ],
-   "voices": 2,
-   "recurrence": 2,
-   "verification": {
-    "participants": 2,
-    "endorse": 2,
-    "amend": 0,
-    "contest": 0,
-    "amendments": [],
-    "gate": "not_yet"
-   }
-  }
- ],
- "interventions": {
-  "from_plans": [
-   {
-    "id": "P1",
-    "name": "Shoreline mangrove planting on the creek edge",
-    "signal_ids": [
-     "sig-mangrove"
-    ],
-    "priced": true,
-    "counter_signal_ids": [
-     "sig-charcoal"
-    ],
-    "note": "Kilifi County Government, from 2027-02. Mangrove restoration presses on household fuel — charcoal access is a live need, not an externality."
-   },
-   {
-    "id": "P2",
-    "name": "Mida Creek Community Conservation Plan",
-    "signal_ids": [
-     "sig-mangrove"
-    ],
-    "priced": true,
-    "counter_signal_ids": [
-     "sig-charcoal"
-    ],
-    "note": "Community conservation plan — restored cover and fish-nursery habitat by 2027-12."
-   },
-   {
-    "id": "P3",
-    "name": "Artizen Season 7 — curated fund",
-    "signal_ids": [
-     "sig-mangrove"
-    ],
-    "priced": true,
-    "note": "Curated season fund — carries the Kwale Mangrove Nursery action."
-   }
+  "pipeline": [
+    {
+      "stage": "Listening",
+      "detail": "stories told in people\u2019s own words",
+      "count": 23,
+      "unit": "stories"
+    },
+    {
+      "stage": "Making sense",
+      "detail": "exact excerpts extracted from stories",
+      "count": 41,
+      "unit": "excerpts"
+    },
+    {
+      "stage": "Consolidating",
+      "detail": "excerpts gathered into signals",
+      "count": 7,
+      "unit": "signals"
+    },
+    {
+      "stage": "People check",
+      "detail": "contributors endorse, amend or contest",
+      "count": 10,
+      "unit": "participants"
+    }
   ],
-  "from_place": [
-   {
-    "id": "C1",
-    "name": "Kwale shore planting day",
-    "signal_ids": [
-     "sig-mangrove",
-     "sig-nursery",
-     "sig-pool"
+  "scale_note": "A demonstrator assembled from real records \u2014 participation is small because it is real.",
+  "stories": [
+    {
+      "id": "2f7f8f88-2fec-4ae1-935f-a05a3f285747",
+      "teller_role": "tree nursery keeper",
+      "channel": "facilitated",
+      "text": "I have a tree nursery that i sell trees",
+      "source": "sarafu.network voucher KALIMB"
+    },
+    {
+      "id": "0b5fc379-96f5-47c5-af92-c4ed3653a4ca",
+      "teller_role": "smallholder",
+      "channel": "facilitated",
+      "text": "I sell vegetables from the produce in my farm",
+      "source": "sarafu.network voucher BEJAA"
+    },
+    {
+      "id": "a9be0a7d-dd88-4aec-b793-80569fab1ea3",
+      "teller_role": "household",
+      "channel": "facilitated",
+      "text": "Access to charcoal",
+      "source": "sarafu.network voucher MWANAM"
+    },
+    {
+      "id": "f438ab3a-c0e6-462f-991e-7c55feaccfab",
+      "teller_role": "smallholder",
+      "channel": "facilitated",
+      "text": "Access to vegetables and fruits",
+      "source": "sarafu.network voucher SADA"
+    },
+    {
+      "id": "a79cc29d-29c4-4eee-aa98-97e786ae26a1",
+      "teller_role": "household",
+      "channel": "facilitated",
+      "text": "Access to vegetables",
+      "source": "sarafu.network voucher NZARA"
+    },
+    {
+      "id": "4466d056-7582-4597-bbf8-1104fabb6498",
+      "teller_role": "voucher issuer, C106",
+      "channel": "facilitated",
+      "text": "Access to Credit,goods and services",
+      "source": "sarafu.network voucher EMILY"
+    },
+    {
+      "id": "4f86ad44-f026-4a07-841c-803bb9d0a5ba",
+      "teller_role": "voucher issuer, C106",
+      "channel": "facilitated",
+      "text": "Access to Credit,goods and services",
+      "source": "sarafu.network voucher NDARO"
+    },
+    {
+      "id": "665f0f35-1911-468d-9dfa-c0f52bf3a0f0",
+      "teller_role": "voucher issuer",
+      "channel": "facilitated",
+      "text": "Access to Credit,goods and services",
+      "source": "sarafu.network voucher DAM"
+    },
+    {
+      "id": "9b2cb93d-5b58-4e56-8160-05a9b1a62d09",
+      "teller_role": "savings group",
+      "channel": "facilitated",
+      "text": "Access to Loans and Advances",
+      "source": "sarafu.network voucher GE KSH"
+    },
+    {
+      "id": "a1c6bd71-7ecc-4a4c-97eb-68b70429b4bc",
+      "teller_role": "trader, Mnarani",
+      "channel": "facilitated",
+      "text": "selling mangoes",
+      "source": "sarafu.network voucher AMI"
+    },
+    {
+      "id": "e4186363-c3cd-4ad3-902b-ba1c5a85e067",
+      "teller_role": "farmer, Kilifi North",
+      "channel": "facilitated",
+      "text": "Farmer",
+      "source": "sarafu.network voucher SAKI"
+    },
+    {
+      "id": "5b46b076-8043-4178-9272-e2102b2d77a4",
+      "teller_role": "farmer, Kilifi North",
+      "channel": "facilitated",
+      "text": "Farmer",
+      "source": "sarafu.network voucher JENNIE"
+    },
+    {
+      "id": "22a7c2f9-7fe3-4cc9-a721-8d38be8b3e55",
+      "teller_role": "commitment pool",
+      "channel": "facilitated",
+      "text": "Communities Across Kenya practicing traditional rotating labor. They pool their vouchers to support each other.",
+      "source": "sarafu.network pool ROLA"
+    },
+    {
+      "id": "382c517f-9527-4d7e-86e8-aa78e30e84e6",
+      "teller_role": "coast collective",
+      "channel": "facilitated",
+      "text": "Community planting day \u2014 bring tools and labour, we need seedlings and lunch",
+      "source": "possibility poss-kwale-mangrove-planting"
+    },
+    {
+      "id": "414ca3a9-cdf2-4ac7-91b2-1e263e6baa6c",
+      "teller_role": "coast collective",
+      "channel": "facilitated",
+      "text": "480 seedlings planted by 12 people; nursery voucher covered stock",
+      "source": "possibility:poss-kwale-mangrove-planting \u2014 report.summary"
+    },
+    {
+      "id": "b734d774-eeb8-4c63-a61a-947deab10722",
+      "teller_role": "coast collective",
+      "channel": "facilitated",
+      "text": "start tool-count earlier \u2014 spades ran short",
+      "source": "possibility:poss-kwale-mangrove-planting \u2014 report.learnings"
+    },
+    {
+      "id": "deceae61-8316-479b-b30b-b5004b70e3fb",
+      "teller_role": "conservation group",
+      "channel": "facilitated",
+      "text": "Two planting days on the degraded creek edge \u2014 nursery raised 800 propagules, we need 400 more, boat transport, and lunch for the crew",
+      "source": "possibility poss-mida-creek-mangrove"
+    },
+    {
+      "id": "6ad49859-91b4-4a49-a72e-fe173f68b37e",
+      "teller_role": "coast collective",
+      "channel": "facilitated",
+      "text": "van run made the tools possible",
+      "source": "ledger app-coast-collective-mike"
+    },
+    {
+      "id": "aacc5a75-800f-4ff5-80ba-6a303446cb97",
+      "teller_role": "community forest group",
+      "channel": "facilitated",
+      "text": "Tree seedlings needed for community reforestation",
+      "source": "csv:community-needs (Kwale Community Forest)"
+    },
+    {
+      "id": "c4e7ced3-f7c4-4ca2-9656-4ec21260084f",
+      "teller_role": "county government",
+      "channel": "facilitated",
+      "text": "Shoreline mangrove planting on the creek edge",
+      "source": "csv:kilifi-county \u2014 action"
+    },
+    {
+      "id": "2c2149a9-3682-4102-ae5c-d2d6c99b7849",
+      "teller_role": "county government",
+      "channel": "facilitated",
+      "text": "Restored mangrove cover and fish-nursery habitat at Mida Creek",
+      "source": "csv:kilifi-county \u2014 outcome"
+    },
+    {
+      "id": "b9edd2fe-d86a-48de-ba26-946e5a43edd3",
+      "teller_role": "field team record",
+      "channel": "facilitated",
+      "text": "344 mangrove trees planted \u2014 Gongoni, Gongoni ward, Magarini, Kilifi County, Kenya",
+      "source": "treegens:live"
+    },
+    {
+      "id": "c3156953-6848-489a-bde5-f64f57e480c7",
+      "teller_role": "field team record",
+      "channel": "facilitated",
+      "text": "760 mangrove trees planted \u2014 Gongoni, Gongoni ward, Magarini, Kilifi County, Kenya",
+      "source": "treegens:live"
+    }
+  ],
+  "claims": [
+    {
+      "id": "80329b9d-a88f-4248-9070-871c36d02fb7",
+      "story_id": "2f7f8f88-2fec-4ae1-935f-a05a3f285747",
+      "text": "I have a tree nursery that i sell trees",
+      "span": [
+        0,
+        39
+      ],
+      "signal_id": "dc7d9b84-9550-45d5-8c6c-ee359032c6d3"
+    },
+    {
+      "id": "cb4b12a3-9f85-463a-8234-5d9b0ec8ce66",
+      "story_id": "a9be0a7d-dd88-4aec-b793-80569fab1ea3",
+      "text": "Access to charcoal",
+      "span": [
+        0,
+        18
+      ],
+      "signal_id": "12f97602-56b2-43ad-a84e-c1e2c2eec3b5"
+    },
+    {
+      "id": "ef62f591-54c8-499b-bd75-0ce886a8ed15",
+      "story_id": "f438ab3a-c0e6-462f-991e-7c55feaccfab",
+      "text": "Access to vegetables and fruits",
+      "span": [
+        0,
+        31
+      ],
+      "signal_id": "2c6215a5-ed6c-4b67-b5bc-29e554dc78eb"
+    },
+    {
+      "id": "0239d608-2871-4b15-ad8e-e9c8b9c0ec23",
+      "story_id": "a79cc29d-29c4-4eee-aa98-97e786ae26a1",
+      "text": "Access to vegetables",
+      "span": [
+        0,
+        20
+      ],
+      "signal_id": "2c6215a5-ed6c-4b67-b5bc-29e554dc78eb"
+    },
+    {
+      "id": "1769e4bd-1b10-4533-8cfa-ab8de298fb88",
+      "story_id": "4466d056-7582-4597-bbf8-1104fabb6498",
+      "text": "Access to Credit,goods and services",
+      "span": [
+        0,
+        35
+      ],
+      "signal_id": "5cbe9161-538d-47a0-b335-9d1667bfd593"
+    },
+    {
+      "id": "9eb68a3a-e324-4bcb-ad9b-8aecce99fbc3",
+      "story_id": "4f86ad44-f026-4a07-841c-803bb9d0a5ba",
+      "text": "Access to Credit,goods and services",
+      "span": [
+        0,
+        35
+      ],
+      "signal_id": "5cbe9161-538d-47a0-b335-9d1667bfd593"
+    },
+    {
+      "id": "23dd2cdc-533d-4c9e-83ed-67c3d604c048",
+      "story_id": "665f0f35-1911-468d-9dfa-c0f52bf3a0f0",
+      "text": "Access to Credit,goods and services",
+      "span": [
+        0,
+        35
+      ],
+      "signal_id": "5cbe9161-538d-47a0-b335-9d1667bfd593"
+    },
+    {
+      "id": "1946727b-25fb-45cc-9cd7-510288855743",
+      "story_id": "a9be0a7d-dd88-4aec-b793-80569fab1ea3",
+      "text": "Access to charcoal",
+      "span": [
+        0,
+        18
+      ],
+      "signal_id": "12f97602-56b2-43ad-a84e-c1e2c2eec3b5"
+    },
+    {
+      "id": "2a6a4431-8a36-4031-83b8-092122b08c33",
+      "story_id": "f438ab3a-c0e6-462f-991e-7c55feaccfab",
+      "text": "Access to vegetables and fruits",
+      "span": [
+        0,
+        31
+      ],
+      "signal_id": "2c6215a5-ed6c-4b67-b5bc-29e554dc78eb"
+    },
+    {
+      "id": "74cc8a1c-51c8-422d-870a-6a00cbd3c20d",
+      "story_id": "a79cc29d-29c4-4eee-aa98-97e786ae26a1",
+      "text": "Access to vegetables",
+      "span": [
+        0,
+        20
+      ],
+      "signal_id": "2c6215a5-ed6c-4b67-b5bc-29e554dc78eb"
+    },
+    {
+      "id": "2fafe8b3-65ae-4169-9237-cce23a555360",
+      "story_id": "4466d056-7582-4597-bbf8-1104fabb6498",
+      "text": "Access to Credit,goods and services",
+      "span": [
+        0,
+        35
+      ],
+      "signal_id": "5cbe9161-538d-47a0-b335-9d1667bfd593"
+    },
+    {
+      "id": "50149c39-a5bf-4feb-aa70-9691eff77e37",
+      "story_id": "4f86ad44-f026-4a07-841c-803bb9d0a5ba",
+      "text": "Access to Credit,goods and services",
+      "span": [
+        0,
+        35
+      ],
+      "signal_id": "5cbe9161-538d-47a0-b335-9d1667bfd593"
+    },
+    {
+      "id": "29174bad-93f8-49d2-bd24-28c845fa1bd3",
+      "story_id": "665f0f35-1911-468d-9dfa-c0f52bf3a0f0",
+      "text": "Access to Credit,goods and services",
+      "span": [
+        0,
+        35
+      ],
+      "signal_id": "5cbe9161-538d-47a0-b335-9d1667bfd593"
+    },
+    {
+      "id": "271bf9c2-f756-465d-8af0-a19c97e5424d",
+      "story_id": "a1c6bd71-7ecc-4a4c-97eb-68b70429b4bc",
+      "text": "selling mangoes",
+      "span": [
+        0,
+        15
+      ],
+      "signal_id": "2c6215a5-ed6c-4b67-b5bc-29e554dc78eb"
+    },
+    {
+      "id": "6f401958-4b0c-4f51-a859-16bfb8c64318",
+      "story_id": "b734d774-eeb8-4c63-a61a-947deab10722",
+      "text": "start tool-count earlier",
+      "span": [
+        0,
+        24
+      ],
+      "signal_id": "7e02c0f4-a6ab-4c4b-8490-4516b43ad58a"
+    },
+    {
+      "id": "c3f344d4-4c30-481a-98a7-9ea072e29318",
+      "story_id": "b734d774-eeb8-4c63-a61a-947deab10722",
+      "text": "spades ran short",
+      "span": [
+        27,
+        43
+      ],
+      "signal_id": "7e02c0f4-a6ab-4c4b-8490-4516b43ad58a"
+    },
+    {
+      "id": "14e4c228-6ece-4a69-9aa5-8af7de4675b8",
+      "story_id": "deceae61-8316-479b-b30b-b5004b70e3fb",
+      "text": "we need 400 more",
+      "span": [
+        78,
+        94
+      ],
+      "signal_id": "dc7d9b84-9550-45d5-8c6c-ee359032c6d3"
+    },
+    {
+      "id": "c9519e44-20e5-483c-950e-186d12cc9c08",
+      "story_id": "2c2149a9-3682-4102-ae5c-d2d6c99b7849",
+      "text": "Restored mangrove cover and fish-nursery habitat at Mida Creek",
+      "span": [
+        0,
+        62
+      ],
+      "signal_id": "7afe437a-0917-4cb5-934b-669abd151355"
+    },
+    {
+      "id": "3908fd8e-8d2c-4514-92ad-12286051b217",
+      "story_id": "b9edd2fe-d86a-48de-ba26-946e5a43edd3",
+      "text": "344 mangrove trees planted \u2014 Gongoni, Gongoni ward, Magarini, Kilifi County, Kenya",
+      "span": [
+        0,
+        82
+      ],
+      "signal_id": "7afe437a-0917-4cb5-934b-669abd151355"
+    },
+    {
+      "id": "a623dfcc-6b81-479e-8f2c-63c5b192bb18",
+      "story_id": "c3156953-6848-489a-bde5-f64f57e480c7",
+      "text": "760 mangrove trees planted \u2014 Gongoni, Gongoni ward, Magarini, Kilifi County, Kenya",
+      "span": [
+        0,
+        82
+      ],
+      "signal_id": "7afe437a-0917-4cb5-934b-669abd151355"
+    },
+    {
+      "id": "1e3e0813-ebf3-494b-904b-453d119191d4",
+      "story_id": "a1c6bd71-7ecc-4a4c-97eb-68b70429b4bc",
+      "text": "selling mangoes",
+      "span": [
+        0,
+        15
+      ],
+      "signal_id": "2c6215a5-ed6c-4b67-b5bc-29e554dc78eb"
+    },
+    {
+      "id": "4a0a3fbb-793d-4d17-b8b2-9939f66edb33",
+      "story_id": "22a7c2f9-7fe3-4cc9-a721-8d38be8b3e55",
+      "text": "Communities Across Kenya practicing traditional rotating labor",
+      "span": [
+        0,
+        62
+      ],
+      "signal_id": "7e02c0f4-a6ab-4c4b-8490-4516b43ad58a"
+    },
+    {
+      "id": "899c33a2-fbc4-4642-8cb6-4dd506bd4a98",
+      "story_id": "382c517f-9527-4d7e-86e8-aa78e30e84e6",
+      "text": "we need seedlings and lunch",
+      "span": [
+        49,
+        76
+      ],
+      "signal_id": "dc7d9b84-9550-45d5-8c6c-ee359032c6d3"
+    },
+    {
+      "id": "a0f1147b-8934-4e16-ac0b-14ae5cebf58b",
+      "story_id": "aacc5a75-800f-4ff5-80ba-6a303446cb97",
+      "text": "Tree seedlings needed for community reforestation",
+      "span": [
+        0,
+        49
+      ],
+      "signal_id": "dc7d9b84-9550-45d5-8c6c-ee359032c6d3"
+    },
+    {
+      "id": "dd3fd17e-2513-446d-98c0-e2c971651b09",
+      "story_id": "c4e7ced3-f7c4-4ca2-9656-4ec21260084f",
+      "text": "Shoreline mangrove planting on the creek edge",
+      "span": [
+        0,
+        45
+      ],
+      "signal_id": "7afe437a-0917-4cb5-934b-669abd151355"
+    },
+    {
+      "id": "f0d87b3c-4100-42cf-a981-7da4f0b2a8a0",
+      "story_id": "22a7c2f9-7fe3-4cc9-a721-8d38be8b3e55",
+      "text": "Communities Across Kenya practicing traditional rotating labor",
+      "span": [
+        0,
+        62
+      ],
+      "signal_id": "7e02c0f4-a6ab-4c4b-8490-4516b43ad58a"
+    },
+    {
+      "id": "159421dd-e0b6-4230-8097-c43c60550198",
+      "story_id": "22a7c2f9-7fe3-4cc9-a721-8d38be8b3e55",
+      "text": "They pool their vouchers to support each other",
+      "span": [
+        64,
+        110
+      ],
+      "signal_id": "7e02c0f4-a6ab-4c4b-8490-4516b43ad58a"
+    },
+    {
+      "id": "5f9e9707-8664-4b4e-a616-17224fc03f47",
+      "story_id": "382c517f-9527-4d7e-86e8-aa78e30e84e6",
+      "text": "we need seedlings and lunch",
+      "span": [
+        49,
+        76
+      ],
+      "signal_id": "dc7d9b84-9550-45d5-8c6c-ee359032c6d3"
+    },
+    {
+      "id": "2605fae3-a6cc-42f9-b6c1-655520f86315",
+      "story_id": "b734d774-eeb8-4c63-a61a-947deab10722",
+      "text": "start tool-count earlier",
+      "span": [
+        0,
+        24
+      ],
+      "signal_id": "7e02c0f4-a6ab-4c4b-8490-4516b43ad58a"
+    },
+    {
+      "id": "474ef2cc-bbd3-453c-b6c7-0611ce283f7d",
+      "story_id": "b734d774-eeb8-4c63-a61a-947deab10722",
+      "text": "spades ran short",
+      "span": [
+        27,
+        43
+      ],
+      "signal_id": "7e02c0f4-a6ab-4c4b-8490-4516b43ad58a"
+    },
+    {
+      "id": "3770c3d0-19ea-4043-9515-c97562771b70",
+      "story_id": "deceae61-8316-479b-b30b-b5004b70e3fb",
+      "text": "we need 400 more",
+      "span": [
+        78,
+        94
+      ],
+      "signal_id": "dc7d9b84-9550-45d5-8c6c-ee359032c6d3"
+    },
+    {
+      "id": "09d66b08-884b-464f-b0bf-cad036cbe46a",
+      "story_id": "deceae61-8316-479b-b30b-b5004b70e3fb",
+      "text": "boat transport",
+      "span": [
+        96,
+        110
+      ],
+      "signal_id": "280085ef-eeb6-41ef-aa98-e589741ca8c6"
+    },
+    {
+      "id": "7b615645-e776-4249-8193-205524f39468",
+      "story_id": "deceae61-8316-479b-b30b-b5004b70e3fb",
+      "text": "and lunch for the crew",
+      "span": [
+        112,
+        134
+      ],
+      "signal_id": "7e02c0f4-a6ab-4c4b-8490-4516b43ad58a"
+    },
+    {
+      "id": "65e985b3-99bf-4e2d-ae8d-ed96770e0e28",
+      "story_id": "aacc5a75-800f-4ff5-80ba-6a303446cb97",
+      "text": "Tree seedlings needed for community reforestation",
+      "span": [
+        0,
+        49
+      ],
+      "signal_id": "dc7d9b84-9550-45d5-8c6c-ee359032c6d3"
+    },
+    {
+      "id": "61c9714b-2276-4f19-9182-d52810d0b146",
+      "story_id": "c4e7ced3-f7c4-4ca2-9656-4ec21260084f",
+      "text": "Shoreline mangrove planting on the creek edge",
+      "span": [
+        0,
+        45
+      ],
+      "signal_id": "7afe437a-0917-4cb5-934b-669abd151355"
+    },
+    {
+      "id": "77fcdc92-d515-4c8f-8ac2-1986f01f295b",
+      "story_id": "2c2149a9-3682-4102-ae5c-d2d6c99b7849",
+      "text": "Restored mangrove cover and fish-nursery habitat at Mida Creek",
+      "span": [
+        0,
+        62
+      ],
+      "signal_id": "7afe437a-0917-4cb5-934b-669abd151355"
+    },
+    {
+      "id": "7f9729a8-3385-4d01-b09f-41d159285db1",
+      "story_id": "b9edd2fe-d86a-48de-ba26-946e5a43edd3",
+      "text": "344 mangrove trees planted \u2014 Gongoni, Gongoni ward, Magarini, Kilifi County, Kenya",
+      "span": [
+        0,
+        82
+      ],
+      "signal_id": "7afe437a-0917-4cb5-934b-669abd151355"
+    },
+    {
+      "id": "0af1610f-478f-4342-a5e7-8b4b69303fef",
+      "story_id": "c3156953-6848-489a-bde5-f64f57e480c7",
+      "text": "760 mangrove trees planted \u2014 Gongoni, Gongoni ward, Magarini, Kilifi County, Kenya",
+      "span": [
+        0,
+        82
+      ],
+      "signal_id": "7afe437a-0917-4cb5-934b-669abd151355"
+    },
+    {
+      "id": "f4163c63-af60-4f8b-92d4-b4e9953d4023",
+      "story_id": "9b2cb93d-5b58-4e56-8160-05a9b1a62d09",
+      "text": "Access to Loans and Advances",
+      "span": [
+        0,
+        28
+      ],
+      "signal_id": "5cbe9161-538d-47a0-b335-9d1667bfd593"
+    },
+    {
+      "id": "9891492f-8114-4645-ac82-113a0f27c201",
+      "story_id": "0b5fc379-96f5-47c5-af92-c4ed3653a4ca",
+      "text": "I sell vegetables from the produce in my farm",
+      "span": [
+        0,
+        45
+      ],
+      "signal_id": "2c6215a5-ed6c-4b67-b5bc-29e554dc78eb"
+    },
+    {
+      "id": "b33f7ad5-2154-4ee5-b6b4-8ecc9825f634",
+      "story_id": "6ad49859-91b4-4a49-a72e-fe173f68b37e",
+      "text": "van run made the tools possible",
+      "span": [
+        0,
+        31
+      ],
+      "signal_id": "7e02c0f4-a6ab-4c4b-8490-4516b43ad58a"
+    }
+  ],
+  "signals": [
+    {
+      "id": "dc7d9b84-9550-45d5-8c6c-ee359032c6d3",
+      "statement": "Nurseries raise the seedlings the planting days run on",
+      "supporting_claim_ids": [
+        "80329b9d-a88f-4248-9070-871c36d02fb7",
+        "14e4c228-6ece-4a69-9aa5-8af7de4675b8",
+        "899c33a2-fbc4-4642-8cb6-4dd506bd4a98",
+        "a0f1147b-8934-4e16-ac0b-14ae5cebf58b",
+        "5f9e9707-8664-4b4e-a616-17224fc03f47",
+        "3770c3d0-19ea-4043-9515-c97562771b70",
+        "65e985b3-99bf-4e2d-ae8d-ed96770e0e28"
+      ],
+      "voices": 4,
+      "recurrence": 7,
+      "verification": {
+        "participants": 6,
+        "endorse": 6,
+        "amend": 0,
+        "contest": 0,
+        "amendments": [],
+        "gate": "may_be_priced"
+      }
+    },
+    {
+      "id": "2c6215a5-ed6c-4b67-b5bc-29e554dc78eb",
+      "statement": "People grow, farm and trade to get by",
+      "supporting_claim_ids": [
+        "ef62f591-54c8-499b-bd75-0ce886a8ed15",
+        "0239d608-2871-4b15-ad8e-e9c8b9c0ec23",
+        "2a6a4431-8a36-4031-83b8-092122b08c33",
+        "74cc8a1c-51c8-422d-870a-6a00cbd3c20d",
+        "271bf9c2-f756-465d-8af0-a19c97e5424d",
+        "1e3e0813-ebf3-494b-904b-453d119191d4",
+        "9891492f-8114-4645-ac82-113a0f27c201"
+      ],
+      "voices": 4,
+      "recurrence": 7,
+      "verification": {
+        "participants": 6,
+        "endorse": 5,
+        "amend": 1,
+        "contest": 0,
+        "amendments": [
+          "Include poultry and goats \u2014 not just crops and trees."
+        ],
+        "gate": "may_be_priced"
+      }
+    },
+    {
+      "id": "12f97602-56b2-43ad-a84e-c1e2c2eec3b5",
+      "statement": "Homes still need charcoal for fuel",
+      "supporting_claim_ids": [
+        "cb4b12a3-9f85-463a-8234-5d9b0ec8ce66",
+        "1946727b-25fb-45cc-9cd7-510288855743"
+      ],
+      "voices": 1,
+      "recurrence": 2,
+      "verification": {
+        "participants": 6,
+        "endorse": 3,
+        "amend": 1,
+        "contest": 2,
+        "amendments": [
+          "Homes need a fuel answer while charcoal is contested \u2014 gas and briquettes both come up."
+        ],
+        "gate": "not_yet"
+      }
+    },
+    {
+      "id": "5cbe9161-538d-47a0-b335-9d1667bfd593",
+      "statement": "Households need credit, loans and advances",
+      "supporting_claim_ids": [
+        "1769e4bd-1b10-4533-8cfa-ab8de298fb88",
+        "9eb68a3a-e324-4bcb-ad9b-8aecce99fbc3",
+        "23dd2cdc-533d-4c9e-83ed-67c3d604c048",
+        "2fafe8b3-65ae-4169-9237-cce23a555360",
+        "50149c39-a5bf-4feb-aa70-9691eff77e37",
+        "29174bad-93f8-49d2-bd24-28c845fa1bd3",
+        "f4163c63-af60-4f8b-92d4-b4e9953d4023"
+      ],
+      "voices": 4,
+      "recurrence": 7,
+      "verification": {
+        "participants": 5,
+        "endorse": 5,
+        "amend": 0,
+        "contest": 0,
+        "amendments": [],
+        "gate": "may_be_priced"
+      }
+    },
+    {
+      "id": "7e02c0f4-a6ab-4c4b-8490-4516b43ad58a",
+      "statement": "The coast pools labour and vouchers to support each other",
+      "supporting_claim_ids": [
+        "6f401958-4b0c-4f51-a859-16bfb8c64318",
+        "c3f344d4-4c30-481a-98a7-9ea072e29318",
+        "4a0a3fbb-793d-4d17-b8b2-9939f66edb33",
+        "f0d87b3c-4100-42cf-a981-7da4f0b2a8a0",
+        "159421dd-e0b6-4230-8097-c43c60550198",
+        "2605fae3-a6cc-42f9-b6c1-655520f86315",
+        "474ef2cc-bbd3-453c-b6c7-0611ce283f7d",
+        "7b615645-e776-4249-8193-205524f39468",
+        "b33f7ad5-2154-4ee5-b6b4-8ecc9825f634"
+      ],
+      "voices": 4,
+      "recurrence": 9,
+      "verification": {
+        "participants": 8,
+        "endorse": 8,
+        "amend": 0,
+        "contest": 0,
+        "amendments": [],
+        "gate": "commons_only"
+      }
+    },
+    {
+      "id": "7afe437a-0917-4cb5-934b-669abd151355",
+      "statement": "The coast is replanting its mangroves \u2014 and the nursery economy behind it is real",
+      "supporting_claim_ids": [
+        "c9519e44-20e5-483c-950e-186d12cc9c08",
+        "3908fd8e-8d2c-4514-92ad-12286051b217",
+        "a623dfcc-6b81-479e-8f2c-63c5b192bb18",
+        "dd3fd17e-2513-446d-98c0-e2c971651b09",
+        "61c9714b-2276-4f19-9182-d52810d0b146",
+        "77fcdc92-d515-4c8f-8ac2-1986f01f295b",
+        "7f9729a8-3385-4d01-b09f-41d159285db1",
+        "0af1610f-478f-4342-a5e7-8b4b69303fef"
+      ],
+      "voices": 4,
+      "recurrence": 8,
+      "verification": {
+        "participants": 7,
+        "endorse": 6,
+        "amend": 1,
+        "contest": 0,
+        "amendments": [
+          "Next planting window needs seedlings reserved earlier."
+        ],
+        "gate": "may_be_priced"
+      }
+    },
+    {
+      "id": "280085ef-eeb6-41ef-aa98-e589741ca8c6",
+      "statement": "Getting to the creek and the market needs transport",
+      "supporting_claim_ids": [
+        "09d66b08-884b-464f-b0bf-cad036cbe46a"
+      ],
+      "voices": 1,
+      "recurrence": 1,
+      "verification": {
+        "participants": 5,
+        "endorse": 4,
+        "amend": 0,
+        "contest": 1,
+        "amendments": [],
+        "gate": "not_yet"
+      }
+    }
+  ],
+  "interventions": {
+    "from_plans": [
+      {
+        "id": "9981ae89-abb4-4488-9acd-f4d075cc3af3",
+        "name": "Shoreline mangrove planting on the creek edge",
+        "note": "Kilifi County Government, from 2027-02. Mangrove restoration and fish-nursery habitat at Mida Creek.",
+        "signal_ids": [
+          "7afe437a-0917-4cb5-934b-669abd151355"
+        ],
+        "counter_signal_ids": [
+          "12f97602-56b2-43ad-a84e-c1e2c2eec3b5"
+        ],
+        "priced": true
+      },
+      {
+        "id": "24d7928c-43da-4c70-99de-038ae0602029",
+        "name": "Mida Creek Community Conservation Plan",
+        "note": "Community conservation plan \u2014 restored cover and fish-nursery habitat.",
+        "signal_ids": [
+          "7afe437a-0917-4cb5-934b-669abd151355"
+        ],
+        "counter_signal_ids": [
+          "12f97602-56b2-43ad-a84e-c1e2c2eec3b5"
+        ],
+        "priced": true
+      },
+      {
+        "id": "6a6df647-0fbc-41d3-a892-7f90ff995586",
+        "name": "Artizen Season 7 \u2014 curated fund",
+        "note": "Curated season fund \u2014 carries the Kwale Mangrove Nursery action.",
+        "signal_ids": [
+          "7afe437a-0917-4cb5-934b-669abd151355"
+        ],
+        "counter_signal_ids": [],
+        "priced": true
+      }
     ],
-    "priced": false,
-    "sip_id": "sip2",
-    "note": "Completed: 480 seedlings planted by 12 people; the nursery voucher covered stock and the van run made the tools possible."
-   },
-   {
-    "id": "C2",
-    "name": "ROLA commitment pool",
-    "signal_ids": [
-     "sig-pool"
-    ],
-    "priced": false,
-    "sip_id": "sip1",
-    "note": "141 vouchers, 1,640 swaps — rotating labour pooled across Kenyan communities. Commons infrastructure."
-   },
-   {
-    "id": "C3",
-    "name": "Voucher commitments — produce, credit, fuel",
-    "signal_ids": [
-     "sig-livelihood",
-     "sig-credit",
-     "sig-charcoal"
-    ],
-    "priced": false,
-    "note": "Real Sarafu commitments from issuers on this coast — giftable, not priced."
-   },
-   {
-    "id": "C4",
-    "name": "treegens mangrove plantings",
-    "signal_ids": [
-     "sig-mangrove",
-     "sig-nursery"
-    ],
-    "priced": false,
-    "note": "Field records around Gongoni — hundreds of verified plantings (344, 760, 262 trees per record)."
-   }
-  ]
- },
- "sips": [
-  {
-   "id": "sip1",
-   "kind": "node",
-   "title": "The commitment pool",
-   "what_changes": "141 vouchers already rotate labour across the coast. A planting day that draws on the pool converts vouchers into trees.",
-   "time_to_show": "months",
-   "evidence_claim_ids": [
-    "c014",
-    "c015",
-    "c017",
-    "c020",
-    "c025"
-   ]
+    "from_place": [
+      {
+        "id": "31b0606c-6089-4b76-826b-c85accaa353f",
+        "name": "Kwale shore planting day",
+        "note": "Completed: 480 seedlings planted by 12 people; the nursery voucher covered stock.",
+        "signal_ids": [
+          "7afe437a-0917-4cb5-934b-669abd151355",
+          "7e02c0f4-a6ab-4c4b-8490-4516b43ad58a",
+          "dc7d9b84-9550-45d5-8c6c-ee359032c6d3"
+        ],
+        "counter_signal_ids": [],
+        "priced": false
+      },
+      {
+        "id": "cfdca007-bb82-4208-8173-714e5f89ff54",
+        "name": "ROLA commitment pool",
+        "note": "141 vouchers, 1,640 swaps \u2014 rotating labour pooled across Kenya.",
+        "signal_ids": [
+          "7e02c0f4-a6ab-4c4b-8490-4516b43ad58a"
+        ],
+        "counter_signal_ids": [],
+        "priced": false
+      },
+      {
+        "id": "60c3a90b-953d-4f55-8c18-303636fba6bb",
+        "name": "Voucher commitments \u2014 produce, credit, fuel",
+        "note": "Real Sarafu commitments from issuers on this coast \u2014 giftable, redeemed in kind.",
+        "signal_ids": [
+          "12f97602-56b2-43ad-a84e-c1e2c2eec3b5",
+          "2c6215a5-ed6c-4b67-b5bc-29e554dc78eb",
+          "5cbe9161-538d-47a0-b335-9d1667bfd593"
+        ],
+        "counter_signal_ids": [],
+        "priced": false
+      },
+      {
+        "id": "d99a45f5-f90d-4425-8561-a788d520e2ac",
+        "name": "treegens mangrove plantings",
+        "note": "Field records around Gongoni \u2014 hundreds of verified plantings.",
+        "signal_ids": [
+          "7afe437a-0917-4cb5-934b-669abd151355",
+          "dc7d9b84-9550-45d5-8c6c-ee359032c6d3"
+        ],
+        "counter_signal_ids": [],
+        "priced": false
+      }
+    ]
   },
-  {
-   "id": "sip2",
-   "kind": "threshold",
-   "title": "What twelve people do in a day",
-   "what_changes": "480 seedlings went in with 12 people and one nursery voucher. The next day needs 400 more propagules, a boat and lunch.",
-   "time_to_show": "one planting day",
-   "evidence_claim_ids": [
-    "c001",
-    "c016",
-    "c018",
-    "c019",
-    "c021",
-    "c022",
-    "c026",
-    "c027"
-   ]
+  "sips": [
+    {
+      "id": "f5195cb8-9f0e-4ac5-80ba-1e41282c23ee",
+      "kind": "node",
+      "title": "The commitment pool",
+      "what_changes": "The ROLA pool already moves 1,640 swaps of labour and goods. If planting days join it, the pool becomes the staffing layer the schemes lack.",
+      "time_to_show": "months",
+      "evidence_claim_ids": [
+        "159421dd-e0b6-4230-8097-c43c60550198",
+        "2605fae3-a6cc-42f9-b6c1-655520f86315",
+        "474ef2cc-bbd3-453c-b6c7-0611ce283f7d",
+        "4a0a3fbb-793d-4d17-b8b2-9939f66edb33",
+        "6f401958-4b0c-4f51-a859-16bfb8c64318",
+        "7b615645-e776-4249-8193-205524f39468",
+        "b33f7ad5-2154-4ee5-b6b4-8ecc9825f634",
+        "c3f344d4-4c30-481a-98a7-9ea072e29318",
+        "f0d87b3c-4100-42cf-a981-7da4f0b2a8a0"
+      ]
+    },
+    {
+      "id": "2057afbc-fed7-43b3-bad2-656cfc3f6bf8",
+      "kind": "threshold",
+      "title": "What twelve people do in a day",
+      "what_changes": "480 seedlings in one day by twelve people. Two more crews at that rate close the propagule gap inside one season.",
+      "time_to_show": "one planting day",
+      "evidence_claim_ids": [
+        "0af1610f-478f-4342-a5e7-8b4b69303fef",
+        "3908fd8e-8d2c-4514-92ad-12286051b217",
+        "61c9714b-2276-4f19-9182-d52810d0b146",
+        "77fcdc92-d515-4c8f-8ac2-1986f01f295b",
+        "7f9729a8-3385-4d01-b09f-41d159285db1",
+        "a623dfcc-6b81-479e-8f2c-63c5b192bb18",
+        "c9519e44-20e5-483c-950e-186d12cc9c08",
+        "dd3fd17e-2513-446d-98c0-e2c971651b09"
+      ]
+    },
+    {
+      "id": "540951ed-71de-41c5-90f4-74b8db06957d",
+      "kind": "window",
+      "title": "The planting window",
+      "what_changes": "Planting windows are tidal and seasonal. Missing the window costs a year of establishment.",
+      "time_to_show": "this season",
+      "evidence_claim_ids": [
+        "0af1610f-478f-4342-a5e7-8b4b69303fef",
+        "14e4c228-6ece-4a69-9aa5-8af7de4675b8",
+        "3770c3d0-19ea-4043-9515-c97562771b70",
+        "3908fd8e-8d2c-4514-92ad-12286051b217",
+        "5f9e9707-8664-4b4e-a616-17224fc03f47",
+        "61c9714b-2276-4f19-9182-d52810d0b146",
+        "65e985b3-99bf-4e2d-ae8d-ed96770e0e28",
+        "77fcdc92-d515-4c8f-8ac2-1986f01f295b",
+        "7f9729a8-3385-4d01-b09f-41d159285db1",
+        "80329b9d-a88f-4248-9070-871c36d02fb7",
+        "899c33a2-fbc4-4642-8cb6-4dd506bd4a98",
+        "a0f1147b-8934-4e16-ac0b-14ae5cebf58b",
+        "a623dfcc-6b81-479e-8f2c-63c5b192bb18",
+        "c9519e44-20e5-483c-950e-186d12cc9c08",
+        "dd3fd17e-2513-446d-98c0-e2c971651b09"
+      ]
+    }
+  ],
+  "priorities": {
+    "title": "Where capital is most needed",
+    "intro": "Derived from this place\u2019s own signals: unreached needs first, then the loudest voices, then the leverage points.",
+    "items": [
+      {
+        "heading": "The plans don\u2019t reach it",
+        "text": "Nurseries raise the seedlings the planting days run on \u2014 4 voices, and no funded scheme answers it."
+      },
+      {
+        "heading": "The plans don\u2019t reach it",
+        "text": "People grow, farm and trade to get by \u2014 4 voices, and no funded scheme answers it."
+      },
+      {
+        "heading": "Where the voices are",
+        "text": "Nurseries raise the seedlings the planting days run on \u2014 4 voices say this most."
+      },
+      {
+        "heading": "The leverage point to watch",
+        "text": "The commitment pool \u2014 The ROLA pool already moves 1,640 swaps of labour and goods. If planting days join it, the pool becomes the staffing layer the schemes lack."
+      }
+    ]
   },
-  {
-   "id": "sip3",
-   "kind": "window",
-   "title": "The planting window",
-   "what_changes": "County scheme from February; the community days are already scheduled. The window is the tide and the nursery stock — the learning says count the spades first.",
-   "time_to_show": "this season",
-   "evidence_claim_ids": [
-    "c014",
-    "c015",
-    "c017",
-    "c018",
-    "c020",
-    "c021",
-    "c025",
-    "c027"
-   ]
+  "meta": {
+    "place_id": "kenya-coast",
+    "version": "2026-10-25",
+    "published_at": "2026-10-25T20:06:27.231Z",
+    "manifest_sha256": "93b490212eb366d7d98e88436d4745322d7d9ad3f6de104d7d5f397f4c3bc3c5"
   }
- ],
- "priorities": {
-  "title": "What would help most",
-  "intro": "Named by the place — from needs returns and the planting debrief.",
-  "items": [
-   {
-    "heading": "Count the tools first",
-    "text": "From the planting-day report: “start tool-count earlier — spades ran short by 10.”"
-   },
-   {
-    "heading": "400 more propagules, a boat and lunch",
-    "text": "Mida Creek’s next planting day is short of stock, transport and crew food."
-   },
-   {
-    "heading": "Tree seedlings for community reforestation",
-    "text": "Open need recorded by Kwale Community Forest."
-   }
-  ]
- },
- "meta": {
-  "place_id": "kenya-coast",
-  "version": "2026.10.25",
-  "published_at": "2026-10-25T18:40:33.975Z",
-  "manifest_sha256": "3a6958092265f625ded3e3128e3c83c50bedf3f9e95ef5466e338feb26f0a7aa"
- }
 }

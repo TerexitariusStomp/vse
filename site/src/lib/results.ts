@@ -123,8 +123,10 @@ export type View = keyof Results['interventions']
 /** Places with published results files in public/data/. */
 export const PLACES = [
   { id: 'thorntree', label: 'Thorntree' },
-  { id: 'thorntree-engine', label: 'Thorntree · live engine' },
   { id: 'kenya-coast', label: 'Kenya coast' },
+  { id: 'mida-creek', label: 'Mida Creek' },
+  { id: 'hebden-bridge', label: 'Hebden Bridge' },
+  { id: 'dar-es-salaam', label: 'Dar es Salaam' },
 ] as const
 export type PlaceId = (typeof PLACES)[number]['id']
 

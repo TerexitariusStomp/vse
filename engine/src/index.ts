@@ -37,11 +37,24 @@ analyst.use('*', async (c, next) => {
 })
 analyst.route('/', structure)
 analyst.post('/places/:placeId', async (c) => {
-  const { name, kind, summary, scale_note } = await c.req.json()
+  const { name, kind, summary, scale_note, geo, readings } = await c.req.json()
   const id = c.req.param('placeId') || crypto.randomUUID()
   await c.env.DB.prepare(
-    'INSERT INTO places (id, name, kind, summary, scale_note) VALUES (?, ?, ?, ?, ?)',
-  ).bind(id, name ?? 'unnamed', kind ?? 'place', summary ?? '', scale_note ?? null).run()
+    `INSERT INTO places (id, name, kind, summary, scale_note, geo, readings) VALUES (?, ?, ?, ?, ?, ?, ?)
+     ON CONFLICT(id) DO UPDATE SET name=excluded.name, kind=excluded.kind,
+       summary=excluded.summary, scale_note=excluded.scale_note,
+       geo=excluded.geo, readings=excluded.readings`,
+  )
+    .bind(
+      id,
+      name ?? 'unnamed',
+      kind ?? 'place',
+      summary ?? '',
+      scale_note ?? null,
+      geo ? JSON.stringify(geo) : null,
+      readings ? JSON.stringify(readings) : null,
+    )
+    .run()
   return c.json({ id }, 201)
 })
 analyst.post('/publish/:placeId', async (c) => {
@@ -55,6 +68,13 @@ analyst.post('/publish/:placeId', async (c) => {
 analyst.post('/extract/:storyId', async (c) => {
   await runExtraction(c.env, c.req.param('storyId'))
   return c.json({ ok: true })
+})
+
+analyst.get('/stories/:placeId', async (c) => {
+  const { results } = await c.env.DB.prepare(
+    'SELECT id, teller_role, channel, text, withdrawn FROM stories WHERE place_id = ? ORDER BY created_at',
+  ).bind(c.req.param('placeId')).all()
+  return c.json(results ?? [])
 })
 
 analyst.get('/claims/:placeId', async (c) => {

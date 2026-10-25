@@ -1,0 +1,877 @@
+{
+  "_about": "Results for Mida Creek, published by a Value Structuring Engine.",
+  "place": {
+    "id": "mida-creek",
+    "name": "Mida Creek",
+    "kind": "tidal creek & boardwalk, Kilifi County, Kenya",
+    "summary": "A degraded creek edge with a conservation plan, a county scheme, and a community possibility trying to plant 1,200 propagules in two days.",
+    "geo": {
+      "lat": -3.349,
+      "lon": 39.986
+    },
+    "readings": [
+      {
+        "label": "Matching round",
+        "value": "$500 USD fund \u00b7 sponsor kilifi-regen-network \u00b7 open until 2026-11-15",
+        "source": "round round-mida-creek"
+      },
+      {
+        "label": "Community pledges recorded",
+        "value": "12 donations \u00b7 $180 USD + $40 pending pledge",
+        "source": "round-mida-creek donation & pledge records"
+      },
+      {
+        "label": "Pre-app field-team plots",
+        "value": "64,699 trees claimed at Mida/Dabaso + Kisiwani \u2014 evidence-only, not app-verified",
+        "source": "treegens:archive"
+      },
+      {
+        "label": "Prep quorum",
+        "value": "6 participants needed by 2027-01-10",
+        "source": "possibility poss-mida-creek-mangrove"
+      }
+    ]
+  },
+  "pipeline": [
+    {
+      "stage": "Listening",
+      "detail": "stories told in people\u2019s own words",
+      "count": 19,
+      "unit": "stories"
+    },
+    {
+      "stage": "Making sense",
+      "detail": "exact excerpts extracted from stories",
+      "count": 41,
+      "unit": "excerpts"
+    },
+    {
+      "stage": "Consolidating",
+      "detail": "excerpts gathered into signals",
+      "count": 5,
+      "unit": "signals"
+    },
+    {
+      "stage": "People check",
+      "detail": "contributors endorse, amend or contest",
+      "count": 6,
+      "unit": "participants"
+    }
+  ],
+  "stories": [
+    {
+      "id": "13f1779a-b2e2-4545-acf8-a4abe521aa96",
+      "teller_role": "mida-creek-conservation",
+      "channel": "facilitated",
+      "text": "Plant 1,200 mangrove propagules along the Mida Creek shoreline",
+      "source": "possibility poss-mida-creek-mangrove"
+    },
+    {
+      "id": "9dd2b502-6e5f-4078-ae29-e96c5d405973",
+      "teller_role": "mida-creek-conservation",
+      "channel": "facilitated",
+      "text": "Two planting days on the degraded creek edge \u2014 nursery raised 800 propagules, we need 400 more, boat transport, and lunch for the crew",
+      "source": "possibility poss-mida-creek-mangrove"
+    },
+    {
+      "id": "cf830a51-b3b3-4e59-bd07-dbdf8e01bb2f",
+      "teller_role": "mida-creek-conservation",
+      "channel": "facilitated",
+      "text": "400 more propagules to reach 1,200",
+      "source": "plannode poss-mida-creek-mangrove-need-0"
+    },
+    {
+      "id": "c03a3fc0-e0c9-4a1d-90b1-1daaf69dfac9",
+      "teller_role": "mida-creek-conservation",
+      "channel": "facilitated",
+      "text": "Boat transport to the planting site",
+      "source": "plannode poss-mida-creek-mangrove-need-1"
+    },
+    {
+      "id": "a8cdcc9a-2896-4bcc-9e7b-20d0d49e0b2b",
+      "teller_role": "mida-creek-conservation",
+      "channel": "facilitated",
+      "text": "Lunch and water for 15 volunteers",
+      "source": "plannode poss-mida-creek-mangrove-need-2"
+    },
+    {
+      "id": "0c455025-e644-4fc6-9fc1-81208a7a4e1b",
+      "teller_role": "dabaso-fishers",
+      "channel": "facilitated",
+      "text": "Two fishing boats and skippers",
+      "source": "plannode poss-mida-creek-mangrove-offer-0"
+    },
+    {
+      "id": "cc6e4ba7-8080-47a7-98e0-b8887e9636d5",
+      "teller_role": "mida-creek-conservation",
+      "channel": "facilitated",
+      "text": "800 nursery-raised propagules",
+      "source": "plannode poss-mida-creek-mangrove-offer-1"
+    },
+    {
+      "id": "24f93773-9f03-4465-9da7-dc1f26605aba",
+      "teller_role": "Kilifi County Government",
+      "channel": "facilitated",
+      "text": "Shoreline mangrove planting on the creek edge",
+      "source": "csv:kilifi-county action"
+    },
+    {
+      "id": "3ef60c8e-ca49-40a2-bb66-1ca5e9500fc7",
+      "teller_role": "Kilifi County Government",
+      "channel": "facilitated",
+      "text": "Restored mangrove cover and fish-nursery habitat at Mida Creek",
+      "source": "csv:kilifi-county outcome"
+    },
+    {
+      "id": "703be15d-2f24-422d-8e3b-a8d280df701c",
+      "teller_role": "Mida Creek Conservation",
+      "channel": "facilitated",
+      "text": "Mangrove propagule nursery establishment",
+      "source": "oneplanet:plan-mida-creek action ma1"
+    },
+    {
+      "id": "44d09046-d29f-468b-934a-3e0500ad969e",
+      "teller_role": "Mida Creek Conservation",
+      "channel": "facilitated",
+      "text": "Community nursery raising Rhizophora and Ceriops propagules",
+      "source": "oneplanet:plan-mida-creek action ma1"
+    },
+    {
+      "id": "b8cb6e3a-f9be-405d-b19b-eeeb26de89db",
+      "teller_role": "Mida Creek Conservation",
+      "channel": "facilitated",
+      "text": "Shoreline planting days \u2014 1,200 propagules",
+      "source": "oneplanet:plan-mida-creek action ma2"
+    },
+    {
+      "id": "e84b456a-b46a-4171-b22f-bf7d7970ac4a",
+      "teller_role": "Mida Creek Conservation",
+      "channel": "facilitated",
+      "text": "Two planting days on the degraded creek edge, GPS-logged plots",
+      "source": "oneplanet:plan-mida-creek action ma2"
+    },
+    {
+      "id": "4808b88a-8be2-4b54-8385-b62922826ba8",
+      "teller_role": "kilifi-regen-network",
+      "channel": "facilitated",
+      "text": "Mida Creek planting round",
+      "source": "round round-mida-creek"
+    },
+    {
+      "id": "1014c73f-3e97-4737-8dfd-17536e2a284b",
+      "teller_role": "kilifi-regen-network",
+      "channel": "facilitated",
+      "text": "Matching fund over the unmet financial needs the card surfaced \u2014 propagules, boat transport, crew lunch",
+      "source": "round round-mida-creek"
+    },
+    {
+      "id": "f5fd9426-2569-40e2-b7ff-8337c74bd431",
+      "teller_role": "Treegens field team",
+      "channel": "facilitated",
+      "text": "16,600 mangrove trees \u2014 Mida, Dabaso",
+      "source": "treegens:archive plannode"
+    },
+    {
+      "id": "4b346be7-a3b3-4694-8d97-1806069dbc88",
+      "teller_role": "Treegens field team",
+      "channel": "facilitated",
+      "text": "48,099 mangrove trees \u2014 Kisiwani, Mida Creek",
+      "source": "treegens:archive plannode"
+    },
+    {
+      "id": "94664281-4680-4921-aa18-15e8b48e59bf",
+      "teller_role": "Treegens field team",
+      "channel": "facilitated",
+      "text": "Restored mangrove forest cover \u2014 Mida, Dabaso",
+      "source": "treegens:archive plannode"
+    },
+    {
+      "id": "7c22971b-7f2f-48ef-9a14-4523bfaa3412",
+      "teller_role": "Treegens field team",
+      "channel": "facilitated",
+      "text": "Restored mangrove forest cover \u2014 Kisiwani, Mida Creek",
+      "source": "treegens:archive plannode"
+    }
+  ],
+  "claims": [
+    {
+      "id": "fce2c232-e3d7-41e7-a353-31e9286db003",
+      "story_id": "13f1779a-b2e2-4545-acf8-a4abe521aa96",
+      "text": "Plant 1,200 mangrove propagules along the Mida Creek shoreline",
+      "span": [
+        0,
+        62
+      ],
+      "signal_id": "17ab646c-ac92-4e02-be03-e5626865ac8c"
+    },
+    {
+      "id": "a055264c-fc2d-4edd-b210-11d079b75126",
+      "story_id": "9dd2b502-6e5f-4078-ae29-e96c5d405973",
+      "text": "we need 400 more",
+      "span": [
+        78,
+        94
+      ],
+      "signal_id": "17ab646c-ac92-4e02-be03-e5626865ac8c"
+    },
+    {
+      "id": "7d71fab0-4e0b-47c9-9655-ace71c897280",
+      "story_id": "9dd2b502-6e5f-4078-ae29-e96c5d405973",
+      "text": "boat transport",
+      "span": [
+        96,
+        110
+      ],
+      "signal_id": "17ab646c-ac92-4e02-be03-e5626865ac8c"
+    },
+    {
+      "id": "9520775f-8b39-402a-b953-edeceae89cb7",
+      "story_id": "9dd2b502-6e5f-4078-ae29-e96c5d405973",
+      "text": "and lunch for the crew",
+      "span": [
+        112,
+        134
+      ],
+      "signal_id": "17ab646c-ac92-4e02-be03-e5626865ac8c"
+    },
+    {
+      "id": "1dc22103-439d-4444-94ec-2463ee151eaa",
+      "story_id": "cf830a51-b3b3-4e59-bd07-dbdf8e01bb2f",
+      "text": "400 more propagules to reach 1,200",
+      "span": [
+        0,
+        34
+      ],
+      "signal_id": "57e6d3db-b373-49ca-a7f3-7b12a58d0359"
+    },
+    {
+      "id": "83a82290-9cd3-427a-9da0-1d615c110c8d",
+      "story_id": "13f1779a-b2e2-4545-acf8-a4abe521aa96",
+      "text": "Plant 1,200 mangrove propagules along the Mida Creek shoreline",
+      "span": [
+        0,
+        62
+      ],
+      "signal_id": "17ab646c-ac92-4e02-be03-e5626865ac8c"
+    },
+    {
+      "id": "7a0e393d-7b25-4391-9b5c-ab16560e35f8",
+      "story_id": "c03a3fc0-e0c9-4a1d-90b1-1daaf69dfac9",
+      "text": "Boat transport to the planting site",
+      "span": [
+        0,
+        35
+      ],
+      "signal_id": "f48a54d1-4cd9-4768-85c8-4434cdb60394"
+    },
+    {
+      "id": "2a62337d-8c13-43c9-8ef6-cc9700efe9b0",
+      "story_id": "a8cdcc9a-2896-4bcc-9e7b-20d0d49e0b2b",
+      "text": "Lunch and water for 15 volunteers",
+      "span": [
+        0,
+        33
+      ],
+      "signal_id": "f48a54d1-4cd9-4768-85c8-4434cdb60394"
+    },
+    {
+      "id": "e8a78a80-0449-439e-8051-85af6892cb04",
+      "story_id": "9dd2b502-6e5f-4078-ae29-e96c5d405973",
+      "text": "we need 400 more",
+      "span": [
+        78,
+        94
+      ],
+      "signal_id": "17ab646c-ac92-4e02-be03-e5626865ac8c"
+    },
+    {
+      "id": "b3470789-0368-471c-add6-901a367e993b",
+      "story_id": "9dd2b502-6e5f-4078-ae29-e96c5d405973",
+      "text": "boat transport",
+      "span": [
+        96,
+        110
+      ],
+      "signal_id": "17ab646c-ac92-4e02-be03-e5626865ac8c"
+    },
+    {
+      "id": "0a8c1b7d-6515-4a69-b85f-8164cd85234f",
+      "story_id": "9dd2b502-6e5f-4078-ae29-e96c5d405973",
+      "text": "and lunch for the crew",
+      "span": [
+        112,
+        134
+      ],
+      "signal_id": "17ab646c-ac92-4e02-be03-e5626865ac8c"
+    },
+    {
+      "id": "09a8b049-eb94-4278-a899-84aad7499b53",
+      "story_id": "cf830a51-b3b3-4e59-bd07-dbdf8e01bb2f",
+      "text": "400 more propagules to reach 1,200",
+      "span": [
+        0,
+        34
+      ],
+      "signal_id": "57e6d3db-b373-49ca-a7f3-7b12a58d0359"
+    },
+    {
+      "id": "16a7c66c-b15b-4103-a3c9-918f777ddac4",
+      "story_id": "0c455025-e644-4fc6-9fc1-81208a7a4e1b",
+      "text": "Two fishing boats and skippers",
+      "span": [
+        0,
+        30
+      ],
+      "signal_id": "f48a54d1-4cd9-4768-85c8-4434cdb60394"
+    },
+    {
+      "id": "6803d1ea-b268-4a62-b3ca-d5e8b7637a5b",
+      "story_id": "cc6e4ba7-8080-47a7-98e0-b8887e9636d5",
+      "text": "800 nursery-raised propagules",
+      "span": [
+        0,
+        29
+      ],
+      "signal_id": "57e6d3db-b373-49ca-a7f3-7b12a58d0359"
+    },
+    {
+      "id": "34b43f76-4229-4c8b-821e-3f14958c79d0",
+      "story_id": "c03a3fc0-e0c9-4a1d-90b1-1daaf69dfac9",
+      "text": "Boat transport to the planting site",
+      "span": [
+        0,
+        35
+      ],
+      "signal_id": "f48a54d1-4cd9-4768-85c8-4434cdb60394"
+    },
+    {
+      "id": "69244935-e051-4223-af87-18c4d765ef66",
+      "story_id": "24f93773-9f03-4465-9da7-dc1f26605aba",
+      "text": "Shoreline mangrove planting on the creek edge",
+      "span": [
+        0,
+        45
+      ],
+      "signal_id": "17ab646c-ac92-4e02-be03-e5626865ac8c"
+    },
+    {
+      "id": "7762ad5e-5bb6-4a53-9d56-abff1d1a86c6",
+      "story_id": "3ef60c8e-ca49-40a2-bb66-1ca5e9500fc7",
+      "text": "Restored mangrove cover and fish-nursery habitat at Mida Creek",
+      "span": [
+        0,
+        62
+      ],
+      "signal_id": "c3f01200-16f2-464c-81e3-dfdb19a153e5"
+    },
+    {
+      "id": "5babec91-96b7-4166-88e5-a5b5da4f3957",
+      "story_id": "703be15d-2f24-422d-8e3b-a8d280df701c",
+      "text": "Mangrove propagule nursery establishment",
+      "span": [
+        0,
+        40
+      ],
+      "signal_id": "57e6d3db-b373-49ca-a7f3-7b12a58d0359"
+    },
+    {
+      "id": "5a46e939-3423-4f3a-b9be-e198864d54e6",
+      "story_id": "a8cdcc9a-2896-4bcc-9e7b-20d0d49e0b2b",
+      "text": "Lunch and water for 15 volunteers",
+      "span": [
+        0,
+        33
+      ],
+      "signal_id": "f48a54d1-4cd9-4768-85c8-4434cdb60394"
+    },
+    {
+      "id": "cd9391be-9d9d-45ca-affe-fed0906a1804",
+      "story_id": "44d09046-d29f-468b-934a-3e0500ad969e",
+      "text": "Community nursery raising Rhizophora and Ceriops propagules",
+      "span": [
+        0,
+        59
+      ],
+      "signal_id": "57e6d3db-b373-49ca-a7f3-7b12a58d0359"
+    },
+    {
+      "id": "5e0845fe-013f-45b3-9cf1-ebd6267154e8",
+      "story_id": "b8cb6e3a-f9be-405d-b19b-eeeb26de89db",
+      "text": "Shoreline planting days \u2014 1,200 propagules",
+      "span": [
+        0,
+        42
+      ],
+      "signal_id": "17ab646c-ac92-4e02-be03-e5626865ac8c"
+    },
+    {
+      "id": "8e6417bf-9851-42b1-9ed0-1cc9da1dd390",
+      "story_id": "0c455025-e644-4fc6-9fc1-81208a7a4e1b",
+      "text": "Two fishing boats and skippers",
+      "span": [
+        0,
+        30
+      ],
+      "signal_id": "f48a54d1-4cd9-4768-85c8-4434cdb60394"
+    },
+    {
+      "id": "16364741-488e-479a-af33-c34a46987144",
+      "story_id": "44d09046-d29f-468b-934a-3e0500ad969e",
+      "text": "Community nursery raising Rhizophora and Ceriops propagules",
+      "span": [
+        0,
+        59
+      ],
+      "signal_id": "57e6d3db-b373-49ca-a7f3-7b12a58d0359"
+    },
+    {
+      "id": "f22bcac8-0989-4bbb-886a-923db492893a",
+      "story_id": "b8cb6e3a-f9be-405d-b19b-eeeb26de89db",
+      "text": "Shoreline planting days \u2014 1,200 propagules",
+      "span": [
+        0,
+        42
+      ],
+      "signal_id": "17ab646c-ac92-4e02-be03-e5626865ac8c"
+    },
+    {
+      "id": "3e0fb2af-6203-4c36-a802-9e5dfd06cd12",
+      "story_id": "e84b456a-b46a-4171-b22f-bf7d7970ac4a",
+      "text": "Two planting days on the degraded creek edge, GPS-logged plots",
+      "span": [
+        0,
+        62
+      ],
+      "signal_id": "17ab646c-ac92-4e02-be03-e5626865ac8c"
+    },
+    {
+      "id": "f25d7c04-4ff0-475e-85a4-3e6678e70cf6",
+      "story_id": "4808b88a-8be2-4b54-8385-b62922826ba8",
+      "text": "Mida Creek planting round",
+      "span": [
+        0,
+        25
+      ],
+      "signal_id": "c8228d43-9178-42a3-9bb1-39f41f38765f"
+    },
+    {
+      "id": "9ed5dfee-b265-4c45-8318-820e96f17d07",
+      "story_id": "f5fd9426-2569-40e2-b7ff-8337c74bd431",
+      "text": "16,600 mangrove trees \u2014 Mida, Dabaso",
+      "span": [
+        0,
+        36
+      ],
+      "signal_id": "c3f01200-16f2-464c-81e3-dfdb19a153e5"
+    },
+    {
+      "id": "a50d37e1-e035-4748-b72e-61f0d6cc821e",
+      "story_id": "4b346be7-a3b3-4694-8d97-1806069dbc88",
+      "text": "48,099 mangrove trees \u2014 Kisiwani, Mida Creek",
+      "span": [
+        0,
+        44
+      ],
+      "signal_id": "c3f01200-16f2-464c-81e3-dfdb19a153e5"
+    },
+    {
+      "id": "14bf30fd-dcef-4ffc-b03a-b861940bf42c",
+      "story_id": "e84b456a-b46a-4171-b22f-bf7d7970ac4a",
+      "text": "Two planting days on the degraded creek edge, GPS-logged plots",
+      "span": [
+        0,
+        62
+      ],
+      "signal_id": "17ab646c-ac92-4e02-be03-e5626865ac8c"
+    },
+    {
+      "id": "cf3f2ad9-b79f-4a13-8166-6599c43be28e",
+      "story_id": "4808b88a-8be2-4b54-8385-b62922826ba8",
+      "text": "Mida Creek planting round",
+      "span": [
+        0,
+        25
+      ],
+      "signal_id": "c8228d43-9178-42a3-9bb1-39f41f38765f"
+    },
+    {
+      "id": "a03fb560-2a73-4883-bb19-316d9b8f8ba9",
+      "story_id": "cc6e4ba7-8080-47a7-98e0-b8887e9636d5",
+      "text": "800 nursery-raised propagules",
+      "span": [
+        0,
+        29
+      ],
+      "signal_id": "57e6d3db-b373-49ca-a7f3-7b12a58d0359"
+    },
+    {
+      "id": "fc8690c3-b9d5-42d1-ae3c-aed09204103c",
+      "story_id": "1014c73f-3e97-4737-8dfd-17536e2a284b",
+      "text": "Matching fund over the unmet financial needs the card surfaced \u2014 propagules, boat transport, crew lunch",
+      "span": [
+        0,
+        103
+      ],
+      "signal_id": "c8228d43-9178-42a3-9bb1-39f41f38765f"
+    },
+    {
+      "id": "c2b3fe84-fa0e-48da-9c95-27c536f4d03f",
+      "story_id": "24f93773-9f03-4465-9da7-dc1f26605aba",
+      "text": "Shoreline mangrove planting on the creek edge",
+      "span": [
+        0,
+        45
+      ],
+      "signal_id": "17ab646c-ac92-4e02-be03-e5626865ac8c"
+    },
+    {
+      "id": "44db2107-47f3-4a5a-bdc9-f8dc0161f741",
+      "story_id": "f5fd9426-2569-40e2-b7ff-8337c74bd431",
+      "text": "16,600 mangrove trees \u2014 Mida, Dabaso",
+      "span": [
+        0,
+        36
+      ],
+      "signal_id": "c3f01200-16f2-464c-81e3-dfdb19a153e5"
+    },
+    {
+      "id": "defa5966-8876-4940-aef6-5e2ae40109f7",
+      "story_id": "3ef60c8e-ca49-40a2-bb66-1ca5e9500fc7",
+      "text": "Restored mangrove cover and fish-nursery habitat at Mida Creek",
+      "span": [
+        0,
+        62
+      ],
+      "signal_id": "c3f01200-16f2-464c-81e3-dfdb19a153e5"
+    },
+    {
+      "id": "5f0554de-530d-48a7-b66c-6676c1e3c0ba",
+      "story_id": "703be15d-2f24-422d-8e3b-a8d280df701c",
+      "text": "Mangrove propagule nursery establishment",
+      "span": [
+        0,
+        40
+      ],
+      "signal_id": "57e6d3db-b373-49ca-a7f3-7b12a58d0359"
+    },
+    {
+      "id": "da537a74-20b1-4b8f-a9f0-12f13f60e686",
+      "story_id": "4b346be7-a3b3-4694-8d97-1806069dbc88",
+      "text": "48,099 mangrove trees \u2014 Kisiwani, Mida Creek",
+      "span": [
+        0,
+        44
+      ],
+      "signal_id": "c3f01200-16f2-464c-81e3-dfdb19a153e5"
+    },
+    {
+      "id": "88bf7ed2-3278-443f-b05f-56b6ec1096e4",
+      "story_id": "94664281-4680-4921-aa18-15e8b48e59bf",
+      "text": "Restored mangrove forest cover \u2014 Mida, Dabaso",
+      "span": [
+        0,
+        45
+      ],
+      "signal_id": "c3f01200-16f2-464c-81e3-dfdb19a153e5"
+    },
+    {
+      "id": "5f762365-a364-4242-bfe3-f0e981938a26",
+      "story_id": "7c22971b-7f2f-48ef-9a14-4523bfaa3412",
+      "text": "Restored mangrove forest cover \u2014 Kisiwani, Mida Creek",
+      "span": [
+        0,
+        53
+      ],
+      "signal_id": "c3f01200-16f2-464c-81e3-dfdb19a153e5"
+    },
+    {
+      "id": "6e7aef8d-3297-4344-ae20-706c6ab9fc5b",
+      "story_id": "94664281-4680-4921-aa18-15e8b48e59bf",
+      "text": "Restored mangrove forest cover \u2014 Mida, Dabaso",
+      "span": [
+        0,
+        45
+      ],
+      "signal_id": "c3f01200-16f2-464c-81e3-dfdb19a153e5"
+    },
+    {
+      "id": "1ff9cc12-c852-44c1-a1a7-ef118e848d0c",
+      "story_id": "7c22971b-7f2f-48ef-9a14-4523bfaa3412",
+      "text": "Restored mangrove forest cover \u2014 Kisiwani, Mida Creek",
+      "span": [
+        0,
+        53
+      ],
+      "signal_id": "c3f01200-16f2-464c-81e3-dfdb19a153e5"
+    }
+  ],
+  "signals": [
+    {
+      "id": "57e6d3db-b373-49ca-a7f3-7b12a58d0359",
+      "statement": "The nursery raised 800 propagules \u2014 400 more are needed for 1,200",
+      "supporting_claim_ids": [
+        "1dc22103-439d-4444-94ec-2463ee151eaa",
+        "09a8b049-eb94-4278-a899-84aad7499b53",
+        "6803d1ea-b268-4a62-b3ca-d5e8b7637a5b",
+        "5babec91-96b7-4166-88e5-a5b5da4f3957",
+        "cd9391be-9d9d-45ca-affe-fed0906a1804",
+        "16364741-488e-479a-af33-c34a46987144",
+        "a03fb560-2a73-4883-bb19-316d9b8f8ba9",
+        "5f0554de-530d-48a7-b66c-6676c1e3c0ba"
+      ],
+      "voices": 4,
+      "recurrence": 8,
+      "verification": {
+        "participants": 4,
+        "endorse": 4,
+        "amend": 0,
+        "contest": 0,
+        "amendments": [],
+        "gate": "may_be_priced"
+      }
+    },
+    {
+      "id": "f48a54d1-4cd9-4768-85c8-4434cdb60394",
+      "statement": "Boats, skippers and lunch decide whether the planting days happen",
+      "supporting_claim_ids": [
+        "7a0e393d-7b25-4391-9b5c-ab16560e35f8",
+        "2a62337d-8c13-43c9-8ef6-cc9700efe9b0",
+        "16a7c66c-b15b-4103-a3c9-918f777ddac4",
+        "34b43f76-4229-4c8b-821e-3f14958c79d0",
+        "5a46e939-3423-4f3a-b9be-e198864d54e6",
+        "8e6417bf-9851-42b1-9ed0-1cc9da1dd390"
+      ],
+      "voices": 3,
+      "recurrence": 6,
+      "verification": {
+        "participants": 4,
+        "endorse": 3,
+        "amend": 1,
+        "contest": 0,
+        "amendments": [
+          "Confirm fuel money for the skippers \u2014 donated boats still burn petrol."
+        ],
+        "gate": "may_be_priced"
+      }
+    },
+    {
+      "id": "17ab646c-ac92-4e02-be03-e5626865ac8c",
+      "statement": "Two shoreline planting days on the degraded creek edge",
+      "supporting_claim_ids": [
+        "fce2c232-e3d7-41e7-a353-31e9286db003",
+        "a055264c-fc2d-4edd-b210-11d079b75126",
+        "7d71fab0-4e0b-47c9-9655-ace71c897280",
+        "9520775f-8b39-402a-b953-edeceae89cb7",
+        "83a82290-9cd3-427a-9da0-1d615c110c8d",
+        "e8a78a80-0449-439e-8051-85af6892cb04",
+        "b3470789-0368-471c-add6-901a367e993b",
+        "0a8c1b7d-6515-4a69-b85f-8164cd85234f",
+        "69244935-e051-4223-af87-18c4d765ef66",
+        "5e0845fe-013f-45b3-9cf1-ebd6267154e8",
+        "f22bcac8-0989-4bbb-886a-923db492893a",
+        "3e0fb2af-6203-4c36-a802-9e5dfd06cd12",
+        "14bf30fd-dcef-4ffc-b03a-b861940bf42c",
+        "c2b3fe84-fa0e-48da-9c95-27c536f4d03f"
+      ],
+      "voices": 5,
+      "recurrence": 14,
+      "verification": {
+        "participants": 5,
+        "endorse": 5,
+        "amend": 0,
+        "contest": 0,
+        "amendments": [],
+        "gate": "may_be_priced"
+      }
+    },
+    {
+      "id": "c8228d43-9178-42a3-9bb1-39f41f38765f",
+      "statement": "A matching round pools small pledges for the unmet needs",
+      "supporting_claim_ids": [
+        "f25d7c04-4ff0-475e-85a4-3e6678e70cf6",
+        "cf3f2ad9-b79f-4a13-8166-6599c43be28e",
+        "fc8690c3-b9d5-42d1-ae3c-aed09204103c"
+      ],
+      "voices": 2,
+      "recurrence": 3,
+      "verification": {
+        "participants": 6,
+        "endorse": 6,
+        "amend": 0,
+        "contest": 0,
+        "amendments": [],
+        "gate": "commons_only"
+      }
+    },
+    {
+      "id": "c3f01200-16f2-464c-81e3-dfdb19a153e5",
+      "statement": "The goal is restored mangrove cover and fish-nursery habitat",
+      "supporting_claim_ids": [
+        "7762ad5e-5bb6-4a53-9d56-abff1d1a86c6",
+        "9ed5dfee-b265-4c45-8318-820e96f17d07",
+        "a50d37e1-e035-4748-b72e-61f0d6cc821e",
+        "44db2107-47f3-4a5a-bdc9-f8dc0161f741",
+        "defa5966-8876-4940-aef6-5e2ae40109f7",
+        "da537a74-20b1-4b8f-a9f0-12f13f60e686",
+        "88bf7ed2-3278-443f-b05f-56b6ec1096e4",
+        "5f762365-a364-4242-bfe3-f0e981938a26",
+        "6e7aef8d-3297-4344-ae20-706c6ab9fc5b",
+        "1ff9cc12-c852-44c1-a1a7-ef118e848d0c"
+      ],
+      "voices": 5,
+      "recurrence": 10,
+      "verification": {
+        "participants": 4,
+        "endorse": 3,
+        "amend": 0,
+        "contest": 1,
+        "amendments": [],
+        "gate": "not_yet"
+      }
+    }
+  ],
+  "interventions": {
+    "from_plans": [
+      {
+        "id": "0a9ea938-b1cd-47d1-841b-7d64f31f64b9",
+        "name": "Shoreline mangrove planting on the creek edge",
+        "note": "Kilifi County Government \u2014 $15,000 budget, from 2027-02. GPS-logged.",
+        "signal_ids": [
+          "17ab646c-ac92-4e02-be03-e5626865ac8c"
+        ],
+        "counter_signal_ids": [],
+        "priced": true
+      },
+      {
+        "id": "48bc60d0-5ca8-43b2-ba37-a627627a15ae",
+        "name": "Mangrove propagule nursery establishment",
+        "note": "Mida Creek Community Conservation Plan \u2014 $12,000 budget, from 2026-11. Rhizophora and Ceriops stock.",
+        "signal_ids": [
+          "57e6d3db-b373-49ca-a7f3-7b12a58d0359"
+        ],
+        "counter_signal_ids": [],
+        "priced": true
+      },
+      {
+        "id": "622e77e0-e9c5-445d-b688-f707f5c9babb",
+        "name": "Shoreline planting days \u2014 1,200 propagules",
+        "note": "Mida Creek Community Conservation Plan \u2014 $9,000 budget, from 2027-01. Overlaps the county scheme on the same shoreline.",
+        "signal_ids": [
+          "17ab646c-ac92-4e02-be03-e5626865ac8c"
+        ],
+        "counter_signal_ids": [],
+        "priced": true
+      }
+    ],
+    "from_place": [
+      {
+        "id": "d7030a0e-bdf8-4f0a-8461-4ffdb3ce2424",
+        "name": "Mida Creek planting round",
+        "note": "kilifi-regen-network matching fund \u2014 $500 USD over the unmet needs; 12 donations and a $40 pledge recorded.",
+        "signal_ids": [
+          "57e6d3db-b373-49ca-a7f3-7b12a58d0359",
+          "c8228d43-9178-42a3-9bb1-39f41f38765f",
+          "f48a54d1-4cd9-4768-85c8-4434cdb60394"
+        ],
+        "counter_signal_ids": [],
+        "priced": false
+      },
+      {
+        "id": "a0419eff-d9b3-4737-ba53-8e40aec353f1",
+        "name": "Two fishing boats and skippers",
+        "note": "dabaso-fishers' offer against the boat-transport need \u2014 pledged participation, not a purchase.",
+        "signal_ids": [
+          "f48a54d1-4cd9-4768-85c8-4434cdb60394"
+        ],
+        "counter_signal_ids": [],
+        "priced": false
+      },
+      {
+        "id": "943d03f1-b36d-49ff-bef2-27cb98137eca",
+        "name": "Community planting days",
+        "note": "The possibility itself \u2014 6 participants needed by 2027-01-10, 800 propagules in hand.",
+        "signal_ids": [
+          "17ab646c-ac92-4e02-be03-e5626865ac8c",
+          "57e6d3db-b373-49ca-a7f3-7b12a58d0359",
+          "f48a54d1-4cd9-4768-85c8-4434cdb60394"
+        ],
+        "counter_signal_ids": [],
+        "priced": false
+      }
+    ]
+  },
+  "sips": [
+    {
+      "id": "6da3cfa8-b17a-4995-b839-292bd32c3b57",
+      "kind": "threshold",
+      "title": "The boats decide the days",
+      "what_changes": "Both planting days strand without boat transport. The fishers' offer exists; pairing it with crew lunch closes the logistics gap.",
+      "time_to_show": "weeks",
+      "evidence_claim_ids": [
+        "16a7c66c-b15b-4103-a3c9-918f777ddac4",
+        "2a62337d-8c13-43c9-8ef6-cc9700efe9b0",
+        "34b43f76-4229-4c8b-821e-3f14958c79d0",
+        "5a46e939-3423-4f3a-b9be-e198864d54e6",
+        "7a0e393d-7b25-4391-9b5c-ab16560e35f8",
+        "8e6417bf-9851-42b1-9ed0-1cc9da1dd390"
+      ]
+    },
+    {
+      "id": "119889de-8a16-4d11-9e0c-5be4927938c1",
+      "kind": "node",
+      "title": "Four hundred propagules short",
+      "what_changes": "800 in hand, 1,200 planned. The county scheme and the nursery action both land here \u2014 whoever fills the gap sets the planting-day scope.",
+      "time_to_show": "months",
+      "evidence_claim_ids": [
+        "09a8b049-eb94-4278-a899-84aad7499b53",
+        "16364741-488e-479a-af33-c34a46987144",
+        "1dc22103-439d-4444-94ec-2463ee151eaa",
+        "5babec91-96b7-4166-88e5-a5b5da4f3957",
+        "5f0554de-530d-48a7-b66c-6676c1e3c0ba",
+        "6803d1ea-b268-4a62-b3ca-d5e8b7637a5b",
+        "a03fb560-2a73-4883-bb19-316d9b8f8ba9",
+        "cd9391be-9d9d-45ca-affe-fed0906a1804"
+      ]
+    },
+    {
+      "id": "27e8f49d-b13e-475b-bf8c-d6efa999816f",
+      "kind": "node",
+      "title": "Small pledges doubled by the match",
+      "what_changes": "Twelve donors pledged $180 against unmet needs; the $500 fund can match every dollar and still leave room \u2014 the round is the cheapest coverage available.",
+      "time_to_show": "weeks",
+      "evidence_claim_ids": [
+        "cf3f2ad9-b79f-4a13-8166-6599c43be28e",
+        "f25d7c04-4ff0-475e-85a4-3e6678e70cf6",
+        "fc8690c3-b9d5-42d1-ae3c-aed09204103c"
+      ]
+    }
+  ],
+  "priorities": {
+    "title": "Where capital is most needed",
+    "intro": "Derived from this place\u2019s own signals: unreached needs first, then the loudest voices, then the leverage points.",
+    "items": [
+      {
+        "heading": "The plans don\u2019t reach it",
+        "text": "The goal is restored mangrove cover and fish-nursery habitat \u2014 5 voices, and no funded scheme answers it."
+      },
+      {
+        "heading": "The plans don\u2019t reach it",
+        "text": "Boats, skippers and lunch decide whether the planting days happen \u2014 3 voices, and no funded scheme answers it."
+      },
+      {
+        "heading": "Where the voices are",
+        "text": "Two shoreline planting days on the degraded creek edge \u2014 5 voices say this most."
+      },
+      {
+        "heading": "The leverage point to watch",
+        "text": "The boats decide the days \u2014 Both planting days strand without boat transport. The fishers' offer exists; pairing it with crew lunch closes the logistics gap."
+      }
+    ]
+  },
+  "meta": {
+    "place_id": "mida-creek",
+    "version": "2026-10-25",
+    "published_at": "2026-10-25T20:06:33.135Z",
+    "manifest_sha256": "39ab28afc21ace150b782b6349fc4e352e3cfe8892dd040fd9cdb8804f50113d"
+  }
+}

@@ -15,7 +15,7 @@ export async function assembleResults(env: Env, placeId: string) {
   if (!place) throw new Error(`place ${placeId} not found`)
 
   const stories = (
-    await db.prepare('SELECT id, teller_role, channel, text FROM stories WHERE place_id = ? AND withdrawn = 0').bind(placeId).all()
+    await db.prepare('SELECT id, teller_role, channel, text, source FROM stories WHERE place_id = ? AND withdrawn = 0').bind(placeId).all()
   ).results ?? []
   const claims = (
     await db.prepare(
@@ -96,9 +96,51 @@ export async function assembleResults(env: Env, placeId: string) {
         }
       })
 
+  // Priorities are derived, not authored: the needs the funded schemes
+  // don't reach (loudest first), the place's loudest signal, and the
+  // first leverage point. Deployment-supplied curation can replace this.
+  const planSignalIds = new Set(
+    (links as any[])
+      .filter((l) => (interventions as any[]).some((i) => i.id === l.intervention_id && i.view === 'from_plans') && l.role === 'answer')
+      .map((l) => l.signal_id),
+  )
+  const unreached = signalsOut
+    .filter((s) => !planSignalIds.has(s.id))
+    .sort((a, b) => b.voices - a.voices)
+  const loudest = [...signalsOut].sort((a, b) => b.voices - a.voices)[0]
+  const items: { heading: string; text: string }[] = []
+  for (const s of unreached.slice(0, 2)) {
+    items.push({
+      heading: 'The plans don’t reach it',
+      text: `${s.statement} — ${s.voices} voice${s.voices === 1 ? '' : 's'}, and no funded scheme answers it.`,
+    })
+  }
+  if (loudest) {
+    items.push({
+      heading: 'Where the voices are',
+      text: `${loudest.statement} — ${loudest.voices} voice${loudest.voices === 1 ? '' : 's'} say this most.`,
+    })
+  }
+  const firstSip = (sips as any[])[0]
+  if (firstSip) {
+    items.push({ heading: 'The leverage point to watch', text: `${firstSip.title} — ${firstSip.what_changes}` })
+  }
+  const priorities = {
+    title: 'Where capital is most needed',
+    intro: 'Derived from this place’s own signals: unreached needs first, then the loudest voices, then the leverage points.',
+    items,
+  }
+
   return {
     _about: `Results for ${(place as any).name}, published by a Value Structuring Engine.`,
-    place: { id: (place as any).id, name: (place as any).name, kind: (place as any).kind, summary: (place as any).summary },
+    place: {
+      id: (place as any).id,
+      name: (place as any).name,
+      kind: (place as any).kind,
+      summary: (place as any).summary,
+      geo: (place as any).geo ? JSON.parse((place as any).geo) : undefined,
+      readings: (place as any).readings ? JSON.parse((place as any).readings) : undefined,
+    },
     pipeline: [
       { stage: 'Listening', detail: 'stories told in people’s own words', count: stories.length, unit: 'stories' },
       { stage: 'Making sense', detail: 'exact excerpts extracted from stories', count: claims.length, unit: 'excerpts' },
@@ -106,7 +148,13 @@ export async function assembleResults(env: Env, placeId: string) {
       { stage: 'People check', detail: 'contributors endorse, amend or contest', count: participantCount, unit: 'participants' },
     ],
     scale_note: (place as any).scale_note ?? undefined,
-    stories,
+    stories: (stories as any[]).map((s) => ({
+      id: s.id,
+      teller_role: s.teller_role,
+      channel: s.channel,
+      text: s.text,
+      source: s.source ?? undefined,
+    })),
     claims: (claims as any[]).map((c) => ({ id: c.id, story_id: c.story_id, text: c.text, span: [c.span_start, c.span_end], signal_id: c.signal_id })),
     signals: signalsOut,
     interventions: { from_plans: interventionOut('from_plans'), from_place: interventionOut('from_place') },
@@ -114,7 +162,7 @@ export async function assembleResults(env: Env, placeId: string) {
       id: s.id, kind: s.kind, title: s.title, what_changes: s.what_changes, time_to_show: s.time_to_show,
       evidence_claim_ids: (sipEvidence as any[]).filter((e) => e.sip_id === s.id).map((e) => e.claim_id),
     })),
-    priorities: { title: 'Where capital is most needed', intro: '', items: [] },
+    priorities,
   }
 }
 

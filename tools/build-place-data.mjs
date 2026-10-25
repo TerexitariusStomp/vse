@@ -4,6 +4,11 @@
 // (plans, plannodes, possibilities, appreciations) plus the Sarafu
 // voucher fixture and the vendored IMD 2025 table.
 //
+// SUPERSEDED: canonical results files are now produced end-to-end by the
+// live engine via tools/run-pipeline.mjs + tools/places/*.spec.json.
+// This builder remains as the interim offline path and writes to
+// docs/source/builder/ so it cannot overwrite the engine artifacts.
+//
 // The curation below is a *spec*: every story string must be found
 // verbatim inside a real source record — the builder errors otherwise.
 // Claim spans are computed by locating substrings, so slice-equality
@@ -416,16 +421,14 @@ function assemble(spec) {
   return results;
 }
 
-mkdirSync(join(ROOT, 'data'), { recursive: true });
-mkdirSync(join(ROOT, 'site/public/data'), { recursive: true });
+const OUT = join(ROOT, 'docs/source/builder');
+mkdirSync(OUT, { recursive: true });
 for (const spec of [THORNTREE, COAST]) {
   const r = assemble(spec);
   const errs = checkSemantics(r);
   if (errs.length) { console.error(`✗ ${spec.place.id}:`, errs); process.exitCode = 1; continue; }
-  const file = `data/${spec.place.id}_results.json`;
-  for (const dir of [join(ROOT, 'data'), join(ROOT, 'site/public/data')]) {
-    writeFileSync(join(dir, file.split('/')[1]), JSON.stringify(r, null, 1) + '\n');
-  }
-  console.log(`✓ ${file} — ${r.stories.length} stories, ${r.claims.length} claims, ${r.signals.length} signals, ${r.pipeline[3].count} participants`);
+  const file = `${spec.place.id}_results.json`;
+  writeFileSync(join(OUT, file), JSON.stringify(r, null, 1) + '\n');
+  console.log(`✓ docs/source/builder/${file} — ${r.stories.length} stories, ${r.claims.length} claims, ${r.signals.length} signals, ${r.pipeline[3].count} participants`);
 }
 console.log(`entities parsed: ${entities.size}`);

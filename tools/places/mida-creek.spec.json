@@ -1,0 +1,152 @@
+{
+  "place": {
+    "id": "mida-creek",
+    "name": "Mida Creek",
+    "kind": "tidal creek & boardwalk, Kilifi County, Kenya",
+    "summary": "A degraded creek edge with a conservation plan, a county scheme, and a community possibility trying to plant 1,200 propagules in two days.",
+    "geo": { "lat": -3.349, "lon": 39.986 },
+    "readings": [
+      {
+        "label": "Matching round",
+        "value": "$500 USD fund · sponsor kilifi-regen-network · open until 2026-11-15",
+        "source": "round round-mida-creek"
+      },
+      {
+        "label": "Community pledges recorded",
+        "value": "12 donations · $180 USD + $40 pending pledge",
+        "source": "round-mida-creek donation & pledge records"
+      },
+      {
+        "label": "Pre-app field-team plots",
+        "value": "64,699 trees claimed at Mida/Dabaso + Kisiwani — evidence-only, not app-verified",
+        "source": "treegens:archive"
+      },
+      {
+        "label": "Prep quorum",
+        "value": "6 participants needed by 2027-01-10",
+        "source": "possibility poss-mida-creek-mangrove"
+      }
+    ]
+  },
+  "stories": [
+    { "teller_role": "mida-creek-conservation", "channel": "facilitated", "source": "possibility poss-mida-creek-mangrove", "text": "Plant 1,200 mangrove propagules along the Mida Creek shoreline" },
+    { "teller_role": "mida-creek-conservation", "channel": "facilitated", "source": "possibility poss-mida-creek-mangrove", "text": "Two planting days on the degraded creek edge — nursery raised 800 propagules, we need 400 more, boat transport, and lunch for the crew" },
+    { "teller_role": "mida-creek-conservation", "channel": "facilitated", "source": "plannode poss-mida-creek-mangrove-need-0", "text": "400 more propagules to reach 1,200" },
+    { "teller_role": "mida-creek-conservation", "channel": "facilitated", "source": "plannode poss-mida-creek-mangrove-need-1", "text": "Boat transport to the planting site" },
+    { "teller_role": "mida-creek-conservation", "channel": "facilitated", "source": "plannode poss-mida-creek-mangrove-need-2", "text": "Lunch and water for 15 volunteers" },
+    { "teller_role": "dabaso-fishers", "channel": "facilitated", "source": "plannode poss-mida-creek-mangrove-offer-0", "text": "Two fishing boats and skippers" },
+    { "teller_role": "mida-creek-conservation", "channel": "facilitated", "source": "plannode poss-mida-creek-mangrove-offer-1", "text": "800 nursery-raised propagules" },
+    { "teller_role": "Kilifi County Government", "channel": "facilitated", "source": "csv:kilifi-county action", "text": "Shoreline mangrove planting on the creek edge" },
+    { "teller_role": "Kilifi County Government", "channel": "facilitated", "source": "csv:kilifi-county outcome", "text": "Restored mangrove cover and fish-nursery habitat at Mida Creek" },
+    { "teller_role": "Mida Creek Conservation", "channel": "facilitated", "source": "oneplanet:plan-mida-creek action ma1", "text": "Mangrove propagule nursery establishment" },
+    { "teller_role": "Mida Creek Conservation", "channel": "facilitated", "source": "oneplanet:plan-mida-creek action ma1", "text": "Community nursery raising Rhizophora and Ceriops propagules" },
+    { "teller_role": "Mida Creek Conservation", "channel": "facilitated", "source": "oneplanet:plan-mida-creek action ma2", "text": "Shoreline planting days — 1,200 propagules" },
+    { "teller_role": "Mida Creek Conservation", "channel": "facilitated", "source": "oneplanet:plan-mida-creek action ma2", "text": "Two planting days on the degraded creek edge, GPS-logged plots" },
+    { "teller_role": "kilifi-regen-network", "channel": "facilitated", "source": "round round-mida-creek", "text": "Mida Creek planting round" },
+    { "teller_role": "kilifi-regen-network", "channel": "facilitated", "source": "round round-mida-creek", "text": "Matching fund over the unmet financial needs the card surfaced — propagules, boat transport, crew lunch" },
+    { "teller_role": "Treegens field team", "channel": "facilitated", "source": "treegens:archive plannode", "text": "16,600 mangrove trees — Mida, Dabaso" },
+    { "teller_role": "Treegens field team", "channel": "facilitated", "source": "treegens:archive plannode", "text": "48,099 mangrove trees — Kisiwani, Mida Creek" },
+    { "teller_role": "Treegens field team", "channel": "facilitated", "source": "treegens:archive plannode", "text": "Restored mangrove forest cover — Mida, Dabaso" },
+    { "teller_role": "Treegens field team", "channel": "facilitated", "source": "treegens:archive plannode", "text": "Restored mangrove forest cover — Kisiwani, Mida Creek" }
+  ],
+  "signals": [
+    {
+      "key": "sig-propagules",
+      "statement": "The nursery raised 800 propagules — 400 more are needed for 1,200",
+      "claim_texts": [
+        "400 more propagules to reach 1,200",
+        "800 nursery-raised propagules",
+        "Mangrove propagule nursery establishment",
+        "Community nursery raising Rhizophora and Ceriops propagules"
+      ]
+    },
+    {
+      "key": "sig-logistics",
+      "statement": "Boats, skippers and lunch decide whether the planting days happen",
+      "claim_texts": [
+        "Boat transport to the planting site",
+        "Two fishing boats and skippers",
+        "Lunch and water for 15 volunteers"
+      ]
+    },
+    {
+      "key": "sig-planting-days",
+      "statement": "Two shoreline planting days on the degraded creek edge",
+      "claim_texts": [
+        "Plant 1,200 mangrove propagules along the Mida Creek shoreline",
+        "Two planting days on the degraded creek edge — nursery raised 800 propagules, we need 400 more, boat transport, and lunch for the crew",
+        "Shoreline planting days — 1,200 propagules",
+        "Two planting days on the degraded creek edge, GPS-logged plots",
+        "Shoreline mangrove planting on the creek edge"
+      ]
+    },
+    {
+      "key": "sig-funding",
+      "statement": "A matching round pools small pledges for the unmet needs",
+      "claim_texts": [
+        "Mida Creek planting round",
+        "Matching fund over the unmet financial needs the card surfaced — propagules, boat transport, crew lunch"
+      ]
+    },
+    {
+      "key": "sig-cover",
+      "statement": "The goal is restored mangrove cover and fish-nursery habitat",
+      "claim_texts": [
+        "Restored mangrove cover and fish-nursery habitat at Mida Creek",
+        "16,600 mangrove trees — Mida, Dabaso",
+        "48,099 mangrove trees — Kisiwani, Mida Creek",
+        "Restored mangrove forest cover — Mida, Dabaso",
+        "Restored mangrove forest cover — Kisiwani, Mida Creek"
+      ]
+    }
+  ],
+  "participants": 6,
+  "votes": {
+    "sig-propagules": ["endorse", "endorse", "endorse", "endorse", null, null],
+    "sig-logistics": ["endorse", "endorse", "amend", "endorse", null, null],
+    "sig-planting-days": ["endorse", "endorse", "endorse", "endorse", "endorse", null],
+    "sig-funding": ["endorse", "endorse", "endorse", "endorse", "endorse", "endorse"],
+    "sig-cover": ["endorse", "endorse", "contest", "endorse", null, null]
+  },
+  "amendments": {
+    "sig-logistics": "Confirm fuel money for the skippers — donated boats still burn petrol."
+  },
+  "gates": {
+    "sig-propagules": "may_be_priced",
+    "sig-logistics": "may_be_priced",
+    "sig-planting-days": "may_be_priced",
+    "sig-funding": "commons_only",
+    "sig-cover": "not_yet"
+  },
+  "interventions": [
+    { "view": "from_plans", "name": "Shoreline mangrove planting on the creek edge", "note": "Kilifi County Government — $15,000 budget, from 2027-02. GPS-logged.", "signals": ["sig-planting-days"], "priced": true },
+    { "view": "from_plans", "name": "Mangrove propagule nursery establishment", "note": "Mida Creek Community Conservation Plan — $12,000 budget, from 2026-11. Rhizophora and Ceriops stock.", "signals": ["sig-propagules"], "priced": true },
+    { "view": "from_plans", "name": "Shoreline planting days — 1,200 propagules", "note": "Mida Creek Community Conservation Plan — $9,000 budget, from 2027-01. Overlaps the county scheme on the same shoreline.", "signals": ["sig-planting-days"], "priced": true },
+    { "view": "from_place", "name": "Mida Creek planting round", "note": "kilifi-regen-network matching fund — $500 USD over the unmet needs; 12 donations and a $40 pledge recorded.", "signals": ["sig-funding", "sig-logistics", "sig-propagules"], "priced": false },
+    { "view": "from_place", "name": "Two fishing boats and skippers", "note": "dabaso-fishers' offer against the boat-transport need — pledged participation, not a purchase.", "signals": ["sig-logistics"], "priced": false },
+    { "view": "from_place", "name": "Community planting days", "note": "The possibility itself — 6 participants needed by 2027-01-10, 800 propagules in hand.", "signals": ["sig-planting-days", "sig-propagules", "sig-logistics"], "priced": false }
+  ],
+  "sips": [
+    {
+      "kind": "threshold",
+      "title": "The boats decide the days",
+      "what_changes": "Both planting days strand without boat transport. The fishers' offer exists; pairing it with crew lunch closes the logistics gap.",
+      "time_to_show": "weeks",
+      "evidence_signals": ["sig-logistics"]
+    },
+    {
+      "kind": "node",
+      "title": "Four hundred propagules short",
+      "what_changes": "800 in hand, 1,200 planned. The county scheme and the nursery action both land here — whoever fills the gap sets the planting-day scope.",
+      "time_to_show": "months",
+      "evidence_signals": ["sig-propagules"]
+    },
+    {
+      "kind": "node",
+      "title": "Small pledges doubled by the match",
+      "what_changes": "Twelve donors pledged $180 against unmet needs; the $500 fund can match every dollar and still leave room — the round is the cheapest coverage available.",
+      "time_to_show": "weeks",
+      "evidence_signals": ["sig-funding"]
+    }
+  ]
+}

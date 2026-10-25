@@ -1,0 +1,154 @@
+{
+  "place": {
+    "id": "dar-es-salaam",
+    "name": "Dar es Salaam coast",
+    "kind": "coastal plots, Kigamboni & Kinondoni, Tanzania",
+    "summary": "Mangrove planting at Mji Mwema and Kunduchi — a live feed of app-verified and pending Treegens records, plus older field-team plots that carry the biggest numbers.",
+    "geo": { "lat": -6.865, "lon": 39.32 },
+    "readings": [
+      {
+        "label": "App planting records for the Dar coast",
+        "value": "83 records · 45 verified · 38 pending",
+        "source": "plan-treegens-live"
+      },
+      {
+        "label": "Pre-app field-team plots",
+        "value": "199,030 trees claimed (6,400 Dar Coast + 192,630 Kibugumo) — filmed evidence, not app-verified",
+        "source": "treegens:archive"
+      },
+      {
+        "label": "Recorded field crew",
+        "value": "Mr, Jafari, Innocent",
+        "source": "treegens record filmed-by fields"
+      }
+    ]
+  },
+  "stories": [
+    { "teller_role": "Treegens field record", "channel": "facilitated", "source": "treegens:live (verified)", "text": "463 mangrove trees planted — To mji mwema Food, Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania" },
+    { "teller_role": "Treegens field record", "channel": "facilitated", "source": "treegens:live (verified)", "text": "362 mangrove trees planted — To mji mwema Food, Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania" },
+    { "teller_role": "Treegens field record", "channel": "facilitated", "source": "treegens:live (verified)", "text": "250 mangrove trees planted — To mji mwema Food, Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania" },
+    { "teller_role": "Treegens field record", "channel": "facilitated", "source": "treegens:live (verified)", "text": "519 mangrove trees planted — To mji mwema Food, Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania" },
+    { "teller_role": "Treegens field record", "channel": "facilitated", "source": "treegens:live (verified)", "text": "485 mangrove trees planted — Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania" },
+    { "teller_role": "Treegens field record", "channel": "facilitated", "source": "treegens:live (verified)", "text": "128 mangrove trees planted — To mji mwema Food, Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania" },
+    { "teller_role": "Treegens field record", "channel": "facilitated", "source": "treegens:live (verified)", "text": "101 mangrove trees planted — To mji mwema Food, Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania" },
+    { "teller_role": "Treegens field record", "channel": "facilitated", "source": "treegens:live (verified)", "text": "150 mangrove trees planted — To mji mwema Food, Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania" },
+    { "teller_role": "Treegens field record", "channel": "facilitated", "source": "treegens:live (verified)", "text": "139 mangrove trees planted — To mji mwema Food, Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania" },
+    { "teller_role": "Treegens field record", "channel": "facilitated", "source": "treegens:live (verified)", "text": "101 mangrove trees planted — To mji mwema Food, Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania" },
+    { "teller_role": "Treegens field record", "channel": "facilitated", "source": "treegens:live (verified)", "text": "115 mangrove trees planted — To mji mwema Food, Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania" },
+    { "teller_role": "Treegens field record", "channel": "facilitated", "source": "treegens:live (verified)", "text": "133 mangrove trees planted — To mji mwema Food, Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania" },
+    { "teller_role": "Treegens field record", "channel": "facilitated", "source": "treegens:live (pending)", "text": "143 mangrove trees planted — Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania" },
+    { "teller_role": "Treegens field record", "channel": "facilitated", "source": "treegens:live (pending)", "text": "57 mangrove trees planted — To mji mwema Food, Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania" },
+    { "teller_role": "Treegens field record", "channel": "facilitated", "source": "treegens:live (pending)", "text": "117 mangrove trees planted — To mji mwema Food, Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania" },
+    { "teller_role": "Treegens field record", "channel": "facilitated", "source": "treegens:live (pending)", "text": "369 mangrove trees planted — To mji mwema Food, Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania" },
+    { "teller_role": "Treegens field record", "channel": "facilitated", "source": "treegens:live (pending)", "text": "358 mangrove trees planted — To mji mwema Food, Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania" },
+    { "teller_role": "Treegens field record", "channel": "facilitated", "source": "treegens:live (pending)", "text": "365 mangrove trees planted — To mji mwema Food, Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania" },
+    { "teller_role": "Treegens field record", "channel": "facilitated", "source": "treegens:live (pending)", "text": "218 mangrove trees planted — Kunduchi, Kawe, Kinondoni Municipal, Dar es Salaam, Coastal Zone, 14130, Tanzania" },
+    { "teller_role": "Treegens field record", "channel": "facilitated", "source": "treegens:live (verified)", "text": "300 mangrove trees planted — Kunduchi, Kawe, Kinondoni Municipal, Dar es Salaam, Coastal Zone, 14130, Tanzania" },
+    { "teller_role": "Treegens field record", "channel": "facilitated", "source": "treegens:live (verified)", "text": "44 mangrove trees planted — Kunduchi, Kawe, Kinondoni Municipal, Dar es Salaam, Coastal Zone, 14130, Tanzania" },
+    { "teller_role": "Treegens field team", "channel": "facilitated", "source": "treegens:archive", "text": "6,400 mangrove trees — Dar es Salaam Coast Plots" },
+    { "teller_role": "Treegens field team", "channel": "facilitated", "source": "treegens:archive", "text": "192,630 mangrove trees — Kibugumo Coast Plots, Dar es Salaam" },
+    { "teller_role": "Treegens field team", "channel": "facilitated", "source": "treegens:archive", "text": "Restored mangrove forest cover — Dar es Salaam Coast Plots" },
+    { "teller_role": "Treegens field team", "channel": "facilitated", "source": "treegens:archive", "text": "Restored mangrove forest cover — Kibugumo Coast Plots, Dar es Salaam" },
+    { "teller_role": "Treegens field team", "channel": "facilitated", "source": "treegens:archive", "text": "Restored mangrove forest cover — Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania" },
+    { "teller_role": "Treegens field team", "channel": "facilitated", "source": "treegens:archive", "text": "Restored mangrove forest cover — Kunduchi, Kawe, Kinondoni Municipal, Dar es Salaam, Coastal Zone, 14130, Tanzania" }
+  ],
+  "signals": [
+    {
+      "key": "sig-mjimwema-verified",
+      "statement": "App-verified planting records keep landing at Mji Mwema",
+      "claim_texts": [
+        "463 mangrove trees planted — To mji mwema Food, Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania",
+        "362 mangrove trees planted — To mji mwema Food, Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania",
+        "250 mangrove trees planted — To mji mwema Food, Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania",
+        "519 mangrove trees planted — To mji mwema Food, Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania",
+        "485 mangrove trees planted — Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania",
+        "128 mangrove trees planted — To mji mwema Food, Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania",
+        "101 mangrove trees planted — To mji mwema Food, Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania",
+        "150 mangrove trees planted — To mji mwema Food, Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania",
+        "139 mangrove trees planted — To mji mwema Food, Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania",
+        "115 mangrove trees planted — To mji mwema Food, Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania",
+        "133 mangrove trees planted — To mji mwema Food, Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania"
+      ]
+    },
+    {
+      "key": "sig-kunduchi",
+      "statement": "The planting reached Kunduchi too",
+      "claim_texts": [
+        "218 mangrove trees planted — Kunduchi, Kawe, Kinondoni Municipal, Dar es Salaam, Coastal Zone, 14130, Tanzania",
+        "300 mangrove trees planted — Kunduchi, Kawe, Kinondoni Municipal, Dar es Salaam, Coastal Zone, 14130, Tanzania",
+        "44 mangrove trees planted — Kunduchi, Kawe, Kinondoni Municipal, Dar es Salaam, Coastal Zone, 14130, Tanzania"
+      ]
+    },
+    {
+      "key": "sig-archive",
+      "statement": "The biggest numbers rest on pre-app field-team evidence",
+      "claim_texts": [
+        "6,400 mangrove trees — Dar es Salaam Coast Plots",
+        "192,630 mangrove trees — Kibugumo Coast Plots, Dar es Salaam"
+      ]
+    },
+    {
+      "key": "sig-pending",
+      "statement": "Dozens of planting records still await verification",
+      "claim_texts": [
+        "143 mangrove trees planted — Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania",
+        "57 mangrove trees planted — To mji mwema Food, Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania",
+        "117 mangrove trees planted — To mji mwema Food, Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania",
+        "369 mangrove trees planted — To mji mwema Food, Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania",
+        "358 mangrove trees planted — To mji mwema Food, Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania",
+        "365 mangrove trees planted — To mji mwema Food, Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania"
+      ]
+    },
+    {
+      "key": "sig-cover",
+      "statement": "The stated outcome is restored mangrove cover",
+      "claim_texts": [
+        "Restored mangrove forest cover — Dar es Salaam Coast Plots",
+        "Restored mangrove forest cover — Kibugumo Coast Plots, Dar es Salaam",
+        "Restored mangrove forest cover — Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania",
+        "Restored mangrove forest cover — Kunduchi, Kawe, Kinondoni Municipal, Dar es Salaam, Coastal Zone, 14130, Tanzania"
+      ]
+    }
+  ],
+  "participants": 4,
+  "votes": {
+    "sig-mjimwema-verified": ["endorse", "endorse", "endorse", "endorse"],
+    "sig-kunduchi": ["endorse", "endorse", "endorse", null],
+    "sig-archive": ["endorse", "contest", "endorse", "contest"],
+    "sig-pending": ["endorse", "amend", "endorse", null],
+    "sig-cover": ["endorse", "endorse", "endorse", "endorse"]
+  },
+  "amendments": {
+    "sig-pending": "Treat these as leads, not evidence — they count once verified."
+  },
+  "gates": {
+    "sig-mjimwema-verified": "may_be_priced",
+    "sig-kunduchi": "may_be_priced",
+    "sig-archive": "not_yet",
+    "sig-pending": "not_yet",
+    "sig-cover": "may_be_priced"
+  },
+  "interventions": [
+    { "view": "from_plans", "name": "Dar es Salaam Coast Plots (pre-app)", "note": "Treegens field-team plot — 6,400 trees claimed since 2024, last AI count 413 on plot 01. Filmed evidence, not app-verified.", "signals": ["sig-archive"], "priced": false },
+    { "view": "from_plans", "name": "Kibugumo Coast Plots (pre-app)", "note": "Treegens field-team plot — 192,630 trees claimed. The largest claim in the corpus, resting on filmed evidence only.", "signals": ["sig-archive"], "priced": false },
+    { "view": "from_place", "name": "Fund the verified record first", "note": "45 app-verified Mji Mwema records are the only payout-grade evidence here — direct any priced support at them.", "signals": ["sig-mjimwema-verified", "sig-kunduchi"], "priced": false },
+    { "view": "from_place", "name": "Clear the verification backlog", "note": "38 pending records including every Kunduchi claim — reviewers before money.", "signals": ["sig-pending"], "priced": false },
+    { "view": "from_place", "name": "Extend planting to Kunduchi", "note": "Three records show the programme already reached Kinondoni — the next planting days can be upstream.", "signals": ["sig-kunduchi", "sig-cover"], "priced": false }
+  ],
+  "sips": [
+    {
+      "kind": "node",
+      "title": "Verification is the bottleneck, not planting",
+      "what_changes": "38 pending records nearly equal the 45 verified ones. Each verified record unlocks evidence-grade support; the backlog is the leverage point.",
+      "time_to_show": "weeks",
+      "evidence_signals": ["sig-pending", "sig-mjimwema-verified"]
+    },
+    {
+      "kind": "threshold",
+      "title": "The 192,630-tree claim needs its proof",
+      "what_changes": "Kibugumo's archive figure dwarfs everything else in the corpus — and it is filmed, not app-verified. Re-shooting it would re-grade the whole place's evidence.",
+      "time_to_show": "months",
+      "evidence_signals": ["sig-archive"]
+    }
+  ]
+}

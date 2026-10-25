@@ -102,6 +102,12 @@ export async function runExtraction(env: Env, storyId: string): Promise<void> {
   if (!story) return
 
   const candidates = await extractClaims(env.AI, story.text)
+  // Micro-story fallback: below ~120 chars the whole text is the only
+  // plausible span, so when the model proposes nothing we propose the
+  // story itself. Same mechanical contract — the claim must slice-equal
+  // the story text, which it does trivially.
+  if (!candidates.length && story.text.trim().length && story.text.length <= 120)
+    candidates.push({ text: story.text, span: [0, story.text.length] })
   const stmt = env.DB.prepare(
     `INSERT INTO claims (id, place_id, story_id, text, span_start, span_end, status)
      VALUES (?, ?, ?, ?, ?, ?, ?)`,

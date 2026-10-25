@@ -1,0 +1,463 @@
+{
+  "_about": "Results for Hebden Bridge, published by a Value Structuring Engine.",
+  "place": {
+    "id": "hebden-bridge",
+    "name": "Hebden Bridge",
+    "kind": "market town, Calderdale, West Yorkshire",
+    "summary": "A Pennine town that floods: mutual aid runs a flood-response prep day while a peer ValueFlows network commits supplies.",
+    "geo": {
+      "lat": 53.7433,
+      "lon": -2.0136
+    },
+    "readings": [
+      {
+        "label": "Flood-risk areas mapped within 15km",
+        "value": "99 \u00b7 0 warnings/alerts currently active",
+        "source": "EA Flood Monitoring \u2014 OGL"
+      },
+      {
+        "label": "Postcode context",
+        "value": "HX7 8EJ \u2192 parish Hebden Royd, LSOA Calderdale 004F",
+        "source": "ONS geography via postcodes.io"
+      },
+      {
+        "label": "Prep-day quorum",
+        "value": "10 participants needed by 2027-01-17",
+        "source": "possibility poss-hebden-flood-response"
+      }
+    ]
+  },
+  "pipeline": [
+    {
+      "stage": "Listening",
+      "detail": "stories told in people\u2019s own words",
+      "count": 12,
+      "unit": "stories"
+    },
+    {
+      "stage": "Making sense",
+      "detail": "exact excerpts extracted from stories",
+      "count": 13,
+      "unit": "excerpts"
+    },
+    {
+      "stage": "Consolidating",
+      "detail": "excerpts gathered into signals",
+      "count": 4,
+      "unit": "signals"
+    },
+    {
+      "stage": "People check",
+      "detail": "contributors endorse, amend or contest",
+      "count": 4,
+      "unit": "participants"
+    }
+  ],
+  "stories": [
+    {
+      "id": "d603f497-4851-4540-9f88-b4dd5c7d8598",
+      "teller_role": "hebden-mutual-aid",
+      "channel": "facilitated",
+      "text": "Community flood-response prep day",
+      "source": "possibility poss-hebden-flood-response"
+    },
+    {
+      "id": "4e7563d3-c7a6-44e6-a8a5-3cb519fb4480",
+      "teller_role": "hebden-mutual-aid",
+      "channel": "facilitated",
+      "text": "Flood season is coming \u2014 fill sandbags, check pumps, set up the hall as a rest centre, map vulnerable neighbours",
+      "source": "possibility poss-hebden-flood-response"
+    },
+    {
+      "id": "cded0a86-5cd6-4616-b1b2-01d5cd07d037",
+      "teller_role": "hebden-mutual-aid",
+      "channel": "facilitated",
+      "text": "Sandbags and sand supply",
+      "source": "plannode poss-hebden-flood-response-need-0"
+    },
+    {
+      "id": "87b51984-155c-420a-a856-466737230532",
+      "teller_role": "hebden-mutual-aid",
+      "channel": "facilitated",
+      "text": "Working pumps (borrow or buy)",
+      "source": "plannode poss-hebden-flood-response-need-1"
+    },
+    {
+      "id": "a7ab5a65-d23a-4511-9728-5bc24bf51006",
+      "teller_role": "hebden-mutual-aid",
+      "channel": "facilitated",
+      "text": "Hall booked as rest centre",
+      "source": "plannode poss-hebden-flood-response-need-2"
+    },
+    {
+      "id": "cd63560a-b449-455f-b9c4-fd4de89d183c",
+      "teller_role": "hebden-mutual-aid",
+      "channel": "facilitated",
+      "text": "Street wardens for vulnerable-neighbour check-ins",
+      "source": "plannode poss-hebden-flood-response-need-3"
+    },
+    {
+      "id": "e83ebf0c-f195-45f5-bcee-63dc2c4c2c85",
+      "teller_role": "hebden-mutual-aid",
+      "channel": "facilitated",
+      "text": "Four wheelie bins for sandbag filling",
+      "source": "plannode poss-hebden-flood-response-offer-bins"
+    },
+    {
+      "id": "5c7e7b54-ce7c-4922-8665-8d93644157cf",
+      "teller_role": "priya",
+      "channel": "facilitated",
+      "text": "Two submersible pumps, tested",
+      "source": "plannode poss-hebden-flood-response-offer-priya"
+    },
+    {
+      "id": "171ea3d2-d306-4d84-bf61-a9a483e63c7b",
+      "teller_role": "calder-council-liaison",
+      "channel": "facilitated",
+      "text": "Sand supply \u2014 depot confirmed",
+      "source": "plannode poss-hebden-flood-response-offer-sand"
+    },
+    {
+      "id": "9068d092-89b6-400f-9841-0633ca2f7ca9",
+      "teller_role": "Mutual Aid North",
+      "channel": "facilitated",
+      "text": "Warm blankets for the rest centre",
+      "source": "vf:playnet-demo intent"
+    },
+    {
+      "id": "10fe0975-c765-47ef-885a-75f92b2670e8",
+      "teller_role": "Mutual Aid North",
+      "channel": "facilitated",
+      "text": "Sand delivery confirmed \u2014 depot lorry",
+      "source": "vf:playnet-demo commitment"
+    },
+    {
+      "id": "07da6f91-13ee-4c00-88d3-51d1b0913fa2",
+      "teller_role": "Mutual Aid North",
+      "channel": "facilitated",
+      "text": "qty 2 tonne",
+      "source": "vf:playnet-demo commitment terms"
+    }
+  ],
+  "claims": [
+    {
+      "id": "1f274543-c240-41bf-b944-0af6977790ec",
+      "story_id": "d603f497-4851-4540-9f88-b4dd5c7d8598",
+      "text": "Community flood-response prep day",
+      "span": [
+        0,
+        33
+      ],
+      "signal_id": "fc3de299-b1a5-4b6e-8729-be1ca3387375"
+    },
+    {
+      "id": "56074a94-895c-474c-9404-f3736695658a",
+      "story_id": "4e7563d3-c7a6-44e6-a8a5-3cb519fb4480",
+      "text": "Flood season is coming \u2014 fill sandbags, check pumps, set up the hall as a rest centre, map vulnerable neighbours",
+      "span": [
+        0,
+        112
+      ],
+      "signal_id": "fc3de299-b1a5-4b6e-8729-be1ca3387375"
+    },
+    {
+      "id": "4de5cdda-ea8a-4398-9d8f-7b0c543a423c",
+      "story_id": "cded0a86-5cd6-4616-b1b2-01d5cd07d037",
+      "text": "Sandbags and sand supply",
+      "span": [
+        0,
+        24
+      ],
+      "signal_id": "2a453139-3801-4770-9ab2-0ff878172c4e"
+    },
+    {
+      "id": "1e419123-7ad8-4405-b2da-425be8278a5e",
+      "story_id": "87b51984-155c-420a-a856-466737230532",
+      "text": "Working pumps (borrow or buy)",
+      "span": [
+        0,
+        29
+      ],
+      "signal_id": "fc3de299-b1a5-4b6e-8729-be1ca3387375"
+    },
+    {
+      "id": "98cc4a3f-eac2-4392-b3c7-a027aa1409d6",
+      "story_id": "a7ab5a65-d23a-4511-9728-5bc24bf51006",
+      "text": "Hall booked as rest centre",
+      "span": [
+        0,
+        26
+      ],
+      "signal_id": "00fe654d-8a90-4533-86dd-8d9a82a16a48"
+    },
+    {
+      "id": "16afbbc2-410e-4529-8de8-73d7ee8f1b8f",
+      "story_id": "cd63560a-b449-455f-b9c4-fd4de89d183c",
+      "text": "Street wardens for vulnerable-neighbour check-ins",
+      "span": [
+        0,
+        49
+      ],
+      "signal_id": "0dc8e043-5593-44fc-8d69-19025a4ffa1f"
+    },
+    {
+      "id": "c87b27a1-2dab-438c-b9ed-6dd41e07322c",
+      "story_id": "e83ebf0c-f195-45f5-bcee-63dc2c4c2c85",
+      "text": "Four wheelie bins for sandbag filling",
+      "span": [
+        0,
+        37
+      ],
+      "signal_id": "fc3de299-b1a5-4b6e-8729-be1ca3387375"
+    },
+    {
+      "id": "a3e9bb08-2103-497b-8ef5-69d8b1e4287b",
+      "story_id": "5c7e7b54-ce7c-4922-8665-8d93644157cf",
+      "text": "Two submersible pumps, tested",
+      "span": [
+        0,
+        29
+      ],
+      "signal_id": "fc3de299-b1a5-4b6e-8729-be1ca3387375"
+    },
+    {
+      "id": "9a810805-e5a1-4380-90d4-bd851e1f0252",
+      "story_id": "171ea3d2-d306-4d84-bf61-a9a483e63c7b",
+      "text": "Sand supply \u2014 depot confirmed",
+      "span": [
+        0,
+        29
+      ],
+      "signal_id": "2a453139-3801-4770-9ab2-0ff878172c4e"
+    },
+    {
+      "id": "0932fbe2-2500-4b3f-9519-63133b37fc04",
+      "story_id": "9068d092-89b6-400f-9841-0633ca2f7ca9",
+      "text": "Warm blankets for the rest centre",
+      "span": [
+        0,
+        33
+      ],
+      "signal_id": "00fe654d-8a90-4533-86dd-8d9a82a16a48"
+    },
+    {
+      "id": "e8991a11-6529-4de1-9866-fed6206528f5",
+      "story_id": "10fe0975-c765-47ef-885a-75f92b2670e8",
+      "text": "Sand delivery confirmed \u2014 depot lorry",
+      "span": [
+        0,
+        37
+      ],
+      "signal_id": "2a453139-3801-4770-9ab2-0ff878172c4e"
+    },
+    {
+      "id": "da5e88a5-6a99-4b6d-aa3e-6ef68ad6f5d0",
+      "story_id": "07da6f91-13ee-4c00-88d3-51d1b0913fa2",
+      "text": "qty 2 tonne",
+      "span": [
+        0,
+        11
+      ],
+      "signal_id": "2a453139-3801-4770-9ab2-0ff878172c4e"
+    },
+    {
+      "id": "449058a9-e04e-42ec-93ce-ad07fc0b67a8",
+      "story_id": "07da6f91-13ee-4c00-88d3-51d1b0913fa2",
+      "text": "qty 2 tonne",
+      "span": [
+        0,
+        11
+      ],
+      "signal_id": "2a453139-3801-4770-9ab2-0ff878172c4e"
+    }
+  ],
+  "signals": [
+    {
+      "id": "fc3de299-b1a5-4b6e-8729-be1ca3387375",
+      "statement": "The prep day needs pumps, bins and bodies filling sandbags",
+      "supporting_claim_ids": [
+        "1f274543-c240-41bf-b944-0af6977790ec",
+        "56074a94-895c-474c-9404-f3736695658a",
+        "1e419123-7ad8-4405-b2da-425be8278a5e",
+        "c87b27a1-2dab-438c-b9ed-6dd41e07322c",
+        "a3e9bb08-2103-497b-8ef5-69d8b1e4287b"
+      ],
+      "voices": 5,
+      "recurrence": 5,
+      "verification": {
+        "participants": 4,
+        "endorse": 4,
+        "amend": 0,
+        "contest": 0,
+        "amendments": [],
+        "gate": "commons_only"
+      }
+    },
+    {
+      "id": "2a453139-3801-4770-9ab2-0ff878172c4e",
+      "statement": "The sandbags question is answered twice \u2014 once by the liaison, once by the network",
+      "supporting_claim_ids": [
+        "4de5cdda-ea8a-4398-9d8f-7b0c543a423c",
+        "9a810805-e5a1-4380-90d4-bd851e1f0252",
+        "e8991a11-6529-4de1-9866-fed6206528f5",
+        "da5e88a5-6a99-4b6d-aa3e-6ef68ad6f5d0",
+        "449058a9-e04e-42ec-93ce-ad07fc0b67a8"
+      ],
+      "voices": 4,
+      "recurrence": 5,
+      "verification": {
+        "participants": 4,
+        "endorse": 3,
+        "amend": 1,
+        "contest": 0,
+        "amendments": [
+          "Confirm the depot lorry timing \u2014 the two-tonne load must land before the prep day."
+        ],
+        "gate": "commons_only"
+      }
+    },
+    {
+      "id": "00fe654d-8a90-4533-86dd-8d9a82a16a48",
+      "statement": "The rest centre needs a warm hall ready by flood season",
+      "supporting_claim_ids": [
+        "98cc4a3f-eac2-4392-b3c7-a027aa1409d6",
+        "0932fbe2-2500-4b3f-9519-63133b37fc04"
+      ],
+      "voices": 2,
+      "recurrence": 2,
+      "verification": {
+        "participants": 3,
+        "endorse": 3,
+        "amend": 0,
+        "contest": 0,
+        "amendments": [],
+        "gate": "commons_only"
+      }
+    },
+    {
+      "id": "0dc8e043-5593-44fc-8d69-19025a4ffa1f",
+      "statement": "Neighbours will check on vulnerable neighbours",
+      "supporting_claim_ids": [
+        "16afbbc2-410e-4529-8de8-73d7ee8f1b8f"
+      ],
+      "voices": 1,
+      "recurrence": 1,
+      "verification": {
+        "participants": 4,
+        "endorse": 4,
+        "amend": 0,
+        "contest": 0,
+        "amendments": [],
+        "gate": "commons_only"
+      }
+    }
+  ],
+  "interventions": {
+    "from_plans": [
+      {
+        "id": "8c0fa6ed-df8a-458e-a628-28e8ddcaf8bb",
+        "name": "Sand delivery confirmed \u2014 depot lorry",
+        "note": "ValueFlows commitment from Mutual Aid North \u2014 qty 2 tonne, pledged to the prep-day need.",
+        "signal_ids": [
+          "2a453139-3801-4770-9ab2-0ff878172c4e"
+        ],
+        "counter_signal_ids": [],
+        "priced": false
+      },
+      {
+        "id": "75c94966-7720-468d-af66-03b880bad3ab",
+        "name": "Warm blankets intent",
+        "note": "ValueFlows intent from Mutual Aid North \u2014 blankets for the rest centre, needed by 2027-01-17.",
+        "signal_ids": [
+          "00fe654d-8a90-4533-86dd-8d9a82a16a48"
+        ],
+        "counter_signal_ids": [],
+        "priced": false
+      }
+    ],
+    "from_place": [
+      {
+        "id": "89321ce4-627d-405e-9f9a-74f0ae734caf",
+        "name": "Community flood-response prep day",
+        "note": "The mutual-aid possibility \u2014 10 participants needed by 2027-01-17, hall as rest centre.",
+        "signal_ids": [
+          "00fe654d-8a90-4533-86dd-8d9a82a16a48",
+          "0dc8e043-5593-44fc-8d69-19025a4ffa1f",
+          "2a453139-3801-4770-9ab2-0ff878172c4e",
+          "fc3de299-b1a5-4b6e-8729-be1ca3387375"
+        ],
+        "counter_signal_ids": [],
+        "priced": false
+      },
+      {
+        "id": "7623107d-3892-4395-88a5-4911fb40c767",
+        "name": "Street-warden check-in rota",
+        "note": "Non-required need flagged by hebden-mutual-aid \u2014 pairs with the prep day.",
+        "signal_ids": [
+          "0dc8e043-5593-44fc-8d69-19025a4ffa1f"
+        ],
+        "counter_signal_ids": [],
+        "priced": false
+      }
+    ]
+  },
+  "sips": [
+    {
+      "id": "f5ec798f-bf2a-445d-add9-58fa20ac84c6",
+      "kind": "threshold",
+      "title": "Two tonnes of sand meet the sandbags",
+      "what_changes": "The overlap record already links the depot-lorry commitment to the sandbags need at 0.31 confidence \u2014 a confirmed delivery turns a proposed match into coverage.",
+      "time_to_show": "weeks",
+      "evidence_claim_ids": [
+        "449058a9-e04e-42ec-93ce-ad07fc0b67a8",
+        "4de5cdda-ea8a-4398-9d8f-7b0c543a423c",
+        "9a810805-e5a1-4380-90d4-bd851e1f0252",
+        "da5e88a5-6a99-4b6d-aa3e-6ef68ad6f5d0",
+        "e8991a11-6529-4de1-9866-fed6206528f5"
+      ]
+    },
+    {
+      "id": "712f7143-e77d-448b-a580-9e692182ee5d",
+      "kind": "node",
+      "title": "Ten hands on the prep day",
+      "what_changes": "The possibility needs 10 participants by 2027-01-17. Pumps, bins, wardens and the hall all converge on that one Saturday.",
+      "time_to_show": "about a month",
+      "evidence_claim_ids": [
+        "16afbbc2-410e-4529-8de8-73d7ee8f1b8f",
+        "1e419123-7ad8-4405-b2da-425be8278a5e",
+        "1f274543-c240-41bf-b944-0af6977790ec",
+        "56074a94-895c-474c-9404-f3736695658a",
+        "a3e9bb08-2103-497b-8ef5-69d8b1e4287b",
+        "c87b27a1-2dab-438c-b9ed-6dd41e07322c"
+      ]
+    }
+  ],
+  "priorities": {
+    "title": "Where capital is most needed",
+    "intro": "Derived from this place\u2019s own signals: unreached needs first, then the loudest voices, then the leverage points.",
+    "items": [
+      {
+        "heading": "The plans don\u2019t reach it",
+        "text": "The prep day needs pumps, bins and bodies filling sandbags \u2014 5 voices, and no funded scheme answers it."
+      },
+      {
+        "heading": "The plans don\u2019t reach it",
+        "text": "Neighbours will check on vulnerable neighbours \u2014 1 voice, and no funded scheme answers it."
+      },
+      {
+        "heading": "Where the voices are",
+        "text": "The prep day needs pumps, bins and bodies filling sandbags \u2014 5 voices say this most."
+      },
+      {
+        "heading": "The leverage point to watch",
+        "text": "Two tonnes of sand meet the sandbags \u2014 The overlap record already links the depot-lorry commitment to the sandbags need at 0.31 confidence \u2014 a confirmed delivery turns a proposed match into coverage."
+      }
+    ]
+  },
+  "meta": {
+    "place_id": "hebden-bridge",
+    "version": "2026-10-25",
+    "published_at": "2026-10-25T20:06:30.360Z",
+    "manifest_sha256": "25deeaf84580dc74b27637306b0c3fc0e2ed18f94ab72f6fb65adc1b7f474b21"
+  }
+}

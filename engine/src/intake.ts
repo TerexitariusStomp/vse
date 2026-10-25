@@ -9,6 +9,7 @@ const StoryIn = z.object({
   teller_role: z.string().min(1).max(120),
   channel: z.enum(['whatsapp', 'voice', 'web', 'facilitated']),
   text: z.string().min(1),
+  source: z.string().max(500).optional(), // provenance ref — "system (record)"
 })
 
 export const intake = new Hono<{ Bindings: Env }>()
@@ -20,9 +21,16 @@ intake.post('/places/:placeId/stories', async (c) => {
   const placeId = c.req.param('placeId')
   const id = crypto.randomUUID()
   const res = await c.env.DB.prepare(
-    'INSERT INTO stories (id, place_id, teller_role, channel, text) VALUES (?, ?, ?, ?, ?)',
+    'INSERT INTO stories (id, place_id, teller_role, channel, text, source) VALUES (?, ?, ?, ?, ?, ?)',
   )
-    .bind(id, placeId, body.data.teller_role, body.data.channel, body.data.text)
+    .bind(
+      id,
+      placeId,
+      body.data.teller_role,
+      body.data.channel,
+      body.data.text,
+      body.data.source ?? null,
+    )
     .run()
   if (!res.success) return c.json({ error: 'insert failed (unknown place?)' }, 400)
   await c.env.PIPELINE.send({ kind: 'extract', placeId, storyId: id })

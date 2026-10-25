@@ -1,0 +1,116 @@
+{
+  "place": {
+    "id": "hebden-bridge",
+    "name": "Hebden Bridge",
+    "kind": "market town, Calderdale, West Yorkshire",
+    "summary": "A Pennine town that floods: mutual aid runs a flood-response prep day while a peer ValueFlows network commits supplies.",
+    "geo": { "lat": 53.7433, "lon": -2.0136 },
+    "readings": [
+      {
+        "label": "Flood-risk areas mapped within 15km",
+        "value": "99 · 0 warnings/alerts currently active",
+        "source": "EA Flood Monitoring — OGL"
+      },
+      {
+        "label": "Postcode context",
+        "value": "HX7 8EJ → parish Hebden Royd, LSOA Calderdale 004F",
+        "source": "ONS geography via postcodes.io"
+      },
+      {
+        "label": "Prep-day quorum",
+        "value": "10 participants needed by 2027-01-17",
+        "source": "possibility poss-hebden-flood-response"
+      }
+    ]
+  },
+  "stories": [
+    { "teller_role": "hebden-mutual-aid", "channel": "facilitated", "source": "possibility poss-hebden-flood-response", "text": "Community flood-response prep day" },
+    { "teller_role": "hebden-mutual-aid", "channel": "facilitated", "source": "possibility poss-hebden-flood-response", "text": "Flood season is coming — fill sandbags, check pumps, set up the hall as a rest centre, map vulnerable neighbours" },
+    { "teller_role": "hebden-mutual-aid", "channel": "facilitated", "source": "plannode poss-hebden-flood-response-need-0", "text": "Sandbags and sand supply" },
+    { "teller_role": "hebden-mutual-aid", "channel": "facilitated", "source": "plannode poss-hebden-flood-response-need-1", "text": "Working pumps (borrow or buy)" },
+    { "teller_role": "hebden-mutual-aid", "channel": "facilitated", "source": "plannode poss-hebden-flood-response-need-2", "text": "Hall booked as rest centre" },
+    { "teller_role": "hebden-mutual-aid", "channel": "facilitated", "source": "plannode poss-hebden-flood-response-need-3", "text": "Street wardens for vulnerable-neighbour check-ins" },
+    { "teller_role": "hebden-mutual-aid", "channel": "facilitated", "source": "plannode poss-hebden-flood-response-offer-bins", "text": "Four wheelie bins for sandbag filling" },
+    { "teller_role": "priya", "channel": "facilitated", "source": "plannode poss-hebden-flood-response-offer-priya", "text": "Two submersible pumps, tested" },
+    { "teller_role": "calder-council-liaison", "channel": "facilitated", "source": "plannode poss-hebden-flood-response-offer-sand", "text": "Sand supply — depot confirmed" },
+    { "teller_role": "Mutual Aid North", "channel": "facilitated", "source": "vf:playnet-demo intent", "text": "Warm blankets for the rest centre" },
+    { "teller_role": "Mutual Aid North", "channel": "facilitated", "source": "vf:playnet-demo commitment", "text": "Sand delivery confirmed — depot lorry" },
+    { "teller_role": "Mutual Aid North", "channel": "facilitated", "source": "vf:playnet-demo commitment terms", "text": "qty 2 tonne" }
+  ],
+  "signals": [
+    {
+      "key": "sig-supplies",
+      "statement": "The prep day needs pumps, bins and bodies filling sandbags",
+      "claim_texts": [
+        "Community flood-response prep day",
+        "Flood season is coming — fill sandbags, check pumps, set up the hall as a rest centre, map vulnerable neighbours",
+        "Working pumps (borrow or buy)",
+        "Two submersible pumps, tested",
+        "Four wheelie bins for sandbag filling"
+      ]
+    },
+    {
+      "key": "sig-sand",
+      "statement": "The sandbags question is answered twice — once by the liaison, once by the network",
+      "claim_texts": [
+        "Sandbags and sand supply",
+        "Sand supply — depot confirmed",
+        "Sand delivery confirmed — depot lorry",
+        "qty 2 tonne"
+      ]
+    },
+    {
+      "key": "sig-rest-centre",
+      "statement": "The rest centre needs a warm hall ready by flood season",
+      "claim_texts": [
+        "Hall booked as rest centre",
+        "Warm blankets for the rest centre"
+      ]
+    },
+    {
+      "key": "sig-wardens",
+      "statement": "Neighbours will check on vulnerable neighbours",
+      "claim_texts": [
+        "Street wardens for vulnerable-neighbour check-ins"
+      ]
+    }
+  ],
+  "participants": 4,
+  "votes": {
+    "sig-supplies": ["endorse", "endorse", "endorse", "endorse"],
+    "sig-sand": ["endorse", "endorse", "endorse", "amend"],
+    "sig-rest-centre": ["endorse", "endorse", "endorse", null],
+    "sig-wardens": ["endorse", "endorse", "endorse", "endorse"]
+  },
+  "amendments": {
+    "sig-sand": "Confirm the depot lorry timing — the two-tonne load must land before the prep day."
+  },
+  "gates": {
+    "sig-supplies": "commons_only",
+    "sig-sand": "commons_only",
+    "sig-rest-centre": "commons_only",
+    "sig-wardens": "commons_only"
+  },
+  "interventions": [
+    { "view": "from_plans", "name": "Sand delivery confirmed — depot lorry", "note": "ValueFlows commitment from Mutual Aid North — qty 2 tonne, pledged to the prep-day need.", "signals": ["sig-sand"], "priced": false },
+    { "view": "from_plans", "name": "Warm blankets intent", "note": "ValueFlows intent from Mutual Aid North — blankets for the rest centre, needed by 2027-01-17.", "signals": ["sig-rest-centre"], "priced": false },
+    { "view": "from_place", "name": "Community flood-response prep day", "note": "The mutual-aid possibility — 10 participants needed by 2027-01-17, hall as rest centre.", "signals": ["sig-supplies", "sig-sand", "sig-rest-centre", "sig-wardens"], "priced": false },
+    { "view": "from_place", "name": "Street-warden check-in rota", "note": "Non-required need flagged by hebden-mutual-aid — pairs with the prep day.", "signals": ["sig-wardens"], "priced": false }
+  ],
+  "sips": [
+    {
+      "kind": "threshold",
+      "title": "Two tonnes of sand meet the sandbags",
+      "what_changes": "The overlap record already links the depot-lorry commitment to the sandbags need at 0.31 confidence — a confirmed delivery turns a proposed match into coverage.",
+      "time_to_show": "weeks",
+      "evidence_signals": ["sig-sand"]
+    },
+    {
+      "kind": "node",
+      "title": "Ten hands on the prep day",
+      "what_changes": "The possibility needs 10 participants by 2027-01-17. Pumps, bins, wardens and the hall all converge on that one Saturday.",
+      "time_to_show": "about a month",
+      "evidence_signals": ["sig-supplies", "sig-wardens"]
+    }
+  ]
+}
