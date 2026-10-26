@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Record the VSE demo walkthrough video.
 
-CDP Page.startScreencast (server-pushed compositor frames) + espeak-ng
-narration per section + ffmpeg mux. An injected CSS animation keeps the
+CDP Page.startScreencast (server-pushed compositor frames) + edge-tts
+neural narration per section + ffmpeg mux. An injected CSS animation keeps the
 compositor producing frames even on static pages.
 
 Needs a Chrome-family browser on CDP http://localhost:9222.
@@ -25,7 +25,9 @@ OUT = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
 TMP = "/tmp/vse-video"
 W, H, QUALITY = 1920, 1080, 62
 
-# (name, [(path, mode)], narration for espeak-ng + srt)
+# (name, [(path, mode)], narration for edge-tts + srt)
+TTS_VOICE = "en-GB-SoniaNeural"
+TTS_RATE = "-8%"
 # modes: scroll | story | signal | check | capital | utopia | thread | None
 SECTIONS = [
     ("01-landing", [("/", "scroll")], """Every place knows what it needs.
@@ -230,12 +232,15 @@ def srt_ts(sec):
 
 segs, cues, cursor = [], [], 0.0
 for name, pages, narration in SECTIONS:
-    wav = f"{TMP}/{name}.wav"
-    subprocess.run(["espeak-ng", "-v", "en-us", "-s", "145", "-p", "30",
-                    "-w", wav, narration], check=True)
-    adur = float(subprocess.check_output(
-        ["ffprobe", "-v", "quiet", "-show_entries", "format=duration",
-         "-of", "csv=p=0", wav]).strip())
+    tts = f"{TMP}/{name}.mp3"
+    subprocess.run(["edge-tts", "--voice", TTS_VOICE, f"--rate={TTS_RATE}",
+                    "-t", " ".join(narration.split()),
+                    "--write-media", tts], check=True)
+    probe = subprocess.run([FFMPEG, "-hide_banner", "-i", tts],
+                           capture_output=True, text=True).stderr
+    m = re.search(r"Duration: (\d+):(\d+):(\d+\.\d+)", probe)
+    adur = (int(m.group(1)) * 3600 + int(m.group(2)) * 60
+            + float(m.group(3))) if m else 10.0
     dur = adur + 1.5
     per = dur / len(pages)
     steps = [(0.0, "nav", pages[0][0])]
@@ -264,7 +269,7 @@ for name, pages, narration in SECTIONS:
     seg = f"{TMP}/{name}.mp4"
     subprocess.run(
         [FFMPEG, "-y", "-f", "concat", "-safe", "0", "-i", lst,
-         "-i", wav, "-t", f"{actual:.2f}",
+         "-i", tts, "-t", f"{actual:.2f}",
          "-vf", f"scale={W}:{H}:force_original_aspect_ratio=decrease,"
                 f"pad={W}:{H}:(ow-iw)/2:(oh-ih)/2,fps=25",
          "-c:v", "libx264", "-pix_fmt", "yuv420p", "-preset", "fast",

@@ -1,35 +1,35 @@
 1
-00:00:00,000 --> 00:00:18,130
+00:00:00,000 --> 00:00:18,120
 Every place knows what it needs. The Value Structuring Engine turns the stories a place tells into signals it has checked, and the signals into capital legibility. This is the live deployment — ten places, a hundred ninety one stories, not one paraphrased.
 
 2
-00:00:18,130 --> 00:00:33,020
+00:00:18,120 --> 00:00:33,000
 Thorntree, a council estate in east Middlesbrough. Beside its own words sits the official record: deprivation decile one, thirty four flood risk areas within fifteen kilometres, tool library vouchers on the ledger.
 
 3
-00:00:33,020 --> 00:00:49,990
+00:00:33,000 --> 00:00:49,950
 The stories arrive as records — hub notes, vouchers, plan documents, public posts. Underlined passages are the exact excerpts the engine kept. Provenance chips name the record. A public post links back to itself.
 
 4
-00:00:49,990 --> 00:01:08,050
+00:00:49,950 --> 00:01:07,990
 Excerpts consolidate into a handful of signals. Open one and it shows the exact words behind it — tap a quote and it lands highlighted inside its story. Every claim is a mechanical slice of the source text. The validator rejects anything else.
 
 5
-00:01:08,050 --> 00:01:26,710
+00:01:07,990 --> 00:01:26,630
 Nothing guides capital until the people who told the stories have checked it. Endorse, amend, contest — and a gate: may be priced, commons only, or not yet. Commons is not price zero. It is a category the system structurally cannot price.
 
 6
-00:01:26,710 --> 00:01:44,670
+00:01:26,630 --> 00:01:44,550
 The same verified signals, structured two ways. From the plans: one project per need. From the place: interventions answering several at once — and the view names what it leaves out. Intervention points mark where the system could tip.
 
 7
-00:01:44,670 --> 00:01:56,750
+00:01:44,550 --> 00:01:56,630
 One place is fictional, and says so everywhere. Its diorama carries eight generated voices — press listen and hear the hill farmer, or the elder's story told in Welsh.
 
 8
-00:01:56,750 --> 00:02:13,070
+00:01:56,630 --> 00:02:12,950
 Four of the ten places are founded entirely on public posts — Nairobi, Detroit, Minneapolis, Puerto la Cruz — attributed to channel, never to a person. A new place ships as a results file, not a codebase change.
 
 9
-00:02:13,070 --> 00:02:29,850
+00:02:12,950 --> 00:02:29,710
 Follow one sentence end to end: we need marsh reeds and planting days volunteers becomes a signal the place checked, becomes a marsh regeneration scheme a funder can answer. The schema, the validator, and every place spec are in the public repo.
