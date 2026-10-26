@@ -16,7 +16,7 @@ import { Check } from './Check'
 import { Capital } from './Capital'
 import { Priorities } from './Priorities'
 
-const TITLE = 'Value Structuring Engine'
+const TITLE = 'VSE'
 
 export function PlacePage({ placeId }: { placeId: string }) {
   if (!placeMeta(placeId)) return <NotFound />

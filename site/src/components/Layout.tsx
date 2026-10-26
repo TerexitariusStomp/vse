@@ -3,6 +3,7 @@ import { Link } from 'wouter'
 import { useResults } from '../lib'
 import { landing } from '../copy'
 import { PlacesMenu } from './PlacesMenu'
+import { Mark } from './Mark'
 import { StepBar } from './StepBar'
 import { ThemeToggle } from './ThemeToggle'
 
@@ -16,8 +17,9 @@ export function Layout({ children }: { children: ReactNode }) {
           <div className="mx-auto flex max-w-5xl items-center gap-4 px-5 py-3">
             <Link
               href="/"
-              className="font-display flex min-h-11 items-center text-lg text-ink outline-offset-2 focus-visible:outline-2 focus-visible:outline-teal"
+              className="font-display flex min-h-11 items-center gap-2 text-lg text-ink outline-offset-2 focus-visible:outline-2 focus-visible:outline-teal"
             >
+              <Mark size={20} className="text-teal" />
               VSE
             </Link>
             <PlacesMenu current={results.place.id} />

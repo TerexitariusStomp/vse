@@ -9,6 +9,7 @@ import { Globe } from '../components/Globe'
 import { InView } from '../components/InView'
 import { Term } from '../components/Term'
 import { ThemeToggle } from '../components/ThemeToggle'
+import { Mark } from '../components/Mark'
 
 type PlaceEntry = PlacesIndex['places'][number]
 
@@ -92,7 +93,10 @@ export function Landing() {
     <div className="min-h-screen">
       <header className="rule-b sticky top-0 z-20 bg-paper/95 backdrop-blur-sm">
         <div className="mx-auto flex max-w-5xl items-center gap-4 px-5 py-3">
-          <span className="font-display text-lg text-ink">VSE</span>
+          <span className="flex items-center gap-2 font-display text-lg text-teal">
+            <Mark size={20} />
+            <span className="text-ink">VSE</span>
+          </span>
           <ThemeToggle className="ml-auto" />
         </div>
       </header>
