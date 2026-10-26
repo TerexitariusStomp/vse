@@ -1,0 +1,104 @@
+{
+ "place": "dar-es-salaam",
+ "curated_from": "tools/social/candidates/dar-es-salaam.json",
+ "indices": [
+  28,
+  66,
+  73,
+  42,
+  83,
+  103,
+  101,
+  91
+ ],
+ "candidates": [
+  {
+   "id": "nostr:eccb450250ffcdda53897462a9a5df5f83a916e709fe6221c38e37e9f71c9ece",
+   "network": "nostr",
+   "author": "59f0660b34dd48f9dfac5d973b77774a75af057ea3a261214ac5cdccd5d24440",
+   "handle": "59f0660b34dd48f9dfac5d973b77774a75af057ea3a261214ac5cdccd5d24440",
+   "ts": "2026-09-22T11:59:38+00:00",
+   "text": "We officially kicked off our Lightning Developer Bootcamp Yesterday in Dar es Salaam, Tanzania! 🇹🇿\n\nIt was an inspiring start as we welcomed a passionate group of developers eager to learn, build, and contribute to the future of Bitcoin and the Lightning Network in Africa.\n\nDay 1 was all about going back to the basics. We explored the fundamentals of money - what money is, why it matters, and how Bitcoin is redefining it. We discussed the problems with the current financial system and how Bitcoin provides a decentralized, open, and permissionless alternative. This strong foundation is essentia",
+   "match_reason": "text_match",
+   "author_bio": "",
+   "url": "https://njump.me/note1an952qjsllxa55ufw332nfwlt7p6j9h8p8lxygwr3cm7nacunm8q5surdn"
+  },
+  {
+   "id": "nostr:81972ab908721d5ec3db8074feef4375357fa2df1c51284329a10b85bb485742",
+   "network": "nostr",
+   "author": "59f0660b34dd48f9dfac5d973b77774a75af057ea3a261214ac5cdccd5d24440",
+   "handle": "59f0660b34dd48f9dfac5d973b77774a75af057ea3a261214ac5cdccd5d24440",
+   "ts": "2026-09-05T06:20:45+00:00",
+   "text": "🚨 DAR ES SALAAM, WE’RE COMING! 🇹🇿\n\nAfrica Free Routing is bringing the Lightning Developer Bootcamp to Dar es Salaam for 5 days of hands on learning, coding, building and connecting with other Bitcoin and Lightning developers.\n\n📅 Sept 21st to 25th, 2026\n📍 Sahara Ventures HQ, Victoria\n🎟️ Apply: https://freerouting.africa/dar-lightning-developer-bootcamp#register\n\nIf you’re a developer looking to build with Bitcoin and Lightning, this is for you.\n\nCome build the future of payments in Africa. \n\n",
+   "match_reason": "text_match",
+   "author_bio": "",
+   "url": "https://njump.me/note1sxtj4wggwgw4as7msp60am6rw56hlgklr3gjssef5y9ctw6g2apqvl97qh"
+  },
+  {
+   "id": "nostr:4e5ea8bb451e32e5fdb446d5e39be0e90a35d8db99d5af19429726a29b1321ce",
+   "network": "nostr",
+   "author": "8c8eefc64fdb7e723b4042264a33454ed125b547e69f2df09f6946b5eaa1d54e",
+   "handle": "8c8eefc64fdb7e723b4042264a33454ed125b547e69f2df09f6946b5eaa1d54e",
+   "ts": "2026-08-31T15:31:22+00:00",
+   "text": "NEW: 🇷🇼🇹🇿 Africa Free Routing Wraps Lightning Developer Bootcamp in Rwanda, Next Stop Dar es Salaam.\n\nnprofile1qqsfrhzkwjd75qmakyktt094juryeuuedu9u3dz82f5shansr9us4ugrany4e's Lightning Developer Bootcamp in Kigali, Rwanda wrapped up this week. Five days of learning, building, and hands-on work with Bitcoin and Lightning came to a close.\n\nhttps://image.nostr.build/7b0b5de7709f7329fa48f32138e53b254f0d6a4c623823c8372140782d65fafa.jpg https://image.nostr.build/097b8a15d8f5e1fb9d2bc031ae443554465878df7268ff2cc11782cde06381b2.jpg\n\nRead More: https://bitcoinnews.africa/kigali-bootcamp-dar-es-salaam-a",
+   "match_reason": "text_match",
+   "author_bio": "",
+   "url": "https://njump.me/note1fe023w69rcewtld5gm278xlqay9rtkxmn8267x2zjun29xcny88q84zywp"
+  },
+  {
+   "id": "nostr:a8eeb556e0b67a872cedebf25ce5a69b68b4829d35a916d1d89e79f0a3635f4e",
+   "network": "nostr",
+   "author": "59f0660b34dd48f9dfac5d973b77774a75af057ea3a261214ac5cdccd5d24440",
+   "handle": "59f0660b34dd48f9dfac5d973b77774a75af057ea3a261214ac5cdccd5d24440",
+   "ts": "2026-09-15T09:46:40+00:00",
+   "text": "ChapSmart is a Bitcoin payment service made for Tanzania. It lets you send Bitcoin using the Lightning Network and have it arrive instantly as Tanzanian Shillings straight into M-Pesa — or use it to pay bills directly, like we just talked about. No bank needed, no long waits, and fees are tiny compared to regular money transfer services. It's built to make Bitcoin genuinely useful for everyday Tanzanians, not just something you hold and watch the price of. Simple, fast, and practical money movement. \n\n",
+   "match_reason": "text_match",
+   "author_bio": "",
+   "url": "https://njump.me/note14rht24hqkeagwt8da0e9eedxnd5tfq5axk53d5wcneulpgmrta8q9n0le8"
+  },
+  {
+   "id": "nostr:bd5f05c54e227d829e07db3233c076df977f60c5b32dd7352bb86026d53ecab2",
+   "network": "nostr",
+   "author": "5e5fc1434c928bcdcba6f801859d5238341093291980fd36e33b7416393d5a2c",
+   "handle": "JackSparrow",
+   "ts": "2026-08-23T15:53:10+00:00",
+   "text": "AFRICA is BUILDING\nENERGY means PROGRESS\nTanzania has commissioned the 2,115 MW Julius Nyerere Hydropower Project (JNHPP), surging its national capacity by >80%\nhttps://pbs.twimg.com/media/HQZmGmQXkAAwklZ.jpg\n🇹🇿 🇰🇪 🇪🇬",
+   "match_reason": "text_match",
+   "author_bio": "#computing #itinfra #travel #consulting #fintwit 🐋#crypto #acceptance",
+   "url": "https://njump.me/note1h40st32wyf7c98s8mver8srkm7th7cx9kvkawdfthpszd4f7e2eq7dlwwa"
+  },
+  {
+   "id": "bsky:at://did:plc:jbvnehrrdqoulco4rf5gxg5r/app.bsky.feed.post/3mqaeeqong62c",
+   "network": "bsky",
+   "author": "did:plc:jbvnehrrdqoulco4rf5gxg5r",
+   "handle": "Reuters",
+   "ts": "2026-07-09T19:25:15+00:00",
+   "text": "Tanzania arrests 130 people as government cracks down on dissent reut.rs/4aLolE9",
+   "match_reason": "text_match",
+   "author_bio": "",
+   "url": "https://bsky.app/profile/Reuters/post/3mqaeeqong62c"
+  },
+  {
+   "id": "bsky:at://did:plc:a67zdrt4nl2tv2qojpngogbq/app.bsky.feed.post/3mrir5kgwqz27",
+   "network": "bsky",
+   "author": "did:plc:a67zdrt4nl2tv2qojpngogbq",
+   "handle": "The Associated Press",
+   "ts": "2026-07-25T21:00:22+00:00",
+   "text": "Tanzania's main opposition party says 51 of its officials have been arrested and charged with terrorism, accusing the government of using law enforcement to intimidate critics.",
+   "match_reason": "text_match",
+   "author_bio": "Advancing the power of facts, globally 🌎",
+   "url": "https://bsky.app/profile/The Associated Press/post/3mrir5kgwqz27"
+  },
+  {
+   "id": "bsky:at://did:plc:4ohb3yjgqgutlntmpwdsnaxv/app.bsky.feed.post/3msnglhfpiz2b",
+   "network": "bsky",
+   "author": "did:plc:4ohb3yjgqgutlntmpwdsnaxv",
+   "handle": "did:plc:4ohb3yjgqgutlntmpwdsnaxv",
+   "ts": "2026-08-09T10:59:47+00:00",
+   "text": "A selfless Tanzanian mother of two dedicates her time to providing kangaroo care for abandoned premature babies. 💕",
+   "match_reason": "text_match",
+   "author_bio": "",
+   "url": "https://bsky.app/profile/did:plc:4ohb3yjgqgutlntmpwdsnaxv/post/3msnglhfpiz2b"
+  }
+ ]
+}

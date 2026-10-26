@@ -151,6 +151,33 @@ Widespread account — R2 was already enabled on Pressword):
   and is what `site/public/data/` serves — engine output is the canonical
   data on the demonstrator.
 
+### Speed (as of 0003)
+
+A spec-driven place run completes in ~60–90s instead of ~5–10min:
+
+- The queue consumer processes its batch concurrently, not serially.
+- `POST /api/extract-batch` re-drives N stories in one call (parallel inside
+  the worker); `POST /api/claims/span` inserts an analyst-specified verbatim
+  span directly (`proposer='analyst'`) — the spec already knows the text, so
+  unmatched spec claims need zero model calls. All three proposers
+  (`model`/`analyst`/`fallback`) pass the identical slice-equality gate.
+- The runner lints the spec locally before any API call, polls claims
+  adaptively, batches thin/claimless re-drives (stories whose only claims
+  are <20 chars get one more model pass), and parallelises every
+  independent phase. `--deterministic-only` skips model waits entirely for
+  spec iteration.
+- `UNIQUE(place_id, text)` makes intake idempotent; claim inserts dedupe
+  on `(story_id, text)` so re-drives never double-count.
+
+### Social corpus
+
+Public posts from Bluesky, Nostr and Hive can become first-class stories
+(`channel: 'social'`, provenance URL in `source`). `tools/social/` exports
+candidate posts from the Rooted audience-identity index, a lexicon scan
+finds community-economy texture corpus-wide, and specs cite curated
+exports via `social_exports` — the same verbatim-corpus check applies.
+See `docs/SOCIAL-DATA.md`.
+
 ## Licence
 
 Apache-2.0 — see `LICENSE`. Dependency licences per `OSS-STACK.md`:

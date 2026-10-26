@@ -3,7 +3,7 @@ import type { Env, PipelineJob } from './env.ts'
 import { intake } from './intake.ts'
 import { check } from './check.ts'
 import { structure } from './structure.ts'
-import { runExtraction } from './extract.ts'
+import { runExtraction, findSpans } from './extract.ts'
 import { runConsolidation } from './consolidate.ts'
 import { publish } from './publish.ts'
 
@@ -70,6 +70,51 @@ analyst.post('/extract/:storyId', async (c) => {
   return c.json({ ok: true })
 })
 
+/** Re-run extraction for many stories in parallel (one HTTP call). */
+analyst.post('/extract-batch', async (c) => {
+  const { storyIds } = await c.req.json()
+  if (!Array.isArray(storyIds) || !storyIds.length)
+    return c.json({ error: 'storyIds array required' }, 400)
+  const results = await Promise.allSettled(
+    storyIds.map((id: string) => runExtraction(c.env, id)),
+  )
+  const failed = results.filter((r) => r.status === 'rejected').length
+  return c.json({ extracted: storyIds.length - failed, failed })
+})
+
+/**
+ * Analyst-specified verbatim span → verified claim. The model is one
+ * proposer; the analyst is another — the slice-equality gate applies
+ * identically to both, so this never bypasses the verbatim contract.
+ */
+analyst.post('/claims/span', async (c) => {
+  const { story_id, text } = await c.req.json()
+  if (!story_id || typeof text !== 'string' || !text.length)
+    return c.json({ error: 'story_id and non-empty text required' }, 400)
+  const story = await c.env.DB.prepare(
+    'SELECT id, place_id, text FROM stories WHERE id = ? AND withdrawn = 0',
+  )
+    .bind(story_id)
+    .first<{ id: string; place_id: string; text: string }>()
+  if (!story) return c.json({ error: 'story not found' }, 404)
+  const spans = findSpans(story.text, text)
+  if (!spans.length) return c.json({ error: 'text not verbatim in story' }, 422)
+  const existing = await c.env.DB.prepare(
+    "SELECT id FROM claims WHERE story_id = ? AND text = ? AND status = 'verified'",
+  )
+    .bind(story.id, text)
+    .first<{ id: string }>()
+  if (existing) return c.json({ id: existing.id, dedup: true })
+  const id = crypto.randomUUID()
+  await c.env.DB.prepare(
+    `INSERT INTO claims (id, place_id, story_id, text, span_start, span_end, status, proposer)
+     VALUES (?, ?, ?, ?, ?, ?, 'verified', 'analyst')`,
+  )
+    .bind(id, story.place_id, story.id, text, spans[0][0], spans[0][1])
+    .run()
+  return c.json({ id }, 201)
+})
+
 analyst.get('/stories/:placeId', async (c) => {
   const { results } = await c.env.DB.prepare(
     'SELECT id, teller_role, channel, text, withdrawn FROM stories WHERE place_id = ? ORDER BY created_at',
@@ -91,34 +136,39 @@ export default {
   fetch: app.fetch,
 
   async queue(batch: MessageBatch<PipelineJob>, env: Env): Promise<void> {
-    for (const msg of batch.messages) {
-      const job = msg.body
-      try {
-        if (job.kind === 'transcribe') {
-          const audio = await env.ARTIFACTS.get(job.r2Key)
-          if (!audio) throw new Error(`missing audio ${job.r2Key}`)
-          const bytes = new Uint8Array(await audio.arrayBuffer())
-          const res = (await env.AI.run('@cf/openai/whisper', {
-            audio: [...bytes],
-          })) as { text?: string }
-          const text = res.text?.trim()
-          if (text) {
-            const id = crypto.randomUUID()
-            await env.DB.prepare(
-              'INSERT INTO stories (id, place_id, teller_role, channel, text, r2_key) VALUES (?, ?, ?, ?, ?, ?)',
-            ).bind(id, job.placeId, job.tellerRole, job.channel, text, job.r2Key).run()
-            await env.PIPELINE.send({ kind: 'extract', placeId: job.placeId, storyId: id })
+    // Messages are independent jobs — run them concurrently. Each still
+    // gets the same per-claim span check; a failure retries only that
+    // message.
+    await Promise.allSettled(
+      batch.messages.map(async (msg) => {
+        const job = msg.body
+        try {
+          if (job.kind === 'transcribe') {
+            const audio = await env.ARTIFACTS.get(job.r2Key)
+            if (!audio) throw new Error(`missing audio ${job.r2Key}`)
+            const bytes = new Uint8Array(await audio.arrayBuffer())
+            const res = (await env.AI.run('@cf/openai/whisper', {
+              audio: [...bytes],
+            })) as { text?: string }
+            const text = res.text?.trim()
+            if (text) {
+              const id = crypto.randomUUID()
+              await env.DB.prepare(
+                'INSERT INTO stories (id, place_id, teller_role, channel, text, r2_key) VALUES (?, ?, ?, ?, ?, ?)',
+              ).bind(id, job.placeId, job.tellerRole, job.channel, text, job.r2Key).run()
+              await env.PIPELINE.send({ kind: 'extract', placeId: job.placeId, storyId: id })
+            }
+          } else if (job.kind === 'extract') {
+            await runExtraction(env, job.storyId)
+          } else if (job.kind === 'consolidate') {
+            await runConsolidation(env, job.placeId) // results surface via /api/consolidate
           }
-        } else if (job.kind === 'extract') {
-          await runExtraction(env, job.storyId)
-        } else if (job.kind === 'consolidate') {
-          await runConsolidation(env, job.placeId) // results surface via /api/consolidate
+          msg.ack()
+        } catch (e) {
+          console.error('pipeline job failed', job.kind, e)
+          msg.retry()
         }
-        msg.ack()
-      } catch (e) {
-        console.error('pipeline job failed', job.kind, e)
-        msg.retry()
-      }
-    }
+      }),
+    )
   },
 }

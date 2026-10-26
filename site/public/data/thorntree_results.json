@@ -4,7 +4,7 @@
     "id": "thorntree",
     "name": "Thorntree",
     "kind": "council estate, east Middlesbrough",
-    "summary": "A real estate on Middlesbrough\u2019s east side: a community hub, a tool library, and a beck that floods the marsh.",
+    "summary": "A real estate on Middlesbrough’s east side: a community hub, a tool library, and a beck that floods the marsh.",
     "geo": {
       "lat": 54.55,
       "lon": -1.208
@@ -12,18 +12,18 @@
     "readings": [
       {
         "label": "IMD deprivation decile (LSOA Middlesbrough 010D)",
-        "value": "1/10 \u00b7 score 66.9 \u00b7 rank 461 of 33,755",
-        "source": "English Indices of Deprivation 2025 \u2014 OGL"
+        "value": "1/10 · score 66.9 · rank 461 of 33,755",
+        "source": "English Indices of Deprivation 2025 — OGL"
       },
       {
         "label": "Flood-risk areas within 15km",
         "value": "34",
-        "source": "EA Flood Monitoring \u2014 OGL (fetched 2026-10-25)"
+        "source": "EA Flood Monitoring — OGL (fetched 2026-10-25)"
       },
       {
         "label": "Tool-library voucher transactions",
         "value": "12",
-        "source": "sarafu.network \u2014 public indexer"
+        "source": "sarafu.network — public indexer"
       },
       {
         "label": "Hub appreciations recorded",
@@ -35,20 +35,20 @@
   "pipeline": [
     {
       "stage": "Listening",
-      "detail": "stories told in people\u2019s own words",
-      "count": 14,
+      "detail": "stories told in people’s own words",
+      "count": 22,
       "unit": "stories"
     },
     {
       "stage": "Making sense",
       "detail": "exact excerpts extracted from stories",
-      "count": 15,
+      "count": 23,
       "unit": "excerpts"
     },
     {
       "stage": "Consolidating",
       "detail": "excerpts gathered into signals",
-      "count": 5,
+      "count": 6,
       "unit": "signals"
     },
     {
@@ -60,286 +60,424 @@
   ],
   "stories": [
     {
-      "id": "8ad37bc0-23b7-4b6f-a668-a41cbae24222",
+      "id": "0292b7ec-293b-45f1-bd01-b8ab8ffd0ca4",
       "teller_role": "Hub member",
       "channel": "facilitated",
       "text": "We need marsh reeds and planting days volunteers",
       "source": "holons:thorntree (hub action)"
     },
     {
-      "id": "424416dc-150e-4d7f-bb84-b671567e0393",
-      "teller_role": "Community ventures",
-      "channel": "facilitated",
-      "text": "We need tools and equipment for the repair caf\u00e9",
-      "source": "csv:community-needs (CVL)"
-    },
-    {
-      "id": "23cb2a20-268d-4c9b-b577-9a5e49f2c8ef",
-      "teller_role": "Hub member",
-      "channel": "facilitated",
-      "text": "Someone to run the repair caf\u00e9 laptop",
-      "source": "holons:thorntree (hub need)"
-    },
-    {
-      "id": "c0c0d1ee-8e71-4839-8f30-d9ec4f851a7a",
-      "teller_role": "Hub member",
-      "channel": "facilitated",
-      "text": "Van and driver for community moves",
-      "source": "holons:thorntree (hub offer)"
-    },
-    {
-      "id": "cfd0322c-3334-4f7b-9dd4-f4b080525eef",
+      "id": "17afee61-52c0-433e-84b9-3e19dde4e866",
       "teller_role": "Hub member",
       "channel": "facilitated",
       "text": "fuel costs only",
       "source": "holons:thorntree (hub offer)"
     },
     {
-      "id": "3caa566b-d691-4394-bbc1-4ebe72f77785",
+      "id": "ed3443cc-0d12-4540-95a7-6b609b7cef9e",
+      "teller_role": "Community ventures",
+      "channel": "facilitated",
+      "text": "We need tools and equipment for the repair café",
+      "source": "csv:community-needs (CVL)"
+    },
+    {
+      "id": "1f0b8a9c-7877-41c5-95ab-05c1e55ef13f",
       "teller_role": "Tool library",
       "channel": "facilitated",
-      "text": "Tool hire and repair caf\u00e9 supplies \u2014 drills, strimmers, scaffold \u2014 offered to local projects",
+      "text": "Tool hire and repair café supplies — drills, strimmers, scaffold — offered to local projects",
       "source": "sarafu.network voucher TTOOL"
     },
     {
-      "id": "9c0c309a-1ca3-4ac8-8bb2-2516c78a1b9e",
-      "teller_role": "Community hub",
-      "channel": "facilitated",
-      "text": "Neighbourhood resourcing \u2014 tools, time, skills",
-      "source": "holons:thorntree (hub membrane)"
-    },
-    {
-      "id": "5960138b-5d15-4e2f-b0f5-50566cad0ee9",
+      "id": "0a8f3374-845f-4084-a749-84f160867e4a",
       "teller_role": "Community plan",
       "channel": "facilitated",
       "text": "Restore the wetland and reed beds around Thorntree beck to slow surface water",
       "source": "oneplanet:plan-cvl-thorntree"
     },
     {
-      "id": "886262b8-d3a0-435f-b19f-6f1f41de34cf",
-      "teller_role": "Community plan",
+      "id": "f76f8a11-8180-4430-8b17-8c4c6e42c93a",
+      "teller_role": "Community hub",
       "channel": "facilitated",
-      "text": "A greener, flood-resilient neighbourhood",
-      "source": "oneplanet:plan-cvl-thorntree"
+      "text": "Neighbourhood resourcing — tools, time, skills",
+      "source": "holons:thorntree (hub membrane)"
     },
     {
-      "id": "ba50ba67-59b3-45d8-b8f3-54c554af32f7",
-      "teller_role": "Community plan",
+      "id": "b8aa84a9-8ca6-4917-8423-f14e4ace7296",
+      "teller_role": "Hub member",
       "channel": "facilitated",
-      "text": "Local young people in work",
-      "source": "oneplanet:plan-cvl-thorntree"
+      "text": "Van and driver for community moves",
+      "source": "holons:thorntree (hub offer)"
     },
     {
-      "id": "0cf4cdcd-16d8-4ace-a558-e6fb692661e1",
-      "teller_role": "Community plan",
+      "id": "07dff937-10c9-460f-ac10-637b374c0ffe",
+      "teller_role": "Hub member",
       "channel": "facilitated",
-      "text": "Drop-in hub linking 16\u201324s to local employers",
-      "source": "oneplanet:plan-cvl-thorntree"
+      "text": "Someone to run the repair café laptop",
+      "source": "holons:thorntree (hub need)"
     },
     {
-      "id": "3283dcaf-e2c0-4b6d-a5d2-d6b20e58508b",
-      "teller_role": "Council programme",
-      "channel": "facilitated",
-      "text": "Marsh regeneration scheme",
-      "source": "csv:upload (Middlesbrough Council)"
-    },
-    {
-      "id": "b6d8e831-1d0a-4a89-b335-d142bcbe7df0",
+      "id": "cb15a285-b7de-40a3-b425-260f8cd0a387",
       "teller_role": "Council programme",
       "channel": "facilitated",
       "text": "Youth skills and jobs centre",
       "source": "csv:upload (Middlesbrough Council)"
     },
     {
-      "id": "2a4ab0fd-d290-41f6-b04c-302c0c1a17db",
+      "id": "608a272a-0a6f-4b92-98a3-9ec39d2c1986",
+      "teller_role": "bsky · North East Bylines",
+      "channel": "social",
+      "text": "Teesside Reuse Shop celebrates first year with more than 27,000 items given a second life\n“The Reuse Shop was always a brilliant idea, but to see more than 27,000 items find new homes really has surpassed all expectations\"\n\nnortheastbylines.co.uk/region/teess...",
+      "source": "https://bsky.app/profile/did:plc:drdkuiw4po3zqrzxy6xb2vlk/post/3mwikkgw6wk2g"
+    },
+    {
+      "id": "83f27c1b-18d0-4921-851a-44d1a171e329",
+      "teller_role": "Council programme",
+      "channel": "facilitated",
+      "text": "Marsh regeneration scheme",
+      "source": "csv:upload (Middlesbrough Council)"
+    },
+    {
+      "id": "c9f37124-5c6e-4cd4-b3ae-dc4d356e245d",
       "teller_role": "Council programme",
       "channel": "facilitated",
       "text": "East Middlesbrough solar feasibility",
       "source": "csv:upload (Middlesbrough Council)"
+    },
+    {
+      "id": "e4817621-413e-40d5-9cf2-c19f539aa30e",
+      "teller_role": "bsky · Teesside Live",
+      "channel": "social",
+      "text": "ICYMI: Community food charity celebrates 15 years of supporting families in Teesside",
+      "source": "https://bsky.app/profile/did:plc:ejrdonhsxyou5txhfnfu5l44/post/3mwi2ytl5u42a"
+    },
+    {
+      "id": "5191dadc-3479-46d0-85e9-b6a88bdf4509",
+      "teller_role": "Community plan",
+      "channel": "facilitated",
+      "text": "A greener, flood-resilient neighbourhood",
+      "source": "oneplanet:plan-cvl-thorntree"
+    },
+    {
+      "id": "0220e67c-564d-4d55-acd2-14c3323bc356",
+      "teller_role": "Community plan",
+      "channel": "facilitated",
+      "text": "Drop-in hub linking 16–24s to local employers",
+      "source": "oneplanet:plan-cvl-thorntree"
+    },
+    {
+      "id": "38eedfb2-2d2a-4e3c-86bd-89c75a8e43af",
+      "teller_role": "Community plan",
+      "channel": "facilitated",
+      "text": "Local young people in work",
+      "source": "oneplanet:plan-cvl-thorntree"
+    },
+    {
+      "id": "502e3022-38f5-4b5f-85a6-0361e4d2d154",
+      "teller_role": "bsky · Teesside Live",
+      "channel": "social",
+      "text": "FYI: More than 50 acts announced for Teesside's biggest grassroots music festival",
+      "source": "https://bsky.app/profile/did:plc:ejrdonhsxyou5txhfnfu5l44/post/3mwieikks652l"
+    },
+    {
+      "id": "26c92dac-c177-4c9a-88e0-1998b45dad60",
+      "teller_role": "bsky voice",
+      "channel": "social",
+      "text": "Middlesbrough’s policing crisis is being treated as a failure of one police force.\n\nBut Cleveland is struggling with a problem facing forces across Britain, writes Dominic Adler 👇 \n\nbuff.ly/XCFLiQq",
+      "source": "https://bsky.app/profile/did:plc:dbhob4ehbowinclgen27ype2/post/3mueebtc6uu2z"
+    },
+    {
+      "id": "208af57c-bdde-45f7-b348-40a2b45dcac0",
+      "teller_role": "bsky · Teesside Live",
+      "channel": "social",
+      "text": "Teesside MPs call for more police and fire service resources after Middlesbrough and A66 deaths",
+      "source": "https://bsky.app/profile/The Guardian/post/3mu3crzk7v52c"
+    },
+    {
+      "id": "e5dccec5-3692-420e-a037-c961ce08b194",
+      "teller_role": "bsky voice",
+      "channel": "social",
+      "text": "The offshore wind installation vessel Wind Ally entering the Tees yesterday. Wind is currently producing nearly half GB's electricity needs. Much of the remainder is solar or low-carbon imports, with gas accounting for only 6.8%. Only idiots want to increase our reliance on fossil fuels.",
+      "source": "https://bsky.app/profile/Palustris/post/3mwiko2gi6k2d"
+    },
+    {
+      "id": "f8b58cb8-608e-4402-8895-8ee7e91e2e4a",
+      "teller_role": "bsky · The Athletic",
+      "channel": "social",
+      "text": "It has not been an easy fortnight for Teesside, an area which has long experience of being talked down. But the football club offers hope www.nytimes.com/athletic/759...",
+      "source": "https://bsky.app/profile/The Athletic/post/3mvjtg2ylmt2k"
+    },
+    {
+      "id": "c7cf5b35-4664-4b7e-adf0-74e40462f2fd",
+      "teller_role": "bsky · The Guardian",
+      "channel": "social",
+      "text": "‘This place might look bad but it’s not’: fear and hope in Middlesbrough community after week of violence",
+      "source": "https://bsky.app/profile/The Guardian/post/3mu5m2ua5jh23"
     }
   ],
   "claims": [
     {
-      "id": "8b7a3721-d991-492a-b4b4-764b6fae1e2c",
-      "story_id": "8ad37bc0-23b7-4b6f-a668-a41cbae24222",
+      "id": "aa40fe42-5425-4306-8d44-08fe755d6247",
+      "story_id": "ed3443cc-0d12-4540-95a7-6b609b7cef9e",
+      "text": "We need tools and equipment for the repair café",
+      "span": [
+        0,
+        47
+      ],
+      "signal_id": "bea0b2df-4536-4ee2-944a-a7842ddbf88e",
+      "proposer": "model"
+    },
+    {
+      "id": "9846eb5b-6f44-4114-a672-4251b5eb7f79",
+      "story_id": "17afee61-52c0-433e-84b9-3e19dde4e866",
+      "text": "fuel costs only",
+      "span": [
+        0,
+        15
+      ],
+      "signal_id": "ceabfd2d-b9c2-4198-9f91-e2b26d1de3ca",
+      "proposer": "model"
+    },
+    {
+      "id": "895d319e-8c76-441f-8435-2940cc6cb9da",
+      "story_id": "1f0b8a9c-7877-41c5-95ab-05c1e55ef13f",
+      "text": "Tool hire and repair café supplies — drills, strimmers, scaffold — offered to local projects",
+      "span": [
+        0,
+        92
+      ],
+      "signal_id": "bea0b2df-4536-4ee2-944a-a7842ddbf88e",
+      "proposer": "model"
+    },
+    {
+      "id": "6c818fb2-fc9e-40bc-a0bf-1afe9f248dc5",
+      "story_id": "0292b7ec-293b-45f1-bd01-b8ab8ffd0ca4",
       "text": "We need marsh reeds and planting days volunteers",
       "span": [
         0,
         48
       ],
-      "signal_id": "87ca3118-884a-419f-bc31-1b0490e196f1"
+      "signal_id": "f9e72d3d-c99f-4c03-bca1-79b06b37b32e",
+      "proposer": "model"
     },
     {
-      "id": "4ef7836d-f54d-49f5-98d3-be162d77cd3b",
-      "story_id": "424416dc-150e-4d7f-bb84-b671567e0393",
-      "text": "We need tools and equipment for the repair caf\u00e9",
-      "span": [
-        0,
-        47
-      ],
-      "signal_id": "0a2036e9-871a-4ffe-95e8-62c1c811179d"
-    },
-    {
-      "id": "66c3b058-e049-463b-8d3b-fedcb51562dc",
-      "story_id": "23cb2a20-268d-4c9b-b577-9a5e49f2c8ef",
-      "text": "Someone to run the repair caf\u00e9 laptop",
-      "span": [
-        0,
-        37
-      ],
-      "signal_id": "0a2036e9-871a-4ffe-95e8-62c1c811179d"
-    },
-    {
-      "id": "e2453fec-3327-4f80-8b10-34d57b183351",
-      "story_id": "c0c0d1ee-8e71-4839-8f30-d9ec4f851a7a",
+      "id": "2c079547-569f-466a-8a09-22468f8bbd6e",
+      "story_id": "b8aa84a9-8ca6-4917-8423-f14e4ace7296",
       "text": "Van and driver for community moves",
       "span": [
         0,
         34
       ],
-      "signal_id": "9801c469-fd95-4cf4-8cfa-d57559aa6b37"
+      "signal_id": "ceabfd2d-b9c2-4198-9f91-e2b26d1de3ca",
+      "proposer": "model"
     },
     {
-      "id": "4138d95c-3f08-4e17-9f0c-90ca425c5c4c",
-      "story_id": "cfd0322c-3334-4f7b-9dd4-f4b080525eef",
-      "text": "fuel costs only",
-      "span": [
-        0,
-        15
-      ],
-      "signal_id": "9801c469-fd95-4cf4-8cfa-d57559aa6b37"
-    },
-    {
-      "id": "c2b9a035-f679-4a8b-b8cb-dae076a5fb3e",
-      "story_id": "3caa566b-d691-4394-bbc1-4ebe72f77785",
-      "text": "Tool hire and repair caf\u00e9 supplies \u2014 drills, strimmers, scaffold \u2014 offered to local projects",
-      "span": [
-        0,
-        92
-      ],
-      "signal_id": "0a2036e9-871a-4ffe-95e8-62c1c811179d"
-    },
-    {
-      "id": "070acdf4-374a-45c6-98bb-507048820f5e",
-      "story_id": "9c0c309a-1ca3-4ac8-8bb2-2516c78a1b9e",
-      "text": "Neighbourhood resourcing \u2014 tools, time, skills",
+      "id": "c66afed0-e9fe-4b24-ab43-bfa94e152dbb",
+      "story_id": "f76f8a11-8180-4430-8b17-8c4c6e42c93a",
+      "text": "Neighbourhood resourcing — tools, time, skills",
       "span": [
         0,
         46
       ],
-      "signal_id": "9801c469-fd95-4cf4-8cfa-d57559aa6b37"
+      "signal_id": "ceabfd2d-b9c2-4198-9f91-e2b26d1de3ca",
+      "proposer": "model"
     },
     {
-      "id": "17123202-d4c5-4030-8bf7-cb6f865a3d0b",
-      "story_id": "5960138b-5d15-4e2f-b0f5-50566cad0ee9",
+      "id": "11a013c1-0a4e-4af4-a304-25007bd0c83f",
+      "story_id": "07dff937-10c9-460f-ac10-637b374c0ffe",
+      "text": "Someone to run the repair café laptop",
+      "span": [
+        0,
+        37
+      ],
+      "signal_id": "bea0b2df-4536-4ee2-944a-a7842ddbf88e",
+      "proposer": "model"
+    },
+    {
+      "id": "fc06e945-502e-4b5b-8ac6-3aa2df59be04",
+      "story_id": "0a8f3374-845f-4084-a749-84f160867e4a",
       "text": "Restore the wetland and reed beds around Thorntree beck to slow surface water",
       "span": [
         0,
         77
       ],
-      "signal_id": "87ca3118-884a-419f-bc31-1b0490e196f1"
+      "signal_id": "f9e72d3d-c99f-4c03-bca1-79b06b37b32e",
+      "proposer": "model"
     },
     {
-      "id": "c999b867-8e5f-4612-a4c4-44b4edd96a66",
-      "story_id": "886262b8-d3a0-435f-b19f-6f1f41de34cf",
-      "text": "A greener, flood-resilient neighbourhood",
-      "span": [
-        0,
-        40
-      ],
-      "signal_id": "87ca3118-884a-419f-bc31-1b0490e196f1"
-    },
-    {
-      "id": "522849d9-dc7c-419b-bf17-bd80bda87435",
-      "story_id": "cfd0322c-3334-4f7b-9dd4-f4b080525eef",
-      "text": "fuel costs only",
-      "span": [
-        0,
-        15
-      ],
-      "signal_id": "9801c469-fd95-4cf4-8cfa-d57559aa6b37"
-    },
-    {
-      "id": "97c21110-161e-4489-aa58-36ed3c8e457f",
-      "story_id": "ba50ba67-59b3-45d8-b8f3-54c554af32f7",
-      "text": "Local young people in work",
-      "span": [
-        0,
-        26
-      ],
-      "signal_id": "c479466e-18b3-4ba5-b62d-fa55c3dfe4e9"
-    },
-    {
-      "id": "f34a16dd-e8ad-4037-bd72-9cebb850f320",
-      "story_id": "0cf4cdcd-16d8-4ace-a558-e6fb692661e1",
-      "text": "Drop-in hub linking 16\u201324s to local employers",
-      "span": [
-        0,
-        45
-      ],
-      "signal_id": "c479466e-18b3-4ba5-b62d-fa55c3dfe4e9"
-    },
-    {
-      "id": "6f926db2-d117-4bf1-9ede-e17547d3e8e9",
-      "story_id": "3283dcaf-e2c0-4b6d-a5d2-d6b20e58508b",
-      "text": "Marsh regeneration scheme",
-      "span": [
-        0,
-        25
-      ],
-      "signal_id": "87ca3118-884a-419f-bc31-1b0490e196f1"
-    },
-    {
-      "id": "cc0223a3-2afc-4823-9b1c-dcccc796a39d",
-      "story_id": "b6d8e831-1d0a-4a89-b335-d142bcbe7df0",
+      "id": "c2531880-00af-4fd6-b780-3b51ba6bd4cd",
+      "story_id": "cb15a285-b7de-40a3-b425-260f8cd0a387",
       "text": "Youth skills and jobs centre",
       "span": [
         0,
         28
       ],
-      "signal_id": "c479466e-18b3-4ba5-b62d-fa55c3dfe4e9"
+      "signal_id": "df1b41da-9fe9-4b0c-bacc-6b13ad3e6424",
+      "proposer": "model"
     },
     {
-      "id": "3c565874-7d4f-4f7d-8d2a-8f299196030a",
-      "story_id": "2a4ab0fd-d290-41f6-b04c-302c0c1a17db",
+      "id": "a53f8131-11a5-4962-8830-5f6994409359",
+      "story_id": "c9f37124-5c6e-4cd4-b3ae-dc4d356e245d",
       "text": "East Middlesbrough solar feasibility",
       "span": [
         0,
         36
       ],
-      "signal_id": "87ac9b7e-c7c2-4381-932a-eece78d850a5"
+      "signal_id": "8b24864b-b0b6-4b12-9d31-54e12877c275",
+      "proposer": "model"
+    },
+    {
+      "id": "6baeb319-ff2a-4878-ba81-ffbd4c600c8d",
+      "story_id": "5191dadc-3479-46d0-85e9-b6a88bdf4509",
+      "text": "A greener, flood-resilient neighbourhood",
+      "span": [
+        0,
+        40
+      ],
+      "signal_id": "f9e72d3d-c99f-4c03-bca1-79b06b37b32e",
+      "proposer": "model"
+    },
+    {
+      "id": "b20dc699-be48-49ef-b35c-69682aa9f7e4",
+      "story_id": "38eedfb2-2d2a-4e3c-86bd-89c75a8e43af",
+      "text": "Local young people in work",
+      "span": [
+        0,
+        26
+      ],
+      "signal_id": "df1b41da-9fe9-4b0c-bacc-6b13ad3e6424",
+      "proposer": "model"
+    },
+    {
+      "id": "f24efc56-51be-42c9-8756-d6be3f43873c",
+      "story_id": "c7cf5b35-4664-4b7e-adf0-74e40462f2fd",
+      "text": "‘This place might look bad but it’s not’",
+      "span": [
+        0,
+        40
+      ],
+      "signal_id": "3ceb4f01-537a-4a12-8366-1bbe65145abe",
+      "proposer": "model"
+    },
+    {
+      "id": "5f68250e-16f8-4e5d-b180-47a2c5dfc06d",
+      "story_id": "502e3022-38f5-4b5f-85a6-0361e4d2d154",
+      "text": "FYI: More than 50 acts announced for Teesside's biggest grassroots music festival",
+      "span": [
+        0,
+        81
+      ],
+      "signal_id": "df1b41da-9fe9-4b0c-bacc-6b13ad3e6424",
+      "proposer": "fallback"
+    },
+    {
+      "id": "751ec162-a5a5-4eba-975b-97ad4142350a",
+      "story_id": "208af57c-bdde-45f7-b348-40a2b45dcac0",
+      "text": "Teesside MPs call for more police and fire service resources",
+      "span": [
+        0,
+        60
+      ],
+      "signal_id": "3ceb4f01-537a-4a12-8366-1bbe65145abe",
+      "proposer": "model"
+    },
+    {
+      "id": "8a6732fa-2e83-42b9-91e9-35c73a3a6261",
+      "story_id": "0220e67c-564d-4d55-acd2-14c3323bc356",
+      "text": "Drop-in hub linking 16–24s to local employers",
+      "span": [
+        0,
+        45
+      ],
+      "signal_id": "df1b41da-9fe9-4b0c-bacc-6b13ad3e6424",
+      "proposer": "model"
+    },
+    {
+      "id": "2a8f9368-d60a-46de-b89f-3b7389866420",
+      "story_id": "83f27c1b-18d0-4921-851a-44d1a171e329",
+      "text": "Marsh regeneration scheme",
+      "span": [
+        0,
+        25
+      ],
+      "signal_id": "f9e72d3d-c99f-4c03-bca1-79b06b37b32e",
+      "proposer": "model"
+    },
+    {
+      "id": "c0a0beb7-5d19-4425-a4ae-12ab033d0c9d",
+      "story_id": "e5dccec5-3692-420e-a037-c961ce08b194",
+      "text": "Wind is currently producing nearly half GB's electricity needs",
+      "span": [
+        77,
+        139
+      ],
+      "signal_id": "8b24864b-b0b6-4b12-9d31-54e12877c275",
+      "proposer": "model"
+    },
+    {
+      "id": "49be3b47-6c9f-4f5d-a29c-2c50c94101c7",
+      "story_id": "e5dccec5-3692-420e-a037-c961ce08b194",
+      "text": "Only idiots want to increase our reliance on fossil fuels",
+      "span": [
+        230,
+        287
+      ],
+      "signal_id": "8b24864b-b0b6-4b12-9d31-54e12877c275",
+      "proposer": "model"
+    },
+    {
+      "id": "6f68ea51-7902-4f3a-8325-2c09bffabf4c",
+      "story_id": "e4817621-413e-40d5-9cf2-c19f539aa30e",
+      "text": "ICYMI: Community food charity celebrates 15 years of supporting families in Teesside",
+      "span": [
+        0,
+        84
+      ],
+      "signal_id": "ceabfd2d-b9c2-4198-9f91-e2b26d1de3ca",
+      "proposer": "fallback"
+    },
+    {
+      "id": "fc16984b-0ad5-4389-893d-a1234fd3236a",
+      "story_id": "608a272a-0a6f-4b92-98a3-9ec39d2c1986",
+      "text": "Teesside Reuse Shop celebrates first year with more than 27,000 items given a second life\n“The Reuse Shop was always a brilliant idea, but to see more than 27,000 items find new homes really has surpassed all expectations\"\n\nnortheastbylines.co.uk/region/teess...",
+      "span": [
+        0,
+        262
+      ],
+      "signal_id": "bea0b2df-4536-4ee2-944a-a7842ddbf88e",
+      "proposer": "analyst"
+    },
+    {
+      "id": "e73aa795-737c-45cf-a06f-9b33753848c7",
+      "story_id": "26c92dac-c177-4c9a-88e0-1998b45dad60",
+      "text": "Middlesbrough’s policing crisis is being treated as a failure of one police force.\n\nBut Cleveland is struggling with a problem facing forces across Britain, writes Dominic Adler 👇 \n\nbuff.ly/XCFLiQq",
+      "span": [
+        0,
+        198
+      ],
+      "signal_id": "3ceb4f01-537a-4a12-8366-1bbe65145abe",
+      "proposer": "analyst"
+    },
+    {
+      "id": "75d3e264-2f13-4eb2-893e-4ee5a6532df3",
+      "story_id": "f8b58cb8-608e-4402-8895-8ee7e91e2e4a",
+      "text": "It has not been an easy fortnight for Teesside, an area which has long experience of being talked down. But the football club offers hope www.nytimes.com/athletic/759...",
+      "span": [
+        0,
+        169
+      ],
+      "signal_id": "3ceb4f01-537a-4a12-8366-1bbe65145abe",
+      "proposer": "analyst"
     }
   ],
   "signals": [
     {
-      "id": "0a2036e9-871a-4ffe-95e8-62c1c811179d",
-      "statement": "The repair caf\u00e9 and the tool library keep things working",
-      "supporting_claim_ids": [
-        "4ef7836d-f54d-49f5-98d3-be162d77cd3b",
-        "66c3b058-e049-463b-8d3b-fedcb51562dc",
-        "c2b9a035-f679-4a8b-b8cb-dae076a5fb3e"
-      ],
-      "voices": 3,
-      "recurrence": 3,
-      "verification": {
-        "participants": 4,
-        "endorse": 3,
-        "amend": 1,
-        "contest": 0,
-        "amendments": [
-          "Open Saturdays \u2014 working people can only come then."
-        ],
-        "gate": "commons_only"
-      }
-    },
-    {
-      "id": "87ca3118-884a-419f-bc31-1b0490e196f1",
+      "id": "f9e72d3d-c99f-4c03-bca1-79b06b37b32e",
       "statement": "The beck and the marsh need hands, reeds and a scheme",
       "supporting_claim_ids": [
-        "8b7a3721-d991-492a-b4b4-764b6fae1e2c",
-        "17123202-d4c5-4030-8bf7-cb6f865a3d0b",
-        "c999b867-8e5f-4612-a4c4-44b4edd96a66",
-        "6f926db2-d117-4bf1-9ede-e17547d3e8e9"
+        "6c818fb2-fc9e-40bc-a0bf-1afe9f248dc5",
+        "fc06e945-502e-4b5b-8ac6-3aa2df59be04",
+        "6baeb319-ff2a-4878-ba81-ffbd4c600c8d",
+        "2a8f9368-d60a-46de-b89f-3b7389866420"
       ],
       "voices": 4,
       "recurrence": 4,
@@ -353,15 +491,38 @@
       }
     },
     {
-      "id": "c479466e-18b3-4ba5-b62d-fa55c3dfe4e9",
+      "id": "bea0b2df-4536-4ee2-944a-a7842ddbf88e",
+      "statement": "The repair café and the tool library keep things working",
+      "supporting_claim_ids": [
+        "aa40fe42-5425-4306-8d44-08fe755d6247",
+        "895d319e-8c76-441f-8435-2940cc6cb9da",
+        "11a013c1-0a4e-4af4-a304-25007bd0c83f",
+        "fc16984b-0ad5-4389-893d-a1234fd3236a"
+      ],
+      "voices": 4,
+      "recurrence": 4,
+      "verification": {
+        "participants": 4,
+        "endorse": 3,
+        "amend": 1,
+        "contest": 0,
+        "amendments": [
+          "Open Saturdays — working people can only come then."
+        ],
+        "gate": "commons_only"
+      }
+    },
+    {
+      "id": "df1b41da-9fe9-4b0c-bacc-6b13ad3e6424",
       "statement": "Young people need routes into work",
       "supporting_claim_ids": [
-        "97c21110-161e-4489-aa58-36ed3c8e457f",
-        "f34a16dd-e8ad-4037-bd72-9cebb850f320",
-        "cc0223a3-2afc-4823-9b1c-dcccc796a39d"
+        "c2531880-00af-4fd6-b780-3b51ba6bd4cd",
+        "b20dc699-be48-49ef-b35c-69682aa9f7e4",
+        "5f68250e-16f8-4e5d-b180-47a2c5dfc06d",
+        "8a6732fa-2e83-42b9-91e9-35c73a3a6261"
       ],
-      "voices": 3,
-      "recurrence": 3,
+      "voices": 4,
+      "recurrence": 4,
       "verification": {
         "participants": 3,
         "endorse": 2,
@@ -372,35 +533,15 @@
       }
     },
     {
-      "id": "9801c469-fd95-4cf4-8cfa-d57559aa6b37",
-      "statement": "Neighbours already move and lend for each other \u2014 for fuel costs, not fees",
-      "supporting_claim_ids": [
-        "e2453fec-3327-4f80-8b10-34d57b183351",
-        "4138d95c-3f08-4e17-9f0c-90ca425c5c4c",
-        "070acdf4-374a-45c6-98bb-507048820f5e",
-        "522849d9-dc7c-419b-bf17-bd80bda87435"
-      ],
-      "voices": 3,
-      "recurrence": 4,
-      "verification": {
-        "participants": 4,
-        "endorse": 2,
-        "amend": 1,
-        "contest": 1,
-        "amendments": [
-          "Fuel costs only if the van is already going \u2014 otherwise share the hire."
-        ],
-        "gate": "commons_only"
-      }
-    },
-    {
-      "id": "87ac9b7e-c7c2-4381-932a-eece78d850a5",
+      "id": "8b24864b-b0b6-4b12-9d31-54e12877c275",
       "statement": "The east side could make its own power",
       "supporting_claim_ids": [
-        "3c565874-7d4f-4f7d-8d2a-8f299196030a"
+        "a53f8131-11a5-4962-8830-5f6994409359",
+        "c0a0beb7-5d19-4425-a4ae-12ab033d0c9d",
+        "49be3b47-6c9f-4f5d-a29c-2c50c94101c7"
       ],
-      "voices": 1,
-      "recurrence": 1,
+      "voices": 2,
+      "recurrence": 3,
       "verification": {
         "participants": 1,
         "endorse": 1,
@@ -409,56 +550,100 @@
         "amendments": [],
         "gate": "not_yet"
       }
+    },
+    {
+      "id": "3ceb4f01-537a-4a12-8366-1bbe65145abe",
+      "statement": "A fortnight of violence tested the estate's name — deaths on the A66, a fatal fire, MPs calling for resources — while the community insists the place is not what it looks like.",
+      "supporting_claim_ids": [
+        "f24efc56-51be-42c9-8756-d6be3f43873c",
+        "751ec162-a5a5-4eba-975b-97ad4142350a",
+        "e73aa795-737c-45cf-a06f-9b33753848c7",
+        "75d3e264-2f13-4eb2-893e-4ee5a6532df3"
+      ],
+      "voices": 4,
+      "recurrence": 4,
+      "verification": {
+        "participants": 6,
+        "endorse": 5,
+        "amend": 1,
+        "contest": 0,
+        "amendments": [
+          "The fear is real, but so is the insistence that this place is not what it looks like."
+        ],
+        "gate": "not_yet"
+      }
+    },
+    {
+      "id": "ceabfd2d-b9c2-4198-9f91-e2b26d1de3ca",
+      "statement": "Neighbours already move and lend for each other — for fuel costs, not fees",
+      "supporting_claim_ids": [
+        "9846eb5b-6f44-4114-a672-4251b5eb7f79",
+        "2c079547-569f-466a-8a09-22468f8bbd6e",
+        "c66afed0-e9fe-4b24-ab43-bfa94e152dbb",
+        "6f68ea51-7902-4f3a-8325-2c09bffabf4c"
+      ],
+      "voices": 4,
+      "recurrence": 4,
+      "verification": {
+        "participants": 4,
+        "endorse": 2,
+        "amend": 1,
+        "contest": 1,
+        "amendments": [
+          "Fuel costs only if the van is already going — otherwise share the hire."
+        ],
+        "gate": "commons_only"
+      }
     }
   ],
   "interventions": {
     "from_plans": [
       {
-        "id": "fde510c9-c537-49f0-bf10-ab1f0d6fbeb2",
-        "name": "Marsh regeneration scheme",
-        "note": "Middlesbrough Council programme \u2014 \u00a355,000, from 2027-02. Scored against flood outcomes alone.",
-        "signal_ids": [
-          "87ca3118-884a-419f-bc31-1b0490e196f1"
-        ],
-        "counter_signal_ids": [],
-        "priced": true
-      },
-      {
-        "id": "8fb8e8ed-b2fc-498b-8ba5-e6f9660eb004",
-        "name": "Youth skills and jobs centre",
-        "note": "Middlesbrough Council programme \u2014 \u00a360,000, from 2027-03.",
-        "signal_ids": [
-          "c479466e-18b3-4ba5-b62d-fa55c3dfe4e9"
-        ],
-        "counter_signal_ids": [],
-        "priced": true
-      },
-      {
-        "id": "2677cb0d-c5d2-4d57-918e-dc29f20962e2",
+        "id": "52aba275-966d-407d-aba6-046b3782df10",
         "name": "East Middlesbrough solar feasibility",
-        "note": "Middlesbrough Council programme \u2014 \u00a330,000, from 2027-06.",
+        "note": "Middlesbrough Council programme — £30,000, from 2027-06.",
         "signal_ids": [
-          "87ac9b7e-c7c2-4381-932a-eece78d850a5"
+          "8b24864b-b0b6-4b12-9d31-54e12877c275"
         ],
         "counter_signal_ids": [],
         "priced": true
       },
       {
-        "id": "692d91d3-1358-487a-9e4d-25d041084941",
-        "name": "Thorntree wetland restoration Q3",
-        "note": "Community Ventures Ltd plan \u2014 \u00a340,000, from 2027-01. Overlaps the council scheme; neither counts the volunteers.",
-        "signal_ids": [
-          "87ca3118-884a-419f-bc31-1b0490e196f1"
-        ],
-        "counter_signal_ids": [],
-        "priced": true
-      },
-      {
-        "id": "f10a0c88-05d1-48fb-bd70-72a6aa826a52",
+        "id": "7cee6cd8-ef6d-4b64-a3e6-406cb34e9616",
         "name": "Youth employment hub",
-        "note": "Community Ventures Ltd plan \u2014 \u00a325,000, from 2027-01.",
+        "note": "Community Ventures Ltd plan — £25,000, from 2027-01.",
         "signal_ids": [
-          "c479466e-18b3-4ba5-b62d-fa55c3dfe4e9"
+          "df1b41da-9fe9-4b0c-bacc-6b13ad3e6424"
+        ],
+        "counter_signal_ids": [],
+        "priced": true
+      },
+      {
+        "id": "b780ac7d-57ae-43de-be0b-09ea88e0bb1a",
+        "name": "Marsh regeneration scheme",
+        "note": "Middlesbrough Council programme — £55,000, from 2027-02. Scored against flood outcomes alone.",
+        "signal_ids": [
+          "f9e72d3d-c99f-4c03-bca1-79b06b37b32e"
+        ],
+        "counter_signal_ids": [],
+        "priced": true
+      },
+      {
+        "id": "325a506d-9440-4bb3-b4f6-6d5514e0bb6f",
+        "name": "Youth skills and jobs centre",
+        "note": "Middlesbrough Council programme — £60,000, from 2027-03.",
+        "signal_ids": [
+          "df1b41da-9fe9-4b0c-bacc-6b13ad3e6424"
+        ],
+        "counter_signal_ids": [],
+        "priced": true
+      },
+      {
+        "id": "54113956-8385-4a63-ac15-9d840c2bef73",
+        "name": "Thorntree wetland restoration Q3",
+        "note": "Community Ventures Ltd plan — £40,000, from 2027-01. Overlaps the council scheme; neither counts the volunteers.",
+        "signal_ids": [
+          "f9e72d3d-c99f-4c03-bca1-79b06b37b32e"
         ],
         "counter_signal_ids": [],
         "priced": true
@@ -466,44 +651,44 @@
     ],
     "from_place": [
       {
-        "id": "4c728742-e5d4-4722-a8fb-167708633f63",
-        "name": "Marsh reeds and planting days",
-        "note": "The hub\u2019s own call for volunteers \u2014 the same ground as both funded schemes, run on goodwill.",
-        "signal_ids": [
-          "87ca3118-884a-419f-bc31-1b0490e196f1",
-          "9801c469-fd95-4cf4-8cfa-d57559aa6b37"
-        ],
-        "counter_signal_ids": [],
-        "priced": false
-      },
-      {
-        "id": "b6524365-a7f2-4831-a956-ecb2dbe95850",
+        "id": "20b2accf-9ae2-4c35-a7cc-0f09ac2017cf",
         "name": "Thorntree Tool Library",
-        "note": "Sarafu commitment (TTOOL, GBP-denominated, giftable) \u2014 12 recorded transactions. A commons instrument, not a priced service.",
+        "note": "Sarafu commitment (TTOOL, GBP-denominated, giftable) — 12 recorded transactions. A commons instrument, not a priced service.",
         "signal_ids": [
-          "0a2036e9-871a-4ffe-95e8-62c1c811179d",
-          "9801c469-fd95-4cf4-8cfa-d57559aa6b37"
+          "bea0b2df-4536-4ee2-944a-a7842ddbf88e",
+          "ceabfd2d-b9c2-4198-9f91-e2b26d1de3ca"
         ],
         "counter_signal_ids": [],
         "priced": false
       },
       {
-        "id": "bae93644-e393-435e-90ff-2cba24ddf6a2",
-        "name": "Repair caf\u00e9 \u2014 tools and a laptop runner",
+        "id": "c85b97a9-8e46-43fb-9205-7b6e45919f12",
+        "name": "Van and driver for community moves",
+        "note": "Offered at fuel costs only — mutual aid, not a market service.",
+        "signal_ids": [
+          "ceabfd2d-b9c2-4198-9f91-e2b26d1de3ca"
+        ],
+        "counter_signal_ids": [],
+        "priced": false
+      },
+      {
+        "id": "e0e6ca20-0555-4a7f-928d-768bfdfb534a",
+        "name": "Repair café — tools and a laptop runner",
         "note": "Two open needs on the hub: tools and equipment, and someone to run the laptop.",
         "signal_ids": [
-          "0a2036e9-871a-4ffe-95e8-62c1c811179d",
-          "9801c469-fd95-4cf4-8cfa-d57559aa6b37"
+          "bea0b2df-4536-4ee2-944a-a7842ddbf88e",
+          "ceabfd2d-b9c2-4198-9f91-e2b26d1de3ca"
         ],
         "counter_signal_ids": [],
         "priced": false
       },
       {
-        "id": "1f661a00-cf70-4a92-8023-781c09fbb656",
-        "name": "Van and driver for community moves",
-        "note": "Offered at fuel costs only \u2014 mutual aid, not a market service.",
+        "id": "8f7d82cd-91b4-4462-a140-3be4e54c8781",
+        "name": "Marsh reeds and planting days",
+        "note": "The hub’s own call for volunteers — the same ground as both funded schemes, run on goodwill.",
         "signal_ids": [
-          "9801c469-fd95-4cf4-8cfa-d57559aa6b37"
+          "ceabfd2d-b9c2-4198-9f91-e2b26d1de3ca",
+          "f9e72d3d-c99f-4c03-bca1-79b06b37b32e"
         ],
         "counter_signal_ids": [],
         "priced": false
@@ -512,61 +697,62 @@
   },
   "sips": [
     {
-      "id": "cfd6888e-182f-4907-a4ea-1d28cb2aad1a",
+      "id": "3beb2598-584a-4cd4-a9e4-784b607c477b",
       "kind": "node",
-      "title": "The repair caf\u00e9",
+      "title": "The repair café",
       "what_changes": "The hub, the tool library and two open needs all point at one table. Staff it and three signals move at once.",
       "time_to_show": "months",
       "evidence_claim_ids": [
-        "070acdf4-374a-45c6-98bb-507048820f5e",
-        "4138d95c-3f08-4e17-9f0c-90ca425c5c4c",
-        "4ef7836d-f54d-49f5-98d3-be162d77cd3b",
-        "522849d9-dc7c-419b-bf17-bd80bda87435",
-        "66c3b058-e049-463b-8d3b-fedcb51562dc",
-        "c2b9a035-f679-4a8b-b8cb-dae076a5fb3e",
-        "e2453fec-3327-4f80-8b10-34d57b183351"
+        "11a013c1-0a4e-4af4-a304-25007bd0c83f",
+        "2c079547-569f-466a-8a09-22468f8bbd6e",
+        "6f68ea51-7902-4f3a-8325-2c09bffabf4c",
+        "895d319e-8c76-441f-8435-2940cc6cb9da",
+        "9846eb5b-6f44-4114-a672-4251b5eb7f79",
+        "aa40fe42-5425-4306-8d44-08fe755d6247",
+        "c66afed0-e9fe-4b24-ab43-bfa94e152dbb",
+        "fc16984b-0ad5-4389-893d-a1234fd3236a"
       ]
     },
     {
-      "id": "f6f65ed2-b1f6-4289-9f3d-ebf81b2a91d8",
+      "id": "064e61d7-77d7-45f5-a217-5917ca7de22c",
       "kind": "threshold",
       "title": "The marsh scheme meets the volunteers",
-      "what_changes": "The council\u2019s \u00a355,000 scheme and the hub\u2019s planting days name the same ground. Join them and the money buys hands.",
+      "what_changes": "The council’s £55,000 scheme and the hub’s planting days name the same ground. Join them and the money buys hands.",
       "time_to_show": "about a year",
       "evidence_claim_ids": [
-        "17123202-d4c5-4030-8bf7-cb6f865a3d0b",
-        "6f926db2-d117-4bf1-9ede-e17547d3e8e9",
-        "8b7a3721-d991-492a-b4b4-764b6fae1e2c",
-        "c999b867-8e5f-4612-a4c4-44b4edd96a66"
+        "2a8f9368-d60a-46de-b89f-3b7389866420",
+        "6baeb319-ff2a-4878-ba81-ffbd4c600c8d",
+        "6c818fb2-fc9e-40bc-a0bf-1afe9f248dc5",
+        "fc06e945-502e-4b5b-8ac6-3aa2df59be04"
       ]
     }
   ],
   "priorities": {
     "title": "Where capital is most needed",
-    "intro": "Derived from this place\u2019s own signals: unreached needs first, then the loudest voices, then the leverage points.",
+    "intro": "Derived from this place’s own signals: unreached needs first, then the loudest voices, then the leverage points.",
     "items": [
       {
-        "heading": "The plans don\u2019t reach it",
-        "text": "The repair caf\u00e9 and the tool library keep things working \u2014 3 voices, and no funded scheme answers it."
+        "heading": "The plans don’t reach it",
+        "text": "The repair café and the tool library keep things working — 4 voices, and no funded scheme answers it."
       },
       {
-        "heading": "The plans don\u2019t reach it",
-        "text": "Neighbours already move and lend for each other \u2014 for fuel costs, not fees \u2014 3 voices, and no funded scheme answers it."
+        "heading": "The plans don’t reach it",
+        "text": "A fortnight of violence tested the estate's name — deaths on the A66, a fatal fire, MPs calling for resources — while the community insists the place is not what it looks like. — 4 voices, and no funded scheme answers it."
       },
       {
         "heading": "Where the voices are",
-        "text": "The beck and the marsh need hands, reeds and a scheme \u2014 4 voices say this most."
+        "text": "The beck and the marsh need hands, reeds and a scheme — 4 voices say this most."
       },
       {
         "heading": "The leverage point to watch",
-        "text": "The repair caf\u00e9 \u2014 The hub, the tool library and two open needs all point at one table. Staff it and three signals move at once."
+        "text": "The repair café — The hub, the tool library and two open needs all point at one table. Staff it and three signals move at once."
       }
     ]
   },
   "meta": {
     "place_id": "thorntree",
-    "version": "2026-10-25",
-    "published_at": "2026-10-25T20:06:24.641Z",
-    "manifest_sha256": "496b4c341eac889eb258cd7a5a4e7d5f0d0563b697c47513e810115bf83a1ea0"
+    "version": "2026-10-26",
+    "published_at": "2026-10-26T02:08:08.036Z",
+    "manifest_sha256": "bce112b3ebeb87f9aa8b968db959cd15d648bf33953ea5646f7cb4a66788a4ac"
   }
 }

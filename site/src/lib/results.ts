@@ -44,6 +44,7 @@ export const ResultsSchema = z.object({
       text: z.string().min(1),
       span: z.tuple([z.number().int().nonnegative(), z.number().int().nonnegative()]),
       signal_id: z.string(),
+      proposer: z.enum(['model', 'analyst', 'fallback']).optional(),
     }),
   ),
   signals: z.array(
@@ -127,6 +128,7 @@ export const PLACES = [
   { id: 'mida-creek', label: 'Mida Creek' },
   { id: 'hebden-bridge', label: 'Hebden Bridge' },
   { id: 'dar-es-salaam', label: 'Dar es Salaam' },
+  { id: 'puerto-la-cruz', label: 'Puerto la Cruz' },
 ] as const
 export type PlaceId = (typeof PLACES)[number]['id']
 

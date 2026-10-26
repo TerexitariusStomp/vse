@@ -1,0 +1,104 @@
+{
+ "place": "thorntree",
+ "curated_from": "tools/social/candidates/thorntree.json",
+ "indices": [
+  12,
+  27,
+  22,
+  46,
+  35,
+  50,
+  29,
+  71
+ ],
+ "candidates": [
+  {
+   "id": "bsky:at://did:plc:drdkuiw4po3zqrzxy6xb2vlk/app.bsky.feed.post/3mwikkgw6wk2g",
+   "network": "bsky",
+   "author": "did:plc:drdkuiw4po3zqrzxy6xb2vlk",
+   "handle": "did:plc:drdkuiw4po3zqrzxy6xb2vlk",
+   "ts": "2026-09-27T10:08:16+00:00",
+   "text": "Teesside Reuse Shop celebrates first year with more than 27,000 items given a second life\n“The Reuse Shop was always a brilliant idea, but to see more than 27,000 items find new homes really has surpassed all expectations\"\n\nnortheastbylines.co.uk/region/teess...",
+   "match_reason": "text_match",
+   "author_bio": "",
+   "url": "https://bsky.app/profile/did:plc:drdkuiw4po3zqrzxy6xb2vlk/post/3mwikkgw6wk2g"
+  },
+  {
+   "id": "bsky:at://did:plc:ejrdonhsxyou5txhfnfu5l44/app.bsky.feed.post/3mwi2ytl5u42a",
+   "network": "bsky",
+   "author": "did:plc:ejrdonhsxyou5txhfnfu5l44",
+   "handle": "did:plc:ejrdonhsxyou5txhfnfu5l44",
+   "ts": "2026-09-27T05:29:59+00:00",
+   "text": "ICYMI: Community food charity celebrates 15 years of supporting families in Teesside",
+   "match_reason": "text_match",
+   "author_bio": "",
+   "url": "https://bsky.app/profile/did:plc:ejrdonhsxyou5txhfnfu5l44/post/3mwi2ytl5u42a"
+  },
+  {
+   "id": "bsky:at://did:plc:ejrdonhsxyou5txhfnfu5l44/app.bsky.feed.post/3mwieikks652l",
+   "network": "bsky",
+   "author": "did:plc:ejrdonhsxyou5txhfnfu5l44",
+   "handle": "did:plc:ejrdonhsxyou5txhfnfu5l44",
+   "ts": "2026-09-27T08:19:50+00:00",
+   "text": "FYI: More than 50 acts announced for Teesside's biggest grassroots music festival",
+   "match_reason": "text_match",
+   "author_bio": "",
+   "url": "https://bsky.app/profile/did:plc:ejrdonhsxyou5txhfnfu5l44/post/3mwieikks652l"
+  },
+  {
+   "id": "bsky:at://did:plc:vovinwhtulbsx4mwfw26r5ni/app.bsky.feed.post/3mu5m2ua5jh23",
+   "network": "bsky",
+   "author": "did:plc:vovinwhtulbsx4mwfw26r5ni",
+   "handle": "The Guardian",
+   "ts": "2026-08-28T14:45:40+00:00",
+   "text": "‘This place might look bad but it’s not’: fear and hope in Middlesbrough community after week of violence",
+   "match_reason": "text_match",
+   "author_bio": "The need for independent journalism has never been greater. Become a Guardian supporter https://support.theguardian.com\n\n🇺🇸 Guardian US https://bsky.app/profile/us.theguardian.com\n🇦🇺 Guardian Australi",
+   "url": "https://bsky.app/profile/The Guardian/post/3mu5m2ua5jh23"
+  },
+  {
+   "id": "bsky:at://did:plc:dbhob4ehbowinclgen27ype2/app.bsky.feed.post/3mueebtc6uu2z",
+   "network": "bsky",
+   "author": "did:plc:dbhob4ehbowinclgen27ype2",
+   "handle": "did:plc:dbhob4ehbowinclgen27ype2",
+   "ts": "2026-08-31T07:15:02+00:00",
+   "text": "Middlesbrough’s policing crisis is being treated as a failure of one police force.\n\nBut Cleveland is struggling with a problem facing forces across Britain, writes Dominic Adler 👇 \n\nbuff.ly/XCFLiQq",
+   "match_reason": "text_match",
+   "author_bio": "",
+   "url": "https://bsky.app/profile/did:plc:dbhob4ehbowinclgen27ype2/post/3mueebtc6uu2z"
+  },
+  {
+   "id": "bsky:at://did:plc:vovinwhtulbsx4mwfw26r5ni/app.bsky.feed.post/3mu3crzk7v52c",
+   "network": "bsky",
+   "author": "did:plc:vovinwhtulbsx4mwfw26r5ni",
+   "handle": "The Guardian",
+   "ts": "2026-08-27T16:54:21+00:00",
+   "text": "Teesside MPs call for more police and fire service resources after Middlesbrough and A66 deaths",
+   "match_reason": "text_match",
+   "author_bio": "The need for independent journalism has never been greater. Become a Guardian supporter https://support.theguardian.com\n\n🇺🇸 Guardian US https://bsky.app/profile/us.theguardian.com\n🇦🇺 Guardian Australi",
+   "url": "https://bsky.app/profile/The Guardian/post/3mu3crzk7v52c"
+  },
+  {
+   "id": "bsky:at://did:plc:b2kutgxqlltwc6lhs724cfwr/app.bsky.feed.post/3mvjtg2ylmt2k",
+   "network": "bsky",
+   "author": "did:plc:b2kutgxqlltwc6lhs724cfwr",
+   "handle": "The Athletic",
+   "ts": "2026-09-15T04:54:18+00:00",
+   "text": "It has not been an easy fortnight for Teesside, an area which has long experience of being talked down. But the football club offers hope www.nytimes.com/athletic/759...",
+   "match_reason": "text_match",
+   "author_bio": "Get every sports story that matters.",
+   "url": "https://bsky.app/profile/The Athletic/post/3mvjtg2ylmt2k"
+  },
+  {
+   "id": "bsky:at://did:plc:erprmpb2buuuqgmh3jeihtuv/app.bsky.feed.post/3mwiko2gi6k2d",
+   "network": "bsky",
+   "author": "did:plc:erprmpb2buuuqgmh3jeihtuv",
+   "handle": "Palustris",
+   "ts": "2026-09-27T10:10:17+00:00",
+   "text": "The offshore wind installation vessel Wind Ally entering the Tees yesterday. Wind is currently producing nearly half GB's electricity needs. Much of the remainder is solar or low-carbon imports, with gas accounting for only 6.8%. Only idiots want to increase our reliance on fossil fuels.",
+   "match_reason": "author_location",
+   "author_bio": "Ecologist. Meadows, mires & meres. Wetland beetles, fen creation, Teesside birds. Against Trump, Putin & Farage.",
+   "url": "https://bsky.app/profile/Palustris/post/3mwiko2gi6k2d"
+  }
+ ]
+}

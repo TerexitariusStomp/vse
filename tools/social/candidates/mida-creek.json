@@ -1,0 +1,27 @@
+{
+ "place": "mida-creek",
+ "aliases": [
+  "mida creek",
+  "watamu"
+ ],
+ "author_terms": [
+  "watamu",
+  "kilifi"
+ ],
+ "exported_at": "2026-10-26T01:36:07.248119+00:00",
+ "indexer": "/home/terex/Documents/Rooted/apps/indexer",
+ "count": 1,
+ "candidates": [
+  {
+   "id": "bsky:at://did:plc:kw3gbxztmnuzf2r5kxt6auga/app.bsky.feed.post/3mwictlcyv42j",
+   "network": "bsky",
+   "author": "did:plc:kw3gbxztmnuzf2r5kxt6auga",
+   "handle": "did:plc:kw3gbxztmnuzf2r5kxt6auga",
+   "ts": "2026-09-27T07:50:12+00:00",
+   "text": "🙏 Eggwanga ly'abantu omugole kasita agenda ewa bba, okwogera naye n'okulya ku mmere gya amuteeketeekedde, omusajja asooka kumusasula mudidi gwa nsimbi ogumusaanidde singa omusajja zimulema omugole akwatamu ebibye nadda ewaabwe....\n\n#RadioSimba #Uganda #Luganda\nhttps://www.radiosimba.ug",
+   "match_reason": "text_match",
+   "author_bio": "",
+   "url": "https://bsky.app/profile/did:plc:kw3gbxztmnuzf2r5kxt6auga/post/3mwictlcyv42j"
+  }
+ ]
+}

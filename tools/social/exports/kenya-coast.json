@@ -1,0 +1,104 @@
+{
+ "place": "kenya-coast",
+ "curated_from": "tools/social/candidates/kenya-coast.json",
+ "indices": [
+  29,
+  55,
+  37,
+  53,
+  5,
+  9,
+  73,
+  52
+ ],
+ "candidates": [
+  {
+   "id": "nostr:3afa6ca94e1860071eb9807f3ae72c9af93c1e4eda70d8d604d04e150a00c63f",
+   "network": "nostr",
+   "author": "ad87ddf92626c2d273aa05ab3dac829a81c8ff25a8edd621257616a834802abf",
+   "handle": "ad87ddf92626c2d273aa05ab3dac829a81c8ff25a8edd621257616a834802abf",
+   "ts": "2026-09-11T07:38:32+00:00",
+   "text": "Kenya — Over 80,000 families in Kenya’s Kilifi County face flood risk due to El Nino rains expected in 2026-2027. #Floods #Kenya #ElNino #News #Breaking\nhttps://news.netasgard.com/a/d0ce9f4ace768908?s=nostr\nhttps://live.staticflickr.com/4084/5192480265_5c0da328be_b.jpg\nPhoto : Hashoo Foundation USA - Houston, TX · CC BY-SA · Flickr",
+   "match_reason": "text_match",
+   "author_bio": "",
+   "url": "https://njump.me/note18taxe22wrpsqw84espln4eevntunc8jwmfcd34sy6p8p2zsqccls66frcx"
+  },
+  {
+   "id": "nostr:071381451abacd0578243fb884fb6ebe7c97c900552076812f3c46686d9b4168",
+   "network": "nostr",
+   "author": "ad87ddf92626c2d273aa05ab3dac829a81c8ff25a8edd621257616a834802abf",
+   "handle": "ad87ddf92626c2d273aa05ab3dac829a81c8ff25a8edd621257616a834802abf",
+   "ts": "2026-08-31T10:58:12+00:00",
+   "text": "the River Sabaki — Governor warns of rising flood risks near River Sabaki. #Kilifi #RiverSabaki #News #Breaking\nhttps://news.netasgard.com/a/296ab453542e820b?s=nostr\nhttps://images.rawpixel.com/editor_1024/cHJpdmF0ZS9zdGF0aWMvaW1hZ2VzL3dlYnNpdGUvMjAyMi0xMS9mbDQ4ODg0ODU1MzQtaW1hZ2UuanBn.jpg\nPhoto : U.S. Forest Service (source) · CC0 · Rawpixel",
+   "match_reason": "text_match",
+   "author_bio": "",
+   "url": "https://njump.me/note1qufcz3g6htxs27py87ugf7mwhe7f0jgq25s8dqf083rxsmvmg95qr3yrh4"
+  },
+  {
+   "id": "nostr:09daad321a65d88bfb0154116bd319341acf0325fa0c5dff23fd8c275ebea047",
+   "network": "nostr",
+   "author": "ad87ddf92626c2d273aa05ab3dac829a81c8ff25a8edd621257616a834802abf",
+   "handle": "ad87ddf92626c2d273aa05ab3dac829a81c8ff25a8edd621257616a834802abf",
+   "ts": "2026-09-08T19:46:45+00:00",
+   "text": "Mombasa — Residents urged to avoid blocking drains as city braces for seasonal storms #Mombasa #News #Breaking\nhttps://news.netasgard.com/a/30cf2123ba622a6e?s=nostr\nhttps://live.staticflickr.com/5453/9109303029_6ca709dfc2_b.jpg\nPhoto : Alan Stanton · CC BY-SA · Flickr",
+   "match_reason": "text_match",
+   "author_bio": "",
+   "url": "https://njump.me/note1p8d26vs6vhvgh7cp2sgkh5cexsdv7qe9lgx9mlerlkxzwh475prss73mwk"
+  },
+  {
+   "id": "nostr:ca2576b077c548a750edaa9eaf05f5b7fffc62bf9f2341f7c4630da8cc384061",
+   "network": "nostr",
+   "author": "ad87ddf92626c2d273aa05ab3dac829a81c8ff25a8edd621257616a834802abf",
+   "handle": "ad87ddf92626c2d273aa05ab3dac829a81c8ff25a8edd621257616a834802abf",
+   "ts": "2026-08-31T16:02:23+00:00",
+   "text": "Kilifi — Kilifi MPs call for customized digital hubs to better serve local small businesses. #Push #Kilifi #News\nhttps://news.netasgard.com/a/afee480eae7775df?s=nostr\nhttps://live.staticflickr.com/5026/5621676321_85d352870c_b.jpg\nPhoto : zaneology · CC BY · Flickr",
+   "match_reason": "text_match",
+   "author_bio": "",
+   "url": "https://njump.me/note1egjhdvrhc4y2w58d42027p04klllcc4lnu35ra7yvvx63npcgpssxcm4uv"
+  },
+  {
+   "id": "nostr:52db13335ac6887ecb40b954d05bd8d884b73c705cc5061f6cd229f718d4f7a5",
+   "network": "nostr",
+   "author": "ad87ddf92626c2d273aa05ab3dac829a81c8ff25a8edd621257616a834802abf",
+   "handle": "ad87ddf92626c2d273aa05ab3dac829a81c8ff25a8edd621257616a834802abf",
+   "ts": "2026-09-22T10:56:40+00:00",
+   "text": "Shakahola — Kilifi County gives 21 days for families to claim Shakahola massacre remains before mass burial #Shakahola #News\nhttps://news.netasgard.com/a/7c1460d0fe6f8d73?s=nostr\nhttps://live.staticflickr.com/7362/10151812053_a2055e6aab_b.jpg\nPhoto : Gary Lee Todd, Ph.D. · CC0 · Flickr",
+   "match_reason": "text_match",
+   "author_bio": "",
+   "url": "https://njump.me/note12td3xv66c6y8aj6qh92dqk7cmzztw0rstnzsv8mv6g5lwxx577js6c6sku"
+  },
+  {
+   "id": "nostr:8996f0e98feaf162c2fd67ff5bd423f36565eeb15d907766119ff0bb88a5e9f8",
+   "network": "nostr",
+   "author": "ad87ddf92626c2d273aa05ab3dac829a81c8ff25a8edd621257616a834802abf",
+   "handle": "ad87ddf92626c2d273aa05ab3dac829a81c8ff25a8edd621257616a834802abf",
+   "ts": "2026-09-22T05:16:21+00:00",
+   "text": "Kilifi County — Kilifi County gives families 21 days to claim remains of 443 Shakahola massacre victims before mass burial #After #KilifiCounty #News\nhttps://news.netasgard.com/a/0296c5665235c4e2?s=nostr\nhttps://upload.wikimedia.org/wikipedia/commons/b/b3/Spioenkop_Mass_Grave_Site.JPG\nPhoto : Nicolette de Lange · CC BY-SA · Wikimedia",
+   "match_reason": "text_match",
+   "author_bio": "",
+   "url": "https://njump.me/note13xt0p6v0atck9shavll4h4pr7djktm43tkg8wes3nlcthz99a8uq88s6pv"
+  },
+  {
+   "id": "nostr:0708833fb33aaa27da3d956769d3342affd1ba497088d5ebc1c83c144eda635b",
+   "network": "nostr",
+   "author": "ad87ddf92626c2d273aa05ab3dac829a81c8ff25a8edd621257616a834802abf",
+   "handle": "ad87ddf92626c2d273aa05ab3dac829a81c8ff25a8edd621257616a834802abf",
+   "ts": "2026-07-31T05:40:33+00:00",
+   "text": "Kenya — Kenya Leads Africa in Clean Cooking Access Expansion #Kenya #Africa #News\nhttps://news.netasgard.com/a/2437d0fcfb33d499?s=nostr\nhttps://publish.eastleighvoice.co.ke/mugera_lock/uploads/2025/09/Kilifi-cooking.jpg",
+   "match_reason": "text_match",
+   "author_bio": "",
+   "url": "https://njump.me/note1quygx0an824z0k3aj4nkn5e59tlarwjfwzydt67peq7pgnk6vddsckxl3u"
+  },
+  {
+   "id": "nostr:c8824f932fafd4bdb396a90728a49910e7a7413280a14db4d01376362c592b97",
+   "network": "nostr",
+   "author": "ad87ddf92626c2d273aa05ab3dac829a81c8ff25a8edd621257616a834802abf",
+   "handle": "ad87ddf92626c2d273aa05ab3dac829a81c8ff25a8edd621257616a834802abf",
+   "ts": "2026-09-02T14:31:02+00:00",
+   "text": "Mombasa — Mombasa officials detail legal process for recognizing Comorian community #Mombasa #News\nhttps://news.netasgard.com/a/3a3da653f8c877bb?s=nostr\nhttps://upload.wikimedia.org/wikipedia/commons/f/f5/Traditional_communal_gathering_in_Al-Qusur%2C_Ain_al-Tamr%2C_Iraq.jpg\nPhoto : حكمت العياشي · CC BY · Wikimedia",
+   "match_reason": "text_match",
+   "author_bio": "",
+   "url": "https://njump.me/note1ezpylye04l2tmvuk4yrj3fyezrn6wsfjszs5mdxszdmrvtze9wtsa0vm09"
+  }
+ ]
+}

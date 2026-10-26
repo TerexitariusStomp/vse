@@ -2,12 +2,14 @@ import { Hono } from 'hono'
 import { z } from 'zod'
 import type { Env } from './env.ts'
 
-// LISTEN (PRD FR-E1..E3, E26): four channels in — whatsapp, voice, web,
-// facilitated. Every story keeps role + channel, never a public name.
+// LISTEN (PRD FR-E1..E3, E26): five channels in — whatsapp, voice, web,
+// facilitated, social. Every story keeps role + channel, never a public name.
+// 'social' covers public posts imported from open networks (Bluesky, Nostr,
+// Hive) via tools/social — provenance URL rides in `source`.
 
 const StoryIn = z.object({
   teller_role: z.string().min(1).max(120),
-  channel: z.enum(['whatsapp', 'voice', 'web', 'facilitated']),
+  channel: z.enum(['whatsapp', 'voice', 'web', 'facilitated', 'social']),
   text: z.string().min(1),
   source: z.string().max(500).optional(), // provenance ref — "system (record)"
 })
@@ -21,7 +23,7 @@ intake.post('/places/:placeId/stories', async (c) => {
   const placeId = c.req.param('placeId')
   const id = crypto.randomUUID()
   const res = await c.env.DB.prepare(
-    'INSERT INTO stories (id, place_id, teller_role, channel, text, source) VALUES (?, ?, ?, ?, ?, ?)',
+    'INSERT OR IGNORE INTO stories (id, place_id, teller_role, channel, text, source) VALUES (?, ?, ?, ?, ?, ?)',
   )
     .bind(
       id,
@@ -33,6 +35,16 @@ intake.post('/places/:placeId/stories', async (c) => {
     )
     .run()
   if (!res.success) return c.json({ error: 'insert failed (unknown place?)' }, 400)
+  // UNIQUE(place_id, text) dedup: identical words are the same story —
+  // return the existing row instead of double-extracting it.
+  if (res.meta.changes === 0) {
+    const existing = await c.env.DB.prepare(
+      'SELECT id FROM stories WHERE place_id = ? AND text = ?',
+    )
+      .bind(placeId, body.data.text)
+      .first<{ id: string }>()
+    return c.json({ id: existing?.id ?? id, dedup: true })
+  }
   await c.env.PIPELINE.send({ kind: 'extract', placeId, storyId: id })
   return c.json({ id }, 201)
 })
@@ -82,11 +94,12 @@ intake.post('/intake/whatsapp', async (c) => {
     const text = m?.text?.body
     if (m?.type === 'text' && typeof text === 'string' && text.trim()) {
       const id = crypto.randomUUID()
-      await c.env.DB.prepare(
-        'INSERT INTO stories (id, place_id, teller_role, channel, text) VALUES (?, ?, ?, ?, ?)',
+      const res = await c.env.DB.prepare(
+        'INSERT OR IGNORE INTO stories (id, place_id, teller_role, channel, text) VALUES (?, ?, ?, ?, ?)',
       )
         .bind(id, placeId, 'whatsapp teller', 'whatsapp', text)
         .run()
+      if (res.meta.changes === 0) continue
       await c.env.PIPELINE.send({ kind: 'extract', placeId, storyId: id })
       accepted++
     }

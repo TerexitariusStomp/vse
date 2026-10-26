@@ -9,6 +9,16 @@ const smooth = () =>
     ? 'instant'
     : ('smooth' as ScrollBehavior)
 
+/** Public social posts carry a provenance URL as their source — derive the
+ *  network label and link it so anyone can check the original post. */
+const socialNet = (src?: string) =>
+  src?.includes('bsky.app') ? 'bsky'
+    : src?.includes('njump.me') ? 'nostr'
+    : src?.includes('hive.blog') ? 'hive' : 'social'
+const host = (src: string) => {
+  try { return new URL(src).hostname.replace(/^www\./, '') } catch { return src }
+}
+
 /** Chapter 02 — stories as a ruled ledger; expand to read (FR-D3). */
 export function Stories() {
   const r = useResults()
@@ -47,12 +57,27 @@ export function Stories() {
                 <span className="flex-1">
                   <span className="font-serif text-xl">{s.teller_role}</span>
                   <span className="ml-3 text-sm text-muted">told by {s.channel}</span>
+                  {s.channel === 'social' && (
+                    <span className="chapter-marker ml-3 rounded-[3px] bg-accent/10 px-1.5 py-0.5 text-accent">
+                      public post
+                    </span>
+                  )}
                 </span>
-                {s.source && (
+                {s.source && (s.channel === 'social' && s.source.startsWith('http') ? (
+                  <a
+                    href={s.source}
+                    target="_blank"
+                    rel="noreferrer"
+                    onClick={(e) => e.stopPropagation()}
+                    className="chapter-marker hidden shrink-0 rounded-[3px] border border-line px-2 py-1 underline decoration-dotted sm:inline"
+                  >
+                    {socialNet(s.source)} · {host(s.source)}
+                  </a>
+                ) : (
                   <span className="chapter-marker hidden shrink-0 rounded-[3px] border border-line px-2 py-1 sm:inline">
                     {s.source}
                   </span>
-                )}
+                ))}
                 <span className="chapter-marker shrink-0">
                   {counts.get(s.id)?.length ?? 0} excerpts
                   <span aria-hidden className="ml-2">{open ? '−' : '+'}</span>

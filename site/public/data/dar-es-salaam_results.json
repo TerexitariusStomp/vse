@@ -4,7 +4,7 @@
     "id": "dar-es-salaam",
     "name": "Dar es Salaam coast",
     "kind": "coastal plots, Kigamboni & Kinondoni, Tanzania",
-    "summary": "Mangrove planting at Mji Mwema and Kunduchi \u2014 a live feed of app-verified and pending Treegens records, plus older field-team plots that carry the biggest numbers.",
+    "summary": "Mangrove planting at Mji Mwema and Kunduchi — a live feed of app-verified and pending Treegens records, plus older field-team plots that carry the biggest numbers.",
     "geo": {
       "lat": -6.865,
       "lon": 39.32
@@ -12,12 +12,12 @@
     "readings": [
       {
         "label": "App planting records for the Dar coast",
-        "value": "83 records \u00b7 45 verified \u00b7 38 pending",
+        "value": "83 records · 45 verified · 38 pending",
         "source": "plan-treegens-live"
       },
       {
         "label": "Pre-app field-team plots",
-        "value": "199,030 trees claimed (6,400 Dar Coast + 192,630 Kibugumo) \u2014 filmed evidence, not app-verified",
+        "value": "199,030 trees claimed (6,400 Dar Coast + 192,630 Kibugumo) — filmed evidence, not app-verified",
         "source": "treegens:archive"
       },
       {
@@ -30,546 +30,674 @@
   "pipeline": [
     {
       "stage": "Listening",
-      "detail": "stories told in people\u2019s own words",
-      "count": 27,
+      "detail": "stories told in people’s own words",
+      "count": 34,
       "unit": "stories"
     },
     {
       "stage": "Making sense",
       "detail": "exact excerpts extracted from stories",
-      "count": 27,
+      "count": 36,
       "unit": "excerpts"
     },
     {
       "stage": "Consolidating",
       "detail": "excerpts gathered into signals",
-      "count": 5,
+      "count": 8,
       "unit": "signals"
     },
     {
       "stage": "People check",
       "detail": "contributors endorse, amend or contest",
-      "count": 4,
+      "count": 10,
       "unit": "participants"
     }
   ],
   "stories": [
     {
-      "id": "455d972a-7b00-41af-8d37-deb01cd56615",
+      "id": "5b630737-49a8-44bb-889f-532594512f2e",
       "teller_role": "Treegens field record",
       "channel": "facilitated",
-      "text": "463 mangrove trees planted \u2014 To mji mwema Food, Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania",
+      "text": "463 mangrove trees planted — To mji mwema Food, Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania",
       "source": "treegens:live (verified)"
     },
     {
-      "id": "b974e24b-db9f-47a7-8b84-17a1598732cb",
+      "id": "cff1c7b9-e2ff-4471-af58-60b7fd112a7e",
       "teller_role": "Treegens field record",
       "channel": "facilitated",
-      "text": "362 mangrove trees planted \u2014 To mji mwema Food, Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania",
+      "text": "250 mangrove trees planted — To mji mwema Food, Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania",
       "source": "treegens:live (verified)"
     },
     {
-      "id": "7377b383-4613-4408-87b5-70a51a962b12",
+      "id": "2aa68cb3-b40f-4f30-9797-91848b44a673",
       "teller_role": "Treegens field record",
       "channel": "facilitated",
-      "text": "250 mangrove trees planted \u2014 To mji mwema Food, Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania",
+      "text": "362 mangrove trees planted — To mji mwema Food, Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania",
       "source": "treegens:live (verified)"
     },
     {
-      "id": "5b9f5218-11e4-40fc-9caa-b0bdf3719d5c",
+      "id": "690c11a8-7d37-4e2f-bdb7-c48969d4dcbe",
       "teller_role": "Treegens field record",
       "channel": "facilitated",
-      "text": "519 mangrove trees planted \u2014 To mji mwema Food, Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania",
+      "text": "150 mangrove trees planted — To mji mwema Food, Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania",
       "source": "treegens:live (verified)"
     },
     {
-      "id": "14da6594-47db-4734-b65e-9bcf1c6cdf7f",
+      "id": "7e0accc7-d218-4b58-b9ef-f0be4787a1ff",
       "teller_role": "Treegens field record",
       "channel": "facilitated",
-      "text": "485 mangrove trees planted \u2014 Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania",
+      "text": "485 mangrove trees planted — Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania",
       "source": "treegens:live (verified)"
     },
     {
-      "id": "ff703947-32c3-4717-b4f9-d8a700a06da0",
+      "id": "c699fbcb-15e1-4b17-9b7f-81edc0a1f0ca",
       "teller_role": "Treegens field record",
       "channel": "facilitated",
-      "text": "128 mangrove trees planted \u2014 To mji mwema Food, Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania",
+      "text": "101 mangrove trees planted — To mji mwema Food, Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania",
       "source": "treegens:live (verified)"
     },
     {
-      "id": "7d711e34-4510-4128-a477-7b5832bc3d89",
+      "id": "ac7686b7-c273-4cba-a484-b0d5780d4c23",
       "teller_role": "Treegens field record",
       "channel": "facilitated",
-      "text": "101 mangrove trees planted \u2014 To mji mwema Food, Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania",
+      "text": "519 mangrove trees planted — To mji mwema Food, Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania",
       "source": "treegens:live (verified)"
     },
     {
-      "id": "69d05b46-20cc-44ab-8454-3d4ef0a85af9",
+      "id": "f459a3c3-768a-4599-93be-9e73234c3f08",
       "teller_role": "Treegens field record",
       "channel": "facilitated",
-      "text": "150 mangrove trees planted \u2014 To mji mwema Food, Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania",
+      "text": "128 mangrove trees planted — To mji mwema Food, Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania",
       "source": "treegens:live (verified)"
     },
     {
-      "id": "74000bd8-288a-48f5-a51c-20321c3bd365",
+      "id": "c4a9e72b-4ea2-4a8d-af62-7a52c71683a2",
       "teller_role": "Treegens field record",
       "channel": "facilitated",
-      "text": "139 mangrove trees planted \u2014 To mji mwema Food, Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania",
+      "text": "139 mangrove trees planted — To mji mwema Food, Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania",
       "source": "treegens:live (verified)"
     },
     {
-      "id": "d9ba034e-da9a-439a-b95b-f4e1aaa81106",
+      "id": "aed47ad7-76df-478d-8c87-b7396c74053c",
       "teller_role": "Treegens field record",
       "channel": "facilitated",
-      "text": "101 mangrove trees planted \u2014 To mji mwema Food, Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania",
+      "text": "115 mangrove trees planted — To mji mwema Food, Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania",
       "source": "treegens:live (verified)"
     },
     {
-      "id": "ff87f581-bacd-49de-b446-16d4789b69bd",
+      "id": "fccbc5b5-3f84-422b-bc94-47730eb3acdc",
       "teller_role": "Treegens field record",
       "channel": "facilitated",
-      "text": "115 mangrove trees planted \u2014 To mji mwema Food, Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania",
+      "text": "133 mangrove trees planted — To mji mwema Food, Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania",
       "source": "treegens:live (verified)"
     },
     {
-      "id": "dbe633f7-8a0f-4048-b33f-88b9a802437e",
+      "id": "95b0612f-5bc0-48e5-8672-f38687c237bc",
       "teller_role": "Treegens field record",
       "channel": "facilitated",
-      "text": "133 mangrove trees planted \u2014 To mji mwema Food, Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania",
-      "source": "treegens:live (verified)"
-    },
-    {
-      "id": "d5008d37-cc6f-4bc7-a2e5-1782e9200e9c",
-      "teller_role": "Treegens field record",
-      "channel": "facilitated",
-      "text": "143 mangrove trees planted \u2014 Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania",
+      "text": "143 mangrove trees planted — Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania",
       "source": "treegens:live (pending)"
     },
     {
-      "id": "b74ea19a-a2d6-4338-a926-3a3e369f1dd1",
+      "id": "f764e1ea-b978-4f23-9f34-e2a283b2eec1",
       "teller_role": "Treegens field record",
       "channel": "facilitated",
-      "text": "57 mangrove trees planted \u2014 To mji mwema Food, Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania",
+      "text": "117 mangrove trees planted — To mji mwema Food, Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania",
       "source": "treegens:live (pending)"
     },
     {
-      "id": "e0763ffc-4c70-43aa-9741-b057acf14d5e",
+      "id": "e83a176a-37fc-4101-84cb-666fb1728f38",
       "teller_role": "Treegens field record",
       "channel": "facilitated",
-      "text": "117 mangrove trees planted \u2014 To mji mwema Food, Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania",
+      "text": "369 mangrove trees planted — To mji mwema Food, Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania",
       "source": "treegens:live (pending)"
     },
     {
-      "id": "82c6501b-e8b7-4421-bce2-f5c698484fdd",
+      "id": "9028a14d-cc3b-4f65-ac44-7c72da1f294f",
       "teller_role": "Treegens field record",
       "channel": "facilitated",
-      "text": "369 mangrove trees planted \u2014 To mji mwema Food, Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania",
+      "text": "57 mangrove trees planted — To mji mwema Food, Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania",
       "source": "treegens:live (pending)"
     },
     {
-      "id": "acf46096-bb4d-4d68-849e-91d720df86c6",
+      "id": "05347d2f-8d72-4d72-ad0e-e60b156f7c66",
       "teller_role": "Treegens field record",
       "channel": "facilitated",
-      "text": "358 mangrove trees planted \u2014 To mji mwema Food, Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania",
+      "text": "218 mangrove trees planted — Kunduchi, Kawe, Kinondoni Municipal, Dar es Salaam, Coastal Zone, 14130, Tanzania",
       "source": "treegens:live (pending)"
     },
     {
-      "id": "9e025cf2-a855-4336-971e-cab417fe68bf",
+      "id": "b528f37e-166b-4f1d-961b-ca02cb246b1f",
       "teller_role": "Treegens field record",
       "channel": "facilitated",
-      "text": "365 mangrove trees planted \u2014 To mji mwema Food, Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania",
-      "source": "treegens:live (pending)"
-    },
-    {
-      "id": "cdc1c1ad-21e5-4842-946b-087761aa72dc",
-      "teller_role": "Treegens field record",
-      "channel": "facilitated",
-      "text": "218 mangrove trees planted \u2014 Kunduchi, Kawe, Kinondoni Municipal, Dar es Salaam, Coastal Zone, 14130, Tanzania",
-      "source": "treegens:live (pending)"
-    },
-    {
-      "id": "265c1b70-18b4-4b86-af10-165eb0465e43",
-      "teller_role": "Treegens field record",
-      "channel": "facilitated",
-      "text": "300 mangrove trees planted \u2014 Kunduchi, Kawe, Kinondoni Municipal, Dar es Salaam, Coastal Zone, 14130, Tanzania",
+      "text": "300 mangrove trees planted — Kunduchi, Kawe, Kinondoni Municipal, Dar es Salaam, Coastal Zone, 14130, Tanzania",
       "source": "treegens:live (verified)"
     },
     {
-      "id": "9f51a123-1ee6-423e-83c7-437947a3e5b3",
+      "id": "751f84c1-4ab4-4d66-8975-4f6b702c6a09",
       "teller_role": "Treegens field record",
       "channel": "facilitated",
-      "text": "44 mangrove trees planted \u2014 Kunduchi, Kawe, Kinondoni Municipal, Dar es Salaam, Coastal Zone, 14130, Tanzania",
-      "source": "treegens:live (verified)"
+      "text": "365 mangrove trees planted — To mji mwema Food, Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania",
+      "source": "treegens:live (pending)"
     },
     {
-      "id": "bdfc36c9-69fa-4b05-85ac-35711c562700",
+      "id": "94431699-00e3-434b-bd00-6cf10458849e",
       "teller_role": "Treegens field team",
       "channel": "facilitated",
-      "text": "6,400 mangrove trees \u2014 Dar es Salaam Coast Plots",
+      "text": "6,400 mangrove trees — Dar es Salaam Coast Plots",
       "source": "treegens:archive"
     },
     {
-      "id": "4e5970d5-1fed-43af-aa5a-0c88c6ccc62e",
+      "id": "74307b6f-5d0e-434d-b50b-c55fbdba7bab",
+      "teller_role": "Treegens field record",
+      "channel": "facilitated",
+      "text": "358 mangrove trees planted — To mji mwema Food, Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania",
+      "source": "treegens:live (pending)"
+    },
+    {
+      "id": "d0524b01-7b60-42ce-85ef-892460f4f3bc",
+      "teller_role": "Treegens field record",
+      "channel": "facilitated",
+      "text": "44 mangrove trees planted — Kunduchi, Kawe, Kinondoni Municipal, Dar es Salaam, Coastal Zone, 14130, Tanzania",
+      "source": "treegens:live (verified)"
+    },
+    {
+      "id": "729efad3-046f-42e6-a337-81be2f4cb4e1",
       "teller_role": "Treegens field team",
       "channel": "facilitated",
-      "text": "192,630 mangrove trees \u2014 Kibugumo Coast Plots, Dar es Salaam",
+      "text": "192,630 mangrove trees — Kibugumo Coast Plots, Dar es Salaam",
       "source": "treegens:archive"
     },
     {
-      "id": "b9deec3d-ba5c-4f9f-995e-8e924bedc869",
+      "id": "42d19e2c-8761-44b2-903c-a59d31c25535",
       "teller_role": "Treegens field team",
       "channel": "facilitated",
-      "text": "Restored mangrove forest cover \u2014 Dar es Salaam Coast Plots",
+      "text": "Restored mangrove forest cover — Dar es Salaam Coast Plots",
       "source": "treegens:archive"
     },
     {
-      "id": "6d4f5a2a-b173-4995-9324-9542838ab22c",
+      "id": "33661543-8383-4cce-9ec6-f243f887e3bb",
       "teller_role": "Treegens field team",
       "channel": "facilitated",
-      "text": "Restored mangrove forest cover \u2014 Kibugumo Coast Plots, Dar es Salaam",
+      "text": "Restored mangrove forest cover — Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania",
       "source": "treegens:archive"
     },
     {
-      "id": "de194143-1042-43db-8cf9-e27e33488e85",
+      "id": "67b599b1-a1ad-4e39-9f80-d73e5d6c9ed5",
       "teller_role": "Treegens field team",
       "channel": "facilitated",
-      "text": "Restored mangrove forest cover \u2014 Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania",
+      "text": "Restored mangrove forest cover — Kibugumo Coast Plots, Dar es Salaam",
       "source": "treegens:archive"
     },
     {
-      "id": "1c323764-9bc6-4239-b746-aa183e1870a1",
+      "id": "9f33cee8-e7b9-49a6-abf9-5f5843745f94",
+      "teller_role": "nostr · Lightning community",
+      "channel": "social",
+      "text": "🚨 DAR ES SALAAM, WE’RE COMING! 🇹🇿\n\nAfrica Free Routing is bringing the Lightning Developer Bootcamp to Dar es Salaam for 5 days of hands on learning, coding, building and connecting with other Bitcoin and Lightning developers.\n\n📅 Sept 21st to 25th, 2026\n📍 Sahara Ventures HQ, Victoria\n🎟️ Apply: https://freerouting.africa/dar-lightning-developer-bootcamp#register\n\nIf you’re a developer looking to build with Bitcoin and Lightning, this is for you.\n\nCome build the future of payments in Africa. \n\n",
+      "source": "https://njump.me/note1sxtj4wggwgw4as7msp60am6rw56hlgklr3gjssef5y9ctw6g2apqvl97qh"
+    },
+    {
+      "id": "382d3fa6-4916-451e-a35d-2d0a0942d0a5",
+      "teller_role": "nostr · regional press relay",
+      "channel": "social",
+      "text": "AFRICA is BUILDING\nENERGY means PROGRESS\nTanzania has commissioned the 2,115 MW Julius Nyerere Hydropower Project (JNHPP), surging its national capacity by >80%\nhttps://pbs.twimg.com/media/HQZmGmQXkAAwklZ.jpg\n🇹🇿 🇰🇪 🇪🇬",
+      "source": "https://njump.me/note1h40st32wyf7c98s8mver8srkm7th7cx9kvkawdfthpszd4f7e2eq7dlwwa"
+    },
+    {
+      "id": "bb540d75-306d-4af9-acbc-a998dd4de369",
+      "teller_role": "nostr · fintech builder",
+      "channel": "social",
+      "text": "ChapSmart is a Bitcoin payment service made for Tanzania. It lets you send Bitcoin using the Lightning Network and have it arrive instantly as Tanzanian Shillings straight into M-Pesa — or use it to pay bills directly, like we just talked about. No bank needed, no long waits, and fees are tiny compared to regular money transfer services. It's built to make Bitcoin genuinely useful for everyday Tanzanians, not just something you hold and watch the price of. Simple, fast, and practical money movement. \n\n",
+      "source": "https://njump.me/note14rht24hqkeagwt8da0e9eedxnd5tfq5axk53d5wcneulpgmrta8q9n0le8"
+    },
+    {
+      "id": "c6bf9e7b-f3fe-4e1a-b317-6542206f53b5",
       "teller_role": "Treegens field team",
       "channel": "facilitated",
-      "text": "Restored mangrove forest cover \u2014 Kunduchi, Kawe, Kinondoni Municipal, Dar es Salaam, Coastal Zone, 14130, Tanzania",
+      "text": "Restored mangrove forest cover — Kunduchi, Kawe, Kinondoni Municipal, Dar es Salaam, Coastal Zone, 14130, Tanzania",
       "source": "treegens:archive"
+    },
+    {
+      "id": "936977bc-8435-4c6a-9b93-0c4377c8cbd5",
+      "teller_role": "nostr · Lightning community",
+      "channel": "social",
+      "text": "We officially kicked off our Lightning Developer Bootcamp Yesterday in Dar es Salaam, Tanzania! 🇹🇿\n\nIt was an inspiring start as we welcomed a passionate group of developers eager to learn, build, and contribute to the future of Bitcoin and the Lightning Network in Africa.\n\nDay 1 was all about going back to the basics. We explored the fundamentals of money - what money is, why it matters, and how Bitcoin is redefining it. We discussed the problems with the current financial system and how Bitcoin provides a decentralized, open, and permissionless alternative. This strong foundation is essentia",
+      "source": "https://njump.me/note1an952qjsllxa55ufw332nfwlt7p6j9h8p8lxygwr3cm7nacunm8q5surdn"
+    },
+    {
+      "id": "33e18b5c-b24d-4388-bcce-d0adade6b660",
+      "teller_role": "nostr · Lightning community",
+      "channel": "social",
+      "text": "NEW: 🇷🇼🇹🇿 Africa Free Routing Wraps Lightning Developer Bootcamp in Rwanda, Next Stop Dar es Salaam.\n\nnprofile1qqsfrhzkwjd75qmakyktt094juryeuuedu9u3dz82f5shansr9us4ugrany4e's Lightning Developer Bootcamp in Kigali, Rwanda wrapped up this week. Five days of learning, building, and hands-on work with Bitcoin and Lightning came to a close.\n\nhttps://image.nostr.build/7b0b5de7709f7329fa48f32138e53b254f0d6a4c623823c8372140782d65fafa.jpg https://image.nostr.build/097b8a15d8f5e1fb9d2bc031ae443554465878df7268ff2cc11782cde06381b2.jpg\n\nRead More: https://bitcoinnews.africa/kigali-bootcamp-dar-es-salaam-a",
+      "source": "https://njump.me/note1fe023w69rcewtld5gm278xlqay9rtkxmn8267x2zjun29xcny88q84zywp"
+    },
+    {
+      "id": "74849959-d62d-42d4-8b93-451ae9834194",
+      "teller_role": "bsky · Reuters",
+      "channel": "social",
+      "text": "Tanzania's main opposition party says 51 of its officials have been arrested and charged with terrorism, accusing the government of using law enforcement to intimidate critics.",
+      "source": "https://bsky.app/profile/The Associated Press/post/3mrir5kgwqz27"
+    },
+    {
+      "id": "a4aea8fc-767e-41e2-abd0-0f298ddbeff9",
+      "teller_role": "bsky voice",
+      "channel": "social",
+      "text": "A selfless Tanzanian mother of two dedicates her time to providing kangaroo care for abandoned premature babies. 💕",
+      "source": "https://bsky.app/profile/did:plc:4ohb3yjgqgutlntmpwdsnaxv/post/3msnglhfpiz2b"
+    },
+    {
+      "id": "f67dfaad-9c23-4888-8807-00f349dd4c05",
+      "teller_role": "bsky · Reuters",
+      "channel": "social",
+      "text": "Tanzania arrests 130 people as government cracks down on dissent reut.rs/4aLolE9",
+      "source": "https://bsky.app/profile/Reuters/post/3mqaeeqong62c"
     }
   ],
   "claims": [
     {
-      "id": "243d4a58-0032-4055-8a68-39f91c5db950",
-      "story_id": "455d972a-7b00-41af-8d37-deb01cd56615",
-      "text": "463 mangrove trees planted \u2014 To mji mwema Food, Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania",
+      "id": "c9c51ad8-804c-4c64-af96-8a9bb5d026c8",
+      "story_id": "7e0accc7-d218-4b58-b9ef-f0be4787a1ff",
+      "text": "485 mangrove trees planted",
       "span": [
         0,
-        117
+        26
       ],
-      "signal_id": "d2d15dc0-f104-4401-8393-5e0dadb8c952"
+      "signal_id": "f28d77f0-3c77-471a-9692-a65f98c4ff83",
+      "proposer": "model"
     },
     {
-      "id": "ba3ff9ae-4a89-42ee-b200-330fd8f6ead5",
-      "story_id": "b974e24b-db9f-47a7-8b84-17a1598732cb",
-      "text": "362 mangrove trees planted \u2014 To mji mwema Food, Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania",
-      "span": [
-        0,
-        117
-      ],
-      "signal_id": "d2d15dc0-f104-4401-8393-5e0dadb8c952"
-    },
-    {
-      "id": "e3da7cf1-2ff9-42d3-afc5-82d61ced5c85",
-      "story_id": "7377b383-4613-4408-87b5-70a51a962b12",
+      "id": "fdcb9d1c-3c3a-43a2-9e61-283469ac949e",
+      "story_id": "cff1c7b9-e2ff-4471-af58-60b7fd112a7e",
       "text": "250 mangrove trees planted",
       "span": [
         0,
         26
       ],
-      "signal_id": "d2d15dc0-f104-4401-8393-5e0dadb8c952"
+      "signal_id": "f28d77f0-3c77-471a-9692-a65f98c4ff83",
+      "proposer": "model"
     },
     {
-      "id": "eb61f569-a56c-488d-9e05-75c8555cd1e2",
-      "story_id": "5b9f5218-11e4-40fc-9caa-b0bdf3719d5c",
-      "text": "519 mangrove trees planted \u2014 To mji mwema Food, Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania",
+      "id": "ed9304c2-b086-4b55-b545-a22b61b075c9",
+      "story_id": "5b630737-49a8-44bb-889f-532594512f2e",
+      "text": "463 mangrove trees planted — To mji mwema Food, Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania",
       "span": [
         0,
         117
       ],
-      "signal_id": "d2d15dc0-f104-4401-8393-5e0dadb8c952"
+      "signal_id": "f28d77f0-3c77-471a-9692-a65f98c4ff83",
+      "proposer": "fallback"
     },
     {
-      "id": "e6a56788-499f-407e-903e-03e78fbcd8b6",
-      "story_id": "14da6594-47db-4734-b65e-9bcf1c6cdf7f",
-      "text": "485 mangrove trees planted \u2014 Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania",
+      "id": "41f5451d-656a-4f06-9d4c-a7e9728795de",
+      "story_id": "05347d2f-8d72-4d72-ad0e-e60b156f7c66",
+      "text": "218 mangrove trees planted — Kunduchi, Kawe, Kinondoni Municipal, Dar es Salaam, Coastal Zone, 14130, Tanzania",
       "span": [
         0,
-        98
+        110
       ],
-      "signal_id": "d2d15dc0-f104-4401-8393-5e0dadb8c952"
+      "signal_id": "b6c978da-97cd-4339-b622-28344b158684",
+      "proposer": "fallback"
     },
     {
-      "id": "05e9bf98-0859-4515-8fac-c74929377125",
-      "story_id": "ff703947-32c3-4717-b4f9-d8a700a06da0",
-      "text": "128 mangrove trees planted",
+      "id": "81ec03b4-3208-429b-88ee-3543ae9b7b4e",
+      "story_id": "751f84c1-4ab4-4d66-8975-4f6b702c6a09",
+      "text": "365 mangrove trees planted",
       "span": [
         0,
         26
       ],
-      "signal_id": "d2d15dc0-f104-4401-8393-5e0dadb8c952"
+      "signal_id": "0b5af83d-f5c3-40cd-9470-57bbc501450d",
+      "proposer": "model"
     },
     {
-      "id": "0e7e7b58-0d9f-44ee-82cc-f217925ae387",
-      "story_id": "ff87f581-bacd-49de-b446-16d4789b69bd",
-      "text": "115 mangrove trees planted \u2014 To mji mwema Food, Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania",
+      "id": "09faae84-802d-46cf-921b-64142def5740",
+      "story_id": "c699fbcb-15e1-4b17-9b7f-81edc0a1f0ca",
+      "text": "101 mangrove trees planted — To mji mwema Food, Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania",
       "span": [
         0,
         117
       ],
-      "signal_id": "d2d15dc0-f104-4401-8393-5e0dadb8c952"
+      "signal_id": "f28d77f0-3c77-471a-9692-a65f98c4ff83",
+      "proposer": "fallback"
     },
     {
-      "id": "649aebb7-f088-42eb-b387-5efd98c8b718",
-      "story_id": "dbe633f7-8a0f-4048-b33f-88b9a802437e",
-      "text": "133 mangrove trees planted \u2014 To mji mwema Food, Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania",
+      "id": "f73493b6-6ba4-470d-93cc-f3245db11164",
+      "story_id": "fccbc5b5-3f84-422b-bc94-47730eb3acdc",
+      "text": "133 mangrove trees planted — To mji mwema Food, Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania",
       "span": [
         0,
         117
       ],
-      "signal_id": "d2d15dc0-f104-4401-8393-5e0dadb8c952"
+      "signal_id": "f28d77f0-3c77-471a-9692-a65f98c4ff83",
+      "proposer": "model"
     },
     {
-      "id": "a65703cf-b1d5-4d4f-8849-f00022a194e9",
-      "story_id": "d5008d37-cc6f-4bc7-a2e5-1782e9200e9c",
-      "text": "143 mangrove trees planted",
+      "id": "e676d9da-3ca3-4402-ac3e-f25876a6dca2",
+      "story_id": "f67dfaad-9c23-4888-8807-00f349dd4c05",
+      "text": "Tanzania arrests 130 people as government cracks down on dissent reut.rs/4aLolE9",
+      "span": [
+        0,
+        80
+      ],
+      "signal_id": "81106585-7297-4736-bbe2-8e6a55454fce",
+      "proposer": "fallback"
+    },
+    {
+      "id": "1cc2b632-247c-4881-a2be-7862c057f5a0",
+      "story_id": "ac7686b7-c273-4cba-a484-b0d5780d4c23",
+      "text": "519 mangrove trees planted",
       "span": [
         0,
         26
       ],
-      "signal_id": "03d65e0a-4459-4f8d-9d83-dd4faaea2569"
+      "signal_id": "f28d77f0-3c77-471a-9692-a65f98c4ff83",
+      "proposer": "model"
     },
     {
-      "id": "b43f5c18-1411-48f1-a0e7-a006314e6783",
-      "story_id": "b74ea19a-a2d6-4338-a926-3a3e369f1dd1",
-      "text": "57 mangrove trees planted \u2014 To mji mwema Food, Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania",
+      "id": "3f574c3c-292e-46f4-8f68-046d88ff9c9e",
+      "story_id": "74849959-d62d-42d4-8b93-451ae9834194",
+      "text": "Tanzania's main opposition party says 51 of its officials have been arrested and charged with terrorism, accusing the government of using law enforcement to intimidate critics",
       "span": [
         0,
-        116
+        175
       ],
-      "signal_id": "03d65e0a-4459-4f8d-9d83-dd4faaea2569"
+      "signal_id": "81106585-7297-4736-bbe2-8e6a55454fce",
+      "proposer": "model"
     },
     {
-      "id": "cb89195c-e4fd-4c62-a24a-6c905f14573a",
-      "story_id": "e0763ffc-4c70-43aa-9741-b057acf14d5e",
-      "text": "117 mangrove trees planted \u2014 To mji mwema Food, Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania",
-      "span": [
-        0,
-        117
-      ],
-      "signal_id": "03d65e0a-4459-4f8d-9d83-dd4faaea2569"
-    },
-    {
-      "id": "89d6bcdc-3b84-40f6-928d-7be87a4386fb",
-      "story_id": "82c6501b-e8b7-4421-bce2-f5c698484fdd",
-      "text": "369 mangrove trees planted \u2014 To mji mwema Food, Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania",
-      "span": [
-        0,
-        117
-      ],
-      "signal_id": "03d65e0a-4459-4f8d-9d83-dd4faaea2569"
-    },
-    {
-      "id": "b6d87308-5807-4282-ac34-a6a19d67c05c",
-      "story_id": "7d711e34-4510-4128-a477-7b5832bc3d89",
-      "text": "101 mangrove trees planted \u2014 To mji mwema Food, Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania",
-      "span": [
-        0,
-        117
-      ],
-      "signal_id": "d2d15dc0-f104-4401-8393-5e0dadb8c952"
-    },
-    {
-      "id": "f07e9c93-6796-4f5e-bd98-cdda52ad5fbf",
-      "story_id": "bdfc36c9-69fa-4b05-85ac-35711c562700",
-      "text": "6,400 mangrove trees \u2014 Dar es Salaam Coast Plots",
-      "span": [
-        0,
-        48
-      ],
-      "signal_id": "c394faaa-ca7f-42ee-bd78-98938ba7019b"
-    },
-    {
-      "id": "f1c610f7-8530-404e-b29e-3ef1fb78d954",
-      "story_id": "4e5970d5-1fed-43af-aa5a-0c88c6ccc62e",
-      "text": "192,630 mangrove trees \u2014 Kibugumo Coast Plots, Dar es Salaam",
-      "span": [
-        0,
-        60
-      ],
-      "signal_id": "c394faaa-ca7f-42ee-bd78-98938ba7019b"
-    },
-    {
-      "id": "67928ab4-46d4-4046-84f5-b0cb3ebfc80d",
-      "story_id": "b9deec3d-ba5c-4f9f-995e-8e924bedc869",
-      "text": "Restored mangrove forest cover \u2014 Dar es Salaam Coast Plots",
-      "span": [
-        0,
-        58
-      ],
-      "signal_id": "adb9bfde-dd9a-44f8-964a-7f7000830f23"
-    },
-    {
-      "id": "04d8d2c4-e0b0-4bf8-a643-ded2ad40d59a",
-      "story_id": "6d4f5a2a-b173-4995-9324-9542838ab22c",
-      "text": "Restored mangrove forest cover \u2014 Kibugumo Coast Plots, Dar es Salaam",
-      "span": [
-        0,
-        68
-      ],
-      "signal_id": "adb9bfde-dd9a-44f8-964a-7f7000830f23"
-    },
-    {
-      "id": "c3c4b2d0-c20d-48a1-89ba-64d424778a0b",
-      "story_id": "de194143-1042-43db-8cf9-e27e33488e85",
-      "text": "Restored mangrove forest cover \u2014 Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania",
+      "id": "aeadea92-5384-451d-a16a-746f4da3c3f0",
+      "story_id": "33661543-8383-4cce-9ec6-f243f887e3bb",
+      "text": "Restored mangrove forest cover — Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania",
       "span": [
         0,
         102
       ],
-      "signal_id": "adb9bfde-dd9a-44f8-964a-7f7000830f23"
+      "signal_id": "79f22506-7cbf-494d-b7c8-568eed565b05",
+      "proposer": "model"
     },
     {
-      "id": "84a57a7b-f415-41ec-b534-98773335ce6e",
-      "story_id": "69d05b46-20cc-44ab-8454-3d4ef0a85af9",
-      "text": "150 mangrove trees planted \u2014 To mji mwema Food, Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania",
+      "id": "9135d895-196a-4a9d-aed6-1f87f5a6360a",
+      "story_id": "f764e1ea-b978-4f23-9f34-e2a283b2eec1",
+      "text": "117 mangrove trees planted — To mji mwema Food, Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania",
       "span": [
         0,
         117
       ],
-      "signal_id": "d2d15dc0-f104-4401-8393-5e0dadb8c952"
+      "signal_id": "0b5af83d-f5c3-40cd-9470-57bbc501450d",
+      "proposer": "fallback"
     },
     {
-      "id": "940f8f34-5cd8-4210-be88-cb75ec10e197",
-      "story_id": "74000bd8-288a-48f5-a51c-20321c3bd365",
-      "text": "139 mangrove trees planted",
+      "id": "e5e836ea-0431-4f34-af0f-a56e58ce66bd",
+      "story_id": "a4aea8fc-767e-41e2-abd0-0f298ddbeff9",
+      "text": "A selfless Tanzanian mother of two dedicates her time to providing kangaroo care for abandoned premature babies",
       "span": [
         0,
-        26
+        111
       ],
-      "signal_id": "d2d15dc0-f104-4401-8393-5e0dadb8c952"
+      "signal_id": "c0d0d48b-e5e9-4541-8c93-7b0a2a6e6700",
+      "proposer": "model"
     },
     {
-      "id": "ab215bda-5954-4617-a942-afd012ad5045",
-      "story_id": "1c323764-9bc6-4239-b746-aa183e1870a1",
-      "text": "Restored mangrove forest cover \u2014 Kunduchi, Kawe, Kinondoni Municipal, Dar es Salaam, Coastal Zone, 14130, Tanzania",
+      "id": "d8cd7eef-730e-47c1-8eb5-900fe037e653",
+      "story_id": "74307b6f-5d0e-434d-b50b-c55fbdba7bab",
+      "text": "358 mangrove trees planted — To mji mwema Food, Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania",
+      "span": [
+        0,
+        117
+      ],
+      "signal_id": "0b5af83d-f5c3-40cd-9470-57bbc501450d",
+      "proposer": "model"
+    },
+    {
+      "id": "bf90a6e8-b85c-4544-a2e7-adfb86e4678e",
+      "story_id": "729efad3-046f-42e6-a337-81be2f4cb4e1",
+      "text": "192,630 mangrove trees — Kibugumo Coast Plots, Dar es Salaam",
+      "span": [
+        0,
+        60
+      ],
+      "signal_id": "a7a1647d-7f69-4940-8bbf-c43b8695ae7d",
+      "proposer": "model"
+    },
+    {
+      "id": "4157d11c-c34f-4f7f-a7d8-2969fa862526",
+      "story_id": "aed47ad7-76df-478d-8c87-b7396c74053c",
+      "text": "115 mangrove trees planted — To mji mwema Food, Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania",
+      "span": [
+        0,
+        117
+      ],
+      "signal_id": "f28d77f0-3c77-471a-9692-a65f98c4ff83",
+      "proposer": "model"
+    },
+    {
+      "id": "b2c344d7-ef19-46eb-b737-b8df9d8f6873",
+      "story_id": "d0524b01-7b60-42ce-85ef-892460f4f3bc",
+      "text": "44 mangrove trees planted — Kunduchi, Kawe, Kinondoni Municipal, Dar es Salaam, Coastal Zone, 14130, Tanzania",
+      "span": [
+        0,
+        109
+      ],
+      "signal_id": "b6c978da-97cd-4339-b622-28344b158684",
+      "proposer": "model"
+    },
+    {
+      "id": "6c469205-2ad2-4f80-a26d-f78256e69b5c",
+      "story_id": "42d19e2c-8761-44b2-903c-a59d31c25535",
+      "text": "Restored mangrove forest cover — Dar es Salaam Coast Plots",
+      "span": [
+        0,
+        58
+      ],
+      "signal_id": "79f22506-7cbf-494d-b7c8-568eed565b05",
+      "proposer": "model"
+    },
+    {
+      "id": "14291930-ff98-46e9-a7aa-9ded3e059bc7",
+      "story_id": "9028a14d-cc3b-4f65-ac44-7c72da1f294f",
+      "text": "57 mangrove trees planted — To mji mwema Food, Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania",
+      "span": [
+        0,
+        116
+      ],
+      "signal_id": "0b5af83d-f5c3-40cd-9470-57bbc501450d",
+      "proposer": "model"
+    },
+    {
+      "id": "9d4e8e45-a503-4059-b69b-030713397bb2",
+      "story_id": "67b599b1-a1ad-4e39-9f80-d73e5d6c9ed5",
+      "text": "Restored mangrove forest cover — Kibugumo Coast Plots, Dar es Salaam",
+      "span": [
+        0,
+        68
+      ],
+      "signal_id": "79f22506-7cbf-494d-b7c8-568eed565b05",
+      "proposer": "model"
+    },
+    {
+      "id": "418401f8-d648-42a0-9e8a-e545cb1358ed",
+      "story_id": "f459a3c3-768a-4599-93be-9e73234c3f08",
+      "text": "128 mangrove trees planted — To mji mwema Food, Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania",
+      "span": [
+        0,
+        117
+      ],
+      "signal_id": "f28d77f0-3c77-471a-9692-a65f98c4ff83",
+      "proposer": "model"
+    },
+    {
+      "id": "718dc929-8981-4e25-8793-7b7da0d4a24b",
+      "story_id": "94431699-00e3-434b-bd00-6cf10458849e",
+      "text": "6,400 mangrove trees — Dar es Salaam Coast Plots",
+      "span": [
+        0,
+        48
+      ],
+      "signal_id": "a7a1647d-7f69-4940-8bbf-c43b8695ae7d",
+      "proposer": "model"
+    },
+    {
+      "id": "d543f1c8-7f26-428b-ba8c-fc989eb2512e",
+      "story_id": "c6bf9e7b-f3fe-4e1a-b317-6542206f53b5",
+      "text": "Restored mangrove forest cover — Kunduchi, Kawe, Kinondoni Municipal, Dar es Salaam, Coastal Zone, 14130, Tanzania",
       "span": [
         0,
         114
       ],
-      "signal_id": "adb9bfde-dd9a-44f8-964a-7f7000830f23"
+      "signal_id": "79f22506-7cbf-494d-b7c8-568eed565b05",
+      "proposer": "model"
     },
     {
-      "id": "ac9f5153-8519-4ecf-9d03-31ea40a5d744",
-      "story_id": "d9ba034e-da9a-439a-b95b-f4e1aaa81106",
-      "text": "101 mangrove trees planted \u2014 To mji mwema Food, Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania",
+      "id": "dd3d5934-b8e1-4894-b7a0-51563df110ba",
+      "story_id": "95b0612f-5bc0-48e5-8672-f38687c237bc",
+      "text": "143 mangrove trees planted — Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania",
+      "span": [
+        0,
+        98
+      ],
+      "signal_id": "0b5af83d-f5c3-40cd-9470-57bbc501450d",
+      "proposer": "model"
+    },
+    {
+      "id": "0863cdc9-2ad7-410d-9934-e4b807af1edb",
+      "story_id": "2aa68cb3-b40f-4f30-9797-91848b44a673",
+      "text": "362 mangrove trees planted — To mji mwema Food, Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania",
       "span": [
         0,
         117
       ],
-      "signal_id": "d2d15dc0-f104-4401-8393-5e0dadb8c952"
+      "signal_id": "f28d77f0-3c77-471a-9692-a65f98c4ff83",
+      "proposer": "fallback"
     },
     {
-      "id": "167fb645-a100-483a-95e0-e16d72d413a6",
-      "story_id": "9e025cf2-a855-4336-971e-cab417fe68bf",
-      "text": "365 mangrove trees planted \u2014 To mji mwema Food, Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania",
+      "id": "17dd58f1-6703-4af1-97cb-0c284b0e01a9",
+      "story_id": "690c11a8-7d37-4e2f-bdb7-c48969d4dcbe",
+      "text": "150 mangrove trees planted — To mji mwema Food, Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania",
       "span": [
         0,
         117
       ],
-      "signal_id": "03d65e0a-4459-4f8d-9d83-dd4faaea2569"
+      "signal_id": "f28d77f0-3c77-471a-9692-a65f98c4ff83",
+      "proposer": "fallback"
     },
     {
-      "id": "5cb79040-f8c5-4097-9fa9-a7e5685006c5",
-      "story_id": "acf46096-bb4d-4d68-849e-91d720df86c6",
-      "text": "358 mangrove trees planted \u2014 To mji mwema Food, Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania",
+      "id": "f7170115-2eb7-44bd-9140-ca4ca261b9fb",
+      "story_id": "e83a176a-37fc-4101-84cb-666fb1728f38",
+      "text": "369 mangrove trees planted — To mji mwema Food, Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania",
       "span": [
         0,
         117
       ],
-      "signal_id": "03d65e0a-4459-4f8d-9d83-dd4faaea2569"
+      "signal_id": "0b5af83d-f5c3-40cd-9470-57bbc501450d",
+      "proposer": "fallback"
     },
     {
-      "id": "7e54c251-1200-4733-b84b-20d29b78032a",
-      "story_id": "cdc1c1ad-21e5-4842-946b-087761aa72dc",
-      "text": "218 mangrove trees planted \u2014 Kunduchi, Kawe, Kinondoni Municipal, Dar es Salaam, Coastal Zone, 14130, Tanzania",
+      "id": "278b9994-aaea-46c5-87c5-ed64e34698dc",
+      "story_id": "c4a9e72b-4ea2-4a8d-af62-7a52c71683a2",
+      "text": "139 mangrove trees planted — To mji mwema Food, Mji Mwema, Kigamboni Municipal, Dar es Salaam, Coastal Zone, Tanzania",
+      "span": [
+        0,
+        117
+      ],
+      "signal_id": "f28d77f0-3c77-471a-9692-a65f98c4ff83",
+      "proposer": "fallback"
+    },
+    {
+      "id": "0f4d1d48-a97a-4cec-a517-54b27b78db75",
+      "story_id": "b528f37e-166b-4f1d-961b-ca02cb246b1f",
+      "text": "300 mangrove trees planted — Kunduchi, Kawe, Kinondoni Municipal, Dar es Salaam, Coastal Zone, 14130, Tanzania",
       "span": [
         0,
         110
       ],
-      "signal_id": "d6df060e-d455-45eb-ac9a-f7bf36dc0b69"
+      "signal_id": "b6c978da-97cd-4339-b622-28344b158684",
+      "proposer": "model"
     },
     {
-      "id": "229b0035-e69a-4636-9e1c-b00c762502be",
-      "story_id": "265c1b70-18b4-4b86-af10-165eb0465e43",
-      "text": "300 mangrove trees planted \u2014 Kunduchi, Kawe, Kinondoni Municipal, Dar es Salaam, Coastal Zone, 14130, Tanzania",
+      "id": "457b44c0-b59d-4b90-aec5-2c75664a3f29",
+      "story_id": "a4aea8fc-767e-41e2-abd0-0f298ddbeff9",
+      "text": "A selfless Tanzanian mother of two dedicates her time to providing kangaroo care for abandoned premature babies.",
       "span": [
         0,
-        110
+        112
       ],
-      "signal_id": "d6df060e-d455-45eb-ac9a-f7bf36dc0b69"
+      "signal_id": "c0d0d48b-e5e9-4541-8c93-7b0a2a6e6700",
+      "proposer": "model"
     },
     {
-      "id": "614c77d0-d95c-43f0-91ad-b3ac2fe09f3f",
-      "story_id": "9f51a123-1ee6-423e-83c7-437947a3e5b3",
-      "text": "44 mangrove trees planted",
+      "id": "c4283b0e-6c74-405f-8e6a-d71fa2617e2b",
+      "story_id": "74849959-d62d-42d4-8b93-451ae9834194",
+      "text": "51 of its officials have been arrested and charged with terrorism",
+      "span": [
+        38,
+        103
+      ],
+      "signal_id": "81106585-7297-4736-bbe2-8e6a55454fce",
+      "proposer": "model"
+    },
+    {
+      "id": "c1362bc9-062f-468f-95db-8459e0a190d7",
+      "story_id": "936977bc-8435-4c6a-9b93-0c4377c8cbd5",
+      "text": "We officially kicked off our Lightning Developer Bootcamp Yesterday in Dar es Salaam, Tanzania! 🇹🇿\n\nIt was an inspiring start as we welcomed a passionate group of developers eager to learn, build, and contribute to the future of Bitcoin and the Lightning Network in Africa.\n\nDay 1 was all about going back to the basics. We explored the fundamentals of money - what money is, why it matters, and how Bitcoin is redefining it. We discussed the problems with the current financial system and how Bitcoin provides a decentralized, open, and permissionless alternative. This strong foundation is essentia",
       "span": [
         0,
-        25
+        602
       ],
-      "signal_id": "d6df060e-d455-45eb-ac9a-f7bf36dc0b69"
+      "signal_id": "a2082ad2-3ec6-44d5-8e78-9b70f9bf0d24",
+      "proposer": "analyst"
+    },
+    {
+      "id": "9ffa6069-6418-468d-8bc3-f597293a74fe",
+      "story_id": "9f33cee8-e7b9-49a6-abf9-5f5843745f94",
+      "text": "🚨 DAR ES SALAAM, WE’RE COMING! 🇹🇿\n\nAfrica Free Routing is bringing the Lightning Developer Bootcamp to Dar es Salaam for 5 days of hands on learning, coding, building and connecting with other Bitcoin and Lightning developers.\n\n📅 Sept 21st to 25th, 2026\n📍 Sahara Ventures HQ, Victoria\n🎟️ Apply: https://freerouting.africa/dar-lightning-developer-bootcamp#register\n\nIf you’re a developer looking to build with Bitcoin and Lightning, this is for you.\n\nCome build the future of payments in Africa. \n\n",
+      "span": [
+        0,
+        503
+      ],
+      "signal_id": "a2082ad2-3ec6-44d5-8e78-9b70f9bf0d24",
+      "proposer": "analyst"
+    },
+    {
+      "id": "49de7cc2-8a4c-4eaf-9d49-3207324196d0",
+      "story_id": "bb540d75-306d-4af9-acbc-a998dd4de369",
+      "text": "ChapSmart is a Bitcoin payment service made for Tanzania. It lets you send Bitcoin using the Lightning Network and have it arrive instantly as Tanzanian Shillings straight into M-Pesa — or use it to pay bills directly, like we just talked about. No bank needed, no long waits, and fees are tiny compared to regular money transfer services. It's built to make Bitcoin genuinely useful for everyday Tanzanians, not just something you hold and watch the price of. Simple, fast, and practical money movement. \n\n",
+      "span": [
+        0,
+        507
+      ],
+      "signal_id": "a2082ad2-3ec6-44d5-8e78-9b70f9bf0d24",
+      "proposer": "analyst"
+    },
+    {
+      "id": "de031ab5-bec0-48ec-9b23-912d01322bfe",
+      "story_id": "33e18b5c-b24d-4388-bcce-d0adade6b660",
+      "text": "NEW: 🇷🇼🇹🇿 Africa Free Routing Wraps Lightning Developer Bootcamp in Rwanda, Next Stop Dar es Salaam.\n\nnprofile1qqsfrhzkwjd75qmakyktt094juryeuuedu9u3dz82f5shansr9us4ugrany4e's Lightning Developer Bootcamp in Kigali, Rwanda wrapped up this week. Five days of learning, building, and hands-on work with Bitcoin and Lightning came to a close.\n\nhttps://image.nostr.build/7b0b5de7709f7329fa48f32138e53b254f0d6a4c623823c8372140782d65fafa.jpg https://image.nostr.build/097b8a15d8f5e1fb9d2bc031ae443554465878df7268ff2cc11782cde06381b2.jpg\n\nRead More: https://bitcoinnews.africa/kigali-bootcamp-dar-es-salaam-a",
+      "span": [
+        0,
+        604
+      ],
+      "signal_id": "a2082ad2-3ec6-44d5-8e78-9b70f9bf0d24",
+      "proposer": "analyst"
+    },
+    {
+      "id": "202b0eb6-913f-411e-9674-250e502863bc",
+      "story_id": "382d3fa6-4916-451e-a35d-2d0a0942d0a5",
+      "text": "AFRICA is BUILDING\nENERGY means PROGRESS\nTanzania has commissioned the 2,115 MW Julius Nyerere Hydropower Project (JNHPP), surging its national capacity by >80%\nhttps://pbs.twimg.com/media/HQZmGmQXkAAwklZ.jpg\n🇹🇿 🇰🇪 🇪🇬",
+      "span": [
+        0,
+        223
+      ],
+      "signal_id": "a2082ad2-3ec6-44d5-8e78-9b70f9bf0d24",
+      "proposer": "analyst"
     }
   ],
   "signals": [
     {
-      "id": "d2d15dc0-f104-4401-8393-5e0dadb8c952",
-      "statement": "App-verified planting records keep landing at Mji Mwema",
-      "supporting_claim_ids": [
-        "243d4a58-0032-4055-8a68-39f91c5db950",
-        "ba3ff9ae-4a89-42ee-b200-330fd8f6ead5",
-        "e3da7cf1-2ff9-42d3-afc5-82d61ced5c85",
-        "eb61f569-a56c-488d-9e05-75c8555cd1e2",
-        "e6a56788-499f-407e-903e-03e78fbcd8b6",
-        "05e9bf98-0859-4515-8fac-c74929377125",
-        "0e7e7b58-0d9f-44ee-82cc-f217925ae387",
-        "649aebb7-f088-42eb-b387-5efd98c8b718",
-        "b6d87308-5807-4282-ac34-a6a19d67c05c",
-        "84a57a7b-f415-41ec-b534-98773335ce6e",
-        "940f8f34-5cd8-4210-be88-cb75ec10e197",
-        "ac9f5153-8519-4ecf-9d03-31ea40a5d744"
-      ],
-      "voices": 12,
-      "recurrence": 12,
-      "verification": {
-        "participants": 4,
-        "endorse": 4,
-        "amend": 0,
-        "contest": 0,
-        "amendments": [],
-        "gate": "may_be_priced"
-      }
-    },
-    {
-      "id": "d6df060e-d455-45eb-ac9a-f7bf36dc0b69",
-      "statement": "The planting reached Kunduchi too",
-      "supporting_claim_ids": [
-        "7e54c251-1200-4733-b84b-20d29b78032a",
-        "229b0035-e69a-4636-9e1c-b00c762502be",
-        "614c77d0-d95c-43f0-91ad-b3ac2fe09f3f"
-      ],
-      "voices": 3,
-      "recurrence": 3,
-      "verification": {
-        "participants": 3,
-        "endorse": 3,
-        "amend": 0,
-        "contest": 0,
-        "amendments": [],
-        "gate": "may_be_priced"
-      }
-    },
-    {
-      "id": "c394faaa-ca7f-42ee-bd78-98938ba7019b",
+      "id": "a7a1647d-7f69-4940-8bbf-c43b8695ae7d",
       "statement": "The biggest numbers rest on pre-app field-team evidence",
       "supporting_claim_ids": [
-        "f07e9c93-6796-4f5e-bd98-cdda52ad5fbf",
-        "f1c610f7-8530-404e-b29e-3ef1fb78d954"
+        "bf90a6e8-b85c-4544-a2e7-adfb86e4678e",
+        "718dc929-8981-4e25-8793-7b7da0d4a24b"
       ],
       "voices": 2,
       "recurrence": 2,
@@ -583,37 +711,13 @@
       }
     },
     {
-      "id": "03d65e0a-4459-4f8d-9d83-dd4faaea2569",
-      "statement": "Dozens of planting records still await verification",
-      "supporting_claim_ids": [
-        "a65703cf-b1d5-4d4f-8849-f00022a194e9",
-        "b43f5c18-1411-48f1-a0e7-a006314e6783",
-        "cb89195c-e4fd-4c62-a24a-6c905f14573a",
-        "89d6bcdc-3b84-40f6-928d-7be87a4386fb",
-        "167fb645-a100-483a-95e0-e16d72d413a6",
-        "5cb79040-f8c5-4097-9fa9-a7e5685006c5"
-      ],
-      "voices": 6,
-      "recurrence": 6,
-      "verification": {
-        "participants": 3,
-        "endorse": 2,
-        "amend": 1,
-        "contest": 0,
-        "amendments": [
-          "Treat these as leads, not evidence \u2014 they count once verified."
-        ],
-        "gate": "not_yet"
-      }
-    },
-    {
-      "id": "adb9bfde-dd9a-44f8-964a-7f7000830f23",
+      "id": "79f22506-7cbf-494d-b7c8-568eed565b05",
       "statement": "The stated outcome is restored mangrove cover",
       "supporting_claim_ids": [
-        "67928ab4-46d4-4046-84f5-b0cb3ebfc80d",
-        "04d8d2c4-e0b0-4bf8-a643-ded2ad40d59a",
-        "c3c4b2d0-c20d-48a1-89ba-64d424778a0b",
-        "ab215bda-5954-4617-a942-afd012ad5045"
+        "aeadea92-5384-451d-a16a-746f4da3c3f0",
+        "6c469205-2ad2-4f80-a26d-f78256e69b5c",
+        "9d4e8e45-a503-4059-b69b-030713397bb2",
+        "d543f1c8-7f26-428b-ba8c-fc989eb2512e"
       ],
       "voices": 4,
       "recurrence": 4,
@@ -625,26 +729,156 @@
         "amendments": [],
         "gate": "may_be_priced"
       }
+    },
+    {
+      "id": "f28d77f0-3c77-471a-9692-a65f98c4ff83",
+      "statement": "App-verified planting records keep landing at Mji Mwema",
+      "supporting_claim_ids": [
+        "c9c51ad8-804c-4c64-af96-8a9bb5d026c8",
+        "fdcb9d1c-3c3a-43a2-9e61-283469ac949e",
+        "ed9304c2-b086-4b55-b545-a22b61b075c9",
+        "09faae84-802d-46cf-921b-64142def5740",
+        "f73493b6-6ba4-470d-93cc-f3245db11164",
+        "1cc2b632-247c-4881-a2be-7862c057f5a0",
+        "4157d11c-c34f-4f7f-a7d8-2969fa862526",
+        "418401f8-d648-42a0-9e8a-e545cb1358ed",
+        "0863cdc9-2ad7-410d-9934-e4b807af1edb",
+        "17dd58f1-6703-4af1-97cb-0c284b0e01a9",
+        "278b9994-aaea-46c5-87c5-ed64e34698dc"
+      ],
+      "voices": 11,
+      "recurrence": 11,
+      "verification": {
+        "participants": 4,
+        "endorse": 4,
+        "amend": 0,
+        "contest": 0,
+        "amendments": [],
+        "gate": "may_be_priced"
+      }
+    },
+    {
+      "id": "b6c978da-97cd-4339-b622-28344b158684",
+      "statement": "The planting reached Kunduchi too",
+      "supporting_claim_ids": [
+        "41f5451d-656a-4f06-9d4c-a7e9728795de",
+        "b2c344d7-ef19-46eb-b737-b8df9d8f6873",
+        "0f4d1d48-a97a-4cec-a517-54b27b78db75"
+      ],
+      "voices": 3,
+      "recurrence": 3,
+      "verification": {
+        "participants": 3,
+        "endorse": 3,
+        "amend": 0,
+        "contest": 0,
+        "amendments": [],
+        "gate": "may_be_priced"
+      }
+    },
+    {
+      "id": "0b5af83d-f5c3-40cd-9470-57bbc501450d",
+      "statement": "Dozens of planting records still await verification",
+      "supporting_claim_ids": [
+        "81ec03b4-3208-429b-88ee-3543ae9b7b4e",
+        "9135d895-196a-4a9d-aed6-1f87f5a6360a",
+        "d8cd7eef-730e-47c1-8eb5-900fe037e653",
+        "14291930-ff98-46e9-a7aa-9ded3e059bc7",
+        "dd3d5934-b8e1-4894-b7a0-51563df110ba",
+        "f7170115-2eb7-44bd-9140-ca4ca261b9fb"
+      ],
+      "voices": 6,
+      "recurrence": 6,
+      "verification": {
+        "participants": 3,
+        "endorse": 2,
+        "amend": 1,
+        "contest": 0,
+        "amendments": [
+          "Treat these as leads, not evidence — they count once verified."
+        ],
+        "gate": "not_yet"
+      }
+    },
+    {
+      "id": "c0d0d48b-e5e9-4541-8c93-7b0a2a6e6700",
+      "statement": "Quiet care work carries on: a mother of two gives kangaroo care to abandoned premature babies.",
+      "supporting_claim_ids": [
+        "e5e836ea-0431-4f34-af0f-a56e58ce66bd",
+        "457b44c0-b59d-4b90-aec5-2c75664a3f29"
+      ],
+      "voices": 1,
+      "recurrence": 2,
+      "verification": {
+        "participants": 7,
+        "endorse": 7,
+        "amend": 0,
+        "contest": 0,
+        "amendments": [],
+        "gate": "commons_only"
+      }
+    },
+    {
+      "id": "a2082ad2-3ec6-44d5-8e78-9b70f9bf0d24",
+      "statement": "A Lightning and fintech builder community is planting itself in the city: bootcamps, Africa Free Routing, and Bitcoin-to-mobile-money rails.",
+      "supporting_claim_ids": [
+        "c1362bc9-062f-468f-95db-8459e0a190d7",
+        "9ffa6069-6418-468d-8bc3-f597293a74fe",
+        "49de7cc2-8a4c-4eaf-9d49-3207324196d0",
+        "de031ab5-bec0-48ec-9b23-912d01322bfe",
+        "202b0eb6-913f-411e-9674-250e502863bc"
+      ],
+      "voices": 5,
+      "recurrence": 5,
+      "verification": {
+        "participants": 6,
+        "endorse": 6,
+        "amend": 0,
+        "contest": 0,
+        "amendments": [],
+        "gate": "may_be_priced"
+      }
+    },
+    {
+      "id": "81106585-7297-4736-bbe2-8e6a55454fce",
+      "statement": "Civic space is closing: 130 arrests in a dissent crackdown and terrorism charges against opposition officials while the vice-presidency churns.",
+      "supporting_claim_ids": [
+        "e676d9da-3ca3-4402-ac3e-f25876a6dca2",
+        "3f574c3c-292e-46f4-8f68-046d88ff9c9e",
+        "c4283b0e-6c74-405f-8e6a-d71fa2617e2b"
+      ],
+      "voices": 2,
+      "recurrence": 3,
+      "verification": {
+        "participants": 5,
+        "endorse": 4,
+        "amend": 1,
+        "contest": 0,
+        "amendments": [
+          "The crackdown is the context every plan in this city operates inside."
+        ],
+        "gate": "not_yet"
+      }
     }
   ],
   "interventions": {
     "from_plans": [
       {
-        "id": "26b56416-736c-451d-9f23-d5d9a52a0ab4",
-        "name": "Dar es Salaam Coast Plots (pre-app)",
-        "note": "Treegens field-team plot \u2014 6,400 trees claimed since 2024, last AI count 413 on plot 01. Filmed evidence, not app-verified.",
+        "id": "0fd41c73-ca67-44e4-9727-02a8f3660a84",
+        "name": "Kibugumo Coast Plots (pre-app)",
+        "note": "Treegens field-team plot — 192,630 trees claimed. The largest claim in the corpus, resting on filmed evidence only.",
         "signal_ids": [
-          "c394faaa-ca7f-42ee-bd78-98938ba7019b"
+          "a7a1647d-7f69-4940-8bbf-c43b8695ae7d"
         ],
         "counter_signal_ids": [],
         "priced": false
       },
       {
-        "id": "eef09307-81c6-46f3-a90c-03eb154e289c",
-        "name": "Kibugumo Coast Plots (pre-app)",
-        "note": "Treegens field-team plot \u2014 192,630 trees claimed. The largest claim in the corpus, resting on filmed evidence only.",
+        "id": "d1cfd686-8575-45fe-b97e-3bfc4f80b2d8",
+        "name": "Dar es Salaam Coast Plots (pre-app)",
+        "note": "Treegens field-team plot — 6,400 trees claimed since 2024, last AI count 413 on plot 01. Filmed evidence, not app-verified.",
         "signal_ids": [
-          "c394faaa-ca7f-42ee-bd78-98938ba7019b"
+          "a7a1647d-7f69-4940-8bbf-c43b8695ae7d"
         ],
         "counter_signal_ids": [],
         "priced": false
@@ -652,33 +886,33 @@
     ],
     "from_place": [
       {
-        "id": "a9365b4e-0bc5-46da-b02f-94b79595ad66",
-        "name": "Fund the verified record first",
-        "note": "45 app-verified Mji Mwema records are the only payout-grade evidence here \u2014 direct any priced support at them.",
-        "signal_ids": [
-          "d2d15dc0-f104-4401-8393-5e0dadb8c952",
-          "d6df060e-d455-45eb-ac9a-f7bf36dc0b69"
-        ],
-        "counter_signal_ids": [],
-        "priced": false
-      },
-      {
-        "id": "f2579d38-ffde-44f5-889a-cdde356fb128",
-        "name": "Clear the verification backlog",
-        "note": "38 pending records including every Kunduchi claim \u2014 reviewers before money.",
-        "signal_ids": [
-          "03d65e0a-4459-4f8d-9d83-dd4faaea2569"
-        ],
-        "counter_signal_ids": [],
-        "priced": false
-      },
-      {
-        "id": "678405d8-50e3-4ef0-8df9-933d5fc7c163",
+        "id": "120bce76-74de-4b8a-9056-f1544fdb8f5d",
         "name": "Extend planting to Kunduchi",
-        "note": "Three records show the programme already reached Kinondoni \u2014 the next planting days can be upstream.",
+        "note": "Three records show the programme already reached Kinondoni — the next planting days can be upstream.",
         "signal_ids": [
-          "adb9bfde-dd9a-44f8-964a-7f7000830f23",
-          "d6df060e-d455-45eb-ac9a-f7bf36dc0b69"
+          "79f22506-7cbf-494d-b7c8-568eed565b05",
+          "b6c978da-97cd-4339-b622-28344b158684"
+        ],
+        "counter_signal_ids": [],
+        "priced": false
+      },
+      {
+        "id": "6a8732f2-37f2-4281-9ea5-eceeddf9b417",
+        "name": "Fund the verified record first",
+        "note": "45 app-verified Mji Mwema records are the only payout-grade evidence here — direct any priced support at them.",
+        "signal_ids": [
+          "b6c978da-97cd-4339-b622-28344b158684",
+          "f28d77f0-3c77-471a-9692-a65f98c4ff83"
+        ],
+        "counter_signal_ids": [],
+        "priced": false
+      },
+      {
+        "id": "3c538938-846b-4a58-816a-d6c099de2278",
+        "name": "Clear the verification backlog",
+        "note": "38 pending records including every Kunduchi claim — reviewers before money.",
+        "signal_ids": [
+          "0b5af83d-f5c3-40cd-9470-57bbc501450d"
         ],
         "counter_signal_ids": [],
         "priced": false
@@ -687,70 +921,69 @@
   },
   "sips": [
     {
-      "id": "bae029c4-b852-477d-9052-aef3d8934a10",
+      "id": "dd620d84-5ff9-44d5-854a-71e4a43ef543",
       "kind": "node",
       "title": "Verification is the bottleneck, not planting",
       "what_changes": "38 pending records nearly equal the 45 verified ones. Each verified record unlocks evidence-grade support; the backlog is the leverage point.",
       "time_to_show": "weeks",
       "evidence_claim_ids": [
-        "05e9bf98-0859-4515-8fac-c74929377125",
-        "0e7e7b58-0d9f-44ee-82cc-f217925ae387",
-        "167fb645-a100-483a-95e0-e16d72d413a6",
-        "243d4a58-0032-4055-8a68-39f91c5db950",
-        "5cb79040-f8c5-4097-9fa9-a7e5685006c5",
-        "649aebb7-f088-42eb-b387-5efd98c8b718",
-        "84a57a7b-f415-41ec-b534-98773335ce6e",
-        "89d6bcdc-3b84-40f6-928d-7be87a4386fb",
-        "940f8f34-5cd8-4210-be88-cb75ec10e197",
-        "a65703cf-b1d5-4d4f-8849-f00022a194e9",
-        "ac9f5153-8519-4ecf-9d03-31ea40a5d744",
-        "b43f5c18-1411-48f1-a0e7-a006314e6783",
-        "b6d87308-5807-4282-ac34-a6a19d67c05c",
-        "ba3ff9ae-4a89-42ee-b200-330fd8f6ead5",
-        "cb89195c-e4fd-4c62-a24a-6c905f14573a",
-        "e3da7cf1-2ff9-42d3-afc5-82d61ced5c85",
-        "e6a56788-499f-407e-903e-03e78fbcd8b6",
-        "eb61f569-a56c-488d-9e05-75c8555cd1e2"
+        "0863cdc9-2ad7-410d-9934-e4b807af1edb",
+        "09faae84-802d-46cf-921b-64142def5740",
+        "14291930-ff98-46e9-a7aa-9ded3e059bc7",
+        "17dd58f1-6703-4af1-97cb-0c284b0e01a9",
+        "1cc2b632-247c-4881-a2be-7862c057f5a0",
+        "278b9994-aaea-46c5-87c5-ed64e34698dc",
+        "4157d11c-c34f-4f7f-a7d8-2969fa862526",
+        "418401f8-d648-42a0-9e8a-e545cb1358ed",
+        "81ec03b4-3208-429b-88ee-3543ae9b7b4e",
+        "9135d895-196a-4a9d-aed6-1f87f5a6360a",
+        "c9c51ad8-804c-4c64-af96-8a9bb5d026c8",
+        "d8cd7eef-730e-47c1-8eb5-900fe037e653",
+        "dd3d5934-b8e1-4894-b7a0-51563df110ba",
+        "ed9304c2-b086-4b55-b545-a22b61b075c9",
+        "f7170115-2eb7-44bd-9140-ca4ca261b9fb",
+        "f73493b6-6ba4-470d-93cc-f3245db11164",
+        "fdcb9d1c-3c3a-43a2-9e61-283469ac949e"
       ]
     },
     {
-      "id": "d407e0b7-ff00-4439-9e3a-7f30530af652",
+      "id": "5902de6c-a2b4-4084-a9a5-0599cf166bda",
       "kind": "threshold",
       "title": "The 192,630-tree claim needs its proof",
-      "what_changes": "Kibugumo's archive figure dwarfs everything else in the corpus \u2014 and it is filmed, not app-verified. Re-shooting it would re-grade the whole place's evidence.",
+      "what_changes": "Kibugumo's archive figure dwarfs everything else in the corpus — and it is filmed, not app-verified. Re-shooting it would re-grade the whole place's evidence.",
       "time_to_show": "months",
       "evidence_claim_ids": [
-        "f07e9c93-6796-4f5e-bd98-cdda52ad5fbf",
-        "f1c610f7-8530-404e-b29e-3ef1fb78d954"
+        "718dc929-8981-4e25-8793-7b7da0d4a24b",
+        "bf90a6e8-b85c-4544-a2e7-adfb86e4678e"
       ]
     }
   ],
   "priorities": {
     "title": "Where capital is most needed",
-    "intro": "Derived from this place\u2019s own signals: unreached needs first, then the loudest voices, then the leverage points.",
+    "intro": "Derived from this place’s own signals: unreached needs first, then the loudest voices, then the leverage points.",
     "items": [
       {
-        "heading": "The plans don\u2019t reach it",
-        "text": "App-verified planting records keep landing at Mji Mwema \u2014 12 voices, and no funded scheme answers it."
+        "heading": "The plans don’t reach it",
+        "text": "App-verified planting records keep landing at Mji Mwema — 11 voices, and no funded scheme answers it."
       },
       {
-        "heading": "The plans don\u2019t reach it",
-        "text": "Dozens of planting records still await verification \u2014 6 voices, and no funded scheme answers it."
+        "heading": "The plans don’t reach it",
+        "text": "Dozens of planting records still await verification — 6 voices, and no funded scheme answers it."
       },
       {
         "heading": "Where the voices are",
-        "text": "App-verified planting records keep landing at Mji Mwema \u2014 12 voices say this most."
+        "text": "App-verified planting records keep landing at Mji Mwema — 11 voices say this most."
       },
       {
         "heading": "The leverage point to watch",
-        "text": "Verification is the bottleneck, not planting \u2014 38 pending records nearly equal the 45 verified ones. Each verified record unlocks evidence-grade support; the backlog is the leverage point."
+        "text": "Verification is the bottleneck, not planting — 38 pending records nearly equal the 45 verified ones. Each verified record unlocks evidence-grade support; the backlog is the leverage point."
       }
     ]
   },
   "meta": {
     "place_id": "dar-es-salaam",
-    "version": "2026-10-25",
-    "published_at": "2026-10-25T20:06:36.221Z",
-    "manifest_sha256": "691190d835c5dec2a701a8a8e26452eb6db6fe85271e88c49139d36c121917dc"
+    "version": "2026-10-26",
+    "published_at": "2026-10-26T02:13:19.061Z",
+    "manifest_sha256": "7a9cc516f96d23f791e3982bb36d6057a2fd2ddb60411bd9af08a7ef7d99566f"
   }
 }

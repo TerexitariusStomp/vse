@@ -1,0 +1,803 @@
+{
+  "_about": "Results for Puerto la Cruz, published by a Value Structuring Engine.",
+  "place": {
+    "id": "puerto-la-cruz",
+    "name": "Puerto la Cruz",
+    "kind": "coastal city, Anzoátegui, Venezuela",
+    "summary": "A Venezuelan port city heard through its own social voice: residents blogging the waterfront, a power grid rationed six hours a day, pensioners on the street, and a sea the ferries barely cross.",
+    "geo": {
+      "lat": 10.2136,
+      "lon": -64.6333
+    },
+    "readings": [
+      {
+        "label": "Public posts naming the city (90-day window)",
+        "value": "124",
+        "source": "widespread social index — bsky/nostr/hive"
+      },
+      {
+        "label": "Resident Hive bloggers in export",
+        "value": "8 distinct authors",
+        "source": "widespread social index — hive"
+      },
+      {
+        "label": "Reported daily power rationing",
+        "value": "5–6 hours/day",
+        "source": "resident post via widespread social index"
+      }
+    ]
+  },
+  "pipeline": [
+    {
+      "stage": "Listening",
+      "detail": "stories told in people’s own words",
+      "count": 17,
+      "unit": "stories"
+    },
+    {
+      "stage": "Making sense",
+      "detail": "exact excerpts extracted from stories",
+      "count": 30,
+      "unit": "excerpts"
+    },
+    {
+      "stage": "Consolidating",
+      "detail": "excerpts gathered into signals",
+      "count": 8,
+      "unit": "signals"
+    },
+    {
+      "stage": "People check",
+      "detail": "contributors endorse, amend or contest",
+      "count": 8,
+      "unit": "participants"
+    }
+  ],
+  "scale_note": "Built entirely from public social posts (90-day window) — no curated corpus. Small because it is real.",
+  "stories": [
+    {
+      "id": "8cebca52-b981-4739-980c-c7bc3ea43116",
+      "teller_role": "hive · Milita Digital (resident)",
+      "channel": "social",
+      "text": "Power outages: my worst night without electricity [story] ![1001009983.jpg](https://files.peakd.com/file/peakd-hive/militadigital01/23wMMtvvn8Q1MSfLuZ8wJ3rDzf8pkifnarEjcTcuBU6YcaXk94jpKxsEtB4gUtDu4imG3.jpg)\n\nHello dear community, today I'm feeling really upset, and I've heard about this section where everyone's frustrations are read and understood.\n\nI'm writing to tell you that since yesterday we've been having severe Electricity problems in the city of Puerto La Cruz (Anzoátegui), where I'm currently staying. It's become common to have a supposed power rationing of 5 or 6 hours a day, but yes",
+      "source": "https://hive.blog/@militadigital01/power-outages-my-worst-night-without-electricity-story"
+    },
+    {
+      "id": "191b291c-fe16-4b4d-96be-c3ef54f3d375",
+      "teller_role": "nostr · regional press relay",
+      "channel": "social",
+      "text": "['🗞️', '📍'] REGIONALES\n💬 Jubilados de Cantv se concentraron por tercer jueves consecutivo en Puerto La Cruz para protestar por la reducción de su bono de alimentación y otras demandas socioeconómicas. La manifestación refleja la crisis laboral y económica que afecta a muchos jubilados en Venezuela, que buscan mejoras en sus condiciones de vida 🗞️.\n[EN] Retirees from Cantv gathered for the third consecutive Thursday to protest the reduction of their food bonus and other socioeconomic demands.\n[contexto inconsistente]\nFuente: Eltiempove\n\nhttps://eltiempove.com/jubilados-de-la-cantv-siguen-espera",
+      "source": "https://njump.me/note1agwp5tneqtgt0k04v86j9eescd7gqx7mn28lzuld0gp9mxw2768qelerua"
+    },
+    {
+      "id": "38a7ce9a-54b7-417c-81bf-6126f6a9b079",
+      "teller_role": "nostr · regional press relay",
+      "channel": "social",
+      "text": "['🗞️', '📍'] REGIONALES\n💬 Jubilados de Cantv protestaron en Puerto La Cruz por séptimo día consecutivo, exigiendo respuestas a sus demandas socioeconómicas. La falta de atención a sus reclamos mantiene la tensión en la zona.\n[EN] Retirees from Cantv protested in Puerto La Cruz for the seventh consecutive day, demanding answers to their socioeconomic demands.\nFuente: Eltiempove\n\nhttps://eltiempove.com/ante-falta-de-respuesta-a-sus-demandas-jubilados-de-la-cantv-protestaron-otra-vez-en-puerto-la-cruz/",
+      "source": "https://njump.me/note1mlmvvjvvur0tz4jnv38049q5009k5alt05qt93q9w7fmwfj6dw0srazvjh"
+    },
+    {
+      "id": "f2c4d063-70a3-4655-8a2e-214c84e7c347",
+      "teller_role": "nostr · regional press relay",
+      "channel": "social",
+      "text": "['📰', '📌'] GENERALES\n💬 Conferry anunció los nuevos precios de boletos para la ruta Puerto La Cruz-Margarita, aunque advirtió que el itinerario podría modificarse sin previo aviso. La empresa, clave en el transporte marítimo interno, ajusta tarifas en medio de la crisis de combustible y servicios públicos. El anuncio llega tras meses de suspensiones y demoras en rutas por falta de gasolina y mantenimiento. 📌\nFuente: El Diario\n\nhttps://eldiario.com/2026/08/19/precios-boletos-conferry/",
+      "source": "https://njump.me/note1fmukvytegpdvwthr4d8dayh4g5rgdssr8vfjqhd5kczwkx3rkdxq3x98pj"
+    },
+    {
+      "id": "2c8213bd-e045-4be1-b7e5-e6c097baea8e",
+      "teller_role": "nostr · regional press relay",
+      "channel": "social",
+      "text": "['🗞️', '📍'] REGIONALES\n💬 En la comunidad rural de Lechozal, en el estado Anzoátegui, el programa gubernamental Madres Procesadoras opera con equipos mínimos, lo que dificulta el cumplimiento de sus objetivos. La falta de infraestructura adecuada plantea desafíos para el personal que busca impulsar el desarrollo de la zona.\n🏘️\nFuente: Eltiempove\n\nhttps://eltiempove.com/vecinos-programa-madres-procesadoras-funciona-en-condiciones-precarias/",
+      "source": "https://njump.me/note123c9m4ffwfqm922qcz3g3kn7p88rftu0ef94458lg98fwd9ym8fsnq6ce5"
+    },
+    {
+      "id": "d3b12aaa-af63-4734-800f-865e40c6312d",
+      "teller_role": "nostr · regional press relay",
+      "channel": "social",
+      "text": "['📰', '📌'] GENERALES\n💬 Al menos 12 familias en Naricual, estado Anzoátegui, resultaron afectadas por el desbordamiento de un río debido a las fuertes lluvias, una situación que agrava la precaria infraestructura del país. Este incidente ocurre en un contexto de crisis humanitaria y tras el doble terremoto del 24 de junio de 2026, lo que añade presión sobre los ya colapsados servicios públicos y la capacidad de respuesta de la presidenta interina Delcy Rodríguez. ⚠️\n[EN] At least 12 families in Naricual, Anzoátegui, were affected by a river overflowing due to heavy rains, exacerbating Venezuela",
+      "source": "https://njump.me/note16k6kukpjurdfhwas2kpff2eayg5snsr02djy4p3vqayfgvg5weyqpsn35p"
+    },
+    {
+      "id": "da37f542-bb35-4878-b7c4-363780ecd231",
+      "teller_role": "nostr · regional press relay",
+      "channel": "social",
+      "text": "['🗞️', '📍'] REGIONALES\n💬 Residentes de la \"Vecindad del Chavo\" en Puerto La Cruz, estado Anzoátegui, denuncian vivir rodeados de aguas negras, una situación que afecta directamente su calidad de vida y salud. La problemática, que se agrava por la cercanía a la urbanización El Gran Maguey, pone en evidencia el precario estado de los servicios públicos en la zona. 🏘️\nResidents of the \"Vecindad del Chavo\" in Puerto La Cruz are reporting living amidst black water, highlighting the dire state of public services.\nFuente: Eltiempove\n\nhttps://eltiempove.com/denuncian-desborde-de-aguas-negras-en-la-vec",
+      "source": "https://njump.me/note1uvz7v26gslaknr4s4xh08q8gvgz8qew3lnye42fkl840wtss3czqyj0dzj"
+    },
+    {
+      "id": "31a0a2e4-9dbb-4962-9fdb-fc648e4d2f91",
+      "teller_role": "nostr · regional press relay",
+      "channel": "social",
+      "text": "['📰', '📌'] GENERALES\n💬 Fuertes lluvias en Anzoátegui afectaron al menos 22 viviendas y 12 familias debido a la crecida de ríos, mientras los organismos de emergencia evalúan riesgos por la onda tropical 40. Este evento se suma a la ya crítica situación del país tras el doble terremoto de junio de 2026 y la deficiente infraestructura. ⚠️\n[EN] Heavy rains in Anzoátegui affected 22 homes and 12 families, adding to Venezuela's critical situation after the June 2026 earthquakes.\nFuente: El Nacional\n\nhttps://www.elnacional.com/2026/08/lluvias-dejaron-al-menos-22-viviendas-y-12-familias-afectadas-tra",
+      "source": "https://njump.me/note1yezp4aewsplk8ryc7adp694e2ajj64c2rx94re63z2pzqj8ld9zqn5vu8u"
+    },
+    {
+      "id": "e54254d0-72dd-430d-9e2e-402a03d1d4df",
+      "teller_role": "nostr · regional press relay",
+      "channel": "social",
+      "text": "['📰', '📌'] GENERALES\n💬 Un nuevo vuelo con 191 venezolanos deportados desde Estados Unidos llegó a Barcelona, estado Anzoátegui, como parte de la \"Gran Misión Vuelta a la Patria\". Este es el vuelo número 167 de este programa, que busca repatriar a venezolanos que se encuentran en EEUU.\n[EN] A new flight with 191 deported Venezuelans from the US arrived in Barcelona, Anzoategui state, as part of the \"Gran Misión Vuelta a la Patria\" program.\nFuente: Monitoreamos\n\nhttps://monitoreamos.com/venezuela/nuevo-vuelo-con-deportados-desde-eeuu-llego-a-venezuela-191-fueron-recibidos-en-barcelona",
+      "source": "https://njump.me/note1kmfy8ujf5sj240tkap2f2wsyydhm73m5pnakj7nargrc68pftrfqaxdwqz"
+    },
+    {
+      "id": "082223aa-6656-4dcf-9236-d95541641ab0",
+      "teller_role": "nostr · regional press relay",
+      "channel": "social",
+      "text": "['📰', '📌'] GENERALES\n💬 La jornada vial en Puerto La Cruz, Anzoátegui, promovió el ahorro de energía eléctrica mediante puntos informativos en semáforos del municipio Sotillo, como parte de la campaña *Plan Energía y Vida*. La iniciativa busca concientizar sobre el uso racional de la electricidad en medio de la crisis energética que afecta al país. Aunque el contexto sugiere un esfuerzo gubernamental, no se especifica si la medida incluye acciones concretas más allá de la difusión. La imagen adjunta muestra un operativo en vía pública, sin detalles sobre su impacto real.\n[EN] Energy-saving camp",
+      "source": "https://njump.me/note1r9jfs9h42gjx97ecfcv2s6hp3xww94pu364ej3f8hh4hutc0lyhqltxwxw"
+    },
+    {
+      "id": "60d53bbb-c899-4498-abca-881f06d09e82",
+      "teller_role": "hive · belkyscabrera (resident)",
+      "channel": "social",
+      "text": "Visiting the artisan trail on Paseo Colón (Eng - Esp) ![ruta artes.png](https://files.peakd.com/file/peakd-hive/belkyscabrera/23uQtWQj2Cw5m8YGYsS1GHa4xqv6RDrRP8Tf8284igySDV7j4syng48JmPjgPJg1SH3pg.png)\n\n\n<hr>\n\n\n<div class=text-justify> \n<div class=\"pull-left\">\n\n**<center>INGLÉS</center>**\n\n\n\n\nContinuing my tour of Puerto la Cruz—a beautiful coastal city known for its lovely beaches, tall buildings, and the famous Paseo Colón—today I am sharing my visit to the \"La Cruz y el Mar\" (The Cross and the Sea) Artisan Route. This space was created for artists and artisans to showcase their products; in ",
+      "source": "https://hive.blog/@belkyscabrera/visiting-the-artisan-trail-on"
+    },
+    {
+      "id": "539dd7ac-5178-4be0-9c3c-bb6e1d348405",
+      "teller_role": "hive · virgilio07 (resident)",
+      "channel": "social",
+      "text": "Recorrido por el \"Paseo La Cruz y el Mar\" en Puerto la Cruz [Esp-Eng]  \n![96672.jpg](https://files.peakd.com/file/peakd-hive/virgilio07/23xKtCokw3TKTQ2NDRv7RKjG9aaBfTQfnV5tr2xuFeDfDVVxh2aSqExxRGH6DeRHody2Y.jpg)\n\n\n\n\n<div class=text-justify> \n<div class=\"pull-left\">\n\n**<center>ESPAÑOL</center>**\n \nHoy comparto un breve recorrido que hice por el \"Paseo La Cruz y el Mar\", uno de los lugares más populares para el ocio y la diversión en familia. El paseo debe su nombre a un monumento azul situado en la entrada, que lleva la frase \"Yo amo Puerto La Cruz\" en su parte frontal; se trata de un símbolo em",
+      "source": "https://hive.blog/@virgilio07/recorrido-por-el-paseo-la"
+    },
+    {
+      "id": "df5026ff-59fe-4c25-bae7-9d19eec4d45a",
+      "teller_role": "nostr · regional press relay",
+      "channel": "social",
+      "text": "['📰', '📌'] GENERALES\n💬 La termoeléctrica de San Diego de Cabrutica se perfila como una posible solución ante los severos apagones que afectan Anzoátegui, con racionamientos de más de seis horas diarias. Su capacidad técnica y operatividad real son clave para determinar si puede aliviar la crítica situación eléctrica del estado venezolano. ⚠️\nThe San Diego de Cabrutica thermoelectric plant is presented as a potential solution to severe blackouts affecting Anzoátegui. Its actual technical capacity is crucial to alleviate the Venezuelan state's critical energy situation.\nFuente: La Patilla\n\nhttps",
+      "source": "https://njump.me/note1839wj5npmtmwpeg9a2lmgwjnjn93dr73uznfvay3xyqz8pat3eqqc7ncxm"
+    },
+    {
+      "id": "285c56dd-6f59-4bd6-9095-b4b07180389b",
+      "teller_role": "hive · belkyscabrera (resident)",
+      "channel": "social",
+      "text": "Visiting the eco-friendly tourist pier in Puerto la Cruz, with excursions to three islands in Mochima Park (Eng / Esp) ![muelle.png](https://files.peakd.com/file/peakd-hive/belkyscabrera/241tWqYZSinSQU92QD2m4PQz8gC1mkYAKRkh1FCNhmQBhUPcfjXKVEZwB4YyXpDiuR4Md.png)\n\n\n<hr>\n\n\n<div class=text-justify> \n<div class=\"pull-left\">\n\n**<center>INGLÉS</center>**\n\n\n\nContinuing my visit along Paseo Colón in the beautiful city of Puerto la Cruz, I’d like to share my tour of the recently renovated \"ecological pier.\" According to a local resident, its construction utilized recycled plastic lumber—made from repurp",
+      "source": "https://hive.blog/@belkyscabrera/visiting-the-eco-friendly-tourist"
+    },
+    {
+      "id": "3b2aa61a-ea76-4f79-8049-a9158d499b07",
+      "teller_role": "nostr · regional press relay",
+      "channel": "social",
+      "text": "['📰', '📌'] GENERALES\n💬 La avenida Centurión de Barcelona, en el estado Anzoátegui, lleva casi un mes sumida en la oscuridad debido a la falta de electricidad de 220v, lo que afecta a vecinos y comerciantes. Esta situación refleja la crítica crisis de servicios públicos que enfrenta Venezuela, donde la falta de electricidad es un problema recurrente.\n[EN] Residents and businesses on Barcelona's Centurion Avenue have been without 220v electricity for nearly a month, highlighting Venezuela's ongoing public services crisis.\nFuente: La Patilla\n\nhttps://lapatilla.com/2026/09/03/en-av-centurion-de-ba",
+      "source": "https://njump.me/note13m8nykjgp5agtcu85g27zmphfv3q8unwfsqkdj0pthf5lwglu9ts5r4ygw"
+    },
+    {
+      "id": "0993a98a-010a-43ef-8744-802422e148f0",
+      "teller_role": "hive · Familia AlfaSueños (theatre troupe)",
+      "channel": "social",
+      "text": "Teatro en la calle: Cuando la magia de Alfasueños llega al Diario El Tiempo en Puerto la Cruz | Alfasueños Teatro ![g1-b4c6bf825232.webp](https://cdn.liketu.com/liketu/alfasuenos/lkt-mtxw2tas-qi67uypc/g1-b4c6bf825232.webp)\n\n![g2-d8ee40dd5fd7.webp](https://cdn.liketu.com/liketu/alfasuenos/lkt-mtxw2tas-qi67uypc/g2-d8ee40dd5fd7.webp)\n\n![g3-81cff7942ce8.webp](https://cdn.liketu.com/liketu/alfasuenos/lkt-mtxw2tas-qi67uypc/g3-81cff7942ce8.webp)\n\n![g4-e60277a52d01.webp](https://cdn.liketu.com/liketu/alfasuenos/lkt-mtxw2tas-qi67uypc/g4-e60277a52d01.webp)\n\n¡Hola a toda la hermosa comunidad de Liketu y ",
+      "source": "https://hive.blog/@alfasuenos/lkt-mtxw2tas-qi67uypc"
+    },
+    {
+      "id": "1f95cb40-f6fc-4e6d-8737-23ca9d38c3e6",
+      "teller_role": "hive · Familia AlfaSueños (theatre troupe)",
+      "channel": "social",
+      "text": "De Tocuyito al Oriente: La inolvidable gira de \"La Granja\" y el calor humano de Puerto La Cruz | Familia AlfaSueños Hola, gran comunidad de Hive y amigos de Ecency!\n\nHoy en Familia AlfaSueños queremos abrir nuestro baúl de los recuerdos teatrales para compartir con ustedes una de las experiencias más hermosas y enriquecedoras que hemos vivido en nuestro camino por las artes escénicas.\n\nHace un tiempo, tuvimos el inmenso honor de viajar desde nuestro querido Tocuyito hasta el oriente del país. El motivo fue una invitación muy especial de nuestros hermanos de la agrupación Trabuqueto Teatro en P",
+      "source": "https://hive.blog/@alfasuenos/de-tocuyito-al-oriente-la"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c91eff68-c1f1-4774-9be1-6f14ae3d33ef",
+      "story_id": "f2c4d063-70a3-4655-8a2e-214c84e7c347",
+      "text": "el itinerario podría modificarse sin previo aviso",
+      "span": [
+        132,
+        181
+      ],
+      "signal_id": "a16ab32c-c703-492c-b36a-228f5642a66a",
+      "proposer": "model"
+    },
+    {
+      "id": "21cc8ee0-c45e-45d9-b76c-f2d6c22c95f8",
+      "story_id": "191b291c-fe16-4b4d-96be-c3ef54f3d375",
+      "text": "la reducción de su bono de alimentación",
+      "span": [
+        130,
+        169
+      ],
+      "signal_id": "a41db222-7fcd-4f81-9c25-8636ff47f006",
+      "proposer": "model"
+    },
+    {
+      "id": "72dc9603-54b0-462f-9b23-6faae79bd2df",
+      "story_id": "191b291c-fe16-4b4d-96be-c3ef54f3d375",
+      "text": "mejoras en sus condiciones de vida",
+      "span": [
+        314,
+        348
+      ],
+      "signal_id": "a41db222-7fcd-4f81-9c25-8636ff47f006",
+      "proposer": "model"
+    },
+    {
+      "id": "e2417a9b-d583-46f3-9f1f-40605e6e4e2b",
+      "story_id": "38a7ce9a-54b7-417c-81bf-6126f6a9b079",
+      "text": "exigiendo respuestas a sus demandas socioeconómicas",
+      "span": [
+        106,
+        157
+      ],
+      "signal_id": "a41db222-7fcd-4f81-9c25-8636ff47f006",
+      "proposer": "model"
+    },
+    {
+      "id": "0725f50e-d34f-4e07-9c99-e38828c85da3",
+      "story_id": "38a7ce9a-54b7-417c-81bf-6126f6a9b079",
+      "text": "La falta de atención a sus reclamos mantiene la tensión en la zona",
+      "span": [
+        159,
+        225
+      ],
+      "signal_id": "a41db222-7fcd-4f81-9c25-8636ff47f006",
+      "proposer": "model"
+    },
+    {
+      "id": "64be29fb-649f-4ad6-a211-b535a15cb99f",
+      "story_id": "38a7ce9a-54b7-417c-81bf-6126f6a9b079",
+      "text": "demanding answers to their socioeconomic demands",
+      "span": [
+        313,
+        361
+      ],
+      "signal_id": "a41db222-7fcd-4f81-9c25-8636ff47f006",
+      "proposer": "model"
+    },
+    {
+      "id": "ce83eee1-7b8c-4f74-bfc3-c3306777587c",
+      "story_id": "8cebca52-b981-4739-980c-c7bc3ea43116",
+      "text": "I'm feeling really upset",
+      "span": [
+        236,
+        260
+      ],
+      "signal_id": "82a8b1aa-235e-47e4-b263-2e49117a5689",
+      "proposer": "model"
+    },
+    {
+      "id": "dd55ac41-a5b5-4303-9451-7747ffc1f7a7",
+      "story_id": "8cebca52-b981-4739-980c-c7bc3ea43116",
+      "text": "since yesterday we've been having severe Electricity problems in the city of Puerto La Cruz (Anzoátegui), where I'm currently staying",
+      "span": [
+        381,
+        514
+      ],
+      "signal_id": "82a8b1aa-235e-47e4-b263-2e49117a5689",
+      "proposer": "model"
+    },
+    {
+      "id": "738f61d6-a068-4e86-9fec-c39b594fc14c",
+      "story_id": "8cebca52-b981-4739-980c-c7bc3ea43116",
+      "text": "It's become common to have a supposed power rationing of 5 or 6 hours a day",
+      "span": [
+        516,
+        591
+      ],
+      "signal_id": "82a8b1aa-235e-47e4-b263-2e49117a5689",
+      "proposer": "model"
+    },
+    {
+      "id": "3624346c-1701-405e-a2e3-485fe9345ea6",
+      "story_id": "2c8213bd-e045-4be1-b7e5-e6c097baea8e",
+      "text": "el programa gubernamental Madres Procesadoras opera con equipos mínimos, lo que dificulta el cumplimiento de sus objetivos",
+      "span": [
+        88,
+        210
+      ],
+      "signal_id": "565b4c41-e997-4890-849e-cd356c31ab70",
+      "proposer": "model"
+    },
+    {
+      "id": "b4b55bc1-0345-44ea-b3fd-e2c5fef2a844",
+      "story_id": "2c8213bd-e045-4be1-b7e5-e6c097baea8e",
+      "text": "La falta de infraestructura adecuada plantea desafíos para el personal que busca impulsar el desarrollo de la zona",
+      "span": [
+        212,
+        326
+      ],
+      "signal_id": "565b4c41-e997-4890-849e-cd356c31ab70",
+      "proposer": "model"
+    },
+    {
+      "id": "2f572616-8767-4284-8cb8-bfe058699897",
+      "story_id": "31a0a2e4-9dbb-4962-9fdb-fc648e4d2f91",
+      "text": "la deficiente infraestructura",
+      "span": [
+        308,
+        337
+      ],
+      "signal_id": "22f5a8cc-d57c-4247-934c-49ddd219bd36",
+      "proposer": "model"
+    },
+    {
+      "id": "019e7a36-f6fe-45e1-8efe-214caa0f2556",
+      "story_id": "da37f542-bb35-4878-b7c4-363780ecd231",
+      "text": "denuncian vivir rodeados de aguas negras, una situación que afecta directamente su calidad de vida y salud",
+      "span": [
+        104,
+        210
+      ],
+      "signal_id": "565b4c41-e997-4890-849e-cd356c31ab70",
+      "proposer": "model"
+    },
+    {
+      "id": "5257908f-e702-4015-8bee-91bd6ad5c94d",
+      "story_id": "3b2aa61a-ea76-4f79-8049-a9158d499b07",
+      "text": "la falta de electricidad de 220v",
+      "span": [
+        136,
+        168
+      ],
+      "signal_id": "82a8b1aa-235e-47e4-b263-2e49117a5689",
+      "proposer": "model"
+    },
+    {
+      "id": "51b0e3f5-0c15-44a3-b40d-0ce6eb151f2f",
+      "story_id": "3b2aa61a-ea76-4f79-8049-a9158d499b07",
+      "text": "la crítica crisis de servicios públicos que enfrenta Venezuela",
+      "span": [
+        233,
+        295
+      ],
+      "signal_id": "82a8b1aa-235e-47e4-b263-2e49117a5689",
+      "proposer": "model"
+    },
+    {
+      "id": "5132bc6c-46a4-47e2-a844-27693e19db57",
+      "story_id": "3b2aa61a-ea76-4f79-8049-a9158d499b07",
+      "text": "la falta de electricidad es un problema recurrente",
+      "span": [
+        303,
+        353
+      ],
+      "signal_id": "82a8b1aa-235e-47e4-b263-2e49117a5689",
+      "proposer": "model"
+    },
+    {
+      "id": "68a057c8-d93a-498e-b08a-096c32899b0d",
+      "story_id": "df5026ff-59fe-4c25-bae7-9d19eec4d45a",
+      "text": "La termoeléctrica de San Diego de Cabrutica se perfila como una posible solución ante los severos apagones que afectan Anzoátegui, con racionamientos de más de seis horas diarias",
+      "span": [
+        26,
+        204
+      ],
+      "signal_id": "82a8b1aa-235e-47e4-b263-2e49117a5689",
+      "proposer": "model"
+    },
+    {
+      "id": "30532782-e2d5-4b99-8806-1fa295b65b07",
+      "story_id": "df5026ff-59fe-4c25-bae7-9d19eec4d45a",
+      "text": "Su capacidad técnica y operatividad real son clave para determinar si puede aliviar la crítica situación eléctrica del estado venezolano",
+      "span": [
+        206,
+        342
+      ],
+      "signal_id": "82a8b1aa-235e-47e4-b263-2e49117a5689",
+      "proposer": "model"
+    },
+    {
+      "id": "63637e60-e950-4deb-80b6-7eeb3b726ca3",
+      "story_id": "df5026ff-59fe-4c25-bae7-9d19eec4d45a",
+      "text": "The San Diego de Cabrutica thermoelectric plant is presented as a potential solution to severe blackouts affecting Anzoátegui",
+      "span": [
+        347,
+        472
+      ],
+      "signal_id": "82a8b1aa-235e-47e4-b263-2e49117a5689",
+      "proposer": "model"
+    },
+    {
+      "id": "2de2f6cd-2ae8-4bef-aff5-b4422d5b62e3",
+      "story_id": "df5026ff-59fe-4c25-bae7-9d19eec4d45a",
+      "text": "Its actual technical capacity is crucial to alleviate the Venezuelan state's critical energy situation",
+      "span": [
+        474,
+        576
+      ],
+      "signal_id": "82a8b1aa-235e-47e4-b263-2e49117a5689",
+      "proposer": "model"
+    },
+    {
+      "id": "a94b501a-fb8b-4447-986a-e94e8da8827e",
+      "story_id": "df5026ff-59fe-4c25-bae7-9d19eec4d45a",
+      "text": "severos apagones que afectan Anzoátegui, con racionamientos de más de seis horas diarias",
+      "span": [
+        116,
+        204
+      ],
+      "signal_id": "82a8b1aa-235e-47e4-b263-2e49117a5689",
+      "proposer": "model"
+    },
+    {
+      "id": "c2d4791c-37a8-4d8a-953a-285e3ba01014",
+      "story_id": "df5026ff-59fe-4c25-bae7-9d19eec4d45a",
+      "text": "aliviar la crítica situación eléctrica del estado venezolano",
+      "span": [
+        282,
+        342
+      ],
+      "signal_id": "82a8b1aa-235e-47e4-b263-2e49117a5689",
+      "proposer": "model"
+    },
+    {
+      "id": "8dca5da8-cf91-4253-a571-f1f4f84dc621",
+      "story_id": "082223aa-6656-4dcf-9236-d95541641ab0",
+      "text": "['📰', '📌'] GENERALES\n💬 La jornada vial en Puerto La Cruz, Anzoátegui, promovió el ahorro de energía eléctrica mediante puntos informativos en semáforos del municipio Sotillo, como parte de la campaña *Plan Energía y Vida*. La iniciativa busca concientizar sobre el uso racional de la electricidad en medio de la crisis energética que afecta al país. Aunque el contexto sugiere un esfuerzo gubernamental, no se especifica si la medida incluye acciones concretas más allá de la difusión. La imagen adjunta muestra un operativo en vía pública, sin detalles sobre su impacto real.\n[EN] Energy-saving camp",
+      "span": [
+        0,
+        603
+      ],
+      "signal_id": "82a8b1aa-235e-47e4-b263-2e49117a5689",
+      "proposer": "analyst"
+    },
+    {
+      "id": "d4dee864-ede6-44db-bb76-188a43b1124d",
+      "story_id": "d3b12aaa-af63-4734-800f-865e40c6312d",
+      "text": "['📰', '📌'] GENERALES\n💬 Al menos 12 familias en Naricual, estado Anzoátegui, resultaron afectadas por el desbordamiento de un río debido a las fuertes lluvias, una situación que agrava la precaria infraestructura del país. Este incidente ocurre en un contexto de crisis humanitaria y tras el doble terremoto del 24 de junio de 2026, lo que añade presión sobre los ya colapsados servicios públicos y la capacidad de respuesta de la presidenta interina Delcy Rodríguez. ⚠️\n[EN] At least 12 families in Naricual, Anzoátegui, were affected by a river overflowing due to heavy rains, exacerbating Venezuela",
+      "span": [
+        0,
+        603
+      ],
+      "signal_id": "22f5a8cc-d57c-4247-934c-49ddd219bd36",
+      "proposer": "analyst"
+    },
+    {
+      "id": "a7f17256-cb4a-4b82-97c0-e788b3625502",
+      "story_id": "1f95cb40-f6fc-4e6d-8737-23ca9d38c3e6",
+      "text": "De Tocuyito al Oriente: La inolvidable gira de \"La Granja\" y el calor humano de Puerto La Cruz | Familia AlfaSueños Hola, gran comunidad de Hive y amigos de Ecency!\n\nHoy en Familia AlfaSueños queremos abrir nuestro baúl de los recuerdos teatrales para compartir con ustedes una de las experiencias más hermosas y enriquecedoras que hemos vivido en nuestro camino por las artes escénicas.\n\nHace un tiempo, tuvimos el inmenso honor de viajar desde nuestro querido Tocuyito hasta el oriente del país. El motivo fue una invitación muy especial de nuestros hermanos de la agrupación Trabuqueto Teatro en P",
+      "span": [
+        0,
+        600
+      ],
+      "signal_id": "e796431e-393d-4cb5-ad03-b32fc9a6b3ab",
+      "proposer": "analyst"
+    },
+    {
+      "id": "97bfb481-1cab-489d-a386-e0354a741717",
+      "story_id": "539dd7ac-5178-4be0-9c3c-bb6e1d348405",
+      "text": "Recorrido por el \"Paseo La Cruz y el Mar\" en Puerto la Cruz [Esp-Eng]  \n![96672.jpg](https://files.peakd.com/file/peakd-hive/virgilio07/23xKtCokw3TKTQ2NDRv7RKjG9aaBfTQfnV5tr2xuFeDfDVVxh2aSqExxRGH6DeRHody2Y.jpg)\n\n\n\n\n<div class=text-justify> \n<div class=\"pull-left\">\n\n**<center>ESPAÑOL</center>**\n \nHoy comparto un breve recorrido que hice por el \"Paseo La Cruz y el Mar\", uno de los lugares más populares para el ocio y la diversión en familia. El paseo debe su nombre a un monumento azul situado en la entrada, que lleva la frase \"Yo amo Puerto La Cruz\" en su parte frontal; se trata de un símbolo em",
+      "span": [
+        0,
+        600
+      ],
+      "signal_id": "bc6def0c-5a3c-4486-a2cc-e6131bca9333",
+      "proposer": "analyst"
+    },
+    {
+      "id": "b8e052e3-582d-4f88-bbf4-2824db006476",
+      "story_id": "285c56dd-6f59-4bd6-9095-b4b07180389b",
+      "text": "Visiting the eco-friendly tourist pier in Puerto la Cruz, with excursions to three islands in Mochima Park (Eng / Esp) ![muelle.png](https://files.peakd.com/file/peakd-hive/belkyscabrera/241tWqYZSinSQU92QD2m4PQz8gC1mkYAKRkh1FCNhmQBhUPcfjXKVEZwB4YyXpDiuR4Md.png)\n\n\n<hr>\n\n\n<div class=text-justify> \n<div class=\"pull-left\">\n\n**<center>INGLÉS</center>**\n\n\n\nContinuing my visit along Paseo Colón in the beautiful city of Puerto la Cruz, I’d like to share my tour of the recently renovated \"ecological pier.\" According to a local resident, its construction utilized recycled plastic lumber—made from repurp",
+      "span": [
+        0,
+        600
+      ],
+      "signal_id": "bc6def0c-5a3c-4486-a2cc-e6131bca9333",
+      "proposer": "analyst"
+    },
+    {
+      "id": "6125cd44-5ed6-4230-954d-d69d129961de",
+      "story_id": "0993a98a-010a-43ef-8744-802422e148f0",
+      "text": "Teatro en la calle: Cuando la magia de Alfasueños llega al Diario El Tiempo en Puerto la Cruz | Alfasueños Teatro ![g1-b4c6bf825232.webp](https://cdn.liketu.com/liketu/alfasuenos/lkt-mtxw2tas-qi67uypc/g1-b4c6bf825232.webp)\n\n![g2-d8ee40dd5fd7.webp](https://cdn.liketu.com/liketu/alfasuenos/lkt-mtxw2tas-qi67uypc/g2-d8ee40dd5fd7.webp)\n\n![g3-81cff7942ce8.webp](https://cdn.liketu.com/liketu/alfasuenos/lkt-mtxw2tas-qi67uypc/g3-81cff7942ce8.webp)\n\n![g4-e60277a52d01.webp](https://cdn.liketu.com/liketu/alfasuenos/lkt-mtxw2tas-qi67uypc/g4-e60277a52d01.webp)\n\n¡Hola a toda la hermosa comunidad de Liketu y ",
+      "span": [
+        0,
+        600
+      ],
+      "signal_id": "e796431e-393d-4cb5-ad03-b32fc9a6b3ab",
+      "proposer": "analyst"
+    },
+    {
+      "id": "28e36794-3797-42e4-9521-21563123b2b6",
+      "story_id": "e54254d0-72dd-430d-9e2e-402a03d1d4df",
+      "text": "['📰', '📌'] GENERALES\n💬 Un nuevo vuelo con 191 venezolanos deportados desde Estados Unidos llegó a Barcelona, estado Anzoátegui, como parte de la \"Gran Misión Vuelta a la Patria\". Este es el vuelo número 167 de este programa, que busca repatriar a venezolanos que se encuentran en EEUU.\n[EN] A new flight with 191 deported Venezuelans from the US arrived in Barcelona, Anzoategui state, as part of the \"Gran Misión Vuelta a la Patria\" program.\nFuente: Monitoreamos\n\nhttps://monitoreamos.com/venezuela/nuevo-vuelo-con-deportados-desde-eeuu-llego-a-venezuela-191-fueron-recibidos-en-barcelona",
+      "span": [
+        0,
+        592
+      ],
+      "signal_id": "855d3a1d-c657-4c59-910d-c266fb4e8128",
+      "proposer": "analyst"
+    },
+    {
+      "id": "c0525338-3bec-4353-b2da-248b78bfb8e5",
+      "story_id": "60d53bbb-c899-4498-abca-881f06d09e82",
+      "text": "Visiting the artisan trail on Paseo Colón (Eng - Esp) ![ruta artes.png](https://files.peakd.com/file/peakd-hive/belkyscabrera/23uQtWQj2Cw5m8YGYsS1GHa4xqv6RDrRP8Tf8284igySDV7j4syng48JmPjgPJg1SH3pg.png)\n\n\n<hr>\n\n\n<div class=text-justify> \n<div class=\"pull-left\">\n\n**<center>INGLÉS</center>**\n\n\n\n\nContinuing my tour of Puerto la Cruz—a beautiful coastal city known for its lovely beaches, tall buildings, and the famous Paseo Colón—today I am sharing my visit to the \"La Cruz y el Mar\" (The Cross and the Sea) Artisan Route. This space was created for artists and artisans to showcase their products; in ",
+      "span": [
+        0,
+        600
+      ],
+      "signal_id": "bc6def0c-5a3c-4486-a2cc-e6131bca9333",
+      "proposer": "analyst"
+    }
+  ],
+  "signals": [
+    {
+      "id": "a41db222-7fcd-4f81-9c25-8636ff47f006",
+      "statement": "Pensioners protest weekly over a cut food bonus — seven consecutive days of unresolved demands.",
+      "supporting_claim_ids": [
+        "21cc8ee0-c45e-45d9-b76c-f2d6c22c95f8",
+        "72dc9603-54b0-462f-9b23-6faae79bd2df",
+        "e2417a9b-d583-46f3-9f1f-40605e6e4e2b",
+        "0725f50e-d34f-4e07-9c99-e38828c85da3",
+        "64be29fb-649f-4ad6-a211-b535a15cb99f"
+      ],
+      "voices": 2,
+      "recurrence": 5,
+      "verification": {
+        "participants": 6,
+        "endorse": 6,
+        "amend": 0,
+        "contest": 0,
+        "amendments": [],
+        "gate": "not_yet"
+      }
+    },
+    {
+      "id": "565b4c41-e997-4890-849e-cd356c31ab70",
+      "statement": "Basic services are collapsing: a neighbourhood living in black water, a mothers' programme running on minimal equipment.",
+      "supporting_claim_ids": [
+        "3624346c-1701-405e-a2e3-485fe9345ea6",
+        "b4b55bc1-0345-44ea-b3fd-e2c5fef2a844",
+        "019e7a36-f6fe-45e1-8efe-214caa0f2556"
+      ],
+      "voices": 2,
+      "recurrence": 3,
+      "verification": {
+        "participants": 6,
+        "endorse": 5,
+        "amend": 1,
+        "contest": 0,
+        "amendments": [
+          "The mothers' programme is itself a community response running on almost nothing."
+        ],
+        "gate": "not_yet"
+      }
+    },
+    {
+      "id": "855d3a1d-c657-4c59-910d-c266fb4e8128",
+      "statement": "Deportation flights keep landing: 191 more residents returned on flight 167 of Vuelta a la Patria.",
+      "supporting_claim_ids": [
+        "28e36794-3797-42e4-9521-21563123b2b6"
+      ],
+      "voices": 1,
+      "recurrence": 1,
+      "verification": {
+        "participants": 5,
+        "endorse": 4,
+        "amend": 1,
+        "contest": 0,
+        "amendments": [
+          "Returnees arrive into the same blackouts and shortages everyone else is living."
+        ],
+        "gate": "not_yet"
+      }
+    },
+    {
+      "id": "22f5a8cc-d57c-4247-934c-49ddd219bd36",
+      "statement": "Rain and river overflow hit fragile housing: 22 homes and 12 families affected in a single storm front.",
+      "supporting_claim_ids": [
+        "2f572616-8767-4284-8cb8-bfe058699897",
+        "d4dee864-ede6-44db-bb76-188a43b1124d"
+      ],
+      "voices": 2,
+      "recurrence": 2,
+      "verification": {
+        "participants": 5,
+        "endorse": 5,
+        "amend": 0,
+        "contest": 0,
+        "amendments": [],
+        "gate": "not_yet"
+      }
+    },
+    {
+      "id": "82a8b1aa-235e-47e4-b263-2e49117a5689",
+      "statement": "The grid fails daily: five-to-six-hour rationing, avenues dark for a month, a thermoelectric promise still unproven.",
+      "supporting_claim_ids": [
+        "ce83eee1-7b8c-4f74-bfc3-c3306777587c",
+        "dd55ac41-a5b5-4303-9451-7747ffc1f7a7",
+        "738f61d6-a068-4e86-9fec-c39b594fc14c",
+        "5257908f-e702-4015-8bee-91bd6ad5c94d",
+        "51b0e3f5-0c15-44a3-b40d-0ce6eb151f2f",
+        "5132bc6c-46a4-47e2-a844-27693e19db57",
+        "68a057c8-d93a-498e-b08a-096c32899b0d",
+        "30532782-e2d5-4b99-8806-1fa295b65b07",
+        "63637e60-e950-4deb-80b6-7eeb3b726ca3",
+        "2de2f6cd-2ae8-4bef-aff5-b4422d5b62e3",
+        "a94b501a-fb8b-4447-986a-e94e8da8827e",
+        "c2d4791c-37a8-4d8a-953a-285e3ba01014",
+        "8dca5da8-cf91-4253-a571-f1f4f84dc621"
+      ],
+      "voices": 4,
+      "recurrence": 13,
+      "verification": {
+        "participants": 7,
+        "endorse": 5,
+        "amend": 1,
+        "contest": 1,
+        "amendments": [
+          "Rationing is the lived reality — the thermoelectric fix is still a promise, not power."
+        ],
+        "gate": "not_yet"
+      }
+    },
+    {
+      "id": "bc6def0c-5a3c-4486-a2cc-e6131bca9333",
+      "statement": "The Paseo Colón waterfront is the city's shared living room — pier, artisan trail and promenade kept alive by the people who document it.",
+      "supporting_claim_ids": [
+        "97bfb481-1cab-489d-a386-e0354a741717",
+        "b8e052e3-582d-4f88-bbf4-2824db006476",
+        "c0525338-3bec-4353-b2da-248b78bfb8e5"
+      ],
+      "voices": 3,
+      "recurrence": 3,
+      "verification": {
+        "participants": 8,
+        "endorse": 8,
+        "amend": 0,
+        "contest": 0,
+        "amendments": [],
+        "gate": "commons_only"
+      }
+    },
+    {
+      "id": "a16ab32c-c703-492c-b36a-228f5642a66a",
+      "statement": "The sea route to Margarita runs on shifting fares and suspended schedules.",
+      "supporting_claim_ids": [
+        "c91eff68-c1f1-4774-9be1-6f14ae3d33ef"
+      ],
+      "voices": 1,
+      "recurrence": 1,
+      "verification": {
+        "participants": 5,
+        "endorse": 4,
+        "amend": 0,
+        "contest": 1,
+        "amendments": [],
+        "gate": "may_be_priced"
+      }
+    },
+    {
+      "id": "e796431e-393d-4cb5-ad03-b32fc9a6b3ab",
+      "statement": "Street theatre and beach concerts carry the city's social life even as services fail.",
+      "supporting_claim_ids": [
+        "a7f17256-cb4a-4b82-97c0-e788b3625502",
+        "6125cd44-5ed6-4230-954d-d69d129961de"
+      ],
+      "voices": 2,
+      "recurrence": 2,
+      "verification": {
+        "participants": 6,
+        "endorse": 6,
+        "amend": 0,
+        "contest": 0,
+        "amendments": [],
+        "gate": "commons_only"
+      }
+    }
+  ],
+  "interventions": {
+    "from_plans": [
+      {
+        "id": "aa961ba3-f575-4390-bc38-a3a1d7030506",
+        "name": "San Diego de Cabrutica thermoelectric plant",
+        "note": "State plan: the plant is presented as the fix for state-wide blackouts — still unproven against daily rationing.",
+        "signal_ids": [
+          "82a8b1aa-235e-47e4-b263-2e49117a5689"
+        ],
+        "counter_signal_ids": [],
+        "priced": true
+      },
+      {
+        "id": "26b85dce-a8a9-4c87-ba98-e417e7a1e360",
+        "name": "Plan Energía y Vida savings campaign",
+        "note": "Government road-day campaign promoting rational electricity use — awareness, not capacity.",
+        "signal_ids": [
+          "82a8b1aa-235e-47e4-b263-2e49117a5689"
+        ],
+        "counter_signal_ids": [],
+        "priced": true
+      }
+    ],
+    "from_place": [
+      {
+        "id": "a0a19913-ef36-4257-8178-2ab60f0b113c",
+        "name": "Pensioners' weekly assembly",
+        "note": "Jubilados de Cantv keep a weekly street presence — a persistent claim on the food bonus the state cut.",
+        "signal_ids": [
+          "565b4c41-e997-4890-849e-cd356c31ab70",
+          "a41db222-7fcd-4f81-9c25-8636ff47f006"
+        ],
+        "counter_signal_ids": [],
+        "priced": false
+      },
+      {
+        "id": "fbb7e725-1bd0-4494-8078-e17b7f4fc300",
+        "name": "Waterfront commons stewardship",
+        "note": "Residents document and maintain the Paseo Colón commons — promenade, pier, artisan trail — the shared space that outlasts the outages.",
+        "signal_ids": [
+          "bc6def0c-5a3c-4486-a2cc-e6131bca9333",
+          "e796431e-393d-4cb5-ad03-b32fc9a6b3ab"
+        ],
+        "counter_signal_ids": [],
+        "priced": false
+      }
+    ]
+  },
+  "sips": [
+    {
+      "id": "36d88695-0af1-4ffe-b702-bc0abb7fde51",
+      "kind": "window",
+      "title": "The protest calendar",
+      "what_changes": "Seven consecutive Thursdays of pensioner protest is a widening window: each unanswered week hardens the claim and grows the crowd.",
+      "time_to_show": "weeks",
+      "evidence_claim_ids": [
+        "0725f50e-d34f-4e07-9c99-e38828c85da3",
+        "21cc8ee0-c45e-45d9-b76c-f2d6c22c95f8",
+        "64be29fb-649f-4ad6-a211-b535a15cb99f",
+        "72dc9603-54b0-462f-9b23-6faae79bd2df",
+        "e2417a9b-d583-46f3-9f1f-40605e6e4e2b"
+      ]
+    },
+    {
+      "id": "08ab3b63-089f-4663-b7ce-c7aad041038e",
+      "kind": "node",
+      "title": "The waterfront as anchor",
+      "what_changes": "The Paseo Colón is the functioning commons residents still maintain. It is the physical venue for the pensions assembly, the theatre troupe, and any mutual-aid response.",
+      "time_to_show": "weeks",
+      "evidence_claim_ids": [
+        "6125cd44-5ed6-4230-954d-d69d129961de",
+        "97bfb481-1cab-489d-a386-e0354a741717",
+        "a7f17256-cb4a-4b82-97c0-e788b3625502",
+        "b8e052e3-582d-4f88-bbf4-2824db006476",
+        "c0525338-3bec-4353-b2da-248b78bfb8e5"
+      ]
+    },
+    {
+      "id": "73f9bda6-1593-4119-bfaf-200b10e53df5",
+      "kind": "threshold",
+      "title": "The fifth hour of darkness",
+      "what_changes": "When rationing passes five hours a day, food spoilage and lost work hours cascade. Restoring baseline power unlocks every other signal.",
+      "time_to_show": "one billing cycle",
+      "evidence_claim_ids": [
+        "2de2f6cd-2ae8-4bef-aff5-b4422d5b62e3",
+        "30532782-e2d5-4b99-8806-1fa295b65b07",
+        "5132bc6c-46a4-47e2-a844-27693e19db57",
+        "51b0e3f5-0c15-44a3-b40d-0ce6eb151f2f",
+        "5257908f-e702-4015-8bee-91bd6ad5c94d",
+        "63637e60-e950-4deb-80b6-7eeb3b726ca3",
+        "68a057c8-d93a-498e-b08a-096c32899b0d",
+        "738f61d6-a068-4e86-9fec-c39b594fc14c",
+        "a94b501a-fb8b-4447-986a-e94e8da8827e",
+        "c2d4791c-37a8-4d8a-953a-285e3ba01014",
+        "ce83eee1-7b8c-4f74-bfc3-c3306777587c",
+        "dd55ac41-a5b5-4303-9451-7747ffc1f7a7"
+      ]
+    }
+  ],
+  "priorities": {
+    "title": "Where capital is most needed",
+    "intro": "Derived from this place’s own signals: unreached needs first, then the loudest voices, then the leverage points.",
+    "items": [
+      {
+        "heading": "The plans don’t reach it",
+        "text": "The Paseo Colón waterfront is the city's shared living room — pier, artisan trail and promenade kept alive by the people who document it. — 3 voices, and no funded scheme answers it."
+      },
+      {
+        "heading": "The plans don’t reach it",
+        "text": "Pensioners protest weekly over a cut food bonus — seven consecutive days of unresolved demands. — 2 voices, and no funded scheme answers it."
+      },
+      {
+        "heading": "Where the voices are",
+        "text": "The grid fails daily: five-to-six-hour rationing, avenues dark for a month, a thermoelectric promise still unproven. — 4 voices say this most."
+      },
+      {
+        "heading": "The leverage point to watch",
+        "text": "The protest calendar — Seven consecutive Thursdays of pensioner protest is a widening window: each unanswered week hardens the claim and grows the crowd."
+      }
+    ]
+  },
+  "meta": {
+    "place_id": "puerto-la-cruz",
+    "version": "2026-10-26",
+    "published_at": "2026-10-26T02:06:23.444Z",
+    "manifest_sha256": "3fec33f0d0d6947afdd3789cd667107e665041b0eca51a44e0a7736fff5c029f"
+  }
+}

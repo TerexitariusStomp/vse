@@ -1,0 +1,61 @@
+[
+ {
+  "place": "thorntree",
+  "aliases": [
+   "thorntree",
+   "middlesbrough",
+   "teesside"
+  ],
+  "author_terms": [
+   "middlesbrough",
+   "teesside"
+  ]
+ },
+ {
+  "place": "kenya-coast",
+  "aliases": [
+   "kilifi",
+   "kwale",
+   "watamu",
+   "malindi",
+   "mombasa",
+   "kenya coast",
+   "kenyan coast"
+  ],
+  "author_terms": [
+   "kilifi",
+   "kwale",
+   "watamu",
+   "malindi",
+   "mombasa"
+  ]
+ },
+ {
+  "place": "dar-es-salaam",
+  "aliases": [
+   "dar es salaam",
+   "dar-es-salaam",
+   "tanzania",
+   "kunduchi"
+  ],
+  "author_terms": [
+   "dar es salaam"
+  ]
+ },
+ {
+  "place": "puerto-la-cruz",
+  "aliases": [
+   "puerto la cruz",
+   "puerto la cruz",
+   "paseo col\u00f3n",
+   "puertolacruz",
+   "lecher\u00eda",
+   "barcelona-venezuela",
+   "anzo\u00e1tegui"
+  ],
+  "author_terms": [
+   "puerto la cruz",
+   "anzo\u00e1tegui"
+  ]
+ }
+]

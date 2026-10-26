@@ -1,0 +1,212 @@
+{
+ "place": "puerto-la-cruz",
+ "curated_from": "tools/social/candidates/puerto-la-cruz.json",
+ "indices": [
+  67,
+  91,
+  103,
+  92,
+  52,
+  53,
+  62,
+  87,
+  97,
+  20,
+  59,
+  61,
+  16,
+  54,
+  22,
+  6,
+  30
+ ],
+ "candidates": [
+  {
+   "id": "hive:militadigital01/power-outages-my-worst-night-without-electricity-story",
+   "network": "hive",
+   "author": "militadigital01",
+   "handle": "Milita Digital",
+   "ts": "2026-08-18T23:46:06+00:00",
+   "text": "Power outages: my worst night without electricity [story] ![1001009983.jpg](https://files.peakd.com/file/peakd-hive/militadigital01/23wMMtvvn8Q1MSfLuZ8wJ3rDzf8pkifnarEjcTcuBU6YcaXk94jpKxsEtB4gUtDu4imG3.jpg)\n\nHello dear community, today I'm feeling really upset, and I've heard about this section where everyone's frustrations are read and understood.\n\nI'm writing to tell you that since yesterday we've been having severe Electricity problems in the city of Puerto La Cruz (Anzoátegui), where I'm currently staying. It's become common to have a supposed power rationing of 5 or 6 hours a day, but yes",
+   "match_reason": "text_match",
+   "author_bio": "To live is to enjoy what you do. ð»ðª",
+   "url": "https://hive.blog/@militadigital01/power-outages-my-worst-night-without-electricity-story"
+  },
+  {
+   "id": "nostr:ea1c1a2e7902d0b7d9f561f522e730c37c801bdb9a8ff173ed7a025d99caf68e",
+   "network": "nostr",
+   "author": "ee35b535d48d4783b235b8b4b6fb80d3b4bff00995716326967aa1b21026ddc9",
+   "handle": "ee35b535d48d4783b235b8b4b6fb80d3b4bff00995716326967aa1b21026ddc9",
+   "ts": "2026-08-13T18:06:18+00:00",
+   "text": "['🗞️', '📍'] REGIONALES\n💬 Jubilados de Cantv se concentraron por tercer jueves consecutivo en Puerto La Cruz para protestar por la reducción de su bono de alimentación y otras demandas socioeconómicas. La manifestación refleja la crisis laboral y económica que afecta a muchos jubilados en Venezuela, que buscan mejoras en sus condiciones de vida 🗞️.\n[EN] Retirees from Cantv gathered for the third consecutive Thursday to protest the reduction of their food bonus and other socioeconomic demands.\n[contexto inconsistente]\nFuente: Eltiempove\n\nhttps://eltiempove.com/jubilados-de-la-cantv-siguen-espera",
+   "match_reason": "text_match",
+   "author_bio": "",
+   "url": "https://njump.me/note1agwp5tneqtgt0k04v86j9eescd7gqx7mn28lzuld0gp9mxw2768qelerua"
+  },
+  {
+   "id": "nostr:dff6c6498ce0deb15653644efa94147bcb6a77eb7d00b2c4057793b7265a6b9f",
+   "network": "nostr",
+   "author": "ee35b535d48d4783b235b8b4b6fb80d3b4bff00995716326967aa1b21026ddc9",
+   "handle": "ee35b535d48d4783b235b8b4b6fb80d3b4bff00995716326967aa1b21026ddc9",
+   "ts": "2026-08-06T18:16:58+00:00",
+   "text": "['🗞️', '📍'] REGIONALES\n💬 Jubilados de Cantv protestaron en Puerto La Cruz por séptimo día consecutivo, exigiendo respuestas a sus demandas socioeconómicas. La falta de atención a sus reclamos mantiene la tensión en la zona.\n[EN] Retirees from Cantv protested in Puerto La Cruz for the seventh consecutive day, demanding answers to their socioeconomic demands.\nFuente: Eltiempove\n\nhttps://eltiempove.com/ante-falta-de-respuesta-a-sus-demandas-jubilados-de-la-cantv-protestaron-otra-vez-en-puerto-la-cruz/",
+   "match_reason": "text_match",
+   "author_bio": "",
+   "url": "https://njump.me/note1mlmvvjvvur0tz4jnv38049q5009k5alt05qt93q9w7fmwfj6dw0srazvjh"
+  },
+  {
+   "id": "nostr:e305e62b4887fb698eb0a9aef380e862047065d1fcc99aa936f9eaf72e108e04",
+   "network": "nostr",
+   "author": "ee35b535d48d4783b235b8b4b6fb80d3b4bff00995716326967aa1b21026ddc9",
+   "handle": "ee35b535d48d4783b235b8b4b6fb80d3b4bff00995716326967aa1b21026ddc9",
+   "ts": "2026-08-13T18:02:46+00:00",
+   "text": "['🗞️', '📍'] REGIONALES\n💬 Residentes de la \"Vecindad del Chavo\" en Puerto La Cruz, estado Anzoátegui, denuncian vivir rodeados de aguas negras, una situación que afecta directamente su calidad de vida y salud. La problemática, que se agrava por la cercanía a la urbanización El Gran Maguey, pone en evidencia el precario estado de los servicios públicos en la zona. 🏘️\nResidents of the \"Vecindad del Chavo\" in Puerto La Cruz are reporting living amidst black water, highlighting the dire state of public services.\nFuente: Eltiempove\n\nhttps://eltiempove.com/denuncian-desborde-de-aguas-negras-en-la-vec",
+   "match_reason": "text_match",
+   "author_bio": "",
+   "url": "https://njump.me/note1uvz7v26gslaknr4s4xh08q8gvgz8qew3lnye42fkl840wtss3czqyj0dzj"
+  },
+  {
+   "id": "nostr:26441af72e807f638c98f75a1d16b957652d570a198b51e75112822048ff6944",
+   "network": "nostr",
+   "author": "ee35b535d48d4783b235b8b4b6fb80d3b4bff00995716326967aa1b21026ddc9",
+   "handle": "ee35b535d48d4783b235b8b4b6fb80d3b4bff00995716326967aa1b21026ddc9",
+   "ts": "2026-08-23T19:04:10+00:00",
+   "text": "['📰', '📌'] GENERALES\n💬 Fuertes lluvias en Anzoátegui afectaron al menos 22 viviendas y 12 familias debido a la crecida de ríos, mientras los organismos de emergencia evalúan riesgos por la onda tropical 40. Este evento se suma a la ya crítica situación del país tras el doble terremoto de junio de 2026 y la deficiente infraestructura. ⚠️\n[EN] Heavy rains in Anzoátegui affected 22 homes and 12 families, adding to Venezuela's critical situation after the June 2026 earthquakes.\nFuente: El Nacional\n\nhttps://www.elnacional.com/2026/08/lluvias-dejaron-al-menos-22-viviendas-y-12-familias-afectadas-tra",
+   "match_reason": "text_match",
+   "author_bio": "",
+   "url": "https://njump.me/note1yezp4aewsplk8ryc7adp694e2ajj64c2rx94re63z2pzqj8ld9zqn5vu8u"
+  },
+  {
+   "id": "nostr:d5b56e5832e0da9bbbb0558294ab3d222909c06f53644a862c07489431147648",
+   "network": "nostr",
+   "author": "ee35b535d48d4783b235b8b4b6fb80d3b4bff00995716326967aa1b21026ddc9",
+   "handle": "ee35b535d48d4783b235b8b4b6fb80d3b4bff00995716326967aa1b21026ddc9",
+   "ts": "2026-08-23T19:02:51+00:00",
+   "text": "['📰', '📌'] GENERALES\n💬 Al menos 12 familias en Naricual, estado Anzoátegui, resultaron afectadas por el desbordamiento de un río debido a las fuertes lluvias, una situación que agrava la precaria infraestructura del país. Este incidente ocurre en un contexto de crisis humanitaria y tras el doble terremoto del 24 de junio de 2026, lo que añade presión sobre los ya colapsados servicios públicos y la capacidad de respuesta de la presidenta interina Delcy Rodríguez. ⚠️\n[EN] At least 12 families in Naricual, Anzoátegui, were affected by a river overflowing due to heavy rains, exacerbating Venezuela",
+   "match_reason": "text_match",
+   "author_bio": "",
+   "url": "https://njump.me/note16k6kukpjurdfhwas2kpff2eayg5snsr02djy4p3vqayfgvg5weyqpsn35p"
+  },
+  {
+   "id": "nostr:4ef9661179405ac72ee3ab4ede92f5450686c2033b13205db4b604eb1a23b34c",
+   "network": "nostr",
+   "author": "ee35b535d48d4783b235b8b4b6fb80d3b4bff00995716326967aa1b21026ddc9",
+   "handle": "ee35b535d48d4783b235b8b4b6fb80d3b4bff00995716326967aa1b21026ddc9",
+   "ts": "2026-08-19T19:34:54+00:00",
+   "text": "['📰', '📌'] GENERALES\n💬 Conferry anunció los nuevos precios de boletos para la ruta Puerto La Cruz-Margarita, aunque advirtió que el itinerario podría modificarse sin previo aviso. La empresa, clave en el transporte marítimo interno, ajusta tarifas en medio de la crisis de combustible y servicios públicos. El anuncio llega tras meses de suspensiones y demoras en rutas por falta de gasolina y mantenimiento. 📌\nFuente: El Diario\n\nhttps://eldiario.com/2026/08/19/precios-boletos-conferry/",
+   "match_reason": "text_match",
+   "author_bio": "",
+   "url": "https://njump.me/note1fmukvytegpdvwthr4d8dayh4g5rgdssr8vfjqhd5kczwkx3rkdxq3x98pj"
+  },
+  {
+   "id": "nostr:54705dd5297241b2a940c0a288da7e09ce34af8fca4b5ad0ff414e9734a4d9d3",
+   "network": "nostr",
+   "author": "ee35b535d48d4783b235b8b4b6fb80d3b4bff00995716326967aa1b21026ddc9",
+   "handle": "ee35b535d48d4783b235b8b4b6fb80d3b4bff00995716326967aa1b21026ddc9",
+   "ts": "2026-08-14T02:31:03+00:00",
+   "text": "['🗞️', '📍'] REGIONALES\n💬 En la comunidad rural de Lechozal, en el estado Anzoátegui, el programa gubernamental Madres Procesadoras opera con equipos mínimos, lo que dificulta el cumplimiento de sus objetivos. La falta de infraestructura adecuada plantea desafíos para el personal que busca impulsar el desarrollo de la zona.\n🏘️\nFuente: Eltiempove\n\nhttps://eltiempove.com/vecinos-programa-madres-procesadoras-funciona-en-condiciones-precarias/",
+   "match_reason": "text_match",
+   "author_bio": "",
+   "url": "https://njump.me/note123c9m4ffwfqm922qcz3g3kn7p88rftu0ef94458lg98fwd9ym8fsnq6ce5"
+  },
+  {
+   "id": "nostr:3c4ae95261daf6e0e505eabfb43a5394cb168fd1e0a696749131002387ab8e40",
+   "network": "nostr",
+   "author": "ee35b535d48d4783b235b8b4b6fb80d3b4bff00995716326967aa1b21026ddc9",
+   "handle": "ee35b535d48d4783b235b8b4b6fb80d3b4bff00995716326967aa1b21026ddc9",
+   "ts": "2026-08-10T12:21:25+00:00",
+   "text": "['📰', '📌'] GENERALES\n💬 La termoeléctrica de San Diego de Cabrutica se perfila como una posible solución ante los severos apagones que afectan Anzoátegui, con racionamientos de más de seis horas diarias. Su capacidad técnica y operatividad real son clave para determinar si puede aliviar la crítica situación eléctrica del estado venezolano. ⚠️\nThe San Diego de Cabrutica thermoelectric plant is presented as a potential solution to severe blackouts affecting Anzoátegui. Its actual technical capacity is crucial to alleviate the Venezuelan state's critical energy situation.\nFuente: La Patilla\n\nhttps",
+   "match_reason": "text_match",
+   "author_bio": "",
+   "url": "https://njump.me/note1839wj5npmtmwpeg9a2lmgwjnjn93dr73uznfvay3xyqz8pat3eqqc7ncxm"
+  },
+  {
+   "id": "nostr:8ecf325a480d3a85e387a215e16c374b2203f26e4c0166c9e15dd34fb91fe157",
+   "network": "nostr",
+   "author": "ee35b535d48d4783b235b8b4b6fb80d3b4bff00995716326967aa1b21026ddc9",
+   "handle": "ee35b535d48d4783b235b8b4b6fb80d3b4bff00995716326967aa1b21026ddc9",
+   "ts": "2026-09-03T19:24:40+00:00",
+   "text": "['📰', '📌'] GENERALES\n💬 La avenida Centurión de Barcelona, en el estado Anzoátegui, lleva casi un mes sumida en la oscuridad debido a la falta de electricidad de 220v, lo que afecta a vecinos y comerciantes. Esta situación refleja la crítica crisis de servicios públicos que enfrenta Venezuela, donde la falta de electricidad es un problema recurrente.\n[EN] Residents and businesses on Barcelona's Centurion Avenue have been without 220v electricity for nearly a month, highlighting Venezuela's ongoing public services crisis.\nFuente: La Patilla\n\nhttps://lapatilla.com/2026/09/03/en-av-centurion-de-ba",
+   "match_reason": "text_match",
+   "author_bio": "",
+   "url": "https://njump.me/note13m8nykjgp5agtcu85g27zmphfv3q8unwfsqkdj0pthf5lwglu9ts5r4ygw"
+  },
+  {
+   "id": "nostr:b6d243f249a424aabd76e854953a04236fbf47740cfb697a7d1a078d1c2958d2",
+   "network": "nostr",
+   "author": "ee35b535d48d4783b235b8b4b6fb80d3b4bff00995716326967aa1b21026ddc9",
+   "handle": "ee35b535d48d4783b235b8b4b6fb80d3b4bff00995716326967aa1b21026ddc9",
+   "ts": "2026-08-20T13:39:11+00:00",
+   "text": "['📰', '📌'] GENERALES\n💬 Un nuevo vuelo con 191 venezolanos deportados desde Estados Unidos llegó a Barcelona, estado Anzoátegui, como parte de la \"Gran Misión Vuelta a la Patria\". Este es el vuelo número 167 de este programa, que busca repatriar a venezolanos que se encuentran en EEUU.\n[EN] A new flight with 191 deported Venezuelans from the US arrived in Barcelona, Anzoategui state, as part of the \"Gran Misión Vuelta a la Patria\" program.\nFuente: Monitoreamos\n\nhttps://monitoreamos.com/venezuela/nuevo-vuelo-con-deportados-desde-eeuu-llego-a-venezuela-191-fueron-recibidos-en-barcelona",
+   "match_reason": "text_match",
+   "author_bio": "",
+   "url": "https://njump.me/note1kmfy8ujf5sj240tkap2f2wsyydhm73m5pnakj7nargrc68pftrfqaxdwqz"
+  },
+  {
+   "id": "nostr:19649816f5522462fb384e18a86ae1899ce2d43c8eab994527bdeb7e2f0ff92e",
+   "network": "nostr",
+   "author": "ee35b535d48d4783b235b8b4b6fb80d3b4bff00995716326967aa1b21026ddc9",
+   "handle": "ee35b535d48d4783b235b8b4b6fb80d3b4bff00995716326967aa1b21026ddc9",
+   "ts": "2026-08-19T19:37:31+00:00",
+   "text": "['📰', '📌'] GENERALES\n💬 La jornada vial en Puerto La Cruz, Anzoátegui, promovió el ahorro de energía eléctrica mediante puntos informativos en semáforos del municipio Sotillo, como parte de la campaña *Plan Energía y Vida*. La iniciativa busca concientizar sobre el uso racional de la electricidad en medio de la crisis energética que afecta al país. Aunque el contexto sugiere un esfuerzo gubernamental, no se especifica si la medida incluye acciones concretas más allá de la difusión. La imagen adjunta muestra un operativo en vía pública, sin detalles sobre su impacto real.\n[EN] Energy-saving camp",
+   "match_reason": "text_match",
+   "author_bio": "",
+   "url": "https://njump.me/note1r9jfs9h42gjx97ecfcv2s6hp3xww94pu364ej3f8hh4hutc0lyhqltxwxw"
+  },
+  {
+   "id": "hive:virgilio07/recorrido-por-el-paseo-la",
+   "network": "hive",
+   "author": "virgilio07",
+   "handle": "virgilio07",
+   "ts": "2026-09-07T10:39:27+00:00",
+   "text": "Recorrido por el \"Paseo La Cruz y el Mar\" en Puerto la Cruz [Esp-Eng]  \n![96672.jpg](https://files.peakd.com/file/peakd-hive/virgilio07/23xKtCokw3TKTQ2NDRv7RKjG9aaBfTQfnV5tr2xuFeDfDVVxh2aSqExxRGH6DeRHody2Y.jpg)\n\n\n\n\n<div class=text-justify> \n<div class=\"pull-left\">\n\n**<center>ESPAÑOL</center>**\n \nHoy comparto un breve recorrido que hice por el \"Paseo La Cruz y el Mar\", uno de los lugares más populares para el ocio y la diversión en familia. El paseo debe su nombre a un monumento azul situado en la entrada, que lleva la frase \"Yo amo Puerto La Cruz\" en su parte frontal; se trata de un símbolo em",
+   "match_reason": "text_match",
+   "author_bio": "",
+   "url": "https://hive.blog/@virgilio07/recorrido-por-el-paseo-la"
+  },
+  {
+   "id": "hive:belkyscabrera/visiting-the-eco-friendly-tourist",
+   "network": "hive",
+   "author": "belkyscabrera",
+   "handle": "belkyscabrera",
+   "ts": "2026-08-23T11:37:15+00:00",
+   "text": "Visiting the eco-friendly tourist pier in Puerto la Cruz, with excursions to three islands in Mochima Park (Eng / Esp) ![muelle.png](https://files.peakd.com/file/peakd-hive/belkyscabrera/241tWqYZSinSQU92QD2m4PQz8gC1mkYAKRkh1FCNhmQBhUPcfjXKVEZwB4YyXpDiuR4Md.png)\n\n\n<hr>\n\n\n<div class=text-justify> \n<div class=\"pull-left\">\n\n**<center>INGLÉS</center>**\n\n\n\nContinuing my visit along Paseo Colón in the beautiful city of Puerto la Cruz, I’d like to share my tour of the recently renovated \"ecological pier.\" According to a local resident, its construction utilized recycled plastic lumber—made from repurp",
+   "match_reason": "text_match",
+   "author_bio": "Madre,  me encanta la costura,  la naturaleza, viajes,  fotografia,  lectura   y las manualidades . De fe profunda en Dios. ",
+   "url": "https://hive.blog/@belkyscabrera/visiting-the-eco-friendly-tourist"
+  },
+  {
+   "id": "hive:belkyscabrera/visiting-the-artisan-trail-on",
+   "network": "hive",
+   "author": "belkyscabrera",
+   "handle": "belkyscabrera",
+   "ts": "2026-09-03T10:33:21+00:00",
+   "text": "Visiting the artisan trail on Paseo Colón (Eng - Esp) ![ruta artes.png](https://files.peakd.com/file/peakd-hive/belkyscabrera/23uQtWQj2Cw5m8YGYsS1GHa4xqv6RDrRP8Tf8284igySDV7j4syng48JmPjgPJg1SH3pg.png)\n\n\n<hr>\n\n\n<div class=text-justify> \n<div class=\"pull-left\">\n\n**<center>INGLÉS</center>**\n\n\n\n\nContinuing my tour of Puerto la Cruz—a beautiful coastal city known for its lovely beaches, tall buildings, and the famous Paseo Colón—today I am sharing my visit to the \"La Cruz y el Mar\" (The Cross and the Sea) Artisan Route. This space was created for artists and artisans to showcase their products; in ",
+   "match_reason": "text_match",
+   "author_bio": "Madre,  me encanta la costura,  la naturaleza, viajes,  fotografia,  lectura   y las manualidades . De fe profunda en Dios. ",
+   "url": "https://hive.blog/@belkyscabrera/visiting-the-artisan-trail-on"
+  },
+  {
+   "id": "hive:alfasuenos/lkt-mtxw2tas-qi67uypc",
+   "network": "hive",
+   "author": "alfasuenos",
+   "handle": "Familia AlfaSueños",
+   "ts": "2026-09-12T10:32:51+00:00",
+   "text": "Teatro en la calle: Cuando la magia de Alfasueños llega al Diario El Tiempo en Puerto la Cruz | Alfasueños Teatro ![g1-b4c6bf825232.webp](https://cdn.liketu.com/liketu/alfasuenos/lkt-mtxw2tas-qi67uypc/g1-b4c6bf825232.webp)\n\n![g2-d8ee40dd5fd7.webp](https://cdn.liketu.com/liketu/alfasuenos/lkt-mtxw2tas-qi67uypc/g2-d8ee40dd5fd7.webp)\n\n![g3-81cff7942ce8.webp](https://cdn.liketu.com/liketu/alfasuenos/lkt-mtxw2tas-qi67uypc/g3-81cff7942ce8.webp)\n\n![g4-e60277a52d01.webp](https://cdn.liketu.com/liketu/alfasuenos/lkt-mtxw2tas-qi67uypc/g4-e60277a52d01.webp)\n\n¡Hola a toda la hermosa comunidad de Liketu y ",
+   "match_reason": "text_match",
+   "author_bio": "Familia AlfaSueños | Espacio creativo de cine independiente, drama y producciones audiovisuales desde Venezuela.",
+   "url": "https://hive.blog/@alfasuenos/lkt-mtxw2tas-qi67uypc"
+  },
+  {
+   "id": "hive:alfasuenos/de-tocuyito-al-oriente-la",
+   "network": "hive",
+   "author": "alfasuenos",
+   "handle": "Familia AlfaSueños",
+   "ts": "2026-08-31T06:18:24+00:00",
+   "text": "De Tocuyito al Oriente: La inolvidable gira de \"La Granja\" y el calor humano de Puerto La Cruz | Familia AlfaSueños Hola, gran comunidad de Hive y amigos de Ecency!\n\nHoy en Familia AlfaSueños queremos abrir nuestro baúl de los recuerdos teatrales para compartir con ustedes una de las experiencias más hermosas y enriquecedoras que hemos vivido en nuestro camino por las artes escénicas.\n\nHace un tiempo, tuvimos el inmenso honor de viajar desde nuestro querido Tocuyito hasta el oriente del país. El motivo fue una invitación muy especial de nuestros hermanos de la agrupación Trabuqueto Teatro en P",
+   "match_reason": "text_match",
+   "author_bio": "Familia AlfaSueños | Espacio creativo de cine independiente, drama y producciones audiovisuales desde Venezuela.",
+   "url": "https://hive.blog/@alfasuenos/de-tocuyito-al-oriente-la"
+  }
+ ]
+}

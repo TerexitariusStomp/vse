@@ -1,137 +1,416 @@
 {
-  "place": {
-    "id": "thorntree",
-    "name": "Thorntree",
-    "kind": "council estate, east Middlesbrough",
-    "summary": "A real estate on Middlesbrough’s east side: a community hub, a tool library, and a beck that floods the marsh.",
-    "geo": { "lat": 54.55, "lon": -1.208 },
-    "readings": [
-      {
-        "label": "IMD deprivation decile (LSOA Middlesbrough 010D)",
-        "value": "1/10 · score 66.9 · rank 461 of 33,755",
-        "source": "English Indices of Deprivation 2025 — OGL"
-      },
-      {
-        "label": "Flood-risk areas within 15km",
-        "value": "34",
-        "source": "EA Flood Monitoring — OGL (fetched 2026-10-25)"
-      },
-      {
-        "label": "Tool-library voucher transactions",
-        "value": "12",
-        "source": "sarafu.network — public indexer"
-      },
-      {
-        "label": "Hub appreciations recorded",
-        "value": "6",
-        "source": "holons:thorntree hub records"
-      }
-    ]
+ "place": {
+  "id": "thorntree",
+  "name": "Thorntree",
+  "kind": "council estate, east Middlesbrough",
+  "summary": "A real estate on Middlesbrough’s east side: a community hub, a tool library, and a beck that floods the marsh.",
+  "geo": {
+   "lat": 54.55,
+   "lon": -1.208
   },
-  "stories": [
-    { "teller_role": "Hub member", "channel": "facilitated", "source": "holons:thorntree (hub action)", "text": "We need marsh reeds and planting days volunteers" },
-    { "teller_role": "Community ventures", "channel": "facilitated", "source": "csv:community-needs (CVL)", "text": "We need tools and equipment for the repair café" },
-    { "teller_role": "Hub member", "channel": "facilitated", "source": "holons:thorntree (hub need)", "text": "Someone to run the repair café laptop" },
-    { "teller_role": "Hub member", "channel": "facilitated", "source": "holons:thorntree (hub offer)", "text": "Van and driver for community moves" },
-    { "teller_role": "Hub member", "channel": "facilitated", "source": "holons:thorntree (hub offer)", "text": "fuel costs only" },
-    { "teller_role": "Tool library", "channel": "facilitated", "source": "sarafu.network voucher TTOOL", "text": "Tool hire and repair café supplies — drills, strimmers, scaffold — offered to local projects" },
-    { "teller_role": "Community hub", "channel": "facilitated", "source": "holons:thorntree (hub membrane)", "text": "Neighbourhood resourcing — tools, time, skills" },
-    { "teller_role": "Community plan", "channel": "facilitated", "source": "oneplanet:plan-cvl-thorntree", "text": "Restore the wetland and reed beds around Thorntree beck to slow surface water" },
-    { "teller_role": "Community plan", "channel": "facilitated", "source": "oneplanet:plan-cvl-thorntree", "text": "A greener, flood-resilient neighbourhood" },
-    { "teller_role": "Community plan", "channel": "facilitated", "source": "oneplanet:plan-cvl-thorntree", "text": "Local young people in work" },
-    { "teller_role": "Community plan", "channel": "facilitated", "source": "oneplanet:plan-cvl-thorntree", "text": "Drop-in hub linking 16–24s to local employers" },
-    { "teller_role": "Council programme", "channel": "facilitated", "source": "csv:upload (Middlesbrough Council)", "text": "Marsh regeneration scheme" },
-    { "teller_role": "Council programme", "channel": "facilitated", "source": "csv:upload (Middlesbrough Council)", "text": "Youth skills and jobs centre" },
-    { "teller_role": "Council programme", "channel": "facilitated", "source": "csv:upload (Middlesbrough Council)", "text": "East Middlesbrough solar feasibility" }
-  ],
-  "signals": [
-    {
-      "key": "sig-repair",
-      "statement": "The repair café and the tool library keep things working",
-      "claim_texts": [
-        "We need tools and equipment for the repair café",
-        "Someone to run the repair café laptop",
-        "Tool hire and repair café supplies — drills, strimmers, scaffold — offered to local projects"
-      ]
-    },
-    {
-      "key": "sig-marsh",
-      "statement": "The beck and the marsh need hands, reeds and a scheme",
-      "claim_texts": [
-        "We need marsh reeds and planting days volunteers",
-        "Restore the wetland and reed beds around Thorntree beck to slow surface water",
-        "Marsh regeneration scheme",
-        "A greener, flood-resilient neighbourhood"
-      ]
-    },
-    {
-      "key": "sig-youth",
-      "statement": "Young people need routes into work",
-      "claim_texts": [
-        "Local young people in work",
-        "Drop-in hub linking 16–24s to local employers",
-        "Youth skills and jobs centre"
-      ]
-    },
-    {
-      "key": "sig-mutual",
-      "statement": "Neighbours already move and lend for each other — for fuel costs, not fees",
-      "claim_texts": [
-        "Van and driver for community moves",
-        "fuel costs only",
-        "Neighbourhood resourcing — tools, time, skills"
-      ]
-    },
-    {
-      "key": "sig-energy",
-      "statement": "The east side could make its own power",
-      "claim_texts": ["East Middlesbrough solar feasibility"]
-    }
-  ],
-  "participants": 8,
-  "votes": {
-    "sig-repair": ["endorse", "endorse", "amend", "endorse", null, null, null, null],
-    "sig-marsh": ["endorse", "endorse", "endorse", null, null, null, null, null],
-    "sig-youth": ["endorse", "contest", "endorse", null, null, null, null, null],
-    "sig-mutual": ["endorse", "endorse", "amend", "contest", null, null, null, null],
-    "sig-energy": ["endorse", null, null, null, null, null, null, null]
-  },
-  "amendments": {
-    "sig-repair": "Open Saturdays — working people can only come then.",
-    "sig-mutual": "Fuel costs only if the van is already going — otherwise share the hire."
-  },
-  "gates": {
-    "sig-repair": "commons_only",
-    "sig-marsh": "may_be_priced",
-    "sig-youth": "may_be_priced",
-    "sig-mutual": "commons_only",
-    "sig-energy": "not_yet"
-  },
-  "interventions": [
-    { "view": "from_plans", "name": "Marsh regeneration scheme", "note": "Middlesbrough Council programme — £55,000, from 2027-02. Scored against flood outcomes alone.", "signals": ["sig-marsh"], "priced": true },
-    { "view": "from_plans", "name": "Youth skills and jobs centre", "note": "Middlesbrough Council programme — £60,000, from 2027-03.", "signals": ["sig-youth"], "priced": true },
-    { "view": "from_plans", "name": "East Middlesbrough solar feasibility", "note": "Middlesbrough Council programme — £30,000, from 2027-06.", "signals": ["sig-energy"], "priced": true },
-    { "view": "from_plans", "name": "Thorntree wetland restoration Q3", "note": "Community Ventures Ltd plan — £40,000, from 2027-01. Overlaps the council scheme; neither counts the volunteers.", "signals": ["sig-marsh"], "priced": true },
-    { "view": "from_plans", "name": "Youth employment hub", "note": "Community Ventures Ltd plan — £25,000, from 2027-01.", "signals": ["sig-youth"], "priced": true },
-    { "view": "from_place", "name": "Marsh reeds and planting days", "note": "The hub’s own call for volunteers — the same ground as both funded schemes, run on goodwill.", "signals": ["sig-marsh", "sig-mutual"], "priced": false },
-    { "view": "from_place", "name": "Thorntree Tool Library", "note": "Sarafu commitment (TTOOL, GBP-denominated, giftable) — 12 recorded transactions. A commons instrument, not a priced service.", "signals": ["sig-repair", "sig-mutual"], "priced": false },
-    { "view": "from_place", "name": "Repair café — tools and a laptop runner", "note": "Two open needs on the hub: tools and equipment, and someone to run the laptop.", "signals": ["sig-repair", "sig-mutual"], "priced": false },
-    { "view": "from_place", "name": "Van and driver for community moves", "note": "Offered at fuel costs only — mutual aid, not a market service.", "signals": ["sig-mutual"], "priced": false }
-  ],
-  "sips": [
-    {
-      "kind": "node",
-      "title": "The repair café",
-      "what_changes": "The hub, the tool library and two open needs all point at one table. Staff it and three signals move at once.",
-      "time_to_show": "months",
-      "evidence_signals": ["sig-repair", "sig-mutual"]
-    },
-    {
-      "kind": "threshold",
-      "title": "The marsh scheme meets the volunteers",
-      "what_changes": "The council’s £55,000 scheme and the hub’s planting days name the same ground. Join them and the money buys hands.",
-      "time_to_show": "about a year",
-      "evidence_signals": ["sig-marsh"]
-    }
+  "readings": [
+   {
+    "label": "IMD deprivation decile (LSOA Middlesbrough 010D)",
+    "value": "1/10 · score 66.9 · rank 461 of 33,755",
+    "source": "English Indices of Deprivation 2025 — OGL"
+   },
+   {
+    "label": "Flood-risk areas within 15km",
+    "value": "34",
+    "source": "EA Flood Monitoring — OGL (fetched 2026-10-25)"
+   },
+   {
+    "label": "Tool-library voucher transactions",
+    "value": "12",
+    "source": "sarafu.network — public indexer"
+   },
+   {
+    "label": "Hub appreciations recorded",
+    "value": "6",
+    "source": "holons:thorntree hub records"
+   }
   ]
+ },
+ "stories": [
+  {
+   "teller_role": "Hub member",
+   "channel": "facilitated",
+   "source": "holons:thorntree (hub action)",
+   "text": "We need marsh reeds and planting days volunteers"
+  },
+  {
+   "teller_role": "Community ventures",
+   "channel": "facilitated",
+   "source": "csv:community-needs (CVL)",
+   "text": "We need tools and equipment for the repair café"
+  },
+  {
+   "teller_role": "Hub member",
+   "channel": "facilitated",
+   "source": "holons:thorntree (hub need)",
+   "text": "Someone to run the repair café laptop"
+  },
+  {
+   "teller_role": "Hub member",
+   "channel": "facilitated",
+   "source": "holons:thorntree (hub offer)",
+   "text": "Van and driver for community moves"
+  },
+  {
+   "teller_role": "Hub member",
+   "channel": "facilitated",
+   "source": "holons:thorntree (hub offer)",
+   "text": "fuel costs only"
+  },
+  {
+   "teller_role": "Tool library",
+   "channel": "facilitated",
+   "source": "sarafu.network voucher TTOOL",
+   "text": "Tool hire and repair café supplies — drills, strimmers, scaffold — offered to local projects"
+  },
+  {
+   "teller_role": "Community hub",
+   "channel": "facilitated",
+   "source": "holons:thorntree (hub membrane)",
+   "text": "Neighbourhood resourcing — tools, time, skills"
+  },
+  {
+   "teller_role": "Community plan",
+   "channel": "facilitated",
+   "source": "oneplanet:plan-cvl-thorntree",
+   "text": "Restore the wetland and reed beds around Thorntree beck to slow surface water"
+  },
+  {
+   "teller_role": "Community plan",
+   "channel": "facilitated",
+   "source": "oneplanet:plan-cvl-thorntree",
+   "text": "A greener, flood-resilient neighbourhood"
+  },
+  {
+   "teller_role": "Community plan",
+   "channel": "facilitated",
+   "source": "oneplanet:plan-cvl-thorntree",
+   "text": "Local young people in work"
+  },
+  {
+   "teller_role": "Community plan",
+   "channel": "facilitated",
+   "source": "oneplanet:plan-cvl-thorntree",
+   "text": "Drop-in hub linking 16–24s to local employers"
+  },
+  {
+   "teller_role": "Council programme",
+   "channel": "facilitated",
+   "source": "csv:upload (Middlesbrough Council)",
+   "text": "Marsh regeneration scheme"
+  },
+  {
+   "teller_role": "Council programme",
+   "channel": "facilitated",
+   "source": "csv:upload (Middlesbrough Council)",
+   "text": "Youth skills and jobs centre"
+  },
+  {
+   "teller_role": "Council programme",
+   "channel": "facilitated",
+   "source": "csv:upload (Middlesbrough Council)",
+   "text": "East Middlesbrough solar feasibility"
+  },
+  {
+   "teller_role": "bsky · North East Bylines",
+   "channel": "social",
+   "text": "Teesside Reuse Shop celebrates first year with more than 27,000 items given a second life\n“The Reuse Shop was always a brilliant idea, but to see more than 27,000 items find new homes really has surpassed all expectations\"\n\nnortheastbylines.co.uk/region/teess...",
+   "source": "https://bsky.app/profile/did:plc:drdkuiw4po3zqrzxy6xb2vlk/post/3mwikkgw6wk2g"
+  },
+  {
+   "teller_role": "bsky · Teesside Live",
+   "channel": "social",
+   "text": "ICYMI: Community food charity celebrates 15 years of supporting families in Teesside",
+   "source": "https://bsky.app/profile/did:plc:ejrdonhsxyou5txhfnfu5l44/post/3mwi2ytl5u42a"
+  },
+  {
+   "teller_role": "bsky · Teesside Live",
+   "channel": "social",
+   "text": "FYI: More than 50 acts announced for Teesside's biggest grassroots music festival",
+   "source": "https://bsky.app/profile/did:plc:ejrdonhsxyou5txhfnfu5l44/post/3mwieikks652l"
+  },
+  {
+   "teller_role": "bsky · The Guardian",
+   "channel": "social",
+   "text": "‘This place might look bad but it’s not’: fear and hope in Middlesbrough community after week of violence",
+   "source": "https://bsky.app/profile/The Guardian/post/3mu5m2ua5jh23"
+  },
+  {
+   "teller_role": "bsky voice",
+   "channel": "social",
+   "text": "Middlesbrough’s policing crisis is being treated as a failure of one police force.\n\nBut Cleveland is struggling with a problem facing forces across Britain, writes Dominic Adler 👇 \n\nbuff.ly/XCFLiQq",
+   "source": "https://bsky.app/profile/did:plc:dbhob4ehbowinclgen27ype2/post/3mueebtc6uu2z"
+  },
+  {
+   "teller_role": "bsky · Teesside Live",
+   "channel": "social",
+   "text": "Teesside MPs call for more police and fire service resources after Middlesbrough and A66 deaths",
+   "source": "https://bsky.app/profile/The Guardian/post/3mu3crzk7v52c"
+  },
+  {
+   "teller_role": "bsky · The Athletic",
+   "channel": "social",
+   "text": "It has not been an easy fortnight for Teesside, an area which has long experience of being talked down. But the football club offers hope www.nytimes.com/athletic/759...",
+   "source": "https://bsky.app/profile/The Athletic/post/3mvjtg2ylmt2k"
+  },
+  {
+   "teller_role": "bsky voice",
+   "channel": "social",
+   "text": "The offshore wind installation vessel Wind Ally entering the Tees yesterday. Wind is currently producing nearly half GB's electricity needs. Much of the remainder is solar or low-carbon imports, with gas accounting for only 6.8%. Only idiots want to increase our reliance on fossil fuels.",
+   "source": "https://bsky.app/profile/Palustris/post/3mwiko2gi6k2d"
+  }
+ ],
+ "signals": [
+  {
+   "key": "sig-repair",
+   "statement": "The repair café and the tool library keep things working",
+   "claim_texts": [
+    "We need tools and equipment for the repair café",
+    "Someone to run the repair café laptop",
+    "Tool hire and repair café supplies — drills, strimmers, scaffold — offered to local projects",
+    "Teesside Reuse Shop celebrates first year with more than 27,000 items given a second life\n“The Reuse Shop was always a brilliant idea, but to see more than 27,000 items find new homes really has surpassed all expectations\"\n\nnortheastbylines.co.uk/region/teess..."
+   ]
+  },
+  {
+   "key": "sig-marsh",
+   "statement": "The beck and the marsh need hands, reeds and a scheme",
+   "claim_texts": [
+    "We need marsh reeds and planting days volunteers",
+    "Restore the wetland and reed beds around Thorntree beck to slow surface water",
+    "Marsh regeneration scheme",
+    "A greener, flood-resilient neighbourhood"
+   ]
+  },
+  {
+   "key": "sig-youth",
+   "statement": "Young people need routes into work",
+   "claim_texts": [
+    "Local young people in work",
+    "Drop-in hub linking 16–24s to local employers",
+    "Youth skills and jobs centre",
+    "FYI: More than 50 acts announced for Teesside's biggest grassroots music festival"
+   ]
+  },
+  {
+   "key": "sig-mutual",
+   "statement": "Neighbours already move and lend for each other — for fuel costs, not fees",
+   "claim_texts": [
+    "Van and driver for community moves",
+    "fuel costs only",
+    "Neighbourhood resourcing — tools, time, skills",
+    "ICYMI: Community food charity celebrates 15 years of supporting families in Teesside"
+   ]
+  },
+  {
+   "key": "sig-energy",
+   "statement": "The east side could make its own power",
+   "claim_texts": [
+    "East Middlesbrough solar feasibility",
+    "The offshore wind installation vessel Wind Ally entering the Tees yesterday. Wind is currently producing nearly half GB's electricity needs. Much of the remainder is solar or low-carbon imports, with gas accounting for only 6.8%. Only idiots want to increase our reliance on fossil fuels."
+   ]
+  },
+  {
+   "key": "sig-safety",
+   "statement": "A fortnight of violence tested the estate's name — deaths on the A66, a fatal fire, MPs calling for resources — while the community insists the place is not what it looks like.",
+   "claim_texts": [
+    "‘This place might look bad but it’s not’: fear and hope in Middlesbrough community after week of violence",
+    "Middlesbrough’s policing crisis is being treated as a failure of one police force.\n\nBut Cleveland is struggling with a problem facing forces across Britain, writes Dominic Adler 👇 \n\nbuff.ly/XCFLiQq",
+    "Teesside MPs call for more police and fire service resources after Middlesbrough and A66 deaths",
+    "It has not been an easy fortnight for Teesside, an area which has long experience of being talked down. But the football club offers hope www.nytimes.com/athletic/759..."
+   ]
+  }
+ ],
+ "participants": 8,
+ "votes": {
+  "sig-repair": [
+   "endorse",
+   "endorse",
+   "amend",
+   "endorse",
+   null,
+   null,
+   null,
+   null
+  ],
+  "sig-marsh": [
+   "endorse",
+   "endorse",
+   "endorse",
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "sig-youth": [
+   "endorse",
+   "contest",
+   "endorse",
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "sig-mutual": [
+   "endorse",
+   "endorse",
+   "amend",
+   "contest",
+   null,
+   null,
+   null,
+   null
+  ],
+  "sig-energy": [
+   "endorse",
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "sig-safety": [
+   "endorse",
+   "endorse",
+   "endorse",
+   "endorse",
+   "endorse",
+   "amend",
+   null,
+   null,
+   null,
+   null
+  ]
+ },
+ "amendments": {
+  "sig-repair": "Open Saturdays — working people can only come then.",
+  "sig-mutual": "Fuel costs only if the van is already going — otherwise share the hire.",
+  "sig-safety": "The fear is real, but so is the insistence that this place is not what it looks like."
+ },
+ "gates": {
+  "sig-repair": "commons_only",
+  "sig-marsh": "may_be_priced",
+  "sig-youth": "may_be_priced",
+  "sig-mutual": "commons_only",
+  "sig-energy": "not_yet",
+  "sig-safety": "not_yet"
+ },
+ "interventions": [
+  {
+   "view": "from_plans",
+   "name": "Marsh regeneration scheme",
+   "note": "Middlesbrough Council programme — £55,000, from 2027-02. Scored against flood outcomes alone.",
+   "signals": [
+    "sig-marsh"
+   ],
+   "priced": true
+  },
+  {
+   "view": "from_plans",
+   "name": "Youth skills and jobs centre",
+   "note": "Middlesbrough Council programme — £60,000, from 2027-03.",
+   "signals": [
+    "sig-youth"
+   ],
+   "priced": true
+  },
+  {
+   "view": "from_plans",
+   "name": "East Middlesbrough solar feasibility",
+   "note": "Middlesbrough Council programme — £30,000, from 2027-06.",
+   "signals": [
+    "sig-energy"
+   ],
+   "priced": true
+  },
+  {
+   "view": "from_plans",
+   "name": "Thorntree wetland restoration Q3",
+   "note": "Community Ventures Ltd plan — £40,000, from 2027-01. Overlaps the council scheme; neither counts the volunteers.",
+   "signals": [
+    "sig-marsh"
+   ],
+   "priced": true
+  },
+  {
+   "view": "from_plans",
+   "name": "Youth employment hub",
+   "note": "Community Ventures Ltd plan — £25,000, from 2027-01.",
+   "signals": [
+    "sig-youth"
+   ],
+   "priced": true
+  },
+  {
+   "view": "from_place",
+   "name": "Marsh reeds and planting days",
+   "note": "The hub’s own call for volunteers — the same ground as both funded schemes, run on goodwill.",
+   "signals": [
+    "sig-marsh",
+    "sig-mutual"
+   ],
+   "priced": false
+  },
+  {
+   "view": "from_place",
+   "name": "Thorntree Tool Library",
+   "note": "Sarafu commitment (TTOOL, GBP-denominated, giftable) — 12 recorded transactions. A commons instrument, not a priced service.",
+   "signals": [
+    "sig-repair",
+    "sig-mutual"
+   ],
+   "priced": false
+  },
+  {
+   "view": "from_place",
+   "name": "Repair café — tools and a laptop runner",
+   "note": "Two open needs on the hub: tools and equipment, and someone to run the laptop.",
+   "signals": [
+    "sig-repair",
+    "sig-mutual"
+   ],
+   "priced": false
+  },
+  {
+   "view": "from_place",
+   "name": "Van and driver for community moves",
+   "note": "Offered at fuel costs only — mutual aid, not a market service.",
+   "signals": [
+    "sig-mutual"
+   ],
+   "priced": false
+  }
+ ],
+ "sips": [
+  {
+   "kind": "node",
+   "title": "The repair café",
+   "what_changes": "The hub, the tool library and two open needs all point at one table. Staff it and three signals move at once.",
+   "time_to_show": "months",
+   "evidence_signals": [
+    "sig-repair",
+    "sig-mutual"
+   ]
+  },
+  {
+   "kind": "threshold",
+   "title": "The marsh scheme meets the volunteers",
+   "what_changes": "The council’s £55,000 scheme and the hub’s planting days name the same ground. Join them and the money buys hands.",
+   "time_to_show": "about a year",
+   "evidence_signals": [
+    "sig-marsh"
+   ]
+  }
+ ],
+ "social_exports": [
+  "tools/social/exports/thorntree.json"
+ ]
 }

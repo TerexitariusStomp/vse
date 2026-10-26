@@ -102,15 +102,21 @@ export async function runExtraction(env: Env, storyId: string): Promise<void> {
   if (!story) return
 
   const candidates = await extractClaims(env.AI, story.text)
+  let fallback = false
   // Micro-story fallback: below ~120 chars the whole text is the only
   // plausible span, so when the model proposes nothing we propose the
   // story itself. Same mechanical contract — the claim must slice-equal
   // the story text, which it does trivially.
-  if (!candidates.length && story.text.trim().length && story.text.length <= 120)
+  if (!candidates.length && story.text.trim().length && story.text.length <= 120) {
     candidates.push({ text: story.text, span: [0, story.text.length] })
+    fallback = true
+  }
   const stmt = env.DB.prepare(
-    `INSERT INTO claims (id, place_id, story_id, text, span_start, span_end, status)
-     VALUES (?, ?, ?, ?, ?, ?, ?)`,
+    `INSERT INTO claims (id, place_id, story_id, text, span_start, span_end, status, proposer)
+     VALUES (?, ?, ?, ?, ?, ?, ?, ?)`,
+  )
+  const dupe = env.DB.prepare(
+    'SELECT 1 FROM claims WHERE story_id = ? AND text = ? AND status = ?',
   )
   for (const c of candidates) {
     // If the model's span is wrong but the text is verbatim, heal the span
@@ -123,8 +129,13 @@ export async function runExtraction(env: Env, storyId: string): Promise<void> {
       if (found.length) span = found[0]
       else status = 'quarantined'
     }
+    // Re-drives and batch retries would otherwise append duplicate rows.
+    if (await dupe.bind(story.id, c.text, status).first()) continue
     await stmt
-      .bind(crypto.randomUUID(), story.place_id, story.id, c.text, span[0], span[1], status)
+      .bind(
+        crypto.randomUUID(), story.place_id, story.id, c.text,
+        span[0], span[1], status, fallback ? 'fallback' : 'model',
+      )
       .run()
   }
 }

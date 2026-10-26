@@ -1,0 +1,94 @@
+{
+ "place": "hebden-bridge",
+ "aliases": [
+  "hebden bridge",
+  "calder valley",
+  "mytholmroyd",
+  "hebden"
+ ],
+ "author_terms": [
+  "hebden bridge"
+ ],
+ "exported_at": "2026-10-26T01:36:06.392257+00:00",
+ "indexer": "/home/terex/Documents/Rooted/apps/indexer",
+ "count": 7,
+ "candidates": [
+  {
+   "id": "bsky:at://did:plc:lczaj7iqoem54rs4x7saybuj/app.bsky.feed.post/3mwixjyd77i2v",
+   "network": "bsky",
+   "author": "did:plc:lczaj7iqoem54rs4x7saybuj",
+   "handle": "did:plc:lczaj7iqoem54rs4x7saybuj",
+   "ts": "2026-09-27T14:00:39+00:00",
+   "text": "[September 27th, 1946] The Mayors of Halifax and Brighouse and the Chairman of Hebden Royd are appealing for funds to aid Calder Valley flood victims. Committees are managing the money. The joint fund has reached about £600, and other donations like furniture are also being received.",
+   "match_reason": "text_match",
+   "author_bio": "",
+   "url": "https://bsky.app/profile/did:plc:lczaj7iqoem54rs4x7saybuj/post/3mwixjyd77i2v"
+  },
+  {
+   "id": "bsky:at://did:plc:4td2irkpxtivwy5aevl2a723/app.bsky.feed.post/3mwipfaqayc22",
+   "network": "bsky",
+   "author": "did:plc:4td2irkpxtivwy5aevl2a723",
+   "handle": "did:plc:4td2irkpxtivwy5aevl2a723",
+   "ts": "2026-09-27T11:34:51+00:00",
+   "text": "First 2027 gig announced bluegrass and more outfit The Often Herd, excited to have been able to bring them to Wadsworth Community Centre #hebdenbridge #bluegrass #roots",
+   "match_reason": "text_match",
+   "author_bio": "",
+   "url": "https://bsky.app/profile/did:plc:4td2irkpxtivwy5aevl2a723/post/3mwipfaqayc22"
+  },
+  {
+   "id": "bsky:at://did:plc:nwdngqvj7akc3whf2gfnnmnj/app.bsky.feed.post/3mwilt6rqas2m",
+   "network": "bsky",
+   "author": "did:plc:nwdngqvj7akc3whf2gfnnmnj",
+   "handle": "did:plc:nwdngqvj7akc3whf2gfnnmnj",
+   "ts": "2026-09-27T10:31:03+00:00",
+   "text": "Grimsby❌\nGlossop❌\nHebden Bridge✅\n\n(If you know, you know🤣)",
+   "match_reason": "text_match",
+   "author_bio": "",
+   "url": "https://bsky.app/profile/did:plc:nwdngqvj7akc3whf2gfnnmnj/post/3mwilt6rqas2m"
+  },
+  {
+   "id": "bsky:at://did:plc:fnofgjbhlvjvmp422vup73vb/app.bsky.feed.post/3mr3uoxc76s2s",
+   "network": "bsky",
+   "author": "did:plc:fnofgjbhlvjvmp422vup73vb",
+   "handle": "indy.bsky.social",
+   "ts": "2026-07-20T17:59:10+00:00",
+   "text": "US food industry, but may interest @paulhebden.bsky.social re: cost optimisation / shrinkflation:\n\nmedium.com/@dapscience/...",
+   "match_reason": "text_match",
+   "author_bio": "",
+   "url": "https://bsky.app/profile/indy.bsky.social/post/3mr3uoxc76s2s"
+  },
+  {
+   "id": "bsky:at://did:plc:amj4ofqfh4rheeic5qrtgo6c/app.bsky.feed.post/3mq7gw6vdbs2h",
+   "network": "bsky",
+   "author": "did:plc:amj4ofqfh4rheeic5qrtgo6c",
+   "handle": "did:plc:amj4ofqfh4rheeic5qrtgo6c",
+   "ts": "2026-07-09T10:38:08+00:00",
+   "text": "Oh lovely stuff from the boy Hebden here - the world always needs more reckless pitch bend.",
+   "match_reason": "text_match",
+   "author_bio": "",
+   "url": "https://bsky.app/profile/did:plc:amj4ofqfh4rheeic5qrtgo6c/post/3mq7gw6vdbs2h"
+  },
+  {
+   "id": "bsky:at://did:plc:fnofgjbhlvjvmp422vup73vb/app.bsky.feed.post/3mq5gczt2ts2y",
+   "network": "bsky",
+   "author": "did:plc:fnofgjbhlvjvmp422vup73vb",
+   "handle": "indy.bsky.social",
+   "ts": "2026-07-08T15:22:06+00:00",
+   "text": "cc @paulhebden.bsky.social  re: rip off Britain",
+   "match_reason": "text_match",
+   "author_bio": "",
+   "url": "https://bsky.app/profile/indy.bsky.social/post/3mq5gczt2ts2y"
+  },
+  {
+   "id": "bsky:at://did:plc:fnofgjbhlvjvmp422vup73vb/app.bsky.feed.post/3mpyhdaiiws2y",
+   "network": "bsky",
+   "author": "did:plc:fnofgjbhlvjvmp422vup73vb",
+   "handle": "indy.bsky.social",
+   "ts": "2026-07-06T15:56:48+00:00",
+   "text": "I'd love to see a similar study for the UK.\n@paulhebden.bsky.social",
+   "match_reason": "text_match",
+   "author_bio": "",
+   "url": "https://bsky.app/profile/indy.bsky.social/post/3mpyhdaiiws2y"
+  }
+ ]
+}

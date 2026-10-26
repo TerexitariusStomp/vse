@@ -1,447 +1,545 @@
 {
-  "place": {
-    "id": "kenya-coast",
-    "name": "Kenya coast",
-    "kind": "coastal counties — Kwale to Kilifi",
-    "summary": "A real stretch of the Kenyan coast: smallholders, voucher commitments, mangrove nurseries and the ROLA commitment pool.",
-    "scale_note": "A demonstrator assembled from real records — participation is small because it is real.",
-    "geo": {
-      "lat": -4.18,
-      "lon": 39.46
-    },
-    "readings": [
-      {
-        "label": "ROLA commitment pool",
-        "value": "141 vouchers · 1,640 swaps",
-        "source": "sarafu.network — public indexer"
-      },
-      {
-        "label": "treegens planting records (Gongoni area)",
-        "value": "141",
-        "source": "treegens.app — live feed"
-      },
-      {
-        "label": "Kwale shore planting day",
-        "value": "480 seedlings · 12 people",
-        "source": "possibility completion report"
-      },
-      {
-        "label": "Voucher issuers on this coast",
-        "value": "12",
-        "source": "sarafu.network — public indexer"
-      }
-    ]
+ "place": {
+  "id": "kenya-coast",
+  "name": "Kenya coast",
+  "kind": "coastal counties — Kwale to Kilifi",
+  "summary": "A real stretch of the Kenyan coast: smallholders, voucher commitments, mangrove nurseries and the ROLA commitment pool.",
+  "scale_note": "A demonstrator assembled from real records — participation is small because it is real.",
+  "geo": {
+   "lat": -4.18,
+   "lon": 39.46
   },
-  "stories": [
-    {
-      "teller_role": "tree nursery keeper",
-      "channel": "facilitated",
-      "text": "I have a tree nursery that i sell trees",
-      "source": "sarafu.network voucher KALIMB"
-    },
-    {
-      "teller_role": "smallholder",
-      "channel": "facilitated",
-      "text": "I sell vegetables from the produce in my farm",
-      "source": "sarafu.network voucher BEJAA"
-    },
-    {
-      "teller_role": "household",
-      "channel": "facilitated",
-      "text": "Access to charcoal",
-      "source": "sarafu.network voucher MWANAM"
-    },
-    {
-      "teller_role": "smallholder",
-      "channel": "facilitated",
-      "text": "Access to vegetables and fruits",
-      "source": "sarafu.network voucher SADA"
-    },
-    {
-      "teller_role": "household",
-      "channel": "facilitated",
-      "text": "Access to vegetables",
-      "source": "sarafu.network voucher NZARA"
-    },
-    {
-      "teller_role": "voucher issuer, C106",
-      "channel": "facilitated",
-      "text": "Access to Credit,goods and services",
-      "source": "sarafu.network voucher EMILY"
-    },
-    {
-      "teller_role": "voucher issuer, C106",
-      "channel": "facilitated",
-      "text": "Access to Credit,goods and services",
-      "source": "sarafu.network voucher NDARO"
-    },
-    {
-      "teller_role": "voucher issuer",
-      "channel": "facilitated",
-      "text": "Access to Credit,goods and services",
-      "source": "sarafu.network voucher DAM"
-    },
-    {
-      "teller_role": "savings group",
-      "channel": "facilitated",
-      "text": "Access to Loans and Advances",
-      "source": "sarafu.network voucher GE KSH"
-    },
-    {
-      "teller_role": "trader, Mnarani",
-      "channel": "facilitated",
-      "text": "selling mangoes",
-      "source": "sarafu.network voucher AMI"
-    },
-    {
-      "teller_role": "farmer, Kilifi North",
-      "channel": "facilitated",
-      "text": "Farmer",
-      "source": "sarafu.network voucher SAKI"
-    },
-    {
-      "teller_role": "farmer, Kilifi North",
-      "channel": "facilitated",
-      "text": "Farmer",
-      "source": "sarafu.network voucher JENNIE"
-    },
-    {
-      "teller_role": "commitment pool",
-      "channel": "facilitated",
-      "text": "Communities Across Kenya practicing traditional rotating labor. They pool their vouchers to support each other.",
-      "source": "sarafu.network pool ROLA"
-    },
-    {
-      "teller_role": "coast collective",
-      "channel": "facilitated",
-      "text": "Community planting day — bring tools and labour, we need seedlings and lunch",
-      "source": "possibility poss-kwale-mangrove-planting"
-    },
-    {
-      "teller_role": "coast collective",
-      "channel": "facilitated",
-      "text": "480 seedlings planted by 12 people; nursery voucher covered stock",
-      "source": "possibility:poss-kwale-mangrove-planting — report.summary"
-    },
-    {
-      "teller_role": "coast collective",
-      "channel": "facilitated",
-      "text": "start tool-count earlier — spades ran short",
-      "source": "possibility:poss-kwale-mangrove-planting — report.learnings"
-    },
-    {
-      "teller_role": "conservation group",
-      "channel": "facilitated",
-      "text": "Two planting days on the degraded creek edge — nursery raised 800 propagules, we need 400 more, boat transport, and lunch for the crew",
-      "source": "possibility poss-mida-creek-mangrove"
-    },
-    {
-      "teller_role": "coast collective",
-      "channel": "facilitated",
-      "text": "van run made the tools possible",
-      "source": "ledger app-coast-collective-mike"
-    },
-    {
-      "teller_role": "community forest group",
-      "channel": "facilitated",
-      "text": "Tree seedlings needed for community reforestation",
-      "source": "csv:community-needs (Kwale Community Forest)"
-    },
-    {
-      "teller_role": "county government",
-      "channel": "facilitated",
-      "text": "Shoreline mangrove planting on the creek edge",
-      "source": "csv:kilifi-county — action"
-    },
-    {
-      "teller_role": "county government",
-      "channel": "facilitated",
-      "text": "Restored mangrove cover and fish-nursery habitat at Mida Creek",
-      "source": "csv:kilifi-county — outcome"
-    },
-    {
-      "teller_role": "field team record",
-      "channel": "facilitated",
-      "text": "344 mangrove trees planted — Gongoni, Gongoni ward, Magarini, Kilifi County, Kenya",
-      "source": "treegens:live"
-    },
-    {
-      "teller_role": "field team record",
-      "channel": "facilitated",
-      "text": "760 mangrove trees planted — Gongoni, Gongoni ward, Magarini, Kilifi County, Kenya",
-      "source": "treegens:live"
-    }
-  ],
-  "signals": [
-    {
-      "key": "sig-nursery",
-      "statement": "Nurseries raise the seedlings the planting days run on",
-      "claim_texts": [
-        "I have a tree nursery that i sell trees",
-        "Tree seedlings needed for community reforestation",
-        "we need seedlings and lunch",
-        "we need 400 more"
-      ]
-    },
-    {
-      "key": "sig-livelihood",
-      "statement": "People grow, farm and trade to get by",
-      "claim_texts": [
-        "I sell vegetables from the produce in my farm",
-        "Access to vegetables and fruits",
-        "Access to vegetables",
-        "selling mangoes"
-      ]
-    },
-    {
-      "key": "sig-charcoal",
-      "statement": "Homes still need charcoal for fuel",
-      "claim_texts": [
-        "Access to charcoal"
-      ]
-    },
-    {
-      "key": "sig-credit",
-      "statement": "Households need credit, loans and advances",
-      "claim_texts": [
-        "Access to Credit,goods and services",
-        "Access to Loans and Advances"
-      ]
-    },
-    {
-      "key": "sig-pool",
-      "statement": "The coast pools labour and vouchers to support each other",
-      "claim_texts": [
-        "Communities Across Kenya practicing traditional rotating labor. They pool their vouchers to support each other.",
-        "van run made the tools possible",
-        "start tool-count earlier",
-        "spades ran short",
-        "lunch for the crew"
-      ]
-    },
-    {
-      "key": "sig-mangrove",
-      "statement": "The coast is replanting its mangroves — and the nursery economy behind it is real",
-      "claim_texts": [
-        "Shoreline mangrove planting on the creek edge",
-        "Restored mangrove cover and fish-nursery habitat at Mida Creek",
-        "344 mangrove trees planted — Gongoni, Gongoni ward, Magarini, Kilifi County, Kenya",
-        "760 mangrove trees planted — Gongoni, Gongoni ward, Magarini, Kilifi County, Kenya"
-      ]
-    },
-    {
-      "key": "sig-transport",
-      "statement": "Getting to the creek and the market needs transport",
-      "claim_texts": [
-        "boat transport"
-      ]
-    }
-  ],
-  "participants": 10,
-  "votes": {
-    "sig-mangrove": [
-      "endorse",
-      "endorse",
-      "endorse",
-      "endorse",
-      "amend",
-      "endorse",
-      "endorse",
-      null,
-      null,
-      null
-    ],
-    "sig-nursery": [
-      "endorse",
-      "endorse",
-      "endorse",
-      "endorse",
-      "endorse",
-      "endorse",
-      null,
-      null,
-      null,
-      null
-    ],
-    "sig-pool": [
-      "endorse",
-      "endorse",
-      "endorse",
-      "endorse",
-      "endorse",
-      "endorse",
-      "endorse",
-      "endorse",
-      null,
-      null
-    ],
-    "sig-livelihood": [
-      "endorse",
-      "endorse",
-      "endorse",
-      "amend",
-      "endorse",
-      "endorse",
-      null,
-      null,
-      null,
-      null
-    ],
-    "sig-credit": [
-      "endorse",
-      "endorse",
-      "endorse",
-      "endorse",
-      "endorse",
-      null,
-      null,
-      null,
-      null,
-      null
-    ],
-    "sig-transport": [
-      "endorse",
-      "endorse",
-      "contest",
-      "endorse",
-      "endorse",
-      null,
-      null,
-      null,
-      null,
-      null
-    ],
-    "sig-charcoal": [
-      "endorse",
-      "contest",
-      "contest",
-      "endorse",
-      "amend",
-      "endorse",
-      null,
-      null,
-      null,
-      null
-    ]
-  },
-  "amendments": {
-    "sig-mangrove": "Next planting window needs seedlings reserved earlier.",
-    "sig-livelihood": "Include poultry and goats — not just crops and trees.",
-    "sig-charcoal": "Homes need a fuel answer while charcoal is contested — gas and briquettes both come up."
-  },
-  "gates": {
-    "sig-nursery": "may_be_priced",
-    "sig-livelihood": "may_be_priced",
-    "sig-charcoal": "not_yet",
-    "sig-credit": "may_be_priced",
-    "sig-pool": "commons_only",
-    "sig-mangrove": "may_be_priced",
-    "sig-transport": "not_yet"
-  },
-  "interventions": [
-    {
-      "view": "from_plans",
-      "name": "Shoreline mangrove planting on the creek edge",
-      "note": "Kilifi County Government, from 2027-02. Mangrove restoration and fish-nursery habitat at Mida Creek.",
-      "signals": [
-        "sig-mangrove"
-      ],
-      "counter": [
-        "sig-charcoal"
-      ],
-      "priced": true
-    },
-    {
-      "view": "from_plans",
-      "name": "Mida Creek Community Conservation Plan",
-      "note": "Community conservation plan — restored cover and fish-nursery habitat.",
-      "signals": [
-        "sig-mangrove"
-      ],
-      "counter": [
-        "sig-charcoal"
-      ],
-      "priced": true
-    },
-    {
-      "view": "from_plans",
-      "name": "Artizen Season 7 — curated fund",
-      "note": "Curated season fund — carries the Kwale Mangrove Nursery action.",
-      "signals": [
-        "sig-mangrove"
-      ],
-      "priced": true
-    },
-    {
-      "view": "from_place",
-      "name": "Kwale shore planting day",
-      "note": "Completed: 480 seedlings planted by 12 people; the nursery voucher covered stock.",
-      "signals": [
-        "sig-mangrove",
-        "sig-nursery",
-        "sig-pool"
-      ],
-      "priced": false
-    },
-    {
-      "view": "from_place",
-      "name": "ROLA commitment pool",
-      "note": "141 vouchers, 1,640 swaps — rotating labour pooled across Kenya.",
-      "signals": [
-        "sig-pool"
-      ],
-      "priced": false
-    },
-    {
-      "view": "from_place",
-      "name": "Voucher commitments — produce, credit, fuel",
-      "note": "Real Sarafu commitments from issuers on this coast — giftable, redeemed in kind.",
-      "signals": [
-        "sig-livelihood",
-        "sig-credit",
-        "sig-charcoal"
-      ],
-      "priced": false
-    },
-    {
-      "view": "from_place",
-      "name": "treegens mangrove plantings",
-      "note": "Field records around Gongoni — hundreds of verified plantings.",
-      "signals": [
-        "sig-mangrove",
-        "sig-nursery"
-      ],
-      "priced": false
-    }
-  ],
-  "sips": [
-    {
-      "kind": "node",
-      "title": "The commitment pool",
-      "what_changes": "The ROLA pool already moves 1,640 swaps of labour and goods. If planting days join it, the pool becomes the staffing layer the schemes lack.",
-      "time_to_show": "months",
-      "evidence_signals": [
-        "sig-pool"
-      ]
-    },
-    {
-      "kind": "threshold",
-      "title": "What twelve people do in a day",
-      "what_changes": "480 seedlings in one day by twelve people. Two more crews at that rate close the propagule gap inside one season.",
-      "time_to_show": "one planting day",
-      "evidence_signals": [
-        "sig-mangrove"
-      ]
-    },
-    {
-      "kind": "window",
-      "title": "The planting window",
-      "what_changes": "Planting windows are tidal and seasonal. Missing the window costs a year of establishment.",
-      "time_to_show": "this season",
-      "evidence_signals": [
-        "sig-mangrove",
-        "sig-nursery"
-      ]
-    }
+  "readings": [
+   {
+    "label": "ROLA commitment pool",
+    "value": "141 vouchers · 1,640 swaps",
+    "source": "sarafu.network — public indexer"
+   },
+   {
+    "label": "treegens planting records (Gongoni area)",
+    "value": "141",
+    "source": "treegens.app — live feed"
+   },
+   {
+    "label": "Kwale shore planting day",
+    "value": "480 seedlings · 12 people",
+    "source": "possibility completion report"
+   },
+   {
+    "label": "Voucher issuers on this coast",
+    "value": "12",
+    "source": "sarafu.network — public indexer"
+   }
   ]
+ },
+ "stories": [
+  {
+   "teller_role": "tree nursery keeper",
+   "channel": "facilitated",
+   "text": "I have a tree nursery that i sell trees",
+   "source": "sarafu.network voucher KALIMB"
+  },
+  {
+   "teller_role": "smallholder",
+   "channel": "facilitated",
+   "text": "I sell vegetables from the produce in my farm",
+   "source": "sarafu.network voucher BEJAA"
+  },
+  {
+   "teller_role": "household",
+   "channel": "facilitated",
+   "text": "Access to charcoal",
+   "source": "sarafu.network voucher MWANAM"
+  },
+  {
+   "teller_role": "smallholder",
+   "channel": "facilitated",
+   "text": "Access to vegetables and fruits",
+   "source": "sarafu.network voucher SADA"
+  },
+  {
+   "teller_role": "household",
+   "channel": "facilitated",
+   "text": "Access to vegetables",
+   "source": "sarafu.network voucher NZARA"
+  },
+  {
+   "teller_role": "voucher issuer, C106",
+   "channel": "facilitated",
+   "text": "Access to Credit,goods and services",
+   "source": "sarafu.network voucher EMILY"
+  },
+  {
+   "teller_role": "voucher issuer, C106",
+   "channel": "facilitated",
+   "text": "Access to Credit,goods and services",
+   "source": "sarafu.network voucher NDARO"
+  },
+  {
+   "teller_role": "voucher issuer",
+   "channel": "facilitated",
+   "text": "Access to Credit,goods and services",
+   "source": "sarafu.network voucher DAM"
+  },
+  {
+   "teller_role": "savings group",
+   "channel": "facilitated",
+   "text": "Access to Loans and Advances",
+   "source": "sarafu.network voucher GE KSH"
+  },
+  {
+   "teller_role": "trader, Mnarani",
+   "channel": "facilitated",
+   "text": "selling mangoes",
+   "source": "sarafu.network voucher AMI"
+  },
+  {
+   "teller_role": "farmer, Kilifi North",
+   "channel": "facilitated",
+   "text": "Farmer",
+   "source": "sarafu.network voucher SAKI"
+  },
+  {
+   "teller_role": "farmer, Kilifi North",
+   "channel": "facilitated",
+   "text": "Farmer",
+   "source": "sarafu.network voucher JENNIE"
+  },
+  {
+   "teller_role": "commitment pool",
+   "channel": "facilitated",
+   "text": "Communities Across Kenya practicing traditional rotating labor. They pool their vouchers to support each other.",
+   "source": "sarafu.network pool ROLA"
+  },
+  {
+   "teller_role": "coast collective",
+   "channel": "facilitated",
+   "text": "Community planting day — bring tools and labour, we need seedlings and lunch",
+   "source": "possibility poss-kwale-mangrove-planting"
+  },
+  {
+   "teller_role": "coast collective",
+   "channel": "facilitated",
+   "text": "480 seedlings planted by 12 people; nursery voucher covered stock",
+   "source": "possibility:poss-kwale-mangrove-planting — report.summary"
+  },
+  {
+   "teller_role": "coast collective",
+   "channel": "facilitated",
+   "text": "start tool-count earlier — spades ran short",
+   "source": "possibility:poss-kwale-mangrove-planting — report.learnings"
+  },
+  {
+   "teller_role": "conservation group",
+   "channel": "facilitated",
+   "text": "Two planting days on the degraded creek edge — nursery raised 800 propagules, we need 400 more, boat transport, and lunch for the crew",
+   "source": "possibility poss-mida-creek-mangrove"
+  },
+  {
+   "teller_role": "coast collective",
+   "channel": "facilitated",
+   "text": "van run made the tools possible",
+   "source": "ledger app-coast-collective-mike"
+  },
+  {
+   "teller_role": "community forest group",
+   "channel": "facilitated",
+   "text": "Tree seedlings needed for community reforestation",
+   "source": "csv:community-needs (Kwale Community Forest)"
+  },
+  {
+   "teller_role": "county government",
+   "channel": "facilitated",
+   "text": "Shoreline mangrove planting on the creek edge",
+   "source": "csv:kilifi-county — action"
+  },
+  {
+   "teller_role": "county government",
+   "channel": "facilitated",
+   "text": "Restored mangrove cover and fish-nursery habitat at Mida Creek",
+   "source": "csv:kilifi-county — outcome"
+  },
+  {
+   "teller_role": "field team record",
+   "channel": "facilitated",
+   "text": "344 mangrove trees planted — Gongoni, Gongoni ward, Magarini, Kilifi County, Kenya",
+   "source": "treegens:live"
+  },
+  {
+   "teller_role": "field team record",
+   "channel": "facilitated",
+   "text": "760 mangrove trees planted — Gongoni, Gongoni ward, Magarini, Kilifi County, Kenya",
+   "source": "treegens:live"
+  },
+  {
+   "teller_role": "nostr · regional press relay",
+   "channel": "social",
+   "text": "Kenya — Over 80,000 families in Kenya’s Kilifi County face flood risk due to El Nino rains expected in 2026-2027. #Floods #Kenya #ElNino #News #Breaking\nhttps://news.netasgard.com/a/d0ce9f4ace768908?s=nostr\nhttps://live.staticflickr.com/4084/5192480265_5c0da328be_b.jpg\nPhoto : Hashoo Foundation USA - Houston, TX · CC BY-SA · Flickr",
+   "source": "https://njump.me/note18taxe22wrpsqw84espln4eevntunc8jwmfcd34sy6p8p2zsqccls66frcx"
+  },
+  {
+   "teller_role": "nostr · regional press relay",
+   "channel": "social",
+   "text": "the River Sabaki — Governor warns of rising flood risks near River Sabaki. #Kilifi #RiverSabaki #News #Breaking\nhttps://news.netasgard.com/a/296ab453542e820b?s=nostr\nhttps://images.rawpixel.com/editor_1024/cHJpdmF0ZS9zdGF0aWMvaW1hZ2VzL3dlYnNpdGUvMjAyMi0xMS9mbDQ4ODg0ODU1MzQtaW1hZ2UuanBn.jpg\nPhoto : U.S. Forest Service (source) · CC0 · Rawpixel",
+   "source": "https://njump.me/note1qufcz3g6htxs27py87ugf7mwhe7f0jgq25s8dqf083rxsmvmg95qr3yrh4"
+  },
+  {
+   "teller_role": "nostr · regional press relay",
+   "channel": "social",
+   "text": "Mombasa — Residents urged to avoid blocking drains as city braces for seasonal storms #Mombasa #News #Breaking\nhttps://news.netasgard.com/a/30cf2123ba622a6e?s=nostr\nhttps://live.staticflickr.com/5453/9109303029_6ca709dfc2_b.jpg\nPhoto : Alan Stanton · CC BY-SA · Flickr",
+   "source": "https://njump.me/note1p8d26vs6vhvgh7cp2sgkh5cexsdv7qe9lgx9mlerlkxzwh475prss73mwk"
+  },
+  {
+   "teller_role": "nostr · regional press relay",
+   "channel": "social",
+   "text": "Kilifi — Kilifi MPs call for customized digital hubs to better serve local small businesses. #Push #Kilifi #News\nhttps://news.netasgard.com/a/afee480eae7775df?s=nostr\nhttps://live.staticflickr.com/5026/5621676321_85d352870c_b.jpg\nPhoto : zaneology · CC BY · Flickr",
+   "source": "https://njump.me/note1egjhdvrhc4y2w58d42027p04klllcc4lnu35ra7yvvx63npcgpssxcm4uv"
+  },
+  {
+   "teller_role": "nostr · regional press relay",
+   "channel": "social",
+   "text": "Shakahola — Kilifi County gives 21 days for families to claim Shakahola massacre remains before mass burial #Shakahola #News\nhttps://news.netasgard.com/a/7c1460d0fe6f8d73?s=nostr\nhttps://live.staticflickr.com/7362/10151812053_a2055e6aab_b.jpg\nPhoto : Gary Lee Todd, Ph.D. · CC0 · Flickr",
+   "source": "https://njump.me/note12td3xv66c6y8aj6qh92dqk7cmzztw0rstnzsv8mv6g5lwxx577js6c6sku"
+  },
+  {
+   "teller_role": "nostr · regional press relay",
+   "channel": "social",
+   "text": "Kilifi County — Kilifi County gives families 21 days to claim remains of 443 Shakahola massacre victims before mass burial #After #KilifiCounty #News\nhttps://news.netasgard.com/a/0296c5665235c4e2?s=nostr\nhttps://upload.wikimedia.org/wikipedia/commons/b/b3/Spioenkop_Mass_Grave_Site.JPG\nPhoto : Nicolette de Lange · CC BY-SA · Wikimedia",
+   "source": "https://njump.me/note13xt0p6v0atck9shavll4h4pr7djktm43tkg8wes3nlcthz99a8uq88s6pv"
+  },
+  {
+   "teller_role": "nostr · regional press relay",
+   "channel": "social",
+   "text": "Kenya — Kenya Leads Africa in Clean Cooking Access Expansion #Kenya #Africa #News\nhttps://news.netasgard.com/a/2437d0fcfb33d499?s=nostr\nhttps://publish.eastleighvoice.co.ke/mugera_lock/uploads/2025/09/Kilifi-cooking.jpg",
+   "source": "https://njump.me/note1quygx0an824z0k3aj4nkn5e59tlarwjfwzydt67peq7pgnk6vddsckxl3u"
+  },
+  {
+   "teller_role": "nostr · regional press relay",
+   "channel": "social",
+   "text": "Mombasa — Mombasa officials detail legal process for recognizing Comorian community #Mombasa #News\nhttps://news.netasgard.com/a/3a3da653f8c877bb?s=nostr\nhttps://upload.wikimedia.org/wikipedia/commons/f/f5/Traditional_communal_gathering_in_Al-Qusur%2C_Ain_al-Tamr%2C_Iraq.jpg\nPhoto : حكمت العياشي · CC BY · Wikimedia",
+   "source": "https://njump.me/note1ezpylye04l2tmvuk4yrj3fyezrn6wsfjszs5mdxszdmrvtze9wtsa0vm09"
+  }
+ ],
+ "signals": [
+  {
+   "key": "sig-nursery",
+   "statement": "Nurseries raise the seedlings the planting days run on",
+   "claim_texts": [
+    "I have a tree nursery that i sell trees",
+    "Tree seedlings needed for community reforestation",
+    "we need seedlings and lunch",
+    "we need 400 more"
+   ]
+  },
+  {
+   "key": "sig-livelihood",
+   "statement": "People grow, farm and trade to get by",
+   "claim_texts": [
+    "I sell vegetables from the produce in my farm",
+    "Access to vegetables and fruits",
+    "Access to vegetables",
+    "selling mangoes",
+    "Kilifi — Kilifi MPs call for customized digital hubs to better serve local small businesses. #Push #Kilifi #News\nhttps://news.netasgard.com/a/afee480eae7775df?s=nostr\nhttps://live.staticflickr.com/5026/5621676321_85d352870c_b.jpg\nPhoto : zaneology · CC BY · Flickr",
+    "Mombasa — Mombasa officials detail legal process for recognizing Comorian community #Mombasa #News\nhttps://news.netasgard.com/a/3a3da653f8c877bb?s=nostr\nhttps://upload.wikimedia.org/wikipedia/commons/f/f5/Traditional_communal_gathering_in_Al-Qusur%2C_Ain_al-Tamr%2C_Iraq.jpg\nPhoto : حكمت العياشي · CC BY · Wikimedia"
+   ]
+  },
+  {
+   "key": "sig-charcoal",
+   "statement": "Homes still need charcoal for fuel",
+   "claim_texts": [
+    "Access to charcoal",
+    "Kenya — Kenya Leads Africa in Clean Cooking Access Expansion #Kenya #Africa #News\nhttps://news.netasgard.com/a/2437d0fcfb33d499?s=nostr\nhttps://publish.eastleighvoice.co.ke/mugera_lock/uploads/2025/09/Kilifi-cooking.jpg"
+   ]
+  },
+  {
+   "key": "sig-credit",
+   "statement": "Households need credit, loans and advances",
+   "claim_texts": [
+    "Access to Credit,goods and services",
+    "Access to Loans and Advances"
+   ]
+  },
+  {
+   "key": "sig-pool",
+   "statement": "The coast pools labour and vouchers to support each other",
+   "claim_texts": [
+    "Communities Across Kenya practicing traditional rotating labor. They pool their vouchers to support each other.",
+    "van run made the tools possible",
+    "start tool-count earlier",
+    "spades ran short",
+    "lunch for the crew"
+   ]
+  },
+  {
+   "key": "sig-mangrove",
+   "statement": "The coast is replanting its mangroves — and the nursery economy behind it is real",
+   "claim_texts": [
+    "Shoreline mangrove planting on the creek edge",
+    "Restored mangrove cover and fish-nursery habitat at Mida Creek",
+    "344 mangrove trees planted — Gongoni, Gongoni ward, Magarini, Kilifi County, Kenya",
+    "760 mangrove trees planted — Gongoni, Gongoni ward, Magarini, Kilifi County, Kenya"
+   ]
+  },
+  {
+   "key": "sig-transport",
+   "statement": "Getting to the creek and the market needs transport",
+   "claim_texts": [
+    "boat transport"
+   ]
+  },
+  {
+   "key": "sig-flood",
+   "statement": "Seasonal floods press the coast: 80,000 Kilifi families at El Niño risk, Sabaki riverside families told to evacuate, Mombasa drains blocked before storms.",
+   "claim_texts": [
+    "Kenya — Over 80,000 families in Kenya’s Kilifi County face flood risk due to El Nino rains expected in 2026-2027. #Floods #Kenya #ElNino #News #Breaking\nhttps://news.netasgard.com/a/d0ce9f4ace768908?s=nostr\nhttps://live.staticflickr.com/4084/5192480265_5c0da328be_b.jpg\nPhoto : Hashoo Foundation USA - Houston, TX · CC BY-SA · Flickr",
+    "the River Sabaki — Governor warns of rising flood risks near River Sabaki. #Kilifi #RiverSabaki #News #Breaking\nhttps://news.netasgard.com/a/296ab453542e820b?s=nostr\nhttps://images.rawpixel.com/editor_1024/cHJpdmF0ZS9zdGF0aWMvaW1hZ2VzL3dlYnNpdGUvMjAyMi0xMS9mbDQ4ODg0ODU1MzQtaW1hZ2UuanBn.jpg\nPhoto : U.S. Forest Service (source) · CC0 · Rawpixel",
+    "Mombasa — Residents urged to avoid blocking drains as city braces for seasonal storms #Mombasa #News #Breaking\nhttps://news.netasgard.com/a/30cf2123ba622a6e?s=nostr\nhttps://live.staticflickr.com/5453/9109303029_6ca709dfc2_b.jpg\nPhoto : Alan Stanton · CC BY-SA · Flickr"
+   ]
+  },
+  {
+   "key": "sig-shakahola",
+   "statement": "The county is still burying Shakahola: 443 dead from the starvation cult, families given twenty-one days to claim remains before mass burial.",
+   "claim_texts": [
+    "Shakahola — Kilifi County gives 21 days for families to claim Shakahola massacre remains before mass burial #Shakahola #News\nhttps://news.netasgard.com/a/7c1460d0fe6f8d73?s=nostr\nhttps://live.staticflickr.com/7362/10151812053_a2055e6aab_b.jpg\nPhoto : Gary Lee Todd, Ph.D. · CC0 · Flickr",
+    "Kilifi County — Kilifi County gives families 21 days to claim remains of 443 Shakahola massacre victims before mass burial #After #KilifiCounty #News\nhttps://news.netasgard.com/a/0296c5665235c4e2?s=nostr\nhttps://upload.wikimedia.org/wikipedia/commons/b/b3/Spioenkop_Mass_Grave_Site.JPG\nPhoto : Nicolette de Lange · CC BY-SA · Wikimedia"
+   ]
+  }
+ ],
+ "participants": 10,
+ "votes": {
+  "sig-mangrove": [
+   "endorse",
+   "endorse",
+   "endorse",
+   "endorse",
+   "amend",
+   "endorse",
+   "endorse",
+   null,
+   null,
+   null
+  ],
+  "sig-nursery": [
+   "endorse",
+   "endorse",
+   "endorse",
+   "endorse",
+   "endorse",
+   "endorse",
+   null,
+   null,
+   null,
+   null
+  ],
+  "sig-pool": [
+   "endorse",
+   "endorse",
+   "endorse",
+   "endorse",
+   "endorse",
+   "endorse",
+   "endorse",
+   "endorse",
+   null,
+   null
+  ],
+  "sig-livelihood": [
+   "endorse",
+   "endorse",
+   "endorse",
+   "amend",
+   "endorse",
+   "endorse",
+   null,
+   null,
+   null,
+   null
+  ],
+  "sig-credit": [
+   "endorse",
+   "endorse",
+   "endorse",
+   "endorse",
+   "endorse",
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "sig-transport": [
+   "endorse",
+   "endorse",
+   "contest",
+   "endorse",
+   "endorse",
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "sig-charcoal": [
+   "endorse",
+   "contest",
+   "contest",
+   "endorse",
+   "amend",
+   "endorse",
+   null,
+   null,
+   null,
+   null
+  ],
+  "sig-flood": [
+   "endorse",
+   "endorse",
+   "endorse",
+   "endorse",
+   "endorse",
+   "endorse",
+   null,
+   null,
+   null,
+   null
+  ],
+  "sig-shakahola": [
+   "endorse",
+   "endorse",
+   "endorse",
+   "endorse",
+   "amend",
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ },
+ "amendments": {
+  "sig-mangrove": "Next planting window needs seedlings reserved earlier.",
+  "sig-livelihood": "Include poultry and goats — not just crops and trees.",
+  "sig-charcoal": "Homes need a fuel answer while charcoal is contested — gas and briquettes both come up.",
+  "sig-shakahola": "A wound carried by the whole county — recorded here so the recovery context is never invisible."
+ },
+ "gates": {
+  "sig-nursery": "may_be_priced",
+  "sig-livelihood": "may_be_priced",
+  "sig-charcoal": "not_yet",
+  "sig-credit": "may_be_priced",
+  "sig-pool": "commons_only",
+  "sig-mangrove": "may_be_priced",
+  "sig-transport": "not_yet",
+  "sig-flood": "not_yet",
+  "sig-shakahola": "not_yet"
+ },
+ "interventions": [
+  {
+   "view": "from_plans",
+   "name": "Shoreline mangrove planting on the creek edge",
+   "note": "Kilifi County Government, from 2027-02. Mangrove restoration and fish-nursery habitat at Mida Creek.",
+   "signals": [
+    "sig-mangrove"
+   ],
+   "counter": [
+    "sig-charcoal"
+   ],
+   "priced": true
+  },
+  {
+   "view": "from_plans",
+   "name": "Mida Creek Community Conservation Plan",
+   "note": "Community conservation plan — restored cover and fish-nursery habitat.",
+   "signals": [
+    "sig-mangrove"
+   ],
+   "counter": [
+    "sig-charcoal"
+   ],
+   "priced": true
+  },
+  {
+   "view": "from_plans",
+   "name": "Artizen Season 7 — curated fund",
+   "note": "Curated season fund — carries the Kwale Mangrove Nursery action.",
+   "signals": [
+    "sig-mangrove"
+   ],
+   "priced": true
+  },
+  {
+   "view": "from_place",
+   "name": "Kwale shore planting day",
+   "note": "Completed: 480 seedlings planted by 12 people; the nursery voucher covered stock.",
+   "signals": [
+    "sig-mangrove",
+    "sig-nursery",
+    "sig-pool"
+   ],
+   "priced": false
+  },
+  {
+   "view": "from_place",
+   "name": "ROLA commitment pool",
+   "note": "141 vouchers, 1,640 swaps — rotating labour pooled across Kenya.",
+   "signals": [
+    "sig-pool"
+   ],
+   "priced": false
+  },
+  {
+   "view": "from_place",
+   "name": "Voucher commitments — produce, credit, fuel",
+   "note": "Real Sarafu commitments from issuers on this coast — giftable, redeemed in kind.",
+   "signals": [
+    "sig-livelihood",
+    "sig-credit",
+    "sig-charcoal"
+   ],
+   "priced": false
+  },
+  {
+   "view": "from_place",
+   "name": "treegens mangrove plantings",
+   "note": "Field records around Gongoni — hundreds of verified plantings.",
+   "signals": [
+    "sig-mangrove",
+    "sig-nursery"
+   ],
+   "priced": false
+  }
+ ],
+ "sips": [
+  {
+   "kind": "node",
+   "title": "The commitment pool",
+   "what_changes": "The ROLA pool already moves 1,640 swaps of labour and goods. If planting days join it, the pool becomes the staffing layer the schemes lack.",
+   "time_to_show": "months",
+   "evidence_signals": [
+    "sig-pool"
+   ]
+  },
+  {
+   "kind": "threshold",
+   "title": "What twelve people do in a day",
+   "what_changes": "480 seedlings in one day by twelve people. Two more crews at that rate close the propagule gap inside one season.",
+   "time_to_show": "one planting day",
+   "evidence_signals": [
+    "sig-mangrove"
+   ]
+  },
+  {
+   "kind": "window",
+   "title": "The planting window",
+   "what_changes": "Planting windows are tidal and seasonal. Missing the window costs a year of establishment.",
+   "time_to_show": "this season",
+   "evidence_signals": [
+    "sig-mangrove",
+    "sig-nursery"
+   ]
+  }
+ ],
+ "social_exports": [
+  "tools/social/exports/kenya-coast.json"
+ ]
 }

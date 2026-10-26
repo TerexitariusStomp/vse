@@ -19,7 +19,7 @@ export async function assembleResults(env: Env, placeId: string) {
   ).results ?? []
   const claims = (
     await db.prepare(
-      `SELECT id, story_id, text, span_start, span_end, signal_id FROM claims
+      `SELECT id, story_id, text, span_start, span_end, signal_id, proposer FROM claims
        WHERE place_id = ? AND status = 'verified' AND signal_id IS NOT NULL`,
     ).bind(placeId).all()
   ).results ?? []
@@ -155,7 +155,7 @@ export async function assembleResults(env: Env, placeId: string) {
       text: s.text,
       source: s.source ?? undefined,
     })),
-    claims: (claims as any[]).map((c) => ({ id: c.id, story_id: c.story_id, text: c.text, span: [c.span_start, c.span_end], signal_id: c.signal_id })),
+    claims: (claims as any[]).map((c) => ({ id: c.id, story_id: c.story_id, text: c.text, span: [c.span_start, c.span_end], signal_id: c.signal_id, proposer: c.proposer })),
     signals: signalsOut,
     interventions: { from_plans: interventionOut('from_plans'), from_place: interventionOut('from_place') },
     sips: (sips as any[]).map((s) => ({
