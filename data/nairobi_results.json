@@ -1,0 +1,628 @@
+{
+  "_about": "Results for Nairobi street economy & parallel rails, published by a Value Structuring Engine.",
+  "place": {
+    "id": "nairobi",
+    "name": "Nairobi street economy & parallel rails",
+    "kind": "city, Kenya — public posts, Sept–Oct 2026",
+    "summary": "Two economies in one city: the CBD's matatus, hawkers and street food; and Kibera's Bitcoin circular economy. Underneath both, water cuts, drainage warnings and civic pressure.",
+    "geo": {
+      "lat": -1.2921,
+      "lon": 36.8219
+    },
+    "readings": [
+      {
+        "label": "Public posts naming Nairobi in the indexer window",
+        "value": "~388 posts · 90-day window",
+        "source": "Rooted audience-identity index"
+      },
+      {
+        "label": "Kibera circular economy",
+        "value": "3.78M sats reported circulating locally across 11 projects",
+        "source": "public nostr post (Blink/BTC Map report)"
+      }
+    ]
+  },
+  "pipeline": [
+    {
+      "stage": "Listening",
+      "detail": "stories told in people’s own words",
+      "count": 19,
+      "unit": "stories"
+    },
+    {
+      "stage": "Making sense",
+      "detail": "exact excerpts extracted from stories",
+      "count": 23,
+      "unit": "excerpts"
+    },
+    {
+      "stage": "Consolidating",
+      "detail": "excerpts gathered into signals",
+      "count": 4,
+      "unit": "signals"
+    },
+    {
+      "stage": "People check",
+      "detail": "contributors endorse, amend or contest",
+      "count": 8,
+      "unit": "participants"
+    }
+  ],
+  "stories": [
+    {
+      "id": "0303d11f-533e-47c9-9d4e-65cc841dc877",
+      "teller_role": "nostr · 8c8eefc64fdb7e723b404226",
+      "channel": "social",
+      "text": "🎙️ FROM THE FOUNDER’S DESK | EPISODE 4\n\nWhat happens when Bitcoin is built around real community needs?\n\nIn Episode 4, we sit down with Ronnie Mdawida, Founder of AfriBit Kibera. 🇰🇪 \n\nWe explore how AfriBit Kibera is building a Bitcoin circular economy in Kibera, Nairobi.\n\nWe discuss:\n🔸  Ronnie’s Bitcoin journey: How he discovered Bitcoin in 2019. And how it changed his view of money.\n\n♻️ Building around community needs: Waste management. Youth opportunities. Local businesses. Savings.\n\n🔸 Bitcoin and Lightning: How Lightning helps make small payments easier and more practical.\n\n🤝 Building trus",
+      "source": "https://njump.me/note1etxj489v3ntmmxdtkenmmy70fgah7lpnuj3p3n0ev2j2w75gnuwq85n2cp"
+    },
+    {
+      "id": "422bc2ff-2e05-4fce-810b-9a8219f67505",
+      "teller_role": "nostr · f26326961a8a5cf1b1a37831",
+      "channel": "social",
+      "text": "What does bitcoin feel like when it's the only door?\n\nIn the West we weigh it against SpaceX or index funds.\n\nIn Nairobi, with a smartphone, it's the ONLY asset you can own.\n\nNot a portfolio choice.\n\nA whole generation walking through one door.\n\nhttps://vod.ageofabundance.live/ep-068/clips/x-clip-15-the-young-person-in-nairobi-who-only-knows-bitcoin.mp4",
+      "source": "https://njump.me/note1rkm6ftjv8fur4kv7g2smvghwyw72juptx566kfp8mfk555ctqh7qamykra"
+    },
+    {
+      "id": "0958ff94-ebed-4762-b5a1-e5affaafca6c",
+      "teller_role": "nostr · Machakos Bitcoin Academy",
+      "channel": "social",
+      "text": "The boy is back from Nairobi CBD. 😭\nI have seen things.\nI have boarded matatus.\nI have crossed roads with a survival rate of 50%.\nI have witnessed economic activity beyond human comprehension.\nI am tired. 💀 \n\n",
+      "source": "https://njump.me/note177vtqtdq3zktgefvyeycleahspmnjcu7cefpf4vjlp8tcswsdvkszm2at4"
+    },
+    {
+      "id": "4755ca55-d81f-44e0-b336-1bf474f7cd49",
+      "teller_role": "nostr · 4ed4c0774ed88ca6b12e5ca0",
+      "channel": "social",
+      "text": "KMRU grew up in Nairobi around matatus, buses fitted with sound systems loud enough to shake the street. He found FL Studio on a school computer and started there. His grandfather was a well-known Kenyan benga musician whose catalog he now reissues.\n\nmugenradio.com",
+      "source": "https://njump.me/note1dp3d089ttd4kj5w5708fsnsyrgulrtnw4enwgegnjml9dk8dcauspj6jem"
+    },
+    {
+      "id": "e5c8dc57-c579-4ef8-8fef-ec9e4ba3bf55",
+      "teller_role": "nostr · 6cac898d7523e97582dec184",
+      "channel": "social",
+      "text": "Earned some sats and spent them on lunch ingredients at Ruth Shop Kibera. Paid over lightning ⚡️. This is what the economy looks like on the ground.\nhttps://btcmap.org/merchant/32012 Zap ruthkwamboka@blink.sv\n#spedn\nhttps://blossom.primal.net/e7573a4ded68e36283bc4ed614a7cf800521582564904e2a4272ef370feba080.mov",
+      "source": "https://njump.me/note1cv5spgxp478r8h4vvjxm9xfftdwdfxdekgzzqw6hhh96jl83vxpsumhry2"
+    },
+    {
+      "id": "75ee95ff-0ffb-4d6e-b780-83a551cdc151",
+      "teller_role": "nostr · Machakos Bitcoin Academy",
+      "channel": "social",
+      "text": "Ate kebabs and smocha in the streets of Kanairo today. 😊\nThe economy may be winning.\nThe rent may be plotting.\nBut for a brief moment, standing on a Nairobi street with a smocha in one hand and absolutely no financial solutions in the other...\nlife was good. 😭🌭 \n\n",
+      "source": "https://njump.me/note1wjv34ramaqgzxyg6wfx4nmfgz5whtzqftx0q2kscd9z5h47syszsrrjj6d"
+    },
+    {
+      "id": "99d8abe6-a931-4d68-8e96-12684be0e1c7",
+      "teller_role": "nostr · Machakos Bitcoin Academy",
+      "channel": "social",
+      "text": "The boy is headed to Nairobi CBD for a few errands. 🇰🇪\nPray for me.\nNot because the errands are difficult.\nBecause Nairobi has a way of introducing new expenses you never planned for. 😭💔💀\n#nostr #nairobi  \n\n\n\nhttps://blossom.primal.net/1bbaff4ef4927a3e6b0f9e3ec49eadda603523a6bc0ec243d3cf722416aeadab.jpg",
+      "source": "https://njump.me/note1w5ty6km4udsyul4t7h39xkalpd0mryckaa0zwfxaskew0kxjjcfqywa3aq"
+    },
+    {
+      "id": "dc0996d8-8ff9-48dd-877e-7ffdb7b0b710",
+      "teller_role": "nostr · Machakos Bitcoin Academy",
+      "channel": "social",
+      "text": "Nairobi CBD is a very strange place.\nYou'll almost get hit by a bus, buy socks, hear three different preachers, dodge ten hawkers and witness a minor crime...\nall before lunch. 😭💀 \n\n",
+      "source": "https://njump.me/note1sqhcwvvcsdfjkxvw3cmf7l85p0r9j076x0pduwp9j0w8tpu3ug7q26zx47"
+    },
+    {
+      "id": "489ba01a-cc15-4c7b-8ea1-66c33e0117ed",
+      "teller_role": "nostr · 8fe53b37518e3dbe9bab26d9",
+      "channel": "social",
+      "text": "Blink brought the BTC Map merchant directory inside the wallet this week — on a shared open standard other wallets are adopting too, so finding where to spend Bitcoin no longer means leaving the app.\n\nIn Nairobi, one settlement reported 3.78M sats circulating locally across 11 projects. BTCPay shipped a Core Lightning update but kept external access disabled while it recovers. And a reported crackdown in Afghanistan was a reminder that where Bitcoin gets banned, it's often needed most.\n\nhttps://www.blink.sv/blog/weekly-brief-2026-36",
+      "source": "https://njump.me/note1j3tzl8tgeyxlczgl57x3tedj3h69nc7jnq57fk5ldg09h904gxuqmwsfxs"
+    },
+    {
+      "id": "c4d58a85-ea52-49e6-804e-084c3f6f86e0",
+      "teller_role": "bsky · did:plc:k7hva42mt6m77h7c",
+      "channel": "social",
+      "text": "Nairobi — Nairobi braces for heavy rains as El Niño threatens flood risks #Plan #Nairobi #News #Breaking",
+      "source": "https://bsky.app/profile/did:plc:k7hva42mt6m77h7cybibcbxe/post/3mwic5nz3us2x"
+    },
+    {
+      "id": "5a6efc28-f0c8-454d-a3d6-025cb74405e8",
+      "teller_role": "nostr · ad87ddf92626c2d273aa05ab",
+      "channel": "social",
+      "text": "Nairobi — Over 17 Nairobi neighborhoods to lose water for 26 hours starting Friday #Nairobi #News\nhttps://news.netasgard.com/a/f8ebc251f5cb03e7?s=nostr\nhttps://upload.wikimedia.org/wikipedia/commons/6/66/Darjeeling_India_truck_delivering_water_May_2009.jpg\nPhoto : shankar s. · CC BY · Wikimedia",
+      "source": "https://njump.me/note1dzxmw857ze6vtnsgq9a67t6uy4wn0t2nw6jqx0qtduus3d6xxxnslghmmz"
+    },
+    {
+      "id": "608fdd32-0e33-46a4-a2cb-9307e9e78623",
+      "teller_role": "nostr · 8343de664ea27d3ca7a87694",
+      "channel": "social",
+      "text": "\"There's a whole community in Kibera that uses Bitcoin day-to-day, and you will never see that business come across to you...\"\n\nRobert Kirubi recently explained to a banker in Kenya that members of the nostr:nprofile1qqsxetyf346j86t4st0vrp9ekq8vwzxc4u7hepnpn3zuafr83wctctqpz3mhxue69uhhyetvv9ujuetcd96zuur4vgq3vamnwvaz7tmjv4kxz7fwwpexjmtpdshxuet5ajtzd2 community have been using bitcoin as everyday money for years now\nhttps://v.nostr.build/BTPhhRsPOoaHG0hIoHZStj.mp4",
+      "source": "https://njump.me/note1erwkuqeww56r00txc5tk7prv22pld74hpn4qm536aks35w4ce7hs3m3vvd"
+    },
+    {
+      "id": "7586b2c5-92ee-484e-8aaa-9503b4274cf6",
+      "teller_role": "nostr · 8c8eefc64fdb7e723b404226",
+      "channel": "social",
+      "text": "NEW: 🇰🇪 Bitcoin in Africa Is Building Hubs and Routes for Its Community.\n\nDada Hub, the women only Bitcoin building space in Nairobi, has also been expanding. It is growing how Dadas stay connected to the wider community.\n https://image.nostr.build/c93a24c419b5106c2f1a56159521fd9255ab4be3565c3f0f32d54c34a06789c5.jpg\n\nRead More: https://bitcoinnews.africa/bitcoin-community-africa-tour-hub/",
+      "source": "https://njump.me/note1smpq8cjkllahpwxsletjjyj9uq7z8fgv35h7k4467lwaxavc7sys0madde"
+    },
+    {
+      "id": "923cfcd4-a99b-43f8-8390-cc3b30d3002c",
+      "teller_role": "nostr · ad87ddf92626c2d273aa05ab",
+      "channel": "social",
+      "text": "Nairobi — Eastleigh traders call for action after buses block 10th Street junction #Nairobi #News\nhttps://news.netasgard.com/a/f43593ce202884d9?s=nostr\nhttps://live.staticflickr.com/111/301209912_e7cb9a1e88_b.jpg\nPhoto : madpai · CC BY · Flickr",
+      "source": "https://njump.me/note1tzk6xa0qap643q5tawfact2s3q7qfa9m32pe9wzhg3z5cye930kq8tvutk"
+    },
+    {
+      "id": "defdb65f-4ddb-4be0-aac0-89c202c00244",
+      "teller_role": "nostr · ad87ddf92626c2d273aa05ab",
+      "channel": "social",
+      "text": "Nairobi — Former Deputy President criticizes governor over drainage issues as El Niño worsens. #Nairobi #News\nhttps://news.netasgard.com/a/ce9343cb68fce19a?s=nostr\nhttps://live.staticflickr.com/122/263061686_4d1a3193a4_b.jpg\nPhoto : Xurble · CC BY · Flickr",
+      "source": "https://njump.me/note1ls6kj7sdm34fsa8rwl9m9r4edy6rtnkxmvvvsvhf4krpedjn96ksg37xxv"
+    },
+    {
+      "id": "98ed7d7d-8203-46a1-a61c-fc0f0cc94471",
+      "teller_role": "nostr · ad87ddf92626c2d273aa05ab",
+      "channel": "social",
+      "text": "Nairobi — Matatu collision kills five, injures eight on Kenya’s highway #Nairobi #News\nhttps://news.netasgard.com/a/fcaf292e433065dd?s=nostr\nhttps://live.staticflickr.com/6098/6265791102_27e0b7e570_b.jpg\nPhoto : Accretion Disc · CC BY · Flickr",
+      "source": "https://njump.me/note1zkffh006mnmk8cj43nj2a250vrcf6ez66szvyc9yfk0jhgyksrus7thl86"
+    },
+    {
+      "id": "5a63d4d4-774c-4b39-9a82-e816ffff697b",
+      "teller_role": "nostr · ad87ddf92626c2d273aa05ab",
+      "channel": "social",
+      "text": "Nairobi — Human rights defenders in Nairobi plan to protest over the detention of Ugandan opposition leader Kizza Besigye. #Kenya #Nairobi #News\nhttps://news.netasgard.com/a/5290a91a4a6a90a4?s=nostr\nhttps://live.staticflickr.com/2745/4357819482_97dd8280b1_b.jpg\nPhoto : Kris Krug · CC BY-SA · Flickr",
+      "source": "https://njump.me/note13vldxzv4xvyx88uxalszyh3ntvguq3nmr3a8e5d6l52qc5925hksx8l8e8"
+    },
+    {
+      "id": "17af7c17-3684-46e1-a45b-142ec640a1bf",
+      "teller_role": "nostr · ad87ddf92626c2d273aa05ab",
+      "channel": "social",
+      "text": "Nairobi — Activists in Nairobi plan Monday protest over Kizza Besigye’s disappearance and government response. #Release #Nairobi #Kenyan #News\nhttps://news.netasgard.com/a/046f87d54f7933ca?s=nostr\nhttps://upload.wikimedia.org/wikipedia/commons/3/3e/17.04.2018_Protest_Demonstrations%2C_Pashinyan%2C_Yerevan.jpg\nPhoto : Ավետիսյան91 · CC BY-SA · Wikimedia",
+      "source": "https://njump.me/note193rl7vm3rzcm8z9xll0fud6prn0e7kyu8c2nddmf9s8e74zqn5uqam7cvs"
+    },
+    {
+      "id": "d246aa31-3fe4-42cf-954a-4e1d4fde80d5",
+      "teller_role": "nostr · ad87ddf92626c2d273aa05ab",
+      "channel": "social",
+      "text": "Nairobi — Nairobi police warn against CBD rally as movement prepares for Sunday event #Nairobi #News\nhttps://news.netasgard.com/a/16db792cfd8b2ffa?s=nostr\nhttps://live.staticflickr.com/5498/9636527878_b7e8935351.jpg\nPhoto : powerofgreatbarrierreef · CC BY · Flickr",
+      "source": "https://njump.me/note17ezs59mfc0j6y3dpcex4quya5uwut32xm4wwlhqsm0st0dquj7ksat4tel"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c541d16f-c77d-439e-9543-5245ae35e51d",
+      "story_id": "422bc2ff-2e05-4fce-810b-9a8219f67505",
+      "text": "In Nairobi, with a smartphone, it's the ONLY asset you can own",
+      "span": [
+        110,
+        172
+      ],
+      "signal_id": "da8bf760-7275-4f2d-ab48-f2e0920c61e9",
+      "proposer": "model"
+    },
+    {
+      "id": "ed013c81-0d0a-4c4c-a9d4-53d8d5e7faed",
+      "story_id": "0958ff94-ebed-4762-b5a1-e5affaafca6c",
+      "text": "I am tired",
+      "span": [
+        194,
+        204
+      ],
+      "signal_id": "87e42c6d-34ee-4273-9bcb-6bb5f47d3d3b",
+      "proposer": "model"
+    },
+    {
+      "id": "160045cf-e6f2-46fd-85d9-da9e2fdbaf53",
+      "story_id": "0958ff94-ebed-4762-b5a1-e5affaafca6c",
+      "text": "I am tired. 💀",
+      "span": [
+        194,
+        208
+      ],
+      "signal_id": "87e42c6d-34ee-4273-9bcb-6bb5f47d3d3b",
+      "proposer": "model"
+    },
+    {
+      "id": "f83861d4-3eb8-4d3d-b52d-c690219a56a0",
+      "story_id": "99d8abe6-a931-4d68-8e96-12684be0e1c7",
+      "text": "Pray for me",
+      "span": [
+        57,
+        68
+      ],
+      "signal_id": "87e42c6d-34ee-4273-9bcb-6bb5f47d3d3b",
+      "proposer": "model"
+    },
+    {
+      "id": "6c18a61c-2032-42b8-ae8d-08338cccb250",
+      "story_id": "99d8abe6-a931-4d68-8e96-12684be0e1c7",
+      "text": "Because Nairobi has a way of introducing new expenses you never planned for",
+      "span": [
+        109,
+        184
+      ],
+      "signal_id": "87e42c6d-34ee-4273-9bcb-6bb5f47d3d3b",
+      "proposer": "model"
+    },
+    {
+      "id": "134fc837-762e-4de5-a47d-136233ba0da3",
+      "story_id": "75ee95ff-0ffb-4d6e-b780-83a551cdc151",
+      "text": "The economy may be winning",
+      "span": [
+        58,
+        84
+      ],
+      "signal_id": "87e42c6d-34ee-4273-9bcb-6bb5f47d3d3b",
+      "proposer": "model"
+    },
+    {
+      "id": "30d7ab81-60e4-4ac0-b5f2-a8cf55581f7f",
+      "story_id": "75ee95ff-0ffb-4d6e-b780-83a551cdc151",
+      "text": "The rent may be plotting",
+      "span": [
+        86,
+        110
+      ],
+      "signal_id": "87e42c6d-34ee-4273-9bcb-6bb5f47d3d3b",
+      "proposer": "model"
+    },
+    {
+      "id": "35c14348-5cad-456a-996b-7c9fd871f4c7",
+      "story_id": "75ee95ff-0ffb-4d6e-b780-83a551cdc151",
+      "text": "absolutely no financial solutions",
+      "span": [
+        195,
+        228
+      ],
+      "signal_id": "87e42c6d-34ee-4273-9bcb-6bb5f47d3d3b",
+      "proposer": "model"
+    },
+    {
+      "id": "95ec2d79-1d05-4acf-807e-c28d5bdfa0b3",
+      "story_id": "0303d11f-533e-47c9-9d4e-65cc841dc877",
+      "text": "What happens when Bitcoin is built around real community needs?",
+      "span": [
+        41,
+        104
+      ],
+      "signal_id": "da8bf760-7275-4f2d-ab48-f2e0920c61e9",
+      "proposer": "model"
+    },
+    {
+      "id": "30b0c4d7-d06d-4023-9585-c732aab96b06",
+      "story_id": "c4d58a85-ea52-49e6-804e-084c3f6f86e0",
+      "text": "Nairobi — Nairobi braces for heavy rains as El Niño threatens flood risks #Plan #Nairobi #News #Breaking",
+      "span": [
+        0,
+        104
+      ],
+      "signal_id": "58943ed1-0551-43c2-86b3-1df497e64179",
+      "proposer": "fallback"
+    },
+    {
+      "id": "62f04567-e84c-48c7-8487-e2933123cf31",
+      "story_id": "dc0996d8-8ff9-48dd-877e-7ffdb7b0b710",
+      "text": "Nairobi CBD is a very strange place.\nYou'll almost get hit by a bus, buy socks, hear three different preachers, dodge ten hawkers and witness a minor crime...\nall before lunch. 😭💀 \n\n",
+      "span": [
+        0,
+        184
+      ],
+      "signal_id": "87e42c6d-34ee-4273-9bcb-6bb5f47d3d3b",
+      "proposer": "analyst"
+    },
+    {
+      "id": "3a0c399b-bf0b-49f9-9006-e6c41e01c0e6",
+      "story_id": "4755ca55-d81f-44e0-b336-1bf474f7cd49",
+      "text": "KMRU grew up in Nairobi around matatus, buses fitted with sound systems loud enough to shake the street. He found FL Studio on a school computer and started there. His grandfather was a well-known Kenyan benga musician whose catalog he now reissues.\n\nmugenradio.com",
+      "span": [
+        0,
+        265
+      ],
+      "signal_id": "87e42c6d-34ee-4273-9bcb-6bb5f47d3d3b",
+      "proposer": "analyst"
+    },
+    {
+      "id": "a4f776d7-580d-4a05-9424-feb4dfd231f6",
+      "story_id": "e5c8dc57-c579-4ef8-8fef-ec9e4ba3bf55",
+      "text": "Earned some sats and spent them on lunch ingredients at Ruth Shop Kibera. Paid over lightning ⚡️. This is what the economy looks like on the ground.\nhttps://btcmap.org/merchant/32012 Zap ruthkwamboka@blink.sv\n#spedn\nhttps://blossom.primal.net/e7573a4ded68e36283bc4ed614a7cf800521582564904e2a4272ef370feba080.mov",
+      "span": [
+        0,
+        311
+      ],
+      "signal_id": "da8bf760-7275-4f2d-ab48-f2e0920c61e9",
+      "proposer": "analyst"
+    },
+    {
+      "id": "52b96dc0-8a25-4507-b3ff-26dba9ae544c",
+      "story_id": "d246aa31-3fe4-42cf-954a-4e1d4fde80d5",
+      "text": "Nairobi — Nairobi police warn against CBD rally as movement prepares for Sunday event #Nairobi #News\nhttps://news.netasgard.com/a/16db792cfd8b2ffa?s=nostr\nhttps://live.staticflickr.com/5498/9636527878_b7e8935351.jpg\nPhoto : powerofgreatbarrierreef · CC BY · Flickr",
+      "span": [
+        0,
+        264
+      ],
+      "signal_id": "cd9d3ae9-6024-4804-bdc2-210ee828d3d2",
+      "proposer": "analyst"
+    },
+    {
+      "id": "4c51af6f-918b-4324-bab1-868dff88341e",
+      "story_id": "defdb65f-4ddb-4be0-aac0-89c202c00244",
+      "text": "Nairobi — Former Deputy President criticizes governor over drainage issues as El Niño worsens. #Nairobi #News\nhttps://news.netasgard.com/a/ce9343cb68fce19a?s=nostr\nhttps://live.staticflickr.com/122/263061686_4d1a3193a4_b.jpg\nPhoto : Xurble · CC BY · Flickr",
+      "span": [
+        0,
+        256
+      ],
+      "signal_id": "58943ed1-0551-43c2-86b3-1df497e64179",
+      "proposer": "analyst"
+    },
+    {
+      "id": "fa9f0c0e-a7f1-4b7f-acdd-51813cd7c66b",
+      "story_id": "5a6efc28-f0c8-454d-a3d6-025cb74405e8",
+      "text": "Nairobi — Over 17 Nairobi neighborhoods to lose water for 26 hours starting Friday #Nairobi #News\nhttps://news.netasgard.com/a/f8ebc251f5cb03e7?s=nostr\nhttps://upload.wikimedia.org/wikipedia/commons/6/66/Darjeeling_India_truck_delivering_water_May_2009.jpg\nPhoto : shankar s. · CC BY · Wikimedia",
+      "span": [
+        0,
+        295
+      ],
+      "signal_id": "58943ed1-0551-43c2-86b3-1df497e64179",
+      "proposer": "analyst"
+    },
+    {
+      "id": "b4a075c1-4c1c-44cf-857a-0403175e9039",
+      "story_id": "608fdd32-0e33-46a4-a2cb-9307e9e78623",
+      "text": "\"There's a whole community in Kibera that uses Bitcoin day-to-day, and you will never see that business come across to you...\"\n\nRobert Kirubi recently explained to a banker in Kenya that members of the nostr:nprofile1qqsxetyf346j86t4st0vrp9ekq8vwzxc4u7hepnpn3zuafr83wctctqpz3mhxue69uhhyetvv9ujuetcd96zuur4vgq3vamnwvaz7tmjv4kxz7fwwpexjmtpdshxuet5ajtzd2 community have been using bitcoin as everyday money for years now\nhttps://v.nostr.build/BTPhhRsPOoaHG0hIoHZStj.mp4",
+      "span": [
+        0,
+        466
+      ],
+      "signal_id": "da8bf760-7275-4f2d-ab48-f2e0920c61e9",
+      "proposer": "analyst"
+    },
+    {
+      "id": "780ae40b-0936-4fd9-9f49-85556afa2866",
+      "story_id": "5a63d4d4-774c-4b39-9a82-e816ffff697b",
+      "text": "Nairobi — Human rights defenders in Nairobi plan to protest over the detention of Ugandan opposition leader Kizza Besigye. #Kenya #Nairobi #News\nhttps://news.netasgard.com/a/5290a91a4a6a90a4?s=nostr\nhttps://live.staticflickr.com/2745/4357819482_97dd8280b1_b.jpg\nPhoto : Kris Krug · CC BY-SA · Flickr",
+      "span": [
+        0,
+        299
+      ],
+      "signal_id": "cd9d3ae9-6024-4804-bdc2-210ee828d3d2",
+      "proposer": "analyst"
+    },
+    {
+      "id": "c26fcf56-4c8d-400f-a5e6-f8e4a215d6f0",
+      "story_id": "923cfcd4-a99b-43f8-8390-cc3b30d3002c",
+      "text": "Nairobi — Eastleigh traders call for action after buses block 10th Street junction #Nairobi #News\nhttps://news.netasgard.com/a/f43593ce202884d9?s=nostr\nhttps://live.staticflickr.com/111/301209912_e7cb9a1e88_b.jpg\nPhoto : madpai · CC BY · Flickr",
+      "span": [
+        0,
+        244
+      ],
+      "signal_id": "58943ed1-0551-43c2-86b3-1df497e64179",
+      "proposer": "analyst"
+    },
+    {
+      "id": "7ba2fade-3fcf-4c83-b24e-3016a2ef9d99",
+      "story_id": "17af7c17-3684-46e1-a45b-142ec640a1bf",
+      "text": "Nairobi — Activists in Nairobi plan Monday protest over Kizza Besigye’s disappearance and government response. #Release #Nairobi #Kenyan #News\nhttps://news.netasgard.com/a/046f87d54f7933ca?s=nostr\nhttps://upload.wikimedia.org/wikipedia/commons/3/3e/17.04.2018_Protest_Demonstrations%2C_Pashinyan%2C_Yerevan.jpg\nPhoto : Ավետիսյան91 · CC BY-SA · Wikimedia",
+      "span": [
+        0,
+        353
+      ],
+      "signal_id": "cd9d3ae9-6024-4804-bdc2-210ee828d3d2",
+      "proposer": "analyst"
+    },
+    {
+      "id": "1afe8816-4234-4886-bbd4-2bc34f81605f",
+      "story_id": "98ed7d7d-8203-46a1-a61c-fc0f0cc94471",
+      "text": "Nairobi — Matatu collision kills five, injures eight on Kenya’s highway #Nairobi #News\nhttps://news.netasgard.com/a/fcaf292e433065dd?s=nostr\nhttps://live.staticflickr.com/6098/6265791102_27e0b7e570_b.jpg\nPhoto : Accretion Disc · CC BY · Flickr",
+      "span": [
+        0,
+        243
+      ],
+      "signal_id": "58943ed1-0551-43c2-86b3-1df497e64179",
+      "proposer": "analyst"
+    },
+    {
+      "id": "1ec9fafa-0f5f-4fc5-b817-d636ae42c381",
+      "story_id": "7586b2c5-92ee-484e-8aaa-9503b4274cf6",
+      "text": "NEW: 🇰🇪 Bitcoin in Africa Is Building Hubs and Routes for Its Community.\n\nDada Hub, the women only Bitcoin building space in Nairobi, has also been expanding. It is growing how Dadas stay connected to the wider community.\n https://image.nostr.build/c93a24c419b5106c2f1a56159521fd9255ab4be3565c3f0f32d54c34a06789c5.jpg\n\nRead More: https://bitcoinnews.africa/bitcoin-community-africa-tour-hub/",
+      "span": [
+        0,
+        393
+      ],
+      "signal_id": "da8bf760-7275-4f2d-ab48-f2e0920c61e9",
+      "proposer": "analyst"
+    },
+    {
+      "id": "86c8719b-fb17-4a93-a85d-4c4c62a241b8",
+      "story_id": "489ba01a-cc15-4c7b-8ea1-66c33e0117ed",
+      "text": "Blink brought the BTC Map merchant directory inside the wallet this week — on a shared open standard other wallets are adopting too, so finding where to spend Bitcoin no longer means leaving the app.\n\nIn Nairobi, one settlement reported 3.78M sats circulating locally across 11 projects. BTCPay shipped a Core Lightning update but kept external access disabled while it recovers. And a reported crackdown in Afghanistan was a reminder that where Bitcoin gets banned, it's often needed most.\n\nhttps://www.blink.sv/blog/weekly-brief-2026-36",
+      "span": [
+        0,
+        538
+      ],
+      "signal_id": "da8bf760-7275-4f2d-ab48-f2e0920c61e9",
+      "proposer": "analyst"
+    }
+  ],
+  "signals": [
+    {
+      "id": "87e42c6d-34ee-4273-9bcb-6bb5f47d3d3b",
+      "statement": "The CBD runs on informal hustle — matatus, hawkers, street food, surprise expenses; the economy works but at survival odds.",
+      "supporting_claim_ids": [
+        "ed013c81-0d0a-4c4c-a9d4-53d8d5e7faed",
+        "160045cf-e6f2-46fd-85d9-da9e2fdbaf53",
+        "f83861d4-3eb8-4d3d-b52d-c690219a56a0",
+        "6c18a61c-2032-42b8-ae8d-08338cccb250",
+        "134fc837-762e-4de5-a47d-136233ba0da3",
+        "30d7ab81-60e4-4ac0-b5f2-a8cf55581f7f",
+        "35c14348-5cad-456a-996b-7c9fd871f4c7",
+        "62f04567-e84c-48c7-8487-e2933123cf31",
+        "3a0c399b-bf0b-49f9-9006-e6c41e01c0e6"
+      ],
+      "voices": 5,
+      "recurrence": 9,
+      "verification": {
+        "participants": 6,
+        "endorse": 6,
+        "amend": 0,
+        "contest": 0,
+        "amendments": [],
+        "gate": "may_be_priced"
+      }
+    },
+    {
+      "id": "da8bf760-7275-4f2d-ab48-f2e0920c61e9",
+      "statement": "A parallel economy runs underneath — sats spent at Ruth Shop, a circular economy in Kibera, women building the rails.",
+      "supporting_claim_ids": [
+        "c541d16f-c77d-439e-9543-5245ae35e51d",
+        "95ec2d79-1d05-4acf-807e-c28d5bdfa0b3",
+        "a4f776d7-580d-4a05-9424-feb4dfd231f6",
+        "b4a075c1-4c1c-44cf-857a-0403175e9039",
+        "1ec9fafa-0f5f-4fc5-b817-d636ae42c381",
+        "86c8719b-fb17-4a93-a85d-4c4c62a241b8"
+      ],
+      "voices": 6,
+      "recurrence": 6,
+      "verification": {
+        "participants": 8,
+        "endorse": 8,
+        "amend": 0,
+        "contest": 0,
+        "amendments": [],
+        "gate": "commons_only"
+      }
+    },
+    {
+      "id": "cd9d3ae9-6024-4804-bdc2-210ee828d3d2",
+      "statement": "Civic pressure continues — protests planned over the Besigye detention, police warning against the CBD rally.",
+      "supporting_claim_ids": [
+        "52b96dc0-8a25-4507-b3ff-26dba9ae544c",
+        "780ae40b-0936-4fd9-9f49-85556afa2866",
+        "7ba2fade-3fcf-4c83-b24e-3016a2ef9d99"
+      ],
+      "voices": 3,
+      "recurrence": 3,
+      "verification": {
+        "participants": 6,
+        "endorse": 6,
+        "amend": 0,
+        "contest": 0,
+        "amendments": [],
+        "gate": "not_yet"
+      }
+    },
+    {
+      "id": "58943ed1-0551-43c2-86b3-1df497e64179",
+      "statement": "Basic infrastructure is failing — 17 neighbourhoods lose water, drainage criticised ahead of El Niño, matatu safety kills.",
+      "supporting_claim_ids": [
+        "30b0c4d7-d06d-4023-9585-c732aab96b06",
+        "4c51af6f-918b-4324-bab1-868dff88341e",
+        "fa9f0c0e-a7f1-4b7f-acdd-51813cd7c66b",
+        "c26fcf56-4c8d-400f-a5e6-f8e4a215d6f0",
+        "1afe8816-4234-4886-bbd4-2bc34f81605f"
+      ],
+      "voices": 5,
+      "recurrence": 5,
+      "verification": {
+        "participants": 6,
+        "endorse": 4,
+        "amend": 1,
+        "contest": 1,
+        "amendments": [
+          "The water cut is scheduled maintenance, not failure — but 26 hours is still 26 hours."
+        ],
+        "gate": "not_yet"
+      }
+    }
+  ],
+  "interventions": {
+    "from_plans": [
+      {
+        "id": "67fac089-90f7-4c5b-8cdc-edd9ebf0d327",
+        "name": "Nairobi water & drainage programme",
+        "note": "County maintenance and El Niño preparedness — scheduled but leaving 17 neighbourhoods dry for 26 hours.",
+        "signal_ids": [
+          "58943ed1-0551-43c2-86b3-1df497e64179"
+        ],
+        "counter_signal_ids": [],
+        "priced": true
+      }
+    ],
+    "from_place": [
+      {
+        "id": "804dc2dd-c411-46a7-8f3d-466b85c02aac",
+        "name": "Kibera circular-economy rails",
+        "note": "AfriBit, Dada Devs, BTC Map merchants — a parallel economy the banking system can't see.",
+        "signal_ids": [
+          "da8bf760-7275-4f2d-ab48-f2e0920c61e9"
+        ],
+        "counter_signal_ids": [
+          "58943ed1-0551-43c2-86b3-1df497e64179"
+        ],
+        "priced": false
+      }
+    ]
+  },
+  "sips": [
+    {
+      "id": "cc6c3421-d4de-4305-8f89-6b572dece647",
+      "kind": "node",
+      "title": "The parallel rails are the hedge",
+      "what_changes": "When 17 neighbourhoods lose water and the CBD runs on hustle, the sats economy in Kibera is a working fallback — invisible to the formal system.",
+      "time_to_show": "weeks",
+      "evidence_claim_ids": [
+        "134fc837-762e-4de5-a47d-136233ba0da3",
+        "160045cf-e6f2-46fd-85d9-da9e2fdbaf53",
+        "1ec9fafa-0f5f-4fc5-b817-d636ae42c381",
+        "30d7ab81-60e4-4ac0-b5f2-a8cf55581f7f",
+        "35c14348-5cad-456a-996b-7c9fd871f4c7",
+        "3a0c399b-bf0b-49f9-9006-e6c41e01c0e6",
+        "62f04567-e84c-48c7-8487-e2933123cf31",
+        "6c18a61c-2032-42b8-ae8d-08338cccb250",
+        "86c8719b-fb17-4a93-a85d-4c4c62a241b8",
+        "95ec2d79-1d05-4acf-807e-c28d5bdfa0b3",
+        "a4f776d7-580d-4a05-9424-feb4dfd231f6",
+        "b4a075c1-4c1c-44cf-857a-0403175e9039",
+        "c541d16f-c77d-439e-9543-5245ae35e51d",
+        "ed013c81-0d0a-4c4c-a9d4-53d8d5e7faed",
+        "f83861d4-3eb8-4d3d-b52d-c690219a56a0"
+      ]
+    },
+    {
+      "id": "dde93242-1cce-4184-9298-101e76e39d34",
+      "kind": "threshold",
+      "title": "The 26-hour water test",
+      "what_changes": "If scheduled cuts stretch or repeat, water becomes the city's binding constraint before drainage fails in the rains.",
+      "time_to_show": "this rain season",
+      "evidence_claim_ids": [
+        "1afe8816-4234-4886-bbd4-2bc34f81605f",
+        "30b0c4d7-d06d-4023-9585-c732aab96b06",
+        "4c51af6f-918b-4324-bab1-868dff88341e",
+        "c26fcf56-4c8d-400f-a5e6-f8e4a215d6f0",
+        "fa9f0c0e-a7f1-4b7f-acdd-51813cd7c66b"
+      ]
+    }
+  ],
+  "priorities": {
+    "title": "Where capital is most needed",
+    "intro": "Derived from this place’s own signals: unreached needs first, then the loudest voices, then the leverage points.",
+    "items": [
+      {
+        "heading": "The plans don’t reach it",
+        "text": "A parallel economy runs underneath — sats spent at Ruth Shop, a circular economy in Kibera, women building the rails. — 6 voices, and no funded scheme answers it."
+      },
+      {
+        "heading": "The plans don’t reach it",
+        "text": "The CBD runs on informal hustle — matatus, hawkers, street food, surprise expenses; the economy works but at survival odds. — 5 voices, and no funded scheme answers it."
+      },
+      {
+        "heading": "Where the voices are",
+        "text": "A parallel economy runs underneath — sats spent at Ruth Shop, a circular economy in Kibera, women building the rails. — 6 voices say this most."
+      },
+      {
+        "heading": "The leverage point to watch",
+        "text": "The parallel rails are the hedge — When 17 neighbourhoods lose water and the CBD runs on hustle, the sats economy in Kibera is a working fallback — invisible to the formal system."
+      }
+    ]
+  },
+  "meta": {
+    "place_id": "nairobi",
+    "version": "2026-10-26",
+    "published_at": "2026-10-26T02:26:09.875Z",
+    "manifest_sha256": "2dedd3060acdb2c7246ccff03c00f1ea2c0616d0a114ba4260c4cdb79fc53587"
+  }
+}

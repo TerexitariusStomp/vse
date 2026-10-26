@@ -129,6 +129,9 @@ export const PLACES = [
   { id: 'hebden-bridge', label: 'Hebden Bridge' },
   { id: 'dar-es-salaam', label: 'Dar es Salaam' },
   { id: 'puerto-la-cruz', label: 'Puerto la Cruz' },
+  { id: 'minneapolis', label: 'Minneapolis' },
+  { id: 'nairobi', label: 'Nairobi' },
+  { id: 'detroit', label: 'Detroit' },
 ] as const
 export type PlaceId = (typeof PLACES)[number]['id']
 

@@ -1,0 +1,608 @@
+{
+  "_about": "Results for Minneapolis under Metro Surge, published by a Value Structuring Engine.",
+  "place": {
+    "id": "minneapolis",
+    "name": "Minneapolis under Metro Surge",
+    "kind": "city, Minnesota, USA — public posts, Sept–Oct 2026",
+    "summary": "A federal enforcement surge and the city's response: neighbors abducted, a quilt counting the missing, activists on trial, volunteers mapping surveillance — and care work continuing alongside.",
+    "geo": {
+      "lat": 44.9778,
+      "lon": -93.265
+    },
+    "readings": [
+      {
+        "label": "Public posts naming Minneapolis in the indexer window",
+        "value": "~796 posts · 90-day window",
+        "source": "Rooted audience-identity index"
+      },
+      {
+        "label": "Stolen Neighbors Quilt",
+        "value": "11,000 squares — one per person taken by ICE in Minnesota",
+        "source": "public post, revealed at the State Capitol"
+      }
+    ]
+  },
+  "pipeline": [
+    {
+      "stage": "Listening",
+      "detail": "stories told in people’s own words",
+      "count": 18,
+      "unit": "stories"
+    },
+    {
+      "stage": "Making sense",
+      "detail": "exact excerpts extracted from stories",
+      "count": 21,
+      "unit": "excerpts"
+    },
+    {
+      "stage": "Consolidating",
+      "detail": "excerpts gathered into signals",
+      "count": 5,
+      "unit": "signals"
+    },
+    {
+      "stage": "People check",
+      "detail": "contributors endorse, amend or contest",
+      "count": 8,
+      "unit": "participants"
+    }
+  ],
+  "stories": [
+    {
+      "id": "d4ab6e84-2586-4869-b2d9-edbae20a1909",
+      "teller_role": "bsky · ELS1852 🇨🇦 🇺🇦",
+      "channel": "social",
+      "text": "Been a con man his entire life\nSelling Venezuelan oil and putting the money in a Middle East bank account - an account he controls\nIs attempting to extort the EU and NATO into giving him Greenland\nHis ICE gestapo have murdered 2 people in Minneapolis and one in Los Angeles\nIs a White Nationalist",
+      "source": "https://bsky.app/profile/ELS1852 🇨🇦 🇺🇦/post/3mwj2fcacza2q"
+    },
+    {
+      "id": "d6bddde3-1886-4db6-8cbe-c3961e22523b",
+      "teller_role": "bsky · did:plc:otu6cdnsjheo6xpn",
+      "channel": "social",
+      "text": "The Stolen Neighbors Quilt was revealed this week at the Minnesota State Capitol. 100 people worked in it for 6 months. Its 11,000 squares represent the number of people abducted by ICE in Minnesota during Operation Metro Surge.",
+      "source": "https://bsky.app/profile/did:plc:otu6cdnsjheo6xpngpdlmq3p/post/3mwij7tv3wo2v"
+    },
+    {
+      "id": "bd6c9ff1-4187-49f1-9dc2-00ef9de7841a",
+      "teller_role": "bsky · Patches🇺🇦🍁🇨🇦 EvilThrives",
+      "channel": "social",
+      "text": "Trump administration asks Supreme Court to permit quick third-country deportations minnesotareformer.com/2026/09/24/r...",
+      "source": "https://bsky.app/profile/Patches🇺🇦🍁🇨🇦 EvilThrivesWhenGoodMenDoNothing/post/3mwiu3onyu22f"
+    },
+    {
+      "id": "fd7e28e2-8b41-48fc-b79c-44e7c464669f",
+      "teller_role": "bsky · Adam Dierksmeier",
+      "channel": "social",
+      "text": "\"The report focuses on documenting human rights violations in ICE operations in the Twin Cities, Chicago, New Orleans and Washington, DC, including racially discriminatory immigration enforcement; unjustified use of force by federal agents; unlawful killings by federal agents;...\"",
+      "source": "https://bsky.app/profile/Adam Dierksmeier/post/3mwirsbrvus27"
+    },
+    {
+      "id": "f8e31548-be98-493e-bbec-c51c5572ffe4",
+      "teller_role": "bsky · did:plc:sykcp6dgazv2gxbz",
+      "channel": "social",
+      "text": "Old National Bank volunteers pack 1,600 comfort kits to support Minnesota dialysis patients - goo.gl/alerts/P2nQQu #GoogleAlerts",
+      "source": "https://bsky.app/profile/did:plc:sykcp6dgazv2gxbzqn4pr2o4/post/3mwikp2o7sk22"
+    },
+    {
+      "id": "540cf8e4-2359-45c4-86ba-1e7fcd36b027",
+      "teller_role": "bsky · Old Guy Yelling at Telev",
+      "channel": "social",
+      "text": "They can advocate my murder, my deportation, stripping me of citizenship, my torture, the kidnapping of my family, loss of all constitutional rights, no habeus corpus, they can just murder me, in downtown Minneapolis, consequence free. \n\nBUT IF I SAY \"KILL THE FUCKING OLIGARCHS,\"\n\nI'm a terrorist.",
+      "source": "https://bsky.app/profile/Old Guy Yelling at Television/post/3mwip44a6jk22"
+    },
+    {
+      "id": "1c6f69bd-1cbe-49a4-a6ea-5f4c6f4a3d9f",
+      "teller_role": "bsky · garci32",
+      "channel": "social",
+      "text": "Minnesota arrested the ICE agent Gov.Greg Abbott of Texas spent months shielding, on state charges no president can pardon, after city video showed the attack the agent described never happened.",
+      "source": "https://bsky.app/profile/garci32/post/3mwj2vbehik2q"
+    },
+    {
+      "id": "6bd6426c-4008-4697-98a0-5080352e4c7b",
+      "teller_role": "bsky · Indivisible Abroad 👑❌",
+      "channel": "social",
+      "text": "This is the Stolen Neighbors Quilt.  Each of the 11,000 squares represents a person taken by ICE in Minnesota.\n\n#abolishice\n\nwww.instagram.com/p/DdnPas4jr1...",
+      "source": "https://bsky.app/profile/Indivisible Abroad 👑❌/post/3mwj24w5ofs2f"
+    },
+    {
+      "id": "73c105d0-184a-4796-8e46-74f6a8afdc72",
+      "teller_role": "bsky · did:plc:4ztklrrwqeay5nsj",
+      "channel": "social",
+      "text": "Hear our chat with Cal of the Minnesota 15 (activists facing felony charges in relation to resisting the ICE and Border Patrol assault on the Twin Cities during Metro Surge.\nMore on the case & how to support can be found via @minnesota15.bsky.social \n\nthefinalstrawradio.mayfirst.info/2026/09/27/c...",
+      "source": "https://bsky.app/profile/did:plc:4ztklrrwqeay5nsjkc7xk2uj/post/3mwiu34ptsk2x"
+    },
+    {
+      "id": "4d95f735-7773-4249-8ffc-c67fc31d07f2",
+      "teller_role": "bsky · who what now",
+      "channel": "social",
+      "text": "Thankfully for the Minneapolis police department currently led by the biggest class traitor of our entire city, it will ensure they are able to rake in even more overtime pay than previously ever imagined",
+      "source": "https://bsky.app/profile/who what now/post/3mwinsacvbs24"
+    },
+    {
+      "id": "d464009a-f8f9-411e-ad6d-ce90f4904526",
+      "teller_role": "bsky · Wm mcnellis ",
+      "channel": "social",
+      "text": "                Amnesty International calls for abolition of ICE for the first time in new report \nSource: Minnesota Reformer\n                share.newsbreak.com/jp9tf6kg",
+      "source": "https://bsky.app/profile/Wm mcnellis /post/3mwiq6et5ns2x"
+    },
+    {
+      "id": "533c2231-9a7b-4205-a24c-05c3cb0ae08d",
+      "teller_role": "bsky · did:plc:qnmfmtmvd7rahcf7",
+      "channel": "social",
+      "text": "📷 8 new license plate readers just reported around Cottage Grove, MN. Newly mapped by volunteers — see what's watching. #ALPR #Surveillance #CottageGrove\n\ndeflocktheusa.com/flock-cameras/minnesota/cottage-grove",
+      "source": "https://bsky.app/profile/did:plc:qnmfmtmvd7rahcf7tlxpohtb/post/3mwivel6nwr2a"
+    },
+    {
+      "id": "18418844-2579-4d20-9618-d52e39d5aa6a",
+      "teller_role": "bsky · Invictus Ghost",
+      "channel": "social",
+      "text": "They do not comply with laws or court orders. There are already laws against what they are doing. ICE must be shut down. The World is well aware of our Gulags. When will our nation follow Minniapolis. Revolt against this Nazi organization.",
+      "source": "https://bsky.app/profile/Invictus Ghost/post/3mwisdsc2vs2m"
+    },
+    {
+      "id": "43e434cd-4164-44c2-bf19-195cd47ac186",
+      "teller_role": "bsky · Arda Mortyne",
+      "channel": "social",
+      "text": "Reverse Jan 6? MAGAS have a lot of guns & where I live 60-70% vote GOP no matter what cruel, traitorous candidate runs. I'm an election judge & feeling anxious, tho ICE won't bother a dependently red rural district. They were all over town during the Minnesota occupation tho. Delete them? Yikes.",
+      "source": "https://bsky.app/profile/Arda Mortyne/post/3mwisvy43bk2m"
+    },
+    {
+      "id": "f53e8c64-9a2e-49c9-ad1e-ed55091fef19",
+      "teller_role": "bsky · bsky.social❌👑",
+      "channel": "social",
+      "text": "#Minnesota #Minneapolis\n#ReneeGood #ICEOutForGood",
+      "source": "https://bsky.app/profile/GailWaldby@bsky.social❌👑/post/3mwitrsl5prs2"
+    },
+    {
+      "id": "a7ab46d6-0065-4800-a656-058d23b01f8c",
+      "teller_role": "bsky · Brad Tabke",
+      "channel": "social",
+      "text": "“The federal government’s actions during (Operation Metro Surge) created a grave threat to the rule of law.” A federal judge tells the NYT what us Minnesotans already know. ICE’s actions weren’t “enforcing the law,” they were violating it. \nbuff.ly/fymJQ8y",
+      "source": "https://bsky.app/profile/Brad Tabke/post/3mwitum4gpx2a"
+    },
+    {
+      "id": "a353d986-449f-4d5f-86b6-dd1001bbdddf",
+      "teller_role": "bsky · did:plc:nhpmw37otpczv4ym",
+      "channel": "social",
+      "text": "I’m running for state senate to represent the voices of district 37 in the legislature. Join our efforts, and let’s stop dark money from trying to buy this seat. #KristyJanigoforMN #mnleg #minnesota #publicservice",
+      "source": "https://bsky.app/profile/did:plc:nhpmw37otpczv4ymr6kb5rdh/post/3mwizxsdzyc2z"
+    },
+    {
+      "id": "9f914fc9-3474-4d05-9c6e-7521c3cd1720",
+      "teller_role": "bsky · If you can’t be brave, b",
+      "channel": "social",
+      "text": "Check your registration, make a voting plan to vote ASAP, be a multiplier, bring (at least) 3 friends with. Be a poll worker or campaign volunteer. \n\nVirginia, Minnesota, Mississippi & Michigan are voting. South Carolina,  10/2 is deadline to register. As of today, minus your earliest voting day ...",
+      "source": "https://bsky.app/profile/If you can’t be brave, be kind 🚵🏽‍♀️☕️ 📸 🐕🐾🥋⚔️☯️👩🏼‍🎨🖋️✏️/post/3mwifrgcg7k2a"
+    }
+  ],
+  "claims": [
+    {
+      "id": "0122ded4-ebf4-4a8b-b039-f63d77a2abba",
+      "story_id": "bd6c9ff1-4187-49f1-9dc2-00ef9de7841a",
+      "text": "Trump administration asks Supreme Court to permit quick third-country deportations",
+      "span": [
+        0,
+        82
+      ],
+      "signal_id": "bec883e0-2cf8-4acb-873d-dd5a26e796e8",
+      "proposer": "model"
+    },
+    {
+      "id": "8d2bdd49-ec9b-40f8-b55a-08b956cf9f78",
+      "story_id": "43e434cd-4164-44c2-bf19-195cd47ac186",
+      "text": "I'm an election judge & feeling anxious",
+      "span": [
+        120,
+        159
+      ],
+      "signal_id": "250802dc-ff75-4656-a241-6ff15de14e17",
+      "proposer": "model"
+    },
+    {
+      "id": "7750714e-05fc-4a21-bd72-419d7b9d4c0f",
+      "story_id": "a7ab46d6-0065-4800-a656-058d23b01f8c",
+      "text": "created a grave threat to the rule of law",
+      "span": [
+        65,
+        106
+      ],
+      "signal_id": "2f7e9bb3-4876-4a34-a989-fbee500789d1",
+      "proposer": "model"
+    },
+    {
+      "id": "76b01646-1c2e-448c-961a-52bbdb873934",
+      "story_id": "d464009a-f8f9-411e-ad6d-ce90f4904526",
+      "text": "Amnesty International calls for abolition of ICE",
+      "span": [
+        16,
+        64
+      ],
+      "signal_id": "2f7e9bb3-4876-4a34-a989-fbee500789d1",
+      "proposer": "model"
+    },
+    {
+      "id": "8e3ed7ef-91ef-4ba9-9f27-a58943c8f391",
+      "story_id": "f53e8c64-9a2e-49c9-ad1e-ed55091fef19",
+      "text": "#Minnesota #Minneapolis\n#ReneeGood #ICEOutForGood",
+      "span": [
+        0,
+        49
+      ],
+      "signal_id": "2f7e9bb3-4876-4a34-a989-fbee500789d1",
+      "proposer": "fallback"
+    },
+    {
+      "id": "ca71394a-90d9-490d-99ef-e117da4a48d7",
+      "story_id": "a353d986-449f-4d5f-86b6-dd1001bbdddf",
+      "text": "I’m running for state senate to represent the voices of district 37 in the legislature",
+      "span": [
+        0,
+        86
+      ],
+      "signal_id": "250802dc-ff75-4656-a241-6ff15de14e17",
+      "proposer": "model"
+    },
+    {
+      "id": "0e264e17-c2e0-4814-a546-9c88d0c27586",
+      "story_id": "a353d986-449f-4d5f-86b6-dd1001bbdddf",
+      "text": "let’s stop dark money from trying to buy this seat",
+      "span": [
+        110,
+        160
+      ],
+      "signal_id": "250802dc-ff75-4656-a241-6ff15de14e17",
+      "proposer": "model"
+    },
+    {
+      "id": "92591f85-6b8b-4322-9af1-7d3b83cad580",
+      "story_id": "43e434cd-4164-44c2-bf19-195cd47ac186",
+      "text": "feeling anxious",
+      "span": [
+        144,
+        159
+      ],
+      "signal_id": "250802dc-ff75-4656-a241-6ff15de14e17",
+      "proposer": "model"
+    },
+    {
+      "id": "e811ff66-884e-4062-bd45-71fdfa6ae82c",
+      "story_id": "d464009a-f8f9-411e-ad6d-ce90f4904526",
+      "text": "Amnesty International calls for abolition of ICE for the first time in new report",
+      "span": [
+        16,
+        97
+      ],
+      "signal_id": "2f7e9bb3-4876-4a34-a989-fbee500789d1",
+      "proposer": "model"
+    },
+    {
+      "id": "4e4110e1-ff2c-4d44-88fa-2270821f8ade",
+      "story_id": "fd7e28e2-8b41-48fc-b79c-44e7c464669f",
+      "text": "\"The report focuses on documenting human rights violations in ICE operations in the Twin Cities, Chicago, New Orleans and Washington, DC, including racially discriminatory immigration enforcement; unjustified use of force by federal agents; unlawful killings by federal agents;...\"",
+      "span": [
+        0,
+        281
+      ],
+      "signal_id": "bec883e0-2cf8-4acb-873d-dd5a26e796e8",
+      "proposer": "analyst"
+    },
+    {
+      "id": "301481e8-1278-45ea-b47c-a00e866e3234",
+      "story_id": "d4ab6e84-2586-4869-b2d9-edbae20a1909",
+      "text": "Been a con man his entire life\nSelling Venezuelan oil and putting the money in a Middle East bank account - an account he controls\nIs attempting to extort the EU and NATO into giving him Greenland\nHis ICE gestapo have murdered 2 people in Minneapolis and one in Los Angeles\nIs a White Nationalist",
+      "span": [
+        0,
+        296
+      ],
+      "signal_id": "bec883e0-2cf8-4acb-873d-dd5a26e796e8",
+      "proposer": "analyst"
+    },
+    {
+      "id": "2514df62-e1d7-4863-abd6-bcb06a65cf42",
+      "story_id": "18418844-2579-4d20-9618-d52e39d5aa6a",
+      "text": "They do not comply with laws or court orders. There are already laws against what they are doing. ICE must be shut down. The World is well aware of our Gulags. When will our nation follow Minniapolis. Revolt against this Nazi organization.",
+      "span": [
+        0,
+        239
+      ],
+      "signal_id": "2f7e9bb3-4876-4a34-a989-fbee500789d1",
+      "proposer": "analyst"
+    },
+    {
+      "id": "d9d46aea-318e-4dd4-854a-a8a5c53e8a24",
+      "story_id": "533c2231-9a7b-4205-a24c-05c3cb0ae08d",
+      "text": "📷 8 new license plate readers just reported around Cottage Grove, MN. Newly mapped by volunteers — see what's watching. #ALPR #Surveillance #CottageGrove\n\ndeflocktheusa.com/flock-cameras/minnesota/cottage-grove",
+      "span": [
+        0,
+        211
+      ],
+      "signal_id": "b268905c-f632-4758-8950-72ac075745e0",
+      "proposer": "analyst"
+    },
+    {
+      "id": "9fcf205f-6b99-46b0-a226-17e5bddc5e58",
+      "story_id": "9f914fc9-3474-4d05-9c6e-7521c3cd1720",
+      "text": "Check your registration, make a voting plan to vote ASAP, be a multiplier, bring (at least) 3 friends with. Be a poll worker or campaign volunteer. \n\nVirginia, Minnesota, Mississippi & Michigan are voting. South Carolina,  10/2 is deadline to register. As of today, minus your earliest voting day ...",
+      "span": [
+        0,
+        300
+      ],
+      "signal_id": "250802dc-ff75-4656-a241-6ff15de14e17",
+      "proposer": "analyst"
+    },
+    {
+      "id": "147414b0-a911-493b-a9a7-09f98b3e4cf4",
+      "story_id": "4d95f735-7773-4249-8ffc-c67fc31d07f2",
+      "text": "Thankfully for the Minneapolis police department currently led by the biggest class traitor of our entire city, it will ensure they are able to rake in even more overtime pay than previously ever imagined",
+      "span": [
+        0,
+        204
+      ],
+      "signal_id": "b268905c-f632-4758-8950-72ac075745e0",
+      "proposer": "analyst"
+    },
+    {
+      "id": "bf19e779-67c8-4bc1-aeed-1060d421e8f0",
+      "story_id": "d6bddde3-1886-4db6-8cbe-c3961e22523b",
+      "text": "The Stolen Neighbors Quilt was revealed this week at the Minnesota State Capitol. 100 people worked in it for 6 months. Its 11,000 squares represent the number of people abducted by ICE in Minnesota during Operation Metro Surge.",
+      "span": [
+        0,
+        228
+      ],
+      "signal_id": "67bb1e9b-de89-4db6-9b6d-30df74189c63",
+      "proposer": "analyst"
+    },
+    {
+      "id": "3b7b809c-3234-426d-b448-4a8ce5fa52de",
+      "story_id": "73c105d0-184a-4796-8e46-74f6a8afdc72",
+      "text": "Hear our chat with Cal of the Minnesota 15 (activists facing felony charges in relation to resisting the ICE and Border Patrol assault on the Twin Cities during Metro Surge.\nMore on the case & how to support can be found via @minnesota15.bsky.social \n\nthefinalstrawradio.mayfirst.info/2026/09/27/c...",
+      "span": [
+        0,
+        300
+      ],
+      "signal_id": "2f7e9bb3-4876-4a34-a989-fbee500789d1",
+      "proposer": "analyst"
+    },
+    {
+      "id": "18a4773b-71f8-44bb-a58a-307fd9e8766a",
+      "story_id": "1c6f69bd-1cbe-49a4-a6ea-5f4c6f4a3d9f",
+      "text": "Minnesota arrested the ICE agent Gov.Greg Abbott of Texas spent months shielding, on state charges no president can pardon, after city video showed the attack the agent described never happened.",
+      "span": [
+        0,
+        194
+      ],
+      "signal_id": "2f7e9bb3-4876-4a34-a989-fbee500789d1",
+      "proposer": "analyst"
+    },
+    {
+      "id": "00c02519-c88a-444c-be49-066790e4aa3b",
+      "story_id": "540cf8e4-2359-45c4-86ba-1e7fcd36b027",
+      "text": "They can advocate my murder, my deportation, stripping me of citizenship, my torture, the kidnapping of my family, loss of all constitutional rights, no habeus corpus, they can just murder me, in downtown Minneapolis, consequence free. \n\nBUT IF I SAY \"KILL THE FUCKING OLIGARCHS,\"\n\nI'm a terrorist.",
+      "span": [
+        0,
+        298
+      ],
+      "signal_id": "bec883e0-2cf8-4acb-873d-dd5a26e796e8",
+      "proposer": "analyst"
+    },
+    {
+      "id": "d10e2472-6135-4630-a24f-382975e00718",
+      "story_id": "f8e31548-be98-493e-bbec-c51c5572ffe4",
+      "text": "Old National Bank volunteers pack 1,600 comfort kits to support Minnesota dialysis patients - goo.gl/alerts/P2nQQu #GoogleAlerts",
+      "span": [
+        0,
+        128
+      ],
+      "signal_id": "67bb1e9b-de89-4db6-9b6d-30df74189c63",
+      "proposer": "analyst"
+    },
+    {
+      "id": "335a3e2c-bc26-4200-81fc-923ca582d75c",
+      "story_id": "6bd6426c-4008-4697-98a0-5080352e4c7b",
+      "text": "This is the Stolen Neighbors Quilt.  Each of the 11,000 squares represents a person taken by ICE in Minnesota.\n\n#abolishice\n\nwww.instagram.com/p/DdnPas4jr1...",
+      "span": [
+        0,
+        158
+      ],
+      "signal_id": "67bb1e9b-de89-4db6-9b6d-30df74189c63",
+      "proposer": "analyst"
+    }
+  ],
+  "signals": [
+    {
+      "id": "67bb1e9b-de89-4db6-9b6d-30df74189c63",
+      "statement": "The city counts and grieves its missing — a quilt of 11,000 squares, built by a hundred hands.",
+      "supporting_claim_ids": [
+        "bf19e779-67c8-4bc1-aeed-1060d421e8f0",
+        "d10e2472-6135-4630-a24f-382975e00718",
+        "335a3e2c-bc26-4200-81fc-923ca582d75c"
+      ],
+      "voices": 3,
+      "recurrence": 3,
+      "verification": {
+        "participants": 8,
+        "endorse": 8,
+        "amend": 0,
+        "contest": 0,
+        "amendments": [],
+        "gate": "commons_only"
+      }
+    },
+    {
+      "id": "250802dc-ff75-4656-a241-6ff15de14e17",
+      "statement": "Civic muscle keeps working — registration drives, anxious election judges, candidates asking for the seat.",
+      "supporting_claim_ids": [
+        "8d2bdd49-ec9b-40f8-b55a-08b956cf9f78",
+        "ca71394a-90d9-490d-99ef-e117da4a48d7",
+        "0e264e17-c2e0-4814-a546-9c88d0c27586",
+        "92591f85-6b8b-4322-9af1-7d3b83cad580",
+        "9fcf205f-6b99-46b0-a226-17e5bddc5e58"
+      ],
+      "voices": 3,
+      "recurrence": 5,
+      "verification": {
+        "participants": 6,
+        "endorse": 6,
+        "amend": 0,
+        "contest": 0,
+        "amendments": [],
+        "gate": "may_be_priced"
+      }
+    },
+    {
+      "id": "b268905c-f632-4758-8950-72ac075745e0",
+      "statement": "Residents document the watchers — volunteer ALPR mapping while officials draw scrutiny too.",
+      "supporting_claim_ids": [
+        "d9d46aea-318e-4dd4-854a-a8a5c53e8a24",
+        "147414b0-a911-493b-a9a7-09f98b3e4cf4"
+      ],
+      "voices": 2,
+      "recurrence": 2,
+      "verification": {
+        "participants": 6,
+        "endorse": 6,
+        "amend": 0,
+        "contest": 0,
+        "amendments": [],
+        "gate": "commons_only"
+      }
+    },
+    {
+      "id": "bec883e0-2cf8-4acb-873d-dd5a26e796e8",
+      "statement": "People are being taken and hurt — abductions, unlawful force, and fear expressed in first person.",
+      "supporting_claim_ids": [
+        "0122ded4-ebf4-4a8b-b039-f63d77a2abba",
+        "4e4110e1-ff2c-4d44-88fa-2270821f8ade",
+        "301481e8-1278-45ea-b47c-a00e866e3234",
+        "00c02519-c88a-444c-be49-066790e4aa3b"
+      ],
+      "voices": 4,
+      "recurrence": 4,
+      "verification": {
+        "participants": 6,
+        "endorse": 6,
+        "amend": 0,
+        "contest": 0,
+        "amendments": [],
+        "gate": "not_yet"
+      }
+    },
+    {
+      "id": "2f7e9bb3-4876-4a34-a989-fbee500789d1",
+      "statement": "The city resists through courts, charges, and the streets — an agent arrested, activists on trial, a judge's rebuke.",
+      "supporting_claim_ids": [
+        "7750714e-05fc-4a21-bd72-419d7b9d4c0f",
+        "76b01646-1c2e-448c-961a-52bbdb873934",
+        "8e3ed7ef-91ef-4ba9-9f27-a58943c8f391",
+        "e811ff66-884e-4062-bd45-71fdfa6ae82c",
+        "2514df62-e1d7-4863-abd6-bcb06a65cf42",
+        "3b7b809c-3234-426d-b448-4a8ce5fa52de",
+        "18a4773b-71f8-44bb-a58a-307fd9e8766a"
+      ],
+      "voices": 6,
+      "recurrence": 7,
+      "verification": {
+        "participants": 6,
+        "endorse": 4,
+        "amend": 1,
+        "contest": 1,
+        "amendments": [
+          "Resistance is also legal: the charges and the judge's rebuke are part of the same response."
+        ],
+        "gate": "not_yet"
+      }
+    }
+  ],
+  "interventions": {
+    "from_plans": [
+      {
+        "id": "74f069a6-2c6d-429d-bbe3-e7ba42b8dc18",
+        "name": "Operation Metro Surge",
+        "note": "Federal enforcement surge — the plan applied to the city; its costs are the signals below.",
+        "signal_ids": [
+          "bec883e0-2cf8-4acb-873d-dd5a26e796e8"
+        ],
+        "counter_signal_ids": [
+          "2f7e9bb3-4876-4a34-a989-fbee500789d1"
+        ],
+        "priced": true
+      }
+    ],
+    "from_place": [
+      {
+        "id": "fb47cbb3-7dd3-42e7-b321-75c6342dd475",
+        "name": "Neighborhood response network",
+        "note": "Quilt-makers, comfort-kit volunteers, ALPR mappers, legal observers — community response running on donated time.",
+        "signal_ids": [
+          "67bb1e9b-de89-4db6-9b6d-30df74189c63",
+          "b268905c-f632-4758-8950-72ac075745e0"
+        ],
+        "counter_signal_ids": [
+          "bec883e0-2cf8-4acb-873d-dd5a26e796e8"
+        ],
+        "priced": false
+      }
+    ]
+  },
+  "sips": [
+    {
+      "id": "c273c530-78d9-46de-9ddc-98e9489eb3fd",
+      "kind": "node",
+      "title": "Documentation is the leverage point",
+      "what_changes": "Every accountability outcome — the agent's arrest, the judge's rebuke — began with someone recording. Protect the documenters.",
+      "time_to_show": "one court cycle",
+      "evidence_claim_ids": [
+        "147414b0-a911-493b-a9a7-09f98b3e4cf4",
+        "18a4773b-71f8-44bb-a58a-307fd9e8766a",
+        "2514df62-e1d7-4863-abd6-bcb06a65cf42",
+        "3b7b809c-3234-426d-b448-4a8ce5fa52de",
+        "76b01646-1c2e-448c-961a-52bbdb873934",
+        "7750714e-05fc-4a21-bd72-419d7b9d4c0f",
+        "8e3ed7ef-91ef-4ba9-9f27-a58943c8f391",
+        "d9d46aea-318e-4dd4-854a-a8a5c53e8a24",
+        "e811ff66-884e-4062-bd45-71fdfa6ae82c"
+      ]
+    },
+    {
+      "id": "1f21aec1-6690-4fbd-8ffe-537fcf8e9af4",
+      "kind": "threshold",
+      "title": "Care work at scale",
+      "what_changes": "11,000 quilt squares and 1,600 comfort kits are the visible tip of care work that must not burn out.",
+      "time_to_show": "months",
+      "evidence_claim_ids": [
+        "335a3e2c-bc26-4200-81fc-923ca582d75c",
+        "bf19e779-67c8-4bc1-aeed-1060d421e8f0",
+        "d10e2472-6135-4630-a24f-382975e00718"
+      ]
+    }
+  ],
+  "priorities": {
+    "title": "Where capital is most needed",
+    "intro": "Derived from this place’s own signals: unreached needs first, then the loudest voices, then the leverage points.",
+    "items": [
+      {
+        "heading": "The plans don’t reach it",
+        "text": "The city resists through courts, charges, and the streets — an agent arrested, activists on trial, a judge's rebuke. — 6 voices, and no funded scheme answers it."
+      },
+      {
+        "heading": "The plans don’t reach it",
+        "text": "The city counts and grieves its missing — a quilt of 11,000 squares, built by a hundred hands. — 3 voices, and no funded scheme answers it."
+      },
+      {
+        "heading": "Where the voices are",
+        "text": "The city resists through courts, charges, and the streets — an agent arrested, activists on trial, a judge's rebuke. — 6 voices say this most."
+      },
+      {
+        "heading": "The leverage point to watch",
+        "text": "Documentation is the leverage point — Every accountability outcome — the agent's arrest, the judge's rebuke — began with someone recording. Protect the documenters."
+      }
+    ]
+  },
+  "meta": {
+    "place_id": "minneapolis",
+    "version": "2026-10-26",
+    "published_at": "2026-10-26T02:25:05.696Z",
+    "manifest_sha256": "6cc93d4ea45b9f59527f934422dd856008797f880c4a842da5d0377277aa085a"
+  }
+}

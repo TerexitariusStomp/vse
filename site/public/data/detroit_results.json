@@ -1,0 +1,519 @@
+{
+  "_about": "Results for Detroit — neighborhoods carry the city, published by a Value Structuring Engine.",
+  "place": {
+    "id": "detroit",
+    "name": "Detroit — neighborhoods carry the city",
+    "kind": "city, Michigan, USA — public posts, Sept–Oct 2026",
+    "summary": "A city where the jobs moved to the suburbs and the neighborhoods carry what remains: local businesses, a garden teaching young men, photographers documenting the streets — under institutional strain.",
+    "geo": {
+      "lat": 42.3314,
+      "lon": -83.0458
+    },
+    "readings": [
+      {
+        "label": "Public posts naming Detroit in the indexer window",
+        "value": "~1000 candidates · 90-day window",
+        "source": "Rooted audience-identity index"
+      },
+      {
+        "label": "Latino-owned businesses (Michigan)",
+        "value": "~25,000 — many in southwest Detroit",
+        "source": "public post, Hispanic Heritage campaign"
+      }
+    ]
+  },
+  "pipeline": [
+    {
+      "stage": "Listening",
+      "detail": "stories told in people’s own words",
+      "count": 14,
+      "unit": "stories"
+    },
+    {
+      "stage": "Making sense",
+      "detail": "exact excerpts extracted from stories",
+      "count": 17,
+      "unit": "excerpts"
+    },
+    {
+      "stage": "Consolidating",
+      "detail": "excerpts gathered into signals",
+      "count": 4,
+      "unit": "signals"
+    },
+    {
+      "stage": "People check",
+      "detail": "contributors endorse, amend or contest",
+      "count": 8,
+      "unit": "participants"
+    }
+  ],
+  "stories": [
+    {
+      "id": "8c6ba261-47c0-4f73-8217-3e9920ca8810",
+      "teller_role": "bsky · did:plc:26t2me6brgrdzuvb",
+      "channel": "social",
+      "text": "so racist that they vote down measures to allow the blacks to get into their towns more easily. \n\ndetroit is STILL a poor city and most of the jobs are in the suburbs.\n\nyou have to be able to get to work. most jobs REQUIRE \"reliable transportation\" which is code for have access to a car EVERY DAY.",
+      "source": "https://bsky.app/profile/did:plc:26t2me6brgrdzuvb7drcoil5/post/3mwiyvi2bwc2g"
+    },
+    {
+      "id": "ff0e834a-a295-4553-9a06-8bf789037eb3",
+      "teller_role": "bsky · did:plc:uclondubjjrducdt",
+      "channel": "social",
+      "text": "I was having a conversation with another detroiter (and professional urbanist) about how it took longer for us to bounce back versus LA/NYC/Chi/Atl.\n\nmy thesis: post-bankruptcy PTSD. our big little city status compounded things.\n\ndata: repeated leadership job postings & new hires lasting ~1yr",
+      "source": "https://bsky.app/profile/did:plc:uclondubjjrducdtaiemaq3i/post/3mwb6khxwic2e"
+    },
+    {
+      "id": "5c300638-5b70-4d8d-b1bb-9e2a09cfee41",
+      "teller_role": "bsky · did:plc:kkrzlx7dlx5bj3bw",
+      "channel": "social",
+      "text": "#Michigan has an estimated 25,000 #Latino-owned businesses, many in southwest Detroit. A national campaign asks people to spend $30 at one before Hispanic Heritage Month ends Oct. 15. #HispanicHeritageMonth",
+      "source": "https://bsky.app/profile/did:plc:kkrzlx7dlx5bj3bwzcbworwb/post/3mwj2wm65jb2h"
+    },
+    {
+      "id": "6fe1d721-c094-4fd5-a696-0a9c763da116",
+      "teller_role": "bsky · zipperheadedfool.bsky.so",
+      "channel": "social",
+      "text": "Today was Adventures in Grocery Shopping day.  I got the wonky wheel.  Talked to a truck driver who said diesel was over $7.00 a gallon in Detroit.  I got hot dogs (not all beef), frozen meatballs, & frozen breaded chicken & tater tots & pasta, so not real food.  Too expensive.",
+      "source": "https://bsky.app/profile/zipperheadedfool.bsky.social/post/3mvxg2srpw22f"
+    },
+    {
+      "id": "b2ae0c7a-8339-49bb-95bd-ceac0af564e5",
+      "teller_role": "bsky · did:plc:2db5i4ywuq64zjdy",
+      "channel": "social",
+      "text": "sweet potato sensations, a neighborhood institution \n\nDetroit Central Library, across from the DIA",
+      "source": "https://bsky.app/profile/did:plc:2db5i4ywuq64zjdycasinzas/post/3mwhu7hvbwk2d"
+    },
+    {
+      "id": "fe8c38c7-15c1-4d5b-999e-b66c51b90c6f",
+      "teller_role": "bsky · Detroit Metro Times",
+      "channel": "social",
+      "text": "Detroit Black Film Festival is back for year seven, with five days of movies, filmmaker talks, workshops, Detroit talent, and its one-of-a-kind showcase of Black-owned beverage brands. Sept. 23-27. www.metrotimes.com/arts/movies/...",
+      "source": "https://bsky.app/profile/Detroit Metro Times/post/3mvil4yeh6s2u"
+    },
+    {
+      "id": "05ad3008-2acf-4e2f-a438-bcf6557b9ab3",
+      "teller_role": "bsky · did:plc:uclondubjjrducdt",
+      "channel": "social",
+      "text": "Detroit nonprofit uses community garden project to teach young men life skills",
+      "source": "https://bsky.app/profile/did:plc:uclondubjjrducdtaiemaq3i/post/3mwinc7ctsk25"
+    },
+    {
+      "id": "8c1ec2a2-ac50-45ad-a317-6d55c422ea74",
+      "teller_role": "bsky · Detroit Metro Times",
+      "channel": "social",
+      "text": "A beloved Portland bakery is coming to Detroit’s Core City neighborhood with croissants, matcha, pastries, and eventually sourdough pizza.\n\nAnd yes, fresh croissants will be carried across the park every hour. www.metrotimes.com/food-drink/b...",
+      "source": "https://bsky.app/profile/Detroit Metro Times/post/3mv6l3yrai22y"
+    },
+    {
+      "id": "cbbb1fc5-2560-4901-8e98-5dd3e630ff1c",
+      "teller_role": "bsky · Atlas (Unreliable Narrat",
+      "channel": "social",
+      "text": "1L0v3myL1f3! (b.1948)\nDetroit, Wayne County Michigan.\n\nIn the Russell Woods neighborhood.\n\n📸 Google Pixel 8 Pro\n\n#photography #lightroom #digitalart #lomo #architecture #oldbuildings #houses #urban #urbangaze #detroit #wayne #michigan",
+      "source": "https://bsky.app/profile/Atlas (Unreliable Narrator)/post/3mwij7755rc2y"
+    },
+    {
+      "id": "006f1ec2-1177-4034-96bc-00ee27e4e7c9",
+      "teller_role": "bsky · did:plc:ala27gvqnuopwsfd",
+      "channel": "social",
+      "text": "I'm a historic tour guide here in Detroit, and my go-to answer when people ask me why things are the way they are around here is, \"Capitalism, white supremacy, or (usually) both at the same time.\"",
+      "source": "https://bsky.app/profile/did:plc:ala27gvqnuopwsfdmf5n2vh5/post/3mwiyfnirt22d"
+    },
+    {
+      "id": "2930fb0a-bfb9-4314-b92c-accb8d377a9a",
+      "teller_role": "bsky · Detroit Metro Times",
+      "channel": "social",
+      "text": "Private emails show a Detroit Thermal employee asked a 1300 East Lafayette leader to recruit two Black residents to speak in support of its steam project. The response: “We are playing the diversity card as best as we can get that going.” www.metrotimes.com/news/playing...",
+      "source": "https://bsky.app/profile/Detroit Metro Times/post/3mv6pitf4qs2o"
+    },
+    {
+      "id": "4ca2967e-4e8a-4f25-8615-9d0c60439d3b",
+      "teller_role": "bsky · Atlas (Unreliable Narrat",
+      "channel": "social",
+      "text": "Bruise Violet (b.1916)\nDetroit, Wayne County Michigan.\n\nIn the Carbon Works neighborhood.\n\n📸 Google Pixel 8 Pro\n\n#photography #lightroom #digitalart #lomo #trees #architecture #victorian #oldbuildings #houses #urban #urbangaze #detroit #wayne #michigan",
+      "source": "https://bsky.app/profile/Atlas (Unreliable Narrator)/post/3mwizmlltrk26"
+    },
+    {
+      "id": "b4eebf9e-8bef-4e42-b1ca-2f9a8f162ab6",
+      "teller_role": "bsky · did:plc:uclondubjjrducdt",
+      "channel": "social",
+      "text": "A Polymarket logo recently appeared on a Detroit water tower, which the city plans to investigate for a possible permit violation.",
+      "source": "https://bsky.app/profile/did:plc:uclondubjjrducdtaiemaq3i/post/3mvpgimnemc2g"
+    },
+    {
+      "id": "53bb36d9-f466-4556-ac7a-344a71d08bd2",
+      "teller_role": "bsky · did:plc:wbdzpqqhcknmdrbv",
+      "channel": "social",
+      "text": "A large community sprang up in Detroit, which numbered from as many as 15,000 to 20,000 #Macedonian Americans by the 1980s.",
+      "source": "https://bsky.app/profile/did:plc:wbdzpqqhcknmdrbvicm6bqie/post/3mwixpoth2324"
+    }
+  ],
+  "claims": [
+    {
+      "id": "0c51b1f9-2ed8-4237-9b56-b9b7c9e2b196",
+      "story_id": "6fe1d721-c094-4fd5-a696-0a9c763da116",
+      "text": "I got the wonky wheel",
+      "span": [
+        47,
+        68
+      ],
+      "signal_id": "05c90cc2-41aa-4310-ac8b-037f64378c79",
+      "proposer": "model"
+    },
+    {
+      "id": "60651df1-7406-4b7a-b352-46c0254b6836",
+      "story_id": "6fe1d721-c094-4fd5-a696-0a9c763da116",
+      "text": "diesel was over $7.00 a gallon in Detroit",
+      "span": [
+        105,
+        146
+      ],
+      "signal_id": "05c90cc2-41aa-4310-ac8b-037f64378c79",
+      "proposer": "model"
+    },
+    {
+      "id": "077adeeb-cbc1-4f1f-9774-fa64948bbece",
+      "story_id": "6fe1d721-c094-4fd5-a696-0a9c763da116",
+      "text": "not real food",
+      "span": [
+        248,
+        261
+      ],
+      "signal_id": "05c90cc2-41aa-4310-ac8b-037f64378c79",
+      "proposer": "model"
+    },
+    {
+      "id": "6f84f171-08a8-45f1-ad10-869a760959de",
+      "story_id": "b2ae0c7a-8339-49bb-95bd-ceac0af564e5",
+      "text": "sweet potato sensations, a neighborhood institution \n\nDetroit Central Library, across from the DIA",
+      "span": [
+        0,
+        98
+      ],
+      "signal_id": "164d48f2-a3fb-4fec-b617-bf11494f42e9",
+      "proposer": "fallback"
+    },
+    {
+      "id": "b4ced4cb-4e07-4441-9b2d-49a550311758",
+      "story_id": "6fe1d721-c094-4fd5-a696-0a9c763da116",
+      "text": "Too expensive",
+      "span": [
+        264,
+        277
+      ],
+      "signal_id": "05c90cc2-41aa-4310-ac8b-037f64378c79",
+      "proposer": "model"
+    },
+    {
+      "id": "ddef6d67-b4f5-4bb8-9d87-7469e46b3364",
+      "story_id": "05ad3008-2acf-4e2f-a438-bcf6557b9ab3",
+      "text": "Detroit nonprofit uses community garden project to teach young men life skills",
+      "span": [
+        0,
+        78
+      ],
+      "signal_id": "164d48f2-a3fb-4fec-b617-bf11494f42e9",
+      "proposer": "model"
+    },
+    {
+      "id": "bc3eae34-2b53-4669-87e9-2d072399156f",
+      "story_id": "ff0e834a-a295-4553-9a06-8bf789037eb3",
+      "text": "I was having a conversation with another detroiter (and professional urbanist) about how it took longer for us to bounce back versus LA/NYC/Chi/Atl.\n\nmy thesis: post-bankruptcy PTSD. our big little city status compounded things.\n\ndata: repeated leadership job postings & new hires lasting ~1yr",
+      "span": [
+        0,
+        293
+      ],
+      "signal_id": "05c90cc2-41aa-4310-ac8b-037f64378c79",
+      "proposer": "analyst"
+    },
+    {
+      "id": "df826162-7304-42bb-a255-c41fadbbf667",
+      "story_id": "8c6ba261-47c0-4f73-8217-3e9920ca8810",
+      "text": "so racist that they vote down measures to allow the blacks to get into their towns more easily. \n\ndetroit is STILL a poor city and most of the jobs are in the suburbs.\n\nyou have to be able to get to work. most jobs REQUIRE \"reliable transportation\" which is code for have access to a car EVERY DAY.",
+      "span": [
+        0,
+        298
+      ],
+      "signal_id": "05c90cc2-41aa-4310-ac8b-037f64378c79",
+      "proposer": "analyst"
+    },
+    {
+      "id": "9af42065-5a1d-4c61-94e5-c3a875f6995c",
+      "story_id": "fe8c38c7-15c1-4d5b-999e-b66c51b90c6f",
+      "text": "Detroit Black Film Festival is back for year seven, with five days of movies, filmmaker talks, workshops, Detroit talent, and its one-of-a-kind showcase of Black-owned beverage brands. Sept. 23-27. www.metrotimes.com/arts/movies/...",
+      "span": [
+        0,
+        232
+      ],
+      "signal_id": "164d48f2-a3fb-4fec-b617-bf11494f42e9",
+      "proposer": "analyst"
+    },
+    {
+      "id": "3ab9c5e4-4d75-441e-8609-0b7f5a921c72",
+      "story_id": "cbbb1fc5-2560-4901-8e98-5dd3e630ff1c",
+      "text": "1L0v3myL1f3! (b.1948)\nDetroit, Wayne County Michigan.\n\nIn the Russell Woods neighborhood.\n\n📸 Google Pixel 8 Pro\n\n#photography #lightroom #digitalart #lomo #architecture #oldbuildings #houses #urban #urbangaze #detroit #wayne #michigan",
+      "span": [
+        0,
+        235
+      ],
+      "signal_id": "9fa4a0f2-a809-4521-847b-403f05107dd9",
+      "proposer": "analyst"
+    },
+    {
+      "id": "e59fa879-1e66-4b60-b135-b12cf71c8fcd",
+      "story_id": "006f1ec2-1177-4034-96bc-00ee27e4e7c9",
+      "text": "I'm a historic tour guide here in Detroit, and my go-to answer when people ask me why things are the way they are around here is, \"Capitalism, white supremacy, or (usually) both at the same time.\"",
+      "span": [
+        0,
+        196
+      ],
+      "signal_id": "9fa4a0f2-a809-4521-847b-403f05107dd9",
+      "proposer": "analyst"
+    },
+    {
+      "id": "1b7e5f7a-260c-498b-af75-1fff69072a32",
+      "story_id": "4ca2967e-4e8a-4f25-8615-9d0c60439d3b",
+      "text": "Bruise Violet (b.1916)\nDetroit, Wayne County Michigan.\n\nIn the Carbon Works neighborhood.\n\n📸 Google Pixel 8 Pro\n\n#photography #lightroom #digitalart #lomo #trees #architecture #victorian #oldbuildings #houses #urban #urbangaze #detroit #wayne #michigan",
+      "span": [
+        0,
+        253
+      ],
+      "signal_id": "9fa4a0f2-a809-4521-847b-403f05107dd9",
+      "proposer": "analyst"
+    },
+    {
+      "id": "3a14df8d-31f9-459d-9236-953634a7de52",
+      "story_id": "2930fb0a-bfb9-4314-b92c-accb8d377a9a",
+      "text": "Private emails show a Detroit Thermal employee asked a 1300 East Lafayette leader to recruit two Black residents to speak in support of its steam project. The response: “We are playing the diversity card as best as we can get that going.” www.metrotimes.com/news/playing...",
+      "span": [
+        0,
+        273
+      ],
+      "signal_id": "b0ec7d96-7213-4602-ad1b-007e468b75c2",
+      "proposer": "analyst"
+    },
+    {
+      "id": "e996418b-3814-4cbf-94dd-9274e80f44e9",
+      "story_id": "b4eebf9e-8bef-4e42-b1ca-2f9a8f162ab6",
+      "text": "A Polymarket logo recently appeared on a Detroit water tower, which the city plans to investigate for a possible permit violation.",
+      "span": [
+        0,
+        130
+      ],
+      "signal_id": "b0ec7d96-7213-4602-ad1b-007e468b75c2",
+      "proposer": "analyst"
+    },
+    {
+      "id": "9f80ea9f-b906-40f6-ba0c-ccd6a8023a91",
+      "story_id": "53bb36d9-f466-4556-ac7a-344a71d08bd2",
+      "text": "A large community sprang up in Detroit, which numbered from as many as 15,000 to 20,000 #Macedonian Americans by the 1980s.",
+      "span": [
+        0,
+        123
+      ],
+      "signal_id": "9fa4a0f2-a809-4521-847b-403f05107dd9",
+      "proposer": "analyst"
+    },
+    {
+      "id": "ab6d3472-5850-4ddc-bb1f-8979426ca9e6",
+      "story_id": "8c1ec2a2-ac50-45ad-a317-6d55c422ea74",
+      "text": "A beloved Portland bakery is coming to Detroit’s Core City neighborhood with croissants, matcha, pastries, and eventually sourdough pizza.\n\nAnd yes, fresh croissants will be carried across the park every hour. www.metrotimes.com/food-drink/b...",
+      "span": [
+        0,
+        244
+      ],
+      "signal_id": "164d48f2-a3fb-4fec-b617-bf11494f42e9",
+      "proposer": "analyst"
+    },
+    {
+      "id": "23982791-8fbb-4994-aa00-2794a56b3c43",
+      "story_id": "5c300638-5b70-4d8d-b1bb-9e2a09cfee41",
+      "text": "#Michigan has an estimated 25,000 #Latino-owned businesses, many in southwest Detroit. A national campaign asks people to spend $30 at one before Hispanic Heritage Month ends Oct. 15. #HispanicHeritageMonth",
+      "span": [
+        0,
+        206
+      ],
+      "signal_id": "164d48f2-a3fb-4fec-b617-bf11494f42e9",
+      "proposer": "analyst"
+    }
+  ],
+  "signals": [
+    {
+      "id": "b0ec7d96-7213-4602-ad1b-007e468b75c2",
+      "statement": "Institutional accountability is contested — a prediction-market logo on a water tower, a steam project's 'diversity card'.",
+      "supporting_claim_ids": [
+        "3a14df8d-31f9-459d-9236-953634a7de52",
+        "e996418b-3814-4cbf-94dd-9274e80f44e9"
+      ],
+      "voices": 2,
+      "recurrence": 2,
+      "verification": {
+        "participants": 6,
+        "endorse": 4,
+        "amend": 1,
+        "contest": 1,
+        "amendments": [
+          "The Thermal emails are documented, not alleged — the permit violation is the city's own finding."
+        ],
+        "gate": "not_yet"
+      }
+    },
+    {
+      "id": "05c90cc2-41aa-4310-ac8b-037f64378c79",
+      "statement": "The jobs are in the suburbs and 'reliable transportation' is the gate — distance and cost keep residents out of work.",
+      "supporting_claim_ids": [
+        "0c51b1f9-2ed8-4237-9b56-b9b7c9e2b196",
+        "60651df1-7406-4b7a-b352-46c0254b6836",
+        "077adeeb-cbc1-4f1f-9774-fa64948bbece",
+        "b4ced4cb-4e07-4441-9b2d-49a550311758",
+        "bc3eae34-2b53-4669-87e9-2d072399156f",
+        "df826162-7304-42bb-a255-c41fadbbf667"
+      ],
+      "voices": 3,
+      "recurrence": 6,
+      "verification": {
+        "participants": 6,
+        "endorse": 4,
+        "amend": 1,
+        "contest": 1,
+        "amendments": [
+          "Suburban employers require cars — transit is the real barrier, not willingness."
+        ],
+        "gate": "not_yet"
+      }
+    },
+    {
+      "id": "164d48f2-a3fb-4fec-b617-bf11494f42e9",
+      "statement": "Neighborhood institutions carry the revival — Latino businesses, a garden teaching young men, institutions old and new.",
+      "supporting_claim_ids": [
+        "6f84f171-08a8-45f1-ad10-869a760959de",
+        "ddef6d67-b4f5-4bb8-9d87-7469e46b3364",
+        "9af42065-5a1d-4c61-94e5-c3a875f6995c",
+        "ab6d3472-5850-4ddc-bb1f-8979426ca9e6",
+        "23982791-8fbb-4994-aa00-2794a56b3c43"
+      ],
+      "voices": 5,
+      "recurrence": 5,
+      "verification": {
+        "participants": 6,
+        "endorse": 6,
+        "amend": 0,
+        "contest": 0,
+        "amendments": [],
+        "gate": "may_be_priced"
+      }
+    },
+    {
+      "id": "9fa4a0f2-a809-4521-847b-403f05107dd9",
+      "statement": "The city documents itself — photographers on the blocks, a tour guide's blunt history, communities numbered.",
+      "supporting_claim_ids": [
+        "3ab9c5e4-4d75-441e-8609-0b7f5a921c72",
+        "e59fa879-1e66-4b60-b135-b12cf71c8fcd",
+        "1b7e5f7a-260c-498b-af75-1fff69072a32",
+        "9f80ea9f-b906-40f6-ba0c-ccd6a8023a91"
+      ],
+      "voices": 4,
+      "recurrence": 4,
+      "verification": {
+        "participants": 6,
+        "endorse": 6,
+        "amend": 0,
+        "contest": 0,
+        "amendments": [],
+        "gate": "commons_only"
+      }
+    }
+  ],
+  "interventions": {
+    "from_plans": [
+      {
+        "id": "d99e6ac4-24c5-4687-9a1d-cee2254dbdb7",
+        "name": "Detroit Three industrial plan",
+        "note": "Auto concentration keeps the metro's fortunes tied to a shrinking market share.",
+        "signal_ids": [
+          "05c90cc2-41aa-4310-ac8b-037f64378c79"
+        ],
+        "counter_signal_ids": [],
+        "priced": true
+      }
+    ],
+    "from_place": [
+      {
+        "id": "0fbe515c-1250-494c-b0fb-2be12a6a2b7d",
+        "name": "Neighborhood institutions network",
+        "note": "Southwest businesses, gardens, festivals and documenters — the city's actual resilience layer.",
+        "signal_ids": [
+          "164d48f2-a3fb-4fec-b617-bf11494f42e9",
+          "9fa4a0f2-a809-4521-847b-403f05107dd9"
+        ],
+        "counter_signal_ids": [
+          "05c90cc2-41aa-4310-ac8b-037f64378c79"
+        ],
+        "priced": false
+      }
+    ]
+  },
+  "sips": [
+    {
+      "id": "3fd6060c-3321-48d5-a8e9-5c5ad6d2dd28",
+      "kind": "node",
+      "title": "Transport is the jobs bottleneck",
+      "what_changes": "Residents name 'reliable transportation' as the gate, not skills. A transit answer unlocks the suburban jobs without moving anyone.",
+      "time_to_show": "one hiring cycle",
+      "evidence_claim_ids": [
+        "077adeeb-cbc1-4f1f-9774-fa64948bbece",
+        "0c51b1f9-2ed8-4237-9b56-b9b7c9e2b196",
+        "60651df1-7406-4b7a-b352-46c0254b6836",
+        "b4ced4cb-4e07-4441-9b2d-49a550311758",
+        "bc3eae34-2b53-4669-87e9-2d072399156f",
+        "df826162-7304-42bb-a255-c41fadbbf667"
+      ]
+    },
+    {
+      "id": "f089d1b6-ddd8-430b-aacb-6bf86812c6ac",
+      "kind": "node",
+      "title": "Institutions compound",
+      "what_changes": "Each documented street, taught cohort, and opened shop raises the floor the next one starts from — the revival is the network.",
+      "time_to_show": "years",
+      "evidence_claim_ids": [
+        "1b7e5f7a-260c-498b-af75-1fff69072a32",
+        "23982791-8fbb-4994-aa00-2794a56b3c43",
+        "3ab9c5e4-4d75-441e-8609-0b7f5a921c72",
+        "6f84f171-08a8-45f1-ad10-869a760959de",
+        "9af42065-5a1d-4c61-94e5-c3a875f6995c",
+        "9f80ea9f-b906-40f6-ba0c-ccd6a8023a91",
+        "ab6d3472-5850-4ddc-bb1f-8979426ca9e6",
+        "ddef6d67-b4f5-4bb8-9d87-7469e46b3364",
+        "e59fa879-1e66-4b60-b135-b12cf71c8fcd"
+      ]
+    }
+  ],
+  "priorities": {
+    "title": "Where capital is most needed",
+    "intro": "Derived from this place’s own signals: unreached needs first, then the loudest voices, then the leverage points.",
+    "items": [
+      {
+        "heading": "The plans don’t reach it",
+        "text": "Neighborhood institutions carry the revival — Latino businesses, a garden teaching young men, institutions old and new. — 5 voices, and no funded scheme answers it."
+      },
+      {
+        "heading": "The plans don’t reach it",
+        "text": "The city documents itself — photographers on the blocks, a tour guide's blunt history, communities numbered. — 4 voices, and no funded scheme answers it."
+      },
+      {
+        "heading": "Where the voices are",
+        "text": "Neighborhood institutions carry the revival — Latino businesses, a garden teaching young men, institutions old and new. — 5 voices say this most."
+      },
+      {
+        "heading": "The leverage point to watch",
+        "text": "Transport is the jobs bottleneck — Residents name 'reliable transportation' as the gate, not skills. A transit answer unlocks the suburban jobs without moving anyone."
+      }
+    ]
+  },
+  "meta": {
+    "place_id": "detroit",
+    "version": "2026-10-26",
+    "published_at": "2026-10-26T02:28:23.856Z",
+    "manifest_sha256": "822369607c0f4c4a1683ec775b79bf9a9ac4b88f2fa3fe7239614b4cad3a9a72"
+  }
+}

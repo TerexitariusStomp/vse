@@ -81,7 +81,28 @@ coverage gaps stay documented rather than padded.
 - **puerto-la-cruz** — first social-native place: 17 stories, all public
   posts (Hive residents on power outages, pensioner protests, ferry fares;
   nostr regional press relays).
+- **minneapolis** — 18 stories on Operation Metro Surge: the Stolen
+  Neighbors Quilt, Minnesota 15 defendants, volunteer ALPR mapping.
+- **nairobi** — 19 stories across two economies: Kanairo CBD street hustle
+  and Kibera's Bitcoin circular economy (3.78M sats reported circulating
+  locally), under water cuts and civic pressure.
+- **detroit** — 14 stories: jobs moved to the suburbs, neighborhood
+  institutions carry the city, residents document it themselves.
 - **thorntree** — +8 social stories (Teesside news/community posts).
 - **kenya-coast** — +8 (Kilifi County flood response, digital hubs).
 - **dar-es-salaam** — +8 (Tanzanian civic voice alongside the planting
   records).
+
+## Coverage caveats observed
+
+- Raw mention counts flatter big metros: Denver's ~1050 candidates are
+  ~4–6% usable (sports, "John Denver" collisions, one syndicated
+  gutter-cleaning SEO post repeated ~30×). Frome's "77" were mostly
+  substring collisions (`fromeach.com`, `Frometa`, `Ethan Frome`) — only
+  ~5 genuine posts. Neither currently carries a place; density_scan +
+  community_scan numbers need manual curation before they mean anything.
+- `détroit` (French "strait") and `Ethan Frome`-style literary names need
+  collision filters — check candidates, don't trust LIKE counts.
+- The spec generator is `tools/social/build_specs.py`: candidate
+  substrings → curated export + complete spec (signals, votes, gates,
+  interventions, SIPs) in one step.
