@@ -99,6 +99,14 @@ body {
 .excerpt:hover { @apply decoration-teal; }
 .excerpt:focus-visible { @apply outline-2 outline-accent outline-offset-1; }
 
+/* ——— diorama labels ——— */
+.diorama-bub {
+  @apply select-none whitespace-nowrap rounded-[3px] border border-line bg-paper/85 px-2 py-1 font-sans text-xs font-medium uppercase tracking-[0.22em] text-muted backdrop-blur-sm;
+}
+.diorama-bub.hot {
+  @apply border-teal text-ink;
+}
+
 /* ——— silk motion ——— */
 .reveal {
   opacity: 0;

@@ -1,6 +1,11 @@
-import { useRef, useState } from 'react'
-import { placeMeta, useResults } from '../lib'
+import { lazy, Suspense, useRef, useState } from 'react'
+import { placeMeta, useResults, type PlaceId } from '../lib'
 import { Reveal } from '../components/Reveal'
+import { Globe } from '../components/Globe'
+import { DIORAMAS } from '../diorama/specs'
+
+// three + r3f are ~600 kB — keep them out of the initial chunk.
+const Diorama = lazy(() => import('../diorama').then((m) => ({ default: m.Diorama })))
 
 /** Chapter 01 — the place + Run animation over the four stages (FR-D2). */
 export function Place() {
@@ -74,6 +79,16 @@ export function Place() {
           </dl>
         </Reveal>
       ) : null}
+
+      {/* the place itself — where it sits, what it looks like */}
+      <Reveal delay={100}>
+        <div className="rule-t mt-10 grid gap-8 pt-6 md:grid-cols-[minmax(0,2fr)_minmax(0,3fr)]">
+          <Globe active={r.place.id as PlaceId} />
+          <Suspense fallback={<div className="aspect-[4/3] w-full" aria-hidden />}>
+            <Diorama spec={DIORAMAS[r.place.id as PlaceId]} results={r} />
+          </Suspense>
+        </div>
+      </Reveal>
 
       <Reveal delay={120}>
         <button

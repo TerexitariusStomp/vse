@@ -48,6 +48,11 @@ not; any non-OSI weight needs explicit sign-off before use.
 | Tailwind CSS v4 + @tailwindcss/vite | MIT (build-time dep lightningcss is MPL-2.0 — file-level copyleft, no runtime reach) | styles |
 | vite-plugin-pwa + workbox-* | MIT | offline precache (NFR-1, G4) |
 | dagre | MIT | bipartite signal↔intervention layout (FR-D6) |
+| three | MIT | WebGL engine for the per-place dioramas (FR-D2a) |
+| @react-three/fiber | MIT | declarative scene graph + raycast events — replaces hand-rolled mount/picking |
+| @react-three/drei | MIT | OrbitControls, projected `<Html>` labels, camera helpers |
+| cobe | MIT | WebGL globe of all places in chapter 01 (same idiom as springforth/living-resources) |
+| @radix-ui/react-dialog | MIT | story-card modal — focus trap / Esc / aria built in |
 | Newsreader + Inter (self-hosted) | OFL-1.1 | serif stories / sans UI (FR-D8) |
 
 ## Test & quality gates
@@ -110,8 +115,8 @@ piece. Evaluated candidates:
 | `engine/pipeline` | 800 | extraction orchestration, clustering glue, publish |
 | `engine/console` | 1,800 | review + check + structure surfaces |
 | `engine/adapters/springforth` | 300 | results file → possibility-card drafts |
-| `site/` | 2,500 | six screens + loader + PWA |
-| **Total authored** | **~6,350** | vs ≥400k LOC deployed OSS ≈ **<2%** (cap: 5%) |
+| `site/` | 3,300 | six screens + loader + PWA + diorama seams (`diorama/build.tsx`, `Diorama.tsx`, `Globe.tsx`, `StoryCard.tsx`, `types.ts` = 1,296 LOC measured; `diorama/specs/*.ts` are authored scene *data*, same role as `tools/places/*.spec.json`) |
+| **Total authored** | **~7,150** | vs ≥400k LOC deployed OSS ≈ **<2%** (cap: 5%) |
 
 Irreducible custom core: verbatim-span validator, gate semantics,
 results-file publication — no OSS base exists for these invariants.
