@@ -29,6 +29,11 @@ export function Landing() {
 
   useEffect(() => {
     loadIndex().then(setIndex).catch(() => setIndex(null))
+    const hash = window.location.hash.slice(1)
+    if (hash)
+      requestAnimationFrame(() =>
+        document.getElementById(hash)?.scrollIntoView({ behavior: 'instant' }),
+      )
   }, [])
 
   const totals = index?.places.reduce(
@@ -129,7 +134,7 @@ export function Landing() {
               </div>
             </InView>
             <InView delay={80}>
-              <div className="mx-auto w-full max-w-md lg:max-w-none">
+              <div className="mx-auto w-full min-w-0 max-w-md lg:max-w-none">
                 <Globe focus={focus} legend={false} />
               </div>
             </InView>
