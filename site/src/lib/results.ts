@@ -132,6 +132,7 @@ export const PLACES = [
   { id: 'minneapolis', label: 'Minneapolis', data: 'real' },
   { id: 'nairobi', label: 'Nairobi', data: 'real' },
   { id: 'detroit', label: 'Detroit', data: 'real' },
+  { id: 'utopia', label: 'Utopia', data: 'dummy' },
 ] as const satisfies readonly { id: string; label: string; data: 'real' | 'dummy' }[]
 
 export function placeMeta(id: string) {
