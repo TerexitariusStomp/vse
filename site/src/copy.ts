@@ -89,7 +89,7 @@ export const landing = {
     'Nine places are real — assembled from field records and clearly attributed public posts. Utopia is a fictional example, labelled dummy data wherever it appears. Nothing is priced against a community’s say; signals marked for the commons stay in the commons.',
   footer: 'Apache-2.0 · works offline',
   oss: 'Built from open-source software',
-  ossUrl: null as string | null,
+  ossUrl: 'https://github.com/TerexitariusStomp/vse' as string | null,
   storiesLabel: 'stories',
   signalsLabel: 'signals',
 }

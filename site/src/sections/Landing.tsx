@@ -258,7 +258,17 @@ export function Landing() {
 
       <footer className="rule-t px-5 py-8 text-center">
         <p className="chapter-marker">Value Structuring Engine · {landing.footer}</p>
-        <p className="mt-2 text-xs text-muted">{landing.oss}</p>
+        <p className="mt-2 text-xs text-muted">
+          {landing.oss} ·{' '}
+          <a
+            href={landing.ossUrl!}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="a"
+          >
+            Source on GitHub
+          </a>
+        </p>
       </footer>
     </div>
   )
