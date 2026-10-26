@@ -1,0 +1,60 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  engine:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: engine/package-lock.json
+      - run: npm ci
+        working-directory: engine
+      - run: npm run typecheck
+        working-directory: engine
+      - run: npm test
+        working-directory: engine
+
+  contract:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: package-lock.json
+      - run: npm ci
+      - run: npm run validate
+      - name: published data must not drift from the site copy
+        run: |
+          for f in data/*_results.json; do
+            n="$(basename "$f")"
+            cmp -s "$f" "site/public/data/$n" || { echo "drift: $n"; exit 1; }
+          done
+          test -f site/public/data/index.json
+      - name: the four place lists must agree
+        run: node tools/check-places.mjs
+
+  site:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: site/package-lock.json
+      - run: npm ci
+        working-directory: site
+      - run: npm run lint
+        working-directory: site
+      - run: npm run build
+        working-directory: site

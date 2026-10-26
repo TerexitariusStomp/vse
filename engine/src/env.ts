@@ -2,9 +2,20 @@ export interface Env {
   DB: D1Database
   ARTIFACTS: R2Bucket
   PIPELINE: Queue<PipelineJob>
+  DLQ?: Queue<PipelineJob>
   AI: Ai
   WHATSAPP_VERIFY_TOKEN?: string
   WHATSAPP_TOKEN?: string
+  // WhatsApp app secret — when set, POST /intake/whatsapp is HMAC-verified
+  // against X-Hub-Signature-256. Set it in production or the webhook is an
+  // open story-injection lane.
+  WHATSAPP_APP_SECRET?: string
+  // Cloudflare Turnstile — when set, public web intake + check-session mints
+  // must carry a verified `turnstile_token`. Unset = facilitated mode.
+  TURNSTILE_SECRET?: string
+  // Resend — when set, POST /api/check/link emails the participant link;
+  // otherwise the link returns for facilitator hand-off.
+  RESEND_API_KEY?: string
   ANALYST_KEY?: string
 }
 

@@ -104,8 +104,10 @@ export function Globe({
     if (!canvas) return
     const globe = createGlobe(canvas, {
       devicePixelRatio: 2,
-      width: canvas.offsetWidth * 2 || 600,
-      height: canvas.offsetWidth * 2 || 600,
+      // cobe multiplies width/height by devicePixelRatio internally —
+      // pass CSS pixels, not device pixels.
+      width: canvas.offsetWidth || 300,
+      height: canvas.offsetWidth || 300,
       phi: phi.current,
       theta: 0.25,
       dark: dark ? 1 : 0,
@@ -121,9 +123,16 @@ export function Globe({
       })),
     })
     globeRef.current = globe
+    // Resize only on actual size change — passing width into update() every
+    // frame writes canvas.style.width, which feeds back into offsetWidth and
+    // doubles the canvas every frame (observed as a ~300k px tall page).
+    const ro = new ResizeObserver(() => {
+      const w = canvas.offsetWidth
+      globe.update({ width: w, height: w })
+    })
+    ro.observe(canvas)
     let raf = 0
     const tick = () => {
-      const w = canvas.offsetWidth
       // ease toward the target bearing, else slow auto-rotate
       if (target.current !== null && !reduced.current) {
         const d = target.current - phi.current
@@ -132,15 +141,12 @@ export function Globe({
       } else if (!reduced.current && interacting.current === null) {
         phi.current += 0.0022
       }
-      globe.update({
-        phi: phi.current + movement.current,
-        width: w * 2,
-        height: w * 2,
-      })
+      globe.update({ phi: phi.current + movement.current })
       raf = requestAnimationFrame(tick)
     }
     raf = requestAnimationFrame(tick)
     return () => {
+      ro.disconnect()
       cancelAnimationFrame(raf)
       globe.destroy()
       globeRef.current = null
@@ -176,16 +182,22 @@ export function Globe({
   }
 
   const downPos = useRef<[number, number] | null>(null)
+  // min-w-0 on the wrappers: the canvas's width/height attributes must never
+  // feed back into layout via min-content propagation (a runaway observed
+  // in headless environments where the attribute can force ancestors wider).
   return (
-    <div>
+    <div className="min-w-0">
       <div
-        className="relative aspect-square w-full select-none"
+        className="relative aspect-square w-full min-w-0 select-none [contain:size]"
         role="img"
         aria-label="Globe showing every place the engine has heard"
       >
         <canvas
           ref={canvasRef}
-          className="h-full w-full cursor-grab active:cursor-grabbing"
+          // absolute+inset-0: out of flow, so cobe's width/height attribute
+          // writes can never feed back into layout (runaway growth seen in
+          // some environments).
+          className="absolute inset-0 h-full w-full cursor-grab active:cursor-grabbing"
           onPointerDown={(e) => {
             interacting.current = e.clientX - movement.current * 1400
             downPos.current = [e.clientX, e.clientY]

@@ -31,7 +31,9 @@ export const PlacesIndexSchema = z.object({
 export type PlacesIndex = z.infer<typeof PlacesIndexSchema>
 
 export async function loadIndex(): Promise<PlacesIndex> {
-  const res = await fetch(`${import.meta.env.BASE_URL}data/index.json`)
+  const res = await fetch(`${import.meta.env.BASE_URL}data/index.json`, {
+    signal: AbortSignal.timeout(15_000),
+  })
   if (!res.ok) throw new Error(`Could not load index file (${res.status})`)
   return PlacesIndexSchema.parse(await res.json())
 }

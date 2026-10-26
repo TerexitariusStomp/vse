@@ -144,7 +144,7 @@ export type PlaceId = (typeof PLACES)[number]['id']
 
 export async function loadResults(place: string): Promise<Results> {
   const url = `${import.meta.env.BASE_URL}data/${place}_results.json`
-  const res = await fetch(url)
+  const res = await fetch(url, { signal: AbortSignal.timeout(15_000) })
   if (!res.ok) throw new Error(`Could not load results file (${res.status})`)
   return ResultsSchema.parse(await res.json())
 }

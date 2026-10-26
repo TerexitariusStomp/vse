@@ -1,12 +1,23 @@
 import type { Env } from './env.ts'
 // Same semantic invariants as tools/validate-results.mjs — publish reuses
 // the library so the file the demonstrator reads is exactly what passed.
+// results-lib.mjs is pure JS with no Node imports; it bundles into the
+// worker as a single source of truth for both consumers.
 import { checkSemantics } from '../../tools/results-lib.mjs'
+import { springforthArtifact } from './adapters/springforth.ts'
 
 // PUBLISH (PRD FR-E24, gate G8): assemble → schema+semantics → version →
-// sha256 manifest → R2 → publications row. Only checked signals publish.
+// sha256 manifest → R2 → publications row. Only checked/published signals
+// reach the file; withdrawn, unconsented and PII-flagged stories never do.
 
-interface PubRow { id: string; version: string; manifest_sha256: string; r2_key: string }
+export interface PubRow {
+  id: string
+  version: string
+  manifest_sha256: string
+  r2_key: string
+  warnings: string[]
+  springforth_key?: string
+}
 
 /** Assemble the results-file JSON for a place from live tables. */
 export async function assembleResults(env: Env, placeId: string) {
@@ -14,13 +25,20 @@ export async function assembleResults(env: Env, placeId: string) {
   const place = await db.prepare('SELECT * FROM places WHERE id = ?').bind(placeId).first()
   if (!place) throw new Error(`place ${placeId} not found`)
 
+  // consent + pii gates (FR-E9 / NFR-2): unconsented or PII-flagged stories
+  // are held for review and never reach the public artifact.
   const stories = (
-    await db.prepare('SELECT id, teller_role, channel, text, source FROM stories WHERE place_id = ? AND withdrawn = 0').bind(placeId).all()
+    await db.prepare(
+      `SELECT id, teller_role, channel, text, source FROM stories
+       WHERE place_id = ? AND withdrawn = 0 AND consent = 'granted' AND pii_flag = 0`,
+    ).bind(placeId).all()
   ).results ?? []
   const claims = (
     await db.prepare(
-      `SELECT id, story_id, text, span_start, span_end, signal_id, proposer FROM claims
-       WHERE place_id = ? AND status = 'verified' AND signal_id IS NOT NULL`,
+      `SELECT cl.id, cl.story_id, cl.text, cl.span_start, cl.span_end, cl.signal_id, cl.proposer
+       FROM claims cl JOIN stories st ON st.id = cl.story_id
+       WHERE cl.place_id = ? AND cl.status = 'verified' AND cl.signal_id IS NOT NULL
+         AND st.withdrawn = 0 AND st.consent = 'granted' AND st.pii_flag = 0`,
     ).bind(placeId).all()
   ).results ?? []
 
@@ -28,7 +46,7 @@ export async function assembleResults(env: Env, placeId: string) {
     await db.prepare(
       `SELECT s.id, s.statement,
               (SELECT gate FROM gates g WHERE g.signal_id = s.id) AS gate
-       FROM signals s WHERE s.place_id = ? AND s.status = 'checked'`,
+       FROM signals s WHERE s.place_id = ? AND s.status IN ('checked','published')`,
     ).bind(placeId).all()
   ).results ?? []
 
@@ -166,7 +184,11 @@ export async function assembleResults(env: Env, placeId: string) {
   }
 }
 
-export async function publish(env: Env, placeId: string): Promise<PubRow> {
+export async function publish(
+  env: Env,
+  placeId: string,
+  opts: { springforth?: boolean } = {},
+): Promise<PubRow> {
   const results = await assembleResults(env, placeId)
 
   // Structural rules that must hold before anything reaches a static host.
@@ -174,7 +196,37 @@ export async function publish(env: Env, placeId: string): Promise<PubRow> {
   const semantics = checkSemantics(results as any)
   if (semantics.length) throw new Error(`semantic validation failed: ${semantics.join('; ')}`)
 
-  const version = new Date().toISOString().slice(0, 10)
+  // FR-E19: completeness warnings — non-blocking, but the analyst should
+  // see what the file deliberately left out.
+  const warnings: string[] = []
+  const db = env.DB
+  const pending = (
+    await db.prepare(
+      `SELECT
+         (SELECT COUNT(*) FROM signals WHERE place_id = ? AND status IN ('candidate','checking')) AS unchecked,
+         (SELECT COUNT(DISTINCT v.signal_id) FROM votes v JOIN signals s ON s.id = v.signal_id
+           WHERE s.place_id = ? AND v.vote = 'contest' AND s.status IN ('checked','published')) AS contested,
+         (SELECT COUNT(*) FROM stories WHERE place_id = ? AND withdrawn = 0 AND consent != 'granted') AS unconsented,
+         (SELECT COUNT(*) FROM stories WHERE place_id = ? AND withdrawn = 0 AND pii_flag = 1) AS pii_held,
+         (SELECT COUNT(*) FROM claims WHERE place_id = ? AND status = 'quarantined') AS quarantined`,
+    ).bind(placeId, placeId, placeId, placeId, placeId).first<Record<string, number>>()
+  ) ?? {}
+  if (pending.unchecked) warnings.push(`${pending.unchecked} signal(s) still unchecked — excluded`)
+  if (pending.contested) warnings.push(`${pending.contested} contested signal(s) — excluded`)
+  if (pending.unconsented) warnings.push(`${pending.unconsented} story(ies) awaiting consent — excluded`)
+  if (pending.pii_held) warnings.push(`${pending.pii_held} PII-flagged story(ies) held for review — excluded`)
+  if (pending.quarantined) warnings.push(`${pending.quarantined} quarantined claim(s) — excluded`)
+
+  // Version: YYYY-MM-DD, suffixed .N when a same-day publication already
+  // exists so each artifact's version is unique.
+  const today = new Date().toISOString().slice(0, 10)
+  const prior = (
+    await db.prepare(
+      'SELECT COUNT(*) AS n FROM publications WHERE place_id = ? AND version LIKE ?',
+    ).bind(placeId, `${today}%`).first<{ n: number }>()
+  )?.n ?? 0
+  const version = prior ? `${today}.${prior + 1}` : today
+
   // Hash the body with the manifest field null, then embed the digest —
   // a manifest hash cannot include itself.
   const meta = { place_id: placeId, version, published_at: new Date().toISOString(), manifest_sha256: null as string | null }
@@ -189,9 +241,24 @@ export async function publish(env: Env, placeId: string): Promise<PubRow> {
   await env.ARTIFACTS.put(key, body, { httpMetadata: { contentType: 'application/json' } })
   await env.ARTIFACTS.put(`${key}.manifest.json`, manifest)
 
+  // FR-E25: optionally emit a Springforth-shaped adapter artifact alongside.
+  let springforth_key: string | undefined
+  if (opts.springforth) {
+    springforth_key = `springforth/${placeId}/${version}-${sha.slice(0, 12)}.json`
+    await env.ARTIFACTS.put(springforth_key, JSON.stringify(springforthArtifact(results), null, 2), {
+      httpMetadata: { contentType: 'application/json' },
+    })
+  }
+
   const id = crypto.randomUUID()
-  await env.DB.prepare(
-    'INSERT INTO publications (id, place_id, version, manifest_sha256, r2_key) VALUES (?, ?, ?, ?, ?)',
-  ).bind(id, placeId, version, sha, key).run()
-  return { id, version, manifest_sha256: sha, r2_key: key }
+  await db.batch([
+    db.prepare(
+      'INSERT INTO publications (id, place_id, version, manifest_sha256, r2_key) VALUES (?, ?, ?, ?, ?)',
+    ).bind(id, placeId, version, sha, key),
+    // Publication closes the stage: checked signals become published.
+    db.prepare(
+      "UPDATE signals SET status = 'published' WHERE place_id = ? AND status = 'checked'",
+    ).bind(placeId),
+  ])
+  return { id, version, manifest_sha256: sha, r2_key: key, warnings, springforth_key }
 }

@@ -44,6 +44,10 @@ export function checkSemantics(data) {
   // --- signals: bidirectional support + derivable aggregates ------------
   const seen = new Set()
   for (const s of data.signals ?? []) {
+    if (!s.supporting_claim_ids?.length)
+      err(`signal ${s.id}: resolves to no verbatim excerpts (gate G2)`)
+    if (new Set(s.supporting_claim_ids ?? []).size !== (s.supporting_claim_ids ?? []).length)
+      err(`signal ${s.id}: duplicate claim ids in supporting_claim_ids`)
     for (const cid of s.supporting_claim_ids) {
       const c = claims.get(cid)
       if (!c) { err(`signal ${s.id}: supporting_claim_ids -> ${cid} does not resolve`); continue }
@@ -69,12 +73,18 @@ export function checkSemantics(data) {
   const commonsOnly = new Set(
     [...signals.values()].filter((s) => s.verification?.gate === 'commons_only').map((s) => s.id),
   )
+  const interventionIds = new Map()
   for (const view of ['from_plans', 'from_place']) {
     for (const i of data.interventions?.[view] ?? []) {
+      if (interventionIds.has(i.id))
+        err(`intervention ${i.id}: id appears in both ${interventionIds.get(i.id)} and ${view}`)
+      interventionIds.set(i.id, view)
       for (const sid of i.signal_ids)
         if (!signals.has(sid)) err(`intervention ${i.id}: signal_id ${sid} does not resolve`)
       for (const sid of i.counter_signal_ids ?? [])
         if (!signals.has(sid)) err(`intervention ${i.id}: counter_signal_id ${sid} does not resolve`)
+      if ((i.counter_signal_ids ?? []).some((sid) => i.signal_ids.includes(sid)))
+        err(`intervention ${i.id}: a signal cannot be both evidence and counter-evidence`)
       if (i.priced && i.signal_ids.some((sid) => commonsOnly.has(sid)))
         err(`intervention ${i.id}: priced intervention may not answer commons_only signals`)
       if (i.sip_id && !sips.has(i.sip_id)) err(`intervention ${i.id}: sip_id ${i.sip_id} does not resolve`)

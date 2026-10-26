@@ -83,7 +83,19 @@ own clean URL — `/thorntree`, `/nairobi`, `/utopia`, … (`/` is the landing
 page; legacy `?place=x#hash` links redirect to `/x#hash`). The header menu
 switches places and a sticky step bar walks through each one. To show
 another place, drop in a `*_results.json` that passes the validator below
-and add it to `PLACES` in `site/src/lib/results.ts`.
+and add it to `PLACES` in `site/src/lib/results.ts`. `npm run check` keeps
+`data/`, `site/public/data/`, `PLACES`, and `index.json` in sync:
+
+```bash
+node tools/data-sync.mjs          # mirror canonical data/ → site/public/data/
+node tools/data-sync.mjs --check  # drift check (CI)
+node tools/check-places.mjs       # place-list consistency check (CI)
+```
+
+`/:placeId/share` is a public story-submission form posting to the engine's
+intake (consent checkbox required; Turnstile when `TURNSTILE_SITE_KEY` is
+set on the site build). `npm run a11y:check` gates every route with
+axe-core at desktop and mobile viewports.
 
 Landing-page preview images are rendered from each place's diorama and
 committed to `site/public/previews/`; regenerate them with the build served
@@ -122,9 +134,13 @@ npx wrangler d1 create vse            # put the database_id in wrangler.toml
 npx wrangler d1 migrations apply vse  # schema
 npx wrangler secret put WHATSAPP_VERIFY_TOKEN
 npx wrangler secret put WHATSAPP_TOKEN
+npx wrangler secret put WHATSAPP_APP_SECRET  # HMAC-verifies X-Hub-Signature-256 on POST /intake/whatsapp
 npx wrangler secret put ANALYST_KEY   # gates /api/consolidate, /api/publish, …
+# optional — the service degrades cleanly when unset:
+npx wrangler secret put TURNSTILE_SECRET   # gates web intake + session mints
+npx wrangler secret put RESEND_API_KEY     # emails magic links (else facilitator hand-off)
 npm run dev                           # local dev (miniflare)
-npm run typecheck && npm test         # tsc + node --test
+npm run typecheck && npm test         # tsc + node --test (node:sqlite-backed D1 stub)
 npm run deploy                        # wrangler deploy (host security gate runs)
 ```
 
@@ -133,7 +149,25 @@ Pipeline: `POST /api/places/:id/stories` (or WhatsApp webhook / voice upload)
 (quarantines paraphrases) → `POST /api/consolidate/:place` proposes clusters →
 analyst confirms signals → people-check votes + sticky gates →
 `POST /api/publish/:place` assembles, validates, hashes, and stores a
-versioned results file + manifest in R2 — the exact format `site/` reads.
+versioned (`YYYY-MM-DD.N`) results file + manifest in R2 — the exact format
+`site/` reads. With `{springforth: true}` publish also writes a
+`springforth/<place>/<version>-<sha>.json` draft-possibility artifact
+(FR-E25).
+
+Boundary guards (migration 0004): story text capped at 20k chars, audio at
+25MB, WhatsApp POSTs HMAC-verified, votes rejected cross-place, session
+mints Turnstile-gated when configured, `/extract-batch` capped at 50,
+exhausted queue jobs recorded in `pipeline_failures`, and `consent` +
+`pii_flag` hold unconsented/PII-flagged stories out of extraction and
+publication. Participant check links come from `POST /api/check/session`
+(facilitated) or `POST /api/check/link` (magic link via Resend).
+
+The analyst's day-to-day surface is `tools/console.mjs` — place/scenario
+setup, story listing, claim/signal review, and publish against the live API:
+
+```bash
+node tools/console.mjs --help        # commands + required ANALYST_KEY env
+```
 
 ### Live deployment
 

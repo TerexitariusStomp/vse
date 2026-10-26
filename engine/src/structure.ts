@@ -18,11 +18,24 @@ const SignalIn = z.object({
   claim_ids: z.array(z.string()).min(1),
 })
 
-/** Analyst confirms a cluster as a signal; claims get linked verbatim. */
+/** Analyst confirms a cluster as a signal; claims get linked verbatim.
+ *  Every claim_id must resolve to a verified claim in this place — a silent
+ *  no-op would produce a signal backing fewer words than the analyst saw. */
 structure.post('/places/:placeId/signals', async (c) => {
   const body = SignalIn.safeParse(await c.req.json().catch(() => null))
   if (!body.success) return c.json({ error: body.error.flatten() }, 400)
   const placeId = c.req.param('placeId')
+  const resolvable = await c.env.DB.prepare(
+    `SELECT id FROM claims
+     WHERE place_id = ? AND status = 'verified'
+       AND id IN (${body.data.claim_ids.map(() => '?').join(',')})`,
+  )
+    .bind(placeId, ...body.data.claim_ids)
+    .all<{ id: string }>()
+  const ok = new Set((resolvable.results ?? []).map((r) => r.id))
+  const missing = body.data.claim_ids.filter((cid) => !ok.has(cid))
+  if (missing.length)
+    return c.json({ error: `claims not verified in this place: ${missing.join(', ')}` }, 400)
   const id = crypto.randomUUID()
   const batch = [
     c.env.DB.prepare(
@@ -57,6 +70,20 @@ structure.post('/places/:placeId/interventions', async (c) => {
   const body = InterventionIn.safeParse(await c.req.json().catch(() => null))
   if (!body.success) return c.json({ error: body.error.flatten() }, 400)
 
+  // All referenced signals must exist in this place — intervention links
+  // to another place's signals would corrupt the published file.
+  const placeId = c.req.param('placeId')
+  const allSignalIds = [...body.data.signal_ids, ...body.data.counter_signal_ids]
+  const sigRows = await c.env.DB.prepare(
+    `SELECT id FROM signals WHERE place_id = ? AND id IN (${allSignalIds.map(() => '?').join(',')})`,
+  )
+    .bind(placeId, ...allSignalIds)
+    .all<{ id: string }>()
+  const found = new Set((sigRows.results ?? []).map((r) => r.id))
+  const missing = allSignalIds.filter((sid) => !found.has(sid))
+  if (missing.length)
+    return c.json({ error: `signals not in this place: ${missing.join(', ')}` }, 400)
+
   // commons_only signals can never back a priced intervention (gate G10).
   if (body.data.priced) {
     const commons = await c.env.DB.prepare(
@@ -73,7 +100,7 @@ structure.post('/places/:placeId/interventions', async (c) => {
   const rows = [
     c.env.DB.prepare(
       'INSERT INTO interventions (id, place_id, view, name, note, sip_id, priced) VALUES (?, ?, ?, ?, ?, ?, ?)',
-    ).bind(id, c.req.param('placeId'), body.data.view, body.data.name, body.data.note, body.data.sip_id ?? null, body.data.priced ? 1 : 0),
+    ).bind(id, placeId, body.data.view, body.data.name, body.data.note, body.data.sip_id ?? null, body.data.priced ? 1 : 0),
     ...body.data.signal_ids.map((sid) =>
       c.env.DB.prepare(
         "INSERT INTO intervention_signals (intervention_id, signal_id, role) VALUES (?, ?, 'answer')",
@@ -100,6 +127,17 @@ const SipIn = z.object({
 structure.post('/places/:placeId/sips', async (c) => {
   const body = SipIn.safeParse(await c.req.json().catch(() => null))
   if (!body.success) return c.json({ error: body.error.flatten() }, 400)
+  // Evidence claims must resolve inside this place.
+  const ev = await c.env.DB.prepare(
+    `SELECT id FROM claims WHERE place_id = ? AND status = 'verified'
+       AND id IN (${body.data.evidence_claim_ids.map(() => '?').join(',')})`,
+  )
+    .bind(c.req.param('placeId'), ...body.data.evidence_claim_ids)
+    .all<{ id: string }>()
+  const evOk = new Set((ev.results ?? []).map((r) => r.id))
+  const missing = body.data.evidence_claim_ids.filter((cid) => !evOk.has(cid))
+  if (missing.length)
+    return c.json({ error: `evidence claims not verified in this place: ${missing.join(', ')}` }, 400)
   const id = crypto.randomUUID()
   const res = await c.env.DB.batch([
     c.env.DB.prepare(

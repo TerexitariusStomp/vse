@@ -94,8 +94,10 @@ export async function extractClaims(ai: Ai, storyText: string): Promise<Candidat
  * with status='quarantined' so the analyst console can review them.
  */
 export async function runExtraction(env: Env, storyId: string): Promise<void> {
+  // consent='pending'/'declined' and PII-flagged stories are held out of
+  // processing (FR-E9 / NFR-2) — flagged text waits for analyst review.
   const story = await env.DB.prepare(
-    'SELECT id, place_id, text FROM stories WHERE id = ? AND withdrawn = 0',
+    "SELECT id, place_id, text FROM stories WHERE id = ? AND withdrawn = 0 AND consent = 'granted' AND pii_flag = 0",
   )
     .bind(storyId)
     .first<{ id: string; place_id: string; text: string }>()

@@ -22,6 +22,14 @@ queue = "vse-pipeline"
 queue = "vse-pipeline"
 max_batch_size = 5
 max_retries = 2
+dead_letter_queue = "vse-pipeline-dlq"
+
+# Jobs that exhausted retries land here; the consumer writes them to
+# pipeline_failures for analyst visibility (GET /api/pipeline/failures).
+[[queues.consumers]]
+queue = "vse-pipeline-dlq"
+max_batch_size = 10
+max_retries = 0
 
 # Extraction, transcription, embeddings — model ids in src/models.ts.
 # All commercially-usable weights (Apache-2.0/MIT per OSS-STACK.md).
@@ -31,4 +39,7 @@ binding = "AI"
 # Secrets (wrangler secret put):
 #   WHATSAPP_VERIFY_TOKEN  — webhook handshake
 #   WHATSAPP_TOKEN         — Cloud API bearer token
+#   WHATSAPP_APP_SECRET    — X-Hub-Signature-256 HMAC verification (production: required)
+#   TURNSTILE_SECRET       — spam gate for public web intake + session mints (optional)
+#   RESEND_API_KEY         — FR-E17 magic-link email delivery (optional)
 #   ANALYST_KEY            — bearer token for analyst/console routes

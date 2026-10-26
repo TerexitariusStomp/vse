@@ -1,6 +1,6 @@
 import { Hono } from 'hono'
 import type { Env, PipelineJob } from './env.ts'
-import { intake } from './intake.ts'
+import { intake, timingSafeEq } from './intake.ts'
 import { check } from './check.ts'
 import { structure } from './structure.ts'
 import { runExtraction, findSpans } from './extract.ts'
@@ -31,7 +31,8 @@ app.get('/api/published/:placeId', async (c) => {
 const analyst = new Hono<{ Bindings: Env }>()
 analyst.use('*', async (c, next) => {
   const key = c.env.ANALYST_KEY
-  if (!key || c.req.header('authorization') !== `Bearer ${key}`)
+  const got = c.req.header('authorization') ?? ''
+  if (!key || !timingSafeEq(got, `Bearer ${key}`))
     return c.json({ error: 'analyst key required' }, 401)
   await next()
 })
@@ -59,7 +60,12 @@ analyst.post('/places/:placeId', async (c) => {
 })
 analyst.post('/publish/:placeId', async (c) => {
   try {
-    return c.json(await publish(c.env, c.req.param('placeId')), 201)
+    return c.json(
+      await publish(c.env, c.req.param('placeId'), {
+        springforth: c.req.query('springforth') === '1',
+      }),
+      201,
+    )
   } catch (e) {
     return c.json({ error: e instanceof Error ? e.message : String(e) }, 422)
   }
@@ -70,11 +76,15 @@ analyst.post('/extract/:storyId', async (c) => {
   return c.json({ ok: true })
 })
 
-/** Re-run extraction for many stories in parallel (one HTTP call). */
+/** Re-run extraction for many stories in parallel (one HTTP call).
+ *  Capped — each entry is a model call, so an unbounded batch is a
+ *  spend/quota footgun. */
 analyst.post('/extract-batch', async (c) => {
   const { storyIds } = await c.req.json()
   if (!Array.isArray(storyIds) || !storyIds.length)
     return c.json({ error: 'storyIds array required' }, 400)
+  if (storyIds.length > 100)
+    return c.json({ error: 'storyIds capped at 100 per call' }, 400)
   const results = await Promise.allSettled(
     storyIds.map((id: string) => runExtraction(c.env, id)),
   )
@@ -129,6 +139,14 @@ analyst.get('/claims/:placeId', async (c) => {
   ).bind(c.req.param('placeId'), status).all()
   return c.json(results ?? [])
 })
+
+/** Queue jobs that exhausted retries — the console's failure list. */
+analyst.get('/pipeline/failures', async (c) => {
+  const { results } = await c.env.DB.prepare(
+    'SELECT * FROM pipeline_failures ORDER BY created_at DESC LIMIT 200',
+  ).all()
+  return c.json(results ?? [])
+})
 app.route('/api', analyst)
 
 // --- queue consumer: the pipeline between stages -----------------------------
@@ -136,6 +154,25 @@ export default {
   fetch: app.fetch,
 
   async queue(batch: MessageBatch<PipelineJob>, env: Env): Promise<void> {
+    // Dead-letter queue: jobs that exhausted retries land here. Record them
+    // so the analyst console sees what died instead of dropping silently.
+    if (batch.queue === 'vse-pipeline-dlq') {
+      for (const msg of batch.messages) {
+        await env.DB.prepare(
+          'INSERT INTO pipeline_failures (id, kind, payload, error, attempts) VALUES (?, ?, ?, ?, ?)',
+        )
+          .bind(
+            crypto.randomUUID(),
+            (msg.body as PipelineJob)?.kind ?? 'unknown',
+            JSON.stringify(msg.body),
+            'retries exhausted',
+            msg.attempts ?? 0,
+          )
+          .run()
+        msg.ack()
+      }
+      return
+    }
     // Messages are independent jobs — run them concurrently. Each still
     // gets the same per-claim span check; a failure retries only that
     // message.

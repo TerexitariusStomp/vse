@@ -6,9 +6,13 @@
   "license": "Apache-2.0",
   "scripts": {
     "validate": "for f in data/*_results.json; do node tools/validate-results.mjs \"$f\" || exit 1; done",
+    "data:sync": "node tools/data-sync.mjs",
+    "data:check": "node tools/data-sync.mjs --check",
+    "places:check": "node tools/check-places.mjs",
     "build-data": "node tools/build-place-data.mjs",
     "site:dev": "npm --prefix site run dev",
-    "site:build": "npm --prefix site run build"
+    "site:build": "npm --prefix site run build",
+    "check": "npm run validate && npm run data:check && npm run places:check && npm --prefix engine run typecheck && npm --prefix engine run test && npm --prefix site run lint && npm --prefix site run build"
   },
   "devDependencies": {
     "ajv": "^8.17.1",
