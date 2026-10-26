@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-26T03:35:14.911Z",
+  "generated": "2026-10-26T04:07:24.202Z",
   "places": [
     {
       "id": "thorntree",
@@ -13,7 +13,7 @@
         "stories": 22,
         "claims": 23,
         "signals": 6,
-        "interventions": 5
+        "interventions": 9
       },
       "thread": {
         "excerpt": "We need marsh reeds and planting days volunteers",
@@ -35,14 +35,14 @@
         "stories": 28,
         "claims": 30,
         "signals": 9,
-        "interventions": 3
+        "interventions": 7
       },
       "thread": {
-        "excerpt": "344 mangrove trees planted — Gongoni, Gongoni ward, Magarini, Kilifi County, Kenya",
-        "teller": "field team record",
+        "excerpt": "Access to vegetables and fruits",
+        "teller": "smallholder",
         "channel": "facilitated",
-        "signal": "The coast is replanting its mangroves — and the nursery economy behind it is real",
-        "intervention": "Artizen Season 7 — curated fund"
+        "signal": "People grow, farm and trade to get by",
+        "intervention": "Voucher commitments — produce, credit, fuel"
       }
     },
     {
@@ -57,7 +57,7 @@
         "stories": 19,
         "claims": 41,
         "signals": 5,
-        "interventions": 3
+        "interventions": 6
       },
       "thread": {
         "excerpt": "400 more propagules to reach 1,200",
@@ -79,14 +79,14 @@
         "stories": 12,
         "claims": 13,
         "signals": 4,
-        "interventions": 2
+        "interventions": 4
       },
       "thread": {
-        "excerpt": "Sand supply — depot confirmed",
-        "teller": "calder-council-liaison",
+        "excerpt": "Community flood-response prep day",
+        "teller": "hebden-mutual-aid",
         "channel": "facilitated",
-        "signal": "The sandbags question is answered twice — once by the liaison, once by the network",
-        "intervention": "Sand delivery confirmed — depot lorry"
+        "signal": "The prep day needs pumps, bins and bodies filling sandbags",
+        "intervention": "Community flood-response prep day"
       }
     },
     {
@@ -101,7 +101,7 @@
         "stories": 34,
         "claims": 36,
         "signals": 8,
-        "interventions": 2
+        "interventions": 5
       },
       "thread": {
         "excerpt": "192,630 mangrove trees — Kibugumo Coast Plots, Dar es Salaam",
@@ -123,14 +123,14 @@
         "stories": 17,
         "claims": 30,
         "signals": 8,
-        "interventions": 2
+        "interventions": 4
       },
       "thread": {
-        "excerpt": "since yesterday we've been having severe Electricity problems in the city of Puerto La Cruz (Anzoátegui), where I'm currently staying",
-        "teller": "hive · Milita Digital (resident)",
+        "excerpt": "la reducción de su bono de alimentación",
+        "teller": "nostr · regional press relay",
         "channel": "social",
-        "signal": "The grid fails daily: five-to-six-hour rationing, avenues dark for a month, a thermoelectric promise still unproven.",
-        "intervention": "San Diego de Cabrutica thermoelectric plant"
+        "signal": "Pensioners protest weekly over a cut food bonus — seven consecutive days of unresolved demands.",
+        "intervention": "Pensioners' weekly assembly"
       }
     },
     {
@@ -145,14 +145,14 @@
         "stories": 18,
         "claims": 21,
         "signals": 5,
-        "interventions": 1
+        "interventions": 2
       },
       "thread": {
-        "excerpt": "Trump administration asks Supreme Court to permit quick third-country deportations",
-        "teller": "bsky · Patches🇺🇦🍁🇨🇦 EvilThrives",
+        "excerpt": "The Stolen Neighbors Quilt was revealed this week at the Minnesota State Capitol. 100 people worked in it for 6 months. Its 11,000 squares represent the number of people abducted by ICE in Minnesota during Operation Metro Surge.",
+        "teller": "bsky",
         "channel": "social",
-        "signal": "People are being taken and hurt — abductions, unlawful force, and fear expressed in first person.",
-        "intervention": "Operation Metro Surge"
+        "signal": "The city counts and grieves its missing — a quilt of 11,000 squares, built by a hundred hands.",
+        "intervention": "Neighborhood response network"
       }
     },
     {
@@ -167,14 +167,14 @@
         "stories": 19,
         "claims": 23,
         "signals": 4,
-        "interventions": 1
+        "interventions": 2
       },
       "thread": {
-        "excerpt": "Nairobi — Nairobi braces for heavy rains as El Niño threatens flood risks #Plan #Nairobi #News #Breaking",
-        "teller": "bsky",
+        "excerpt": "In Nairobi, with a smartphone, it's the ONLY asset you can own",
+        "teller": "nostr user",
         "channel": "social",
-        "signal": "Basic infrastructure is failing — 17 neighbourhoods lose water, drainage criticised ahead of El Niño, matatu safety kills.",
-        "intervention": "Nairobi water & drainage programme"
+        "signal": "A parallel economy runs underneath — sats spent at Ruth Shop, a circular economy in Kibera, women building the rails.",
+        "intervention": "Kibera circular-economy rails"
       }
     },
     {
@@ -189,11 +189,11 @@
         "stories": 14,
         "claims": 17,
         "signals": 4,
-        "interventions": 1
+        "interventions": 2
       },
       "thread": {
         "excerpt": "diesel was over $7.00 a gallon in Detroit",
-        "teller": "bsky · zipperheadedfool.bsky.so",
+        "teller": "bsky user",
         "channel": "social",
         "signal": "The jobs are in the suburbs and 'reliable transportation' is the gate — distance and cost keep residents out of work.",
         "intervention": "Detroit Three industrial plan"
@@ -208,7 +208,7 @@
         "stories": 8,
         "claims": 49,
         "signals": 7,
-        "interventions": 5
+        "interventions": 10
       },
       "thread": {
         "excerpt": "Our roll is 38. Ten years ago it was 61, and the county reviews any school under 40.",

@@ -8,8 +8,11 @@ import {
   type Gate,
   type Signal,
 } from '../lib'
+import { signalsAnswer } from '../lib/answers'
+import { HOW, QUESTIONS, STEPS } from '../copy'
+import { Term } from '../components/Term'
 import { Chapter } from '../components/Chapter'
-import { Reveal } from '../components/Reveal'
+import { InView } from '../components/InView'
 
 const smooth = () =>
   window.matchMedia?.('(prefers-reduced-motion: reduce)').matches
@@ -26,6 +29,7 @@ const GATE_DOT: Record<Gate, string> = {
 export function Signals() {
   const r = useResults()
   const { openSignal, signalNonce, toggleSignal } = useUI()
+  const a = signalsAnswer(r)
 
   useEffect(() => {
     if (!openSignal) return
@@ -36,12 +40,18 @@ export function Signals() {
 
   return (
     <Chapter
-      n="03"
+      n={STEPS[2].n}
       id="signals"
-      title="What the place is saying"
-      intro={`${r.signals.length} signals, consolidated from ${r.claims.length}
-      excerpts. Every one traces back to the exact words in the record —
-      nothing is invented here.`}
+      title={STEPS[2].label}
+      question={QUESTIONS.signals}
+      answer={
+        <>
+          {a.claims} exact <Term k="excerpt">excerpts</Term> grouped into {a.signals}{' '}
+          <Term k="signal">signals</Term>.
+          {a.statement && ` The strongest, from ${a.voices} voices: “${a.statement}”`}
+        </>
+      }
+      how={HOW.signals}
     >
       <ol className="rule-t mt-6">
         {r.signals.map((s) => (
@@ -99,7 +109,7 @@ function SignalRow({
           </p>
           <ul className="mt-4 space-y-4">
             {claims.map((c) => (
-              <Reveal as="li" key={c.id}>
+              <InView as="li" key={c.id}>
                 <figure className="max-w-3xl">
                   <blockquote className="font-serif text-lg italic leading-relaxed text-ink">
                     <button
@@ -113,7 +123,7 @@ function SignalRow({
                     — {stories.get(c.story_id)?.teller_role}
                   </figcaption>
                 </figure>
-              </Reveal>
+              </InView>
             ))}
           </ul>
           <p className="mt-5 text-sm text-muted">

@@ -74,10 +74,17 @@ npm run dev        # → http://localhost:5173
 npm run build      # → dist/ — upload to any static host; works offline (PWA)
 ```
 
-The site reads `site/public/data/<place>_results.json`; a header switcher
-moves between places (`?place=thorntree` / `?place=kenya-coast`). To show
+The site reads `site/public/data/<place>_results.json`. Every place has its
+own clean URL — `/thorntree`, `/nairobi`, `/utopia`, … (`/` is the landing
+page; legacy `?place=x#hash` links redirect to `/x#hash`). The header menu
+switches places and a sticky step bar walks through each one. To show
 another place, drop in a `*_results.json` that passes the validator below
 and add it to `PLACES` in `site/src/lib/results.ts`.
+
+Landing-page preview images are rendered from each place's diorama and
+committed to `site/public/previews/`; regenerate them with the build served
+(`cd site && npm run build && npx vite preview --port 4173`) and then
+`python3 tools/capture-previews.py` (needs Python Playwright + Pillow).
 
 Deployed on Cloudflare Pages (project `vse-demonstrator`) — live at
 **https://vse-demonstrator.pages.dev**:

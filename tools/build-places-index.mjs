@@ -26,27 +26,37 @@ function threadFor(r) {
   const storyById = new Map(r.stories.map((s) => [s.id, s]))
   const interventions = [
     ...(r.interventions.from_plans ?? []),
-    ...(r.interventions.from_voices ?? []),
-    ...(r.interventions.dreams ?? []),
+    ...(r.interventions.from_place ?? []),
   ]
   const used = new Set(interventions.flatMap((i) => i.signal_ids))
-  const sig =
-    r.signals.find((s) => used.has(s.id) && s.supporting_claim_ids.length) ??
-    r.signals.find((s) => s.supporting_claim_ids.length)
-  if (!sig) return null
-  // prefer a clean, quotable excerpt — no hashtag salad, no did: handles
-  const claims = sig.supporting_claim_ids
-    .map((id) => claimById.get(id))
-    .filter(Boolean)
-  const claim =
-    claims.find((c) => !c.text.includes('#') && c.text.length > 24) ??
-    claims.find((c) => !c.text.includes('#')) ??
-    claims[0]
-  if (!claim) return null
+  // signals tied to an intervention first, then the rest
+  const ordered = [
+    ...r.signals.filter((s) => used.has(s.id)),
+    ...r.signals.filter((s) => !used.has(s.id)),
+  ]
+  const claimsOf = (s) =>
+    s.supporting_claim_ids.map((id) => claimById.get(id)).filter(Boolean)
+  // prefer a clean, quotable verbatim excerpt (claim text is never edited)
+  let sig = null
+  let claim = null
+  for (const s of ordered) {
+    const c = claimsOf(s).find((c) => !c.text.includes('#') && c.text.length > 24)
+    if (c) {
+      sig = s
+      claim = c
+      break
+    }
+  }
+  if (!claim) {
+    sig = ordered.find((s) => claimsOf(s).length) ?? null
+    claim = sig ? claimsOf(sig)[0] : null
+  }
+  if (!sig || !claim) return null
   const story = storyById.get(claim.story_id)
   const teller = (story?.teller_role ?? 'A resident')
     .replace(/\s*·\s*did:\S+/, '')
     .replace(/\bdid:\S+/, 'public post')
+    .replace(/^(nostr|bsky|hive)\s*·\s*(\S+\.\S+|[0-9a-f]{12,})$/i, '$1 user')
   const intv = interventions.find((i) => i.signal_ids.includes(sig.id))
   return {
     excerpt: claim.text,
@@ -74,8 +84,7 @@ for (const f of readdirSync(DATA).filter((f) => f.endsWith('_results.json'))) {
       signals: r.signals.length,
       interventions:
         (r.interventions.from_plans?.length ?? 0) +
-        (r.interventions.from_voices?.length ?? 0) +
-        (r.interventions.dreams?.length ?? 0),
+        (r.interventions.from_place?.length ?? 0),
     },
     thread: threadFor(r),
   })

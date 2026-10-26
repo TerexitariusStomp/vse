@@ -4,14 +4,18 @@ import { VitePWA } from 'vite-plugin-pwa'
 import { defineConfig } from 'vite'
 
 export default defineConfig({
-  base: './',
+  base: '/',
   plugins: [
     react(),
     tailwindcss(),
     VitePWA({
       registerType: 'autoUpdate',
       includeAssets: ['data/*.json'],
-      workbox: { globPatterns: ['**/*.{js,css,html,svg,json,woff2}'] },
+      workbox: {
+        globPatterns: ['**/*.{js,css,html,svg,json,woff2,webp}'],
+        navigateFallback: 'index.html',
+        navigateFallbackDenylist: [/^\/data\//, /^\/audio\//],
+      },
       manifest: {
         name: 'Value Structuring Engine',
         short_name: 'VSE',

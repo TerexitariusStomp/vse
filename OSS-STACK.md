@@ -44,7 +44,13 @@ not; any non-OSI weight needs explicit sign-off before use.
 | Component | Licence | Used for |
 |---|---|---|
 | Vite | MIT | static build |
-| React + react-router-dom | MIT | UI + six screens |
+| React | MIT | UI + six screens |
+| wouter 3.13.0 | Unlicense | clean path routing `/` and `/:placeId` (~2 KB) |
+| motion 14.3.0 | MIT | scroll reveals, step-bar progress line, quote→signal `layoutId` morph, reduced-motion |
+| @number-flow/react 0.6.2 | MIT | animated counters (pipeline strip, landing totals) |
+| @radix-ui/react-popover 1.3.1 | MIT | tap-friendly glossary terms (popover, since tooltips don't open on touch) |
+| @radix-ui/react-accordion 1.3.1 | MIT | "Show me how this works" detail layers |
+| lucide-react 1.59.0 | ISC | icons (replaces inline SVGs) |
 | Tailwind CSS v4 + @tailwindcss/vite | MIT (build-time dep lightningcss is MPL-2.0 — file-level copyleft, no runtime reach) | styles |
 | vite-plugin-pwa + workbox-* | MIT | offline precache (NFR-1, G4) |
 | dagre | MIT | bipartite signal↔intervention layout (FR-D6) |
@@ -63,7 +69,7 @@ not; any non-OSI weight needs explicit sign-off before use.
 | vitest | MIT | unit tests |
 | @cloudflare/vitest-pool-workers | MIT | worker tests |
 | Playwright | Apache-2.0 | two-minute demo path + offline checks (dev-only) |
-| axe-core | MPL-2.0 | a11y assertions at 1440×900 and 390×844 (dev-only) |
+| axe-core 4.14.0 | MPL-2.0 | a11y assertions at 1440×900 and 390×844 (dev-only; injected into Playwright) |
 
 ## Services (terms, not licences — no vendored code)
 
@@ -116,8 +122,9 @@ piece. Evaluated candidates:
 | `engine/pipeline` | 800 | extraction orchestration, clustering glue, publish |
 | `engine/console` | 1,800 | review + check + structure surfaces |
 | `engine/adapters/springforth` | 300 | results file → possibility-card drafts |
-| `site/` | 3,300 | six screens + loader + PWA + diorama seams (`diorama/build.tsx`, `Diorama.tsx`, `Globe.tsx`, `StoryCard.tsx`, `types.ts` = 1,296 LOC measured; `diorama/specs/*.ts` are authored scene *data*, same role as `tools/places/*.spec.json`) |
-| **Total authored** | **~7,150** | vs ≥400k LOC deployed OSS ≈ **<2%** (cap: 5%) |
+| `site/` | 4,010 | landing + per-place pages + step bar + glossary + copy/answers + PWA + diorama seams (`diorama/build.tsx`, `Diorama.tsx`, `Globe.tsx`, `StoryCard.tsx`, `types.ts` = 1,296 LOC measured; `diorama/specs/*.ts` are authored scene *data*, same role as `tools/places/*.spec.json`). Measured 4,009 with `git ls-files site/src \| grep -v diorama/specs \| xargs wc -l` plus new untracked files (was 3,483 before the rework, already over the earlier 3,300 cap). Target going forward: net-flat or lower |
+| `tools/capture-previews.py` | 50 | regenerates `site/public/previews/*.webp` (dev-only) |
+| **Total authored** | **~7,900** | vs ≥400k LOC deployed OSS ≈ **<2%** (cap: 5%) |
 
 Irreducible custom core: verbatim-span validator, gate semantics,
 results-file publication — no OSS base exists for these invariants.

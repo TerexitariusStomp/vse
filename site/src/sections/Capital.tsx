@@ -8,6 +8,9 @@ import {
   type Intervention,
   type View,
 } from '../lib'
+import { capitalAnswer } from '../lib/answers'
+import { HOW, QUESTIONS, STEPS } from '../copy'
+import { Term } from '../components/Term'
 import { Chapter } from '../components/Chapter'
 import { BipartiteGraph } from '../components/BipartiteGraph'
 import { SipBadge } from '../components/SipBadge'
@@ -24,6 +27,7 @@ const VIEW_HINT: Record<View, string> = {
 /** Chapter 05 — the two-way mirror: same signals, structured two ways. */
 export function Capital() {
   const r = useResults()
+  const a = capitalAnswer(r)
   const { goToSignal } = useUI()
   const [view, setView] = useState<View>('from_place')
   const [open, setOpen] = useState<Intervention | null>(null)
@@ -36,11 +40,18 @@ export function Capital() {
 
   return (
     <Chapter
-      n="05"
+      n={STEPS[4].n}
       id="capital"
-      title="Where capital goes"
-      intro="The same signals, structured two ways. A place can be funded as a
-      list of separate projects — or as a place."
+      title={STEPS[4].label}
+      question={QUESTIONS.capital}
+      answer={
+        <>
+          {a.interventions} <Term k="intervention">ideas</Term> for where money could go.{' '}
+          {a.commons} {a.commons === 1 ? 'signal is' : 'signals are'} kept for the{' '}
+          <Term k="commons">commons</Term> and never <Term k="priced">priced</Term>.
+        </>
+      }
+      how={HOW.capital}
     >
       {/* typographic tab — underline marks the live view */}
       <div className="rule-b mt-6 flex gap-8" role="group" aria-label="View">

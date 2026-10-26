@@ -142,14 +142,7 @@ export function placeMeta(id: string) {
 }
 export type PlaceId = (typeof PLACES)[number]['id']
 
-export function currentPlace(): PlaceId {
-  const q = new URLSearchParams(window.location.search).get('place')
-  if (PLACES.some((p) => p.id === q)) return q as PlaceId
-  const saved = localStorage.getItem('vse-place')
-  return (PLACES.some((p) => p.id === saved) ? saved : 'thorntree') as PlaceId
-}
-
-export async function loadResults(place: PlaceId = 'thorntree'): Promise<Results> {
+export async function loadResults(place: string): Promise<Results> {
   const url = `${import.meta.env.BASE_URL}data/${place}_results.json`
   const res = await fetch(url)
   if (!res.ok) throw new Error(`Could not load results file (${res.status})`)

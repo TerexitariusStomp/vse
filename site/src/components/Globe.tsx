@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import createGlobe from 'cobe'
+import { Link, useLocation } from 'wouter'
 import { type PlaceId } from '../lib'
 
 // cobe globe — same idiom as springforth's GlobeView / living-resources
@@ -51,7 +52,16 @@ function project(lat: number, lon: number, phi: number, theta: number, w: number
   return { x: (x * w) / 2 + w / 2, y: (-y * w) / 2 + w / 2, front: zr > 0 }
 }
 
-export function Globe({ active }: { active?: PlaceId }) {
+export function Globe({
+  active,
+  focus,
+  legend = true,
+}: {
+  active?: PlaceId
+  focus?: PlaceId | null
+  legend?: boolean
+}) {
+  const [, navigate] = useLocation()
   const canvasRef = useRef<HTMLCanvasElement>(null)
   const globeRef = useRef<ReturnType<typeof createGlobe> | null>(null)
   const phi = useRef(Math.PI) // start facing the Atlantic-ish
@@ -72,14 +82,14 @@ export function Globe({ active }: { active?: PlaceId }) {
 
   // Ease the globe to face the active place's longitude, then resume.
   useEffect(() => {
-    const m = MARKS.find((m) => m.id === active)
+    const m = MARKS.find((m) => m.id === (focus ?? active))
     if (!m) return
     const want = -((m.lon * Math.PI) / 180)
     let d = want - ((phi.current + movement.current) % (Math.PI * 2))
     d = ((d + Math.PI) % (Math.PI * 2)) - Math.PI
     target.current = phi.current + movement.current + d
     movement.current = 0
-  }, [active])
+  }, [active, focus])
 
   // Editorial palette: light theme = muted-grey dotted earth on paper;
   // dark theme = pale dots on the dark sphere (springforth's dark=1 idiom).
@@ -159,7 +169,7 @@ export function Globe({ active }: { active?: PlaceId }) {
       const p = project(m.lat, m.lon, phi.current + movement.current, theta, w)
       if (!p.front) continue
       if (Math.hypot(p.x - px, p.y - py) < 14) {
-        window.location.href = `?place=${m.id}`
+        navigate(`/${m.id}`)
         return
       }
     }
@@ -196,22 +206,22 @@ export function Globe({ active }: { active?: PlaceId }) {
         />
       </div>
       <p className="chapter-marker mt-2 text-muted">Where in the world — drag or click a marker</p>
-      <ul className="mt-3 columns-2 gap-4">
+      {legend && <ul className="mt-3 columns-2 gap-4">
         {MARKS.map((m) => (
           <li key={m.id}>
-            <a
-              href={`?place=${m.id}`}
+            <Link
+              href={`/${m.id}`}
               aria-current={m.id === active ? 'true' : undefined}
-              className={`text-xs underline-offset-2 motion-safe-only transition-colors hover:text-ink ${
+              className={`inline-flex min-h-11 items-center text-xs underline-offset-2 motion-safe-only transition-colors hover:text-ink ${
                 m.id === active ? 'font-medium text-teal underline' : 'text-muted'
               }`}
             >
               {m.label}
               {m.fictional ? ' · fictional' : ''}
-            </a>
+            </Link>
           </li>
         ))}
-      </ul>
+      </ul>}
     </div>
   )
 }
