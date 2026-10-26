@@ -8,6 +8,7 @@ import {
   type Results,
 } from './lib'
 import { Layout } from './components/Layout'
+import { Landing } from './sections/Landing'
 import { Place } from './sections/Place'
 import { Stories } from './sections/Stories'
 import { Signals } from './sections/Signals'
@@ -18,14 +19,19 @@ import { Priorities } from './sections/Priorities'
 export default function App() {
   const [results, setResults] = useState<Results | null>(null)
   const [error, setError] = useState<string | null>(null)
+  // `?place=<id>` enters the demonstrator; bare `/` is the landing page.
+  const placeParam = new URLSearchParams(window.location.search).get('place')
 
   useEffect(() => {
+    if (!placeParam) return
     const place = currentPlace()
     localStorage.setItem('vse-place', place)
     loadResults(place)
       .then(setResults)
       .catch((e) => setError(e instanceof Error ? e.message : String(e)))
-  }, [])
+  }, [placeParam])
+
+  if (!placeParam) return <Landing />
 
   if (error)
     return (

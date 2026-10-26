@@ -1,0 +1,222 @@
+{
+  "generated": "2026-10-26T03:35:14.911Z",
+  "places": [
+    {
+      "id": "thorntree",
+      "name": "Thorntree",
+      "data": "real",
+      "geo": {
+        "lat": 54.55,
+        "lon": -1.208
+      },
+      "counts": {
+        "stories": 22,
+        "claims": 23,
+        "signals": 6,
+        "interventions": 5
+      },
+      "thread": {
+        "excerpt": "We need marsh reeds and planting days volunteers",
+        "teller": "Hub member",
+        "channel": "facilitated",
+        "signal": "The beck and the marsh need hands, reeds and a scheme",
+        "intervention": "Marsh regeneration scheme"
+      }
+    },
+    {
+      "id": "kenya-coast",
+      "name": "Kenya coast",
+      "data": "real",
+      "geo": {
+        "lat": -4.18,
+        "lon": 39.46
+      },
+      "counts": {
+        "stories": 28,
+        "claims": 30,
+        "signals": 9,
+        "interventions": 3
+      },
+      "thread": {
+        "excerpt": "344 mangrove trees planted — Gongoni, Gongoni ward, Magarini, Kilifi County, Kenya",
+        "teller": "field team record",
+        "channel": "facilitated",
+        "signal": "The coast is replanting its mangroves — and the nursery economy behind it is real",
+        "intervention": "Artizen Season 7 — curated fund"
+      }
+    },
+    {
+      "id": "mida-creek",
+      "name": "Mida Creek",
+      "data": "real",
+      "geo": {
+        "lat": -3.349,
+        "lon": 39.986
+      },
+      "counts": {
+        "stories": 19,
+        "claims": 41,
+        "signals": 5,
+        "interventions": 3
+      },
+      "thread": {
+        "excerpt": "400 more propagules to reach 1,200",
+        "teller": "mida-creek-conservation",
+        "channel": "facilitated",
+        "signal": "The nursery raised 800 propagules — 400 more are needed for 1,200",
+        "intervention": "Mangrove propagule nursery establishment"
+      }
+    },
+    {
+      "id": "hebden-bridge",
+      "name": "Hebden Bridge",
+      "data": "real",
+      "geo": {
+        "lat": 53.7433,
+        "lon": -2.0136
+      },
+      "counts": {
+        "stories": 12,
+        "claims": 13,
+        "signals": 4,
+        "interventions": 2
+      },
+      "thread": {
+        "excerpt": "Sand supply — depot confirmed",
+        "teller": "calder-council-liaison",
+        "channel": "facilitated",
+        "signal": "The sandbags question is answered twice — once by the liaison, once by the network",
+        "intervention": "Sand delivery confirmed — depot lorry"
+      }
+    },
+    {
+      "id": "dar-es-salaam",
+      "name": "Dar es Salaam",
+      "data": "real",
+      "geo": {
+        "lat": -6.865,
+        "lon": 39.32
+      },
+      "counts": {
+        "stories": 34,
+        "claims": 36,
+        "signals": 8,
+        "interventions": 2
+      },
+      "thread": {
+        "excerpt": "192,630 mangrove trees — Kibugumo Coast Plots, Dar es Salaam",
+        "teller": "Treegens field team",
+        "channel": "facilitated",
+        "signal": "The biggest numbers rest on pre-app field-team evidence",
+        "intervention": "Kibugumo Coast Plots (pre-app)"
+      }
+    },
+    {
+      "id": "puerto-la-cruz",
+      "name": "Puerto la Cruz",
+      "data": "real",
+      "geo": {
+        "lat": 10.2136,
+        "lon": -64.6333
+      },
+      "counts": {
+        "stories": 17,
+        "claims": 30,
+        "signals": 8,
+        "interventions": 2
+      },
+      "thread": {
+        "excerpt": "since yesterday we've been having severe Electricity problems in the city of Puerto La Cruz (Anzoátegui), where I'm currently staying",
+        "teller": "hive · Milita Digital (resident)",
+        "channel": "social",
+        "signal": "The grid fails daily: five-to-six-hour rationing, avenues dark for a month, a thermoelectric promise still unproven.",
+        "intervention": "San Diego de Cabrutica thermoelectric plant"
+      }
+    },
+    {
+      "id": "minneapolis",
+      "name": "Minneapolis",
+      "data": "real",
+      "geo": {
+        "lat": 44.9778,
+        "lon": -93.265
+      },
+      "counts": {
+        "stories": 18,
+        "claims": 21,
+        "signals": 5,
+        "interventions": 1
+      },
+      "thread": {
+        "excerpt": "Trump administration asks Supreme Court to permit quick third-country deportations",
+        "teller": "bsky · Patches🇺🇦🍁🇨🇦 EvilThrives",
+        "channel": "social",
+        "signal": "People are being taken and hurt — abductions, unlawful force, and fear expressed in first person.",
+        "intervention": "Operation Metro Surge"
+      }
+    },
+    {
+      "id": "nairobi",
+      "name": "Nairobi",
+      "data": "real",
+      "geo": {
+        "lat": -1.2921,
+        "lon": 36.8219
+      },
+      "counts": {
+        "stories": 19,
+        "claims": 23,
+        "signals": 4,
+        "interventions": 1
+      },
+      "thread": {
+        "excerpt": "Nairobi — Nairobi braces for heavy rains as El Niño threatens flood risks #Plan #Nairobi #News #Breaking",
+        "teller": "bsky",
+        "channel": "social",
+        "signal": "Basic infrastructure is failing — 17 neighbourhoods lose water, drainage criticised ahead of El Niño, matatu safety kills.",
+        "intervention": "Nairobi water & drainage programme"
+      }
+    },
+    {
+      "id": "detroit",
+      "name": "Detroit",
+      "data": "real",
+      "geo": {
+        "lat": 42.3314,
+        "lon": -83.0458
+      },
+      "counts": {
+        "stories": 14,
+        "claims": 17,
+        "signals": 4,
+        "interventions": 1
+      },
+      "thread": {
+        "excerpt": "diesel was over $7.00 a gallon in Detroit",
+        "teller": "bsky · zipperheadedfool.bsky.so",
+        "channel": "social",
+        "signal": "The jobs are in the suburbs and 'reliable transportation' is the gate — distance and cost keep residents out of work.",
+        "intervention": "Detroit Three industrial plan"
+      }
+    },
+    {
+      "id": "utopia",
+      "name": "Utopia",
+      "data": "dummy",
+      "geo": null,
+      "counts": {
+        "stories": 8,
+        "claims": 49,
+        "signals": 7,
+        "interventions": 5
+      },
+      "thread": {
+        "excerpt": "Our roll is 38. Ten years ago it was 61, and the county reviews any school under 40.",
+        "teller": "Head teacher, village primary",
+        "channel": "session",
+        "signal": "The school stays open",
+        "intervention": "School estate review"
+      }
+    }
+  ]
+}

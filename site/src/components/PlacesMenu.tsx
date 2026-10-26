@@ -44,6 +44,15 @@ export function PlacesMenu({ current }: { current: string }) {
           sideOffset={6}
           className="z-50 min-w-56 rounded-[3px] border border-line bg-surface py-1 shadow-[0_10px_30px_-12px_rgba(0,0,0,0.25)]"
         >
+          <DropdownMenu.Item asChild>
+            <a
+              href="?"
+              className="mx-1 flex min-h-11 items-baseline justify-between gap-3 rounded-[3px] px-3 py-2.5 text-sm text-muted outline-none motion-safe-only transition-colors data-[highlighted]:bg-paper"
+            >
+              <span>What this is</span>
+              <span className="chapter-marker shrink-0">Home</span>
+            </a>
+          </DropdownMenu.Item>
           <DropdownMenu.Label className="chapter-marker px-4 pb-1.5 pt-2.5">
             Places heard
           </DropdownMenu.Label>

@@ -51,7 +51,7 @@ function project(lat: number, lon: number, phi: number, theta: number, w: number
   return { x: (x * w) / 2 + w / 2, y: (-y * w) / 2 + w / 2, front: zr > 0 }
 }
 
-export function Globe({ active }: { active: PlaceId }) {
+export function Globe({ active }: { active?: PlaceId }) {
   const canvasRef = useRef<HTMLCanvasElement>(null)
   const globeRef = useRef<ReturnType<typeof createGlobe> | null>(null)
   const phi = useRef(Math.PI) // start facing the Atlantic-ish

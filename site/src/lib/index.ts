@@ -1,4 +1,5 @@
 export * from './results'
+export * from './places-index'
 export {
   ResultsProvider,
   VisitorProvider,
