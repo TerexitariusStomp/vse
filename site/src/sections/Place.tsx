@@ -1,5 +1,5 @@
 import { useRef, useState } from 'react'
-import { useResults } from '../lib'
+import { placeMeta, useResults } from '../lib'
 import { Reveal } from '../components/Reveal'
 
 /** Chapter 01 — the place + Run animation over the four stages (FR-D2). */
@@ -49,13 +49,13 @@ export function Place() {
     <section id="place" className="scroll-mt-20 pt-14">
       <Reveal>
         <p className="chapter-marker">
-          <span className="text-teal">01</span> · {r.place.kind} · real data
+          <span className="text-teal">01</span> · Geographical Area + Info ·{' '}
+          {placeMeta(r.place.id)?.data === 'dummy' ? 'Dummy data' : 'Real data'}
         </p>
         {/* the one display-type moment the editorial profile allows */}
         <h1 className="font-display mt-4 text-[clamp(3.4rem,11vw,8.5rem)] leading-[0.95] text-ink">
           {r.place.name}
         </h1>
-        <p className="measure mt-5 text-lg text-muted">{r.place.summary}</p>
       </Reveal>
 
       {/* the official record — what the plans already know about this place */}

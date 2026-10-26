@@ -121,18 +121,24 @@ export type Intervention = Results['interventions']['from_plans'][number]
 export type Sip = Results['sips'][number]
 export type View = keyof Results['interventions']
 
-/** Places with published results files in public/data/. */
+/** Places with published results files in public/data/. `data` marks real vs dummy provenance. */
 export const PLACES = [
-  { id: 'thorntree', label: 'Thorntree' },
-  { id: 'kenya-coast', label: 'Kenya coast' },
-  { id: 'mida-creek', label: 'Mida Creek' },
-  { id: 'hebden-bridge', label: 'Hebden Bridge' },
-  { id: 'dar-es-salaam', label: 'Dar es Salaam' },
-  { id: 'puerto-la-cruz', label: 'Puerto la Cruz' },
-  { id: 'minneapolis', label: 'Minneapolis' },
-  { id: 'nairobi', label: 'Nairobi' },
-  { id: 'detroit', label: 'Detroit' },
-] as const
+  { id: 'thorntree', label: 'Thorntree', data: 'real' },
+  { id: 'kenya-coast', label: 'Kenya coast', data: 'real' },
+  { id: 'mida-creek', label: 'Mida Creek', data: 'real' },
+  { id: 'hebden-bridge', label: 'Hebden Bridge', data: 'real' },
+  { id: 'dar-es-salaam', label: 'Dar es Salaam', data: 'real' },
+  { id: 'puerto-la-cruz', label: 'Puerto la Cruz', data: 'real' },
+  { id: 'minneapolis', label: 'Minneapolis', data: 'real' },
+  { id: 'nairobi', label: 'Nairobi', data: 'real' },
+  { id: 'detroit', label: 'Detroit', data: 'real' },
+] as const satisfies readonly { id: string; label: string; data: 'real' | 'dummy' }[]
+
+export function placeMeta(id: string) {
+  return PLACES.find((p) => p.id === id) as
+    | { id: string; label: string; data: 'real' | 'dummy' }
+    | undefined
+}
 export type PlaceId = (typeof PLACES)[number]['id']
 
 export function currentPlace(): PlaceId {
