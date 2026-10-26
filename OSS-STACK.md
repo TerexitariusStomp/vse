@@ -53,6 +53,7 @@ not; any non-OSI weight needs explicit sign-off before use.
 | @react-three/drei | MIT | OrbitControls, projected `<Html>` labels, camera helpers |
 | cobe | MIT | WebGL globe of all places in chapter 01 (same idiom as springforth/living-resources) |
 | @radix-ui/react-dialog | MIT | story-card modal — focus trap / Esc / aria built in |
+| @radix-ui/react-dropdown-menu | MIT | header places + chapters menus — focus/arrow-key a11y built in |
 | Newsreader + Inter (self-hosted) | OFL-1.1 | serif stories / sans UI (FR-D8) |
 
 ## Test & quality gates

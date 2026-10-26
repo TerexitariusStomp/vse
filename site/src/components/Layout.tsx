@@ -1,14 +1,8 @@
 import { useEffect, useState, type ReactNode } from 'react'
-import { PLACES, useResults } from '../lib'
+import { useResults } from '../lib'
+import { CHAPTERS, ChaptersMenu, PlacesMenu } from './PlacesMenu'
 
-export const CHAPTERS = [
-  { id: 'place', n: '01', label: 'Place' },
-  { id: 'stories', n: '02', label: 'Stories' },
-  { id: 'signals', n: '03', label: 'Signals' },
-  { id: 'check', n: '04', label: 'Check' },
-  { id: 'capital', n: '05', label: 'Capital' },
-  { id: 'priorities', n: '06', label: 'Priorities' },
-]
+export { CHAPTERS }
 
 export function Layout({ children }: { children: ReactNode }) {
   const results = useResults()
@@ -40,25 +34,10 @@ export function Layout({ children }: { children: ReactNode }) {
     <div className="min-h-screen">
       <header className="sticky top-0 z-20 rule-b bg-paper/95 backdrop-blur-sm">
         <div className="mx-auto flex max-w-5xl items-center gap-4 px-5 py-3">
-          <a href="#place" className="font-display text-lg text-ink">
-            {results.place.name}
-          </a>
-          <nav className="flex items-center gap-1" aria-label="Places">
-            {PLACES.map((p) => (
-              <a
-                key={p.id}
-                href={`?place=${p.id}`}
-                aria-current={results.place.id === p.id ? 'true' : undefined}
-                className={`min-h-11 rounded-[3px] px-3 py-2 text-xs font-medium tracking-wide motion-safe-only transition-colors ${
-                  results.place.id === p.id
-                    ? 'bg-teal text-teal-ink'
-                    : 'text-muted hover:text-ink'
-                }`}
-              >
-                {p.label}
-              </a>
-            ))}
-          </nav>
+          <PlacesMenu current={results.place.id} />
+          <div className="ml-auto md:hidden">
+            <ChaptersMenu active={active} />
+          </div>
           <nav className="ml-auto hidden items-center gap-5 md:flex" aria-label="Chapters">
             {CHAPTERS.map((c) => (
               <a
