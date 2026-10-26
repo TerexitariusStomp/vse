@@ -1,0 +1,186 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" font-family="Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif">
+  <defs>
+    <marker id="arrt" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#006F84"/>
+    </marker>
+    <marker id="arrc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#902824"/>
+    </marker>
+    <marker id="arrs" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#8a7a68"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="800" fill="#FAF2EA" rx="14"/>
+
+  <text x="56" y="56" fill="#0D0B08" font-size="30" font-weight="700">VSE — logical architecture</text>
+  <text x="56" y="84" fill="#6b5c4e" font-size="15">two products, one data contract — the published results file is the interface · every claim a verbatim slice of its story</text>
+
+  <!-- ===================== CHANNELS ===================== -->
+  <g>
+    <rect x="56" y="110" width="700" height="96" rx="12" fill="#fff" stroke="#006F84" stroke-width="1.4"/>
+    <text x="74" y="136" fill="#006F84" font-size="13" font-weight="700" letter-spacing="2">LISTENING — CHANNELS</text>
+    <g fill="#0D0B08" font-size="13">
+      <rect x="74" y="150" width="122" height="42" rx="7" fill="#F3E8DA" stroke="#d8c7b4"/>
+      <text x="90" y="168">WhatsApp</text><text x="90" y="184" fill="#6b5c4e" font-size="10.5">Cloud API webhook</text>
+      <rect x="208" y="150" width="122" height="42" rx="7" fill="#F3E8DA" stroke="#d8c7b4"/>
+      <text x="224" y="168">Voice note</text><text x="224" y="184" fill="#6b5c4e" font-size="10.5">R2 → Whisper</text>
+      <rect x="342" y="150" width="122" height="42" rx="7" fill="#F3E8DA" stroke="#d8c7b4"/>
+      <text x="358" y="168">Web form</text><text x="358" y="184" fill="#6b5c4e" font-size="10.5">consent-gated</text>
+      <rect x="476" y="150" width="122" height="42" rx="7" fill="#F3E8DA" stroke="#d8c7b4"/>
+      <text x="492" y="168">Sessions</text><text x="492" y="184" fill="#6b5c4e" font-size="10.5">facilitated · Welsh</text>
+      <rect x="610" y="150" width="130" height="42" rx="7" fill="#F3E8DA" stroke="#d8c7b4"/>
+      <text x="626" y="168">Public posts</text><text x="626" y="184" fill="#6b5c4e" font-size="10.5">bsky · nostr · hive</text>
+    </g>
+  </g>
+
+  <line x1="406" y1="206" x2="406" y2="230" stroke="#006F84" stroke-width="2" marker-end="url(#arrt)"/>
+
+  <!-- ===================== ENGINE ===================== -->
+  <g>
+    <rect x="56" y="234" width="700" height="246" rx="12" fill="#fff" stroke="#006F84" stroke-width="1.4"/>
+    <text x="74" y="260" fill="#006F84" font-size="13" font-weight="700" letter-spacing="2">ENGINE — CLOUDFLARE WORKERS · D1 · QUEUE · R2 · WORKERS AI</text>
+
+    <!-- pipeline stages -->
+    <g font-size="12" fill="#0D0B08">
+      <rect x="74" y="278" width="98" height="52" rx="7" fill="#E9F1F2" stroke="#006F84"/>
+      <text x="84" y="299" font-weight="700">Listening</text>
+      <text x="84" y="316" fill="#6b5c4e" font-size="10">stories → D1</text>
+      <rect x="182" y="278" width="98" height="52" rx="7" fill="#E9F1F2" stroke="#006F84"/>
+      <text x="192" y="299" font-weight="700">Making sense</text>
+      <text x="192" y="316" fill="#6b5c4e" font-size="10">excerpt spans</text>
+      <rect x="290" y="278" width="98" height="52" rx="7" fill="#E9F1F2" stroke="#006F84"/>
+      <text x="300" y="299" font-weight="700">Consolidating</text>
+      <text x="300" y="316" fill="#6b5c4e" font-size="10">claims → signals</text>
+      <rect x="398" y="278" width="98" height="52" rx="7" fill="#FBEFE8" stroke="#902824" stroke-width="1.6"/>
+      <text x="408" y="299" font-weight="700" fill="#902824">People check</text>
+      <text x="408" y="316" fill="#902824" font-size="10">constitutional gate</text>
+      <rect x="506" y="278" width="110" height="52" rx="7" fill="#E9F1F2" stroke="#006F84"/>
+      <text x="516" y="299" font-weight="700">Capital</text>
+      <text x="516" y="310" font-weight="700">structuring</text>
+      <text x="516" y="324" fill="#6b5c4e" font-size="10">2 views + SIPs</text>
+      <rect x="626" y="278" width="114" height="52" rx="7" fill="#E9F1F2" stroke="#006F84"/>
+      <text x="636" y="299" font-weight="700">Publication</text>
+      <text x="636" y="316" fill="#6b5c4e" font-size="10">validate · hash · R2</text>
+      <line x1="172" y1="304" x2="180" y2="304" stroke="#006F84" stroke-width="2" marker-end="url(#arrt)"/>
+      <line x1="280" y1="304" x2="288" y2="304" stroke="#006F84" stroke-width="2" marker-end="url(#arrt)"/>
+      <line x1="388" y1="304" x2="396" y2="304" stroke="#006F84" stroke-width="2" marker-end="url(#arrt)"/>
+      <line x1="496" y1="304" x2="504" y2="304" stroke="#006F84" stroke-width="2" marker-end="url(#arrt)"/>
+      <line x1="616" y1="304" x2="624" y2="304" stroke="#006F84" stroke-width="2" marker-end="url(#arrt)"/>
+    </g>
+
+    <!-- verbatim gate callout -->
+    <g>
+      <path d="M231 330 L231 348" stroke="#902824" stroke-width="2" marker-end="url(#arrc)"/>
+      <rect x="74" y="352" width="666" height="56" rx="7" fill="#FBEFE8" stroke="#902824" stroke-width="1.6"/>
+      <text x="90" y="374" fill="#902824" font-size="12.5" font-weight="700">VERBATIM-SPAN GATE — the invariant</text>
+      <text x="90" y="393" fill="#7a4630" font-size="11.5" font-family="ui-monospace,Menlo,monospace">story.text.slice(span[0], span[1]) === claim.text</text>
+      <text x="90" y="402" fill="#7a4630" font-size="10.5">model · analyst · fallback proposers pass the identical check — paraphrase quarantined (the 7B story)</text>
+    </g>
+
+    <!-- state plane -->
+    <g font-size="11.5">
+      <rect x="74" y="420" width="160" height="44" rx="7" fill="#F3E8DA" stroke="#d8c7b4"/>
+      <text x="88" y="438" fill="#0D0B08" font-weight="700">D1 records</text>
+      <text x="88" y="454" fill="#6b5c4e">stories·claims·signals</text>
+      <rect x="246" y="420" width="160" height="44" rx="7" fill="#F3E8DA" stroke="#d8c7b4"/>
+      <text x="260" y="438" fill="#0D0B08" font-weight="700">Queue + Workers AI</text>
+      <text x="260" y="454" fill="#6b5c4e">whisper · 70B · bge</text>
+      <rect x="418" y="420" width="160" height="44" rx="7" fill="#F3E8DA" stroke="#d8c7b4"/>
+      <text x="432" y="438" fill="#0D0B08" font-weight="700">R2 artifacts</text>
+      <text x="432" y="454" fill="#6b5c4e">media + manifests</text>
+      <rect x="590" y="420" width="150" height="44" rx="7" fill="#FBEFE8" stroke="#902824"/>
+      <text x="604" y="438" fill="#902824" font-weight="700">commons_sticky</text>
+      <text x="604" y="454" fill="#902824">D1 trigger → 409 at publish</text>
+    </g>
+  </g>
+
+  <line x1="406" y1="480" x2="406" y2="504" stroke="#006F84" stroke-width="2" marker-end="url(#arrt)"/>
+
+  <!-- ===================== CONTRACT ===================== -->
+  <g>
+    <rect x="56" y="508" width="700" height="96" rx="12" fill="#0D0B08"/>
+    <text x="74" y="534" fill="#FAF2EA" font-size="13" font-weight="700" letter-spacing="2">THE CONTRACT — results-&lt;place&gt;-&lt;v&gt;.json</text>
+    <text x="74" y="558" fill="#cbb9a4" font-size="12.5">schema/results.schema.json (JSON Schema 2020-12) + semantic invariants</text>
+    <text x="74" y="578" fill="#cbb9a4" font-size="12.5">versioned · manifest_sha256 in R2 · GET /api/published/&lt;place&gt;</text>
+    <text x="74" y="596" fill="#7fb8c4" font-size="11.5">re-verify with node tools/validate-results.mjs — third parties need only the file</text>
+  </g>
+
+  <line x1="406" y1="604" x2="406" y2="628" stroke="#006F84" stroke-width="2" marker-end="url(#arrt)"/>
+
+  <!-- ===================== SITE ===================== -->
+  <g>
+    <rect x="56" y="632" width="700" height="118" rx="12" fill="#fff" stroke="#006F84" stroke-width="1.4"/>
+    <text x="74" y="658" fill="#006F84" font-size="13" font-weight="700" letter-spacing="2">STATIC READER — site/ · vse-demonstrator.pages.dev</text>
+    <g fill="#0D0B08" font-size="12">
+      <rect x="74" y="672" width="160" height="60" rx="7" fill="#F3E8DA" stroke="#d8c7b4"/>
+      <text x="88" y="694" font-weight="700">Six chapters</text>
+      <text x="88" y="711" fill="#6b5c4e" font-size="10.5">place→stories→signals→</text>
+      <text x="88" y="724" fill="#6b5c4e" font-size="10.5">check→capital→priorities</text>
+      <rect x="246" y="672" width="160" height="60" rx="7" fill="#F3E8DA" stroke="#d8c7b4"/>
+      <text x="260" y="694" font-weight="700">Per-place diorama</text>
+      <text x="260" y="711" fill="#6b5c4e" font-size="10.5">WebGL scenes · Utopia</text>
+      <text x="260" y="724" fill="#6b5c4e" font-size="10.5">carries generated voices</text>
+      <rect x="418" y="672" width="160" height="60" rx="7" fill="#F3E8DA" stroke="#d8c7b4"/>
+      <text x="432" y="694" font-weight="700">Pure reader</text>
+      <text x="432" y="711" fill="#6b5c4e" font-size="10.5">zero backend calls · PWA</text>
+      <text x="432" y="724" fill="#6b5c4e" font-size="10.5">offline · &lt;2% custom code</text>
+      <rect x="590" y="672" width="150" height="60" rx="7" fill="#F3E8DA" stroke="#d8c7b4"/>
+      <text x="604" y="694" font-weight="700">10 places live</text>
+      <text x="604" y="711" fill="#6b5c4e" font-size="10.5">191 stories · 283 excerpts</text>
+      <text x="604" y="724" fill="#6b5c4e" font-size="10.5">60 signals · 51 interventions</text>
+    </g>
+  </g>
+
+  <!-- ===================== RIGHT RAIL ===================== -->
+  <g>
+    <rect x="792" y="110" width="352" height="640" rx="12" fill="#fff" stroke="#006F84" stroke-width="1.4" stroke-dasharray="6 5"/>
+    <text x="812" y="140" fill="#006F84" font-size="13" font-weight="700" letter-spacing="2">INVARIANTS — ENFORCED, NOT DISPLAYED</text>
+
+    <g font-size="12.5" fill="#0D0B08">
+      <rect x="812" y="156" width="312" height="76" rx="8" fill="#FBEFE8" stroke="#902824"/>
+      <text x="828" y="178" font-weight="700" fill="#902824">verbatim lineage</text>
+      <text x="828" y="197" fill="#7a4630" font-size="11.5">a signal resolves to exact quoted spans</text>
+      <text x="828" y="213" fill="#7a4630" font-size="11.5">— slice equality checked in a console</text>
+      <text x="828" y="227" fill="#7a4630" font-size="10.5">extraction · publish · standalone validator</text>
+
+      <rect x="812" y="248" width="312" height="76" rx="8" fill="#FBEFE8" stroke="#902824"/>
+      <text x="828" y="270" font-weight="700" fill="#902824">people check is constitutional</text>
+      <text x="828" y="289" fill="#7a4630" font-size="11.5">tellers endorse · amend · contest before</text>
+      <text x="828" y="305" fill="#7a4630" font-size="11.5">anything guides capital; publish hard-</text>
+      <text x="828" y="319" fill="#7a4630" font-size="10.5">blocks on zero verification events</text>
+
+      <rect x="812" y="340" width="312" height="76" rx="8" fill="#FBEFE8" stroke="#902824"/>
+      <text x="828" y="362" font-weight="700" fill="#902824">commons gate is structural</text>
+      <text x="828" y="381" fill="#7a4630" font-size="11.5">commons_only → priced is unrepresentable</text>
+      <text x="828" y="397" fill="#7a4630" font-size="11.5">(D1 trigger) and publish-fatal (409)</text>
+      <text x="828" y="411" fill="#7a4630" font-size="10.5">a category distinction, not price = 0</text>
+
+      <rect x="812" y="432" width="312" height="76" rx="8" fill="#E9F1F2" stroke="#006F84"/>
+      <text x="828" y="454" font-weight="700" fill="#006F84">counter-evidence rendered</text>
+      <text x="828" y="473" fill="#4d6570" font-size="11.5">contest votes, amendments and harm-links</text>
+      <text x="828" y="489" fill="#4d6570" font-size="11.5">(counter_signal_ids) are first-class output</text>
+      <text x="828" y="503" fill="#4d6570" font-size="10.5">Gould 2024 disvalues — never hidden</text>
+
+      <rect x="812" y="524" width="312" height="76" rx="8" fill="#E9F1F2" stroke="#006F84"/>
+      <text x="828" y="546" font-weight="700" fill="#006F84">open replayable artifact</text>
+      <text x="828" y="565" fill="#4d6570" font-size="11.5">schema-validated, hash-manifested, versioned;</text>
+      <text x="828" y="581" fill="#4d6570" font-size="11.5">withdrawal propagates to claims (G9)</text>
+      <text x="828" y="595" fill="#4d6570" font-size="10.5">anyone can re-render or re-verify</text>
+    </g>
+
+    <line x1="968" y1="232" x2="968" y2="244" stroke="#8a7a68" stroke-width="1.5" marker-end="url(#arrs)"/>
+    <line x1="968" y1="324" x2="968" y2="336" stroke="#8a7a68" stroke-width="1.5" marker-end="url(#arrs)"/>
+    <line x1="968" y1="416" x2="968" y2="428" stroke="#8a7a68" stroke-width="1.5" marker-end="url(#arrs)"/>
+    <line x1="968" y1="508" x2="968" y2="520" stroke="#8a7a68" stroke-width="1.5" marker-end="url(#arrs)"/>
+
+    <rect x="812" y="616" width="312" height="112" rx="8" fill="#F3E8DA" stroke="#d8c7b4"/>
+    <text x="828" y="638" fill="#006F84" font-size="12.5" font-weight="700">HONESTY (labelled, not hidden)</text>
+    <text x="828" y="658" fill="#6b5c4e" font-size="11.5">· verification = recorded participation</text>
+    <text x="828" y="676" fill="#6b5c4e" font-size="11.5">· social posts: channel, never person</text>
+    <text x="828" y="694" fill="#6b5c4e" font-size="11.5">· Utopia = labelled fictional; generated voices</text>
+    <text x="828" y="712" fill="#6b5c4e" font-size="11.5">· visitor votes are memory-only</text>
+  </g>
+
+  <line x1="756" y1="304" x2="788" y2="304" stroke="#8a7a68" stroke-width="1.5" stroke-dasharray="4 4" marker-end="url(#arrs)"/>
+  <line x1="756" y1="556" x2="788" y2="556" stroke="#8a7a68" stroke-width="1.5" stroke-dasharray="4 4" marker-end="url(#arrs)"/>
+</svg>

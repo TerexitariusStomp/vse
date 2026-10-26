@@ -18,6 +18,10 @@ This repository holds two products on one data contract:
   making sense → consolidating → people check → capital structuring →
   publication.
 
+**Judging?** — the 3- and 8-minute live paths: [`docs/hackathon/JUDGES.md`](docs/hackathon/JUDGES.md).
+
+![Logical architecture](docs/hackathon/demo-assets/architecture.svg)
+
 See **`PRD.md`** for the full product requirements. The demonstrator ships
 five **real places**, each produced end-to-end by the live engine from
 records consumed by the sibling Springforth project:
