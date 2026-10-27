@@ -76,7 +76,7 @@ curl -s -o /dev/null -w "%{http_code}\n" \
 - [ ] `docs/hackathon/DATA-SOURCES.md` — per-place provenance matrix
 - [ ] Live demo URL: `https://vse-demonstrator.pages.dev`
 - [ ] `demo-assets/walkthrough.mp4` — 2:30 captioned walkthrough
-- [ ] Repo link: github.com/TerexitariusStomp/vse (Apache-2.0)
+- [ ] Repo link: github.com/TerexitariusStomp/vse (AGPL-3.0-only)
 
 ### Ready-to-paste post
 
@@ -96,7 +96,7 @@ curl -s -o /dev/null -w "%{http_code}\n" \
 >   `/thorntree#capital` the two-way mirror, `/utopia` the generated
 >   voices (labelled fictional)
 > - **Code + docs**: https://github.com/TerexitariusStomp/vse
->   (Apache-2.0; BMC, pitch, architecture, data sources under
+>   (AGPL-3.0-only; BMC, pitch, architecture, data sources under
 >   `docs/hackathon/`; engine live at
 >   `vse-engine.delta-git.workers.dev/health`)
 > - **Walkthrough video** (2:30, captioned): attached / link below

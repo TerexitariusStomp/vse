@@ -1,5 +1,7 @@
 # VSE — Business Model Canvas (PS1)
 
+> **Status: DRAFT** — working document, not final.
+
 | Block | |
 |---|---|
 | **Customer segments** | Place-based funders who must justify allocation to lived reality: community foundations, councils/combined authorities, philanthropy, place-based investors, development funds (primary, paying). Places and their stewarding organisations (community hubs, anchor institutions, conservation groups) — the supply side, served free. Researchers/auditors consuming verified place evidence |

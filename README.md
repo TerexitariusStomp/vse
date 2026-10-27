@@ -60,7 +60,7 @@ PRD.md                  product requirements (source of truth)
 COMPETITORS.md          landscape + honest gaps + surpass properties
 OSS-STACK.md            bill of materials, licences, <5% custom-code accounting
 README.md               this file
-LICENSE                 Apache-2.0
+LICENSE                 AGPL-3.0-only
 data/                   results files (the published contract)
 schema/                 JSON Schema for results files
 tools/                  results-file validator + live-pipeline runner + place specs
@@ -225,6 +225,6 @@ See `docs/SOCIAL-DATA.md`.
 
 ## Licence
 
-Apache-2.0 — see `LICENSE`. Dependency licences per `OSS-STACK.md`:
+AGPL-3.0-only — see `LICENSE`. Dependency licences per `OSS-STACK.md`:
 permissive + copyleft acceptable; no SSPL/BSL/Elastic; AI model weights must
 be commercially usable.

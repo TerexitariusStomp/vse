@@ -1,5 +1,7 @@
 # Live pitch — 8 minutes (Emerging class)
 
+> **Status: DRAFT** — working document, not final.
+
 Timing target: 7:30, leaving buffer. Rehearse with a visible timer; the
 demo legs are scripted in `DEMO-SCRIPT.md`. Hard stop at 8:00.
 
@@ -50,7 +52,7 @@ Follow `DEMO-SCRIPT.md`. Click path with the one line per leg:
 > rendered as siloed plans — one project per need — versus place-derived
 > interventions answering several at once. Customers are the people who
 > already pay for this synthesis badly: community funders, councils,
-> place-based investors, philanthropy. The core is open source — Apache-2.0
+> place-based investors, philanthropy. The core is open source — AGPL-3.0-only
 > — the revenue lane is service and integration: facilitated runs,
 > hosted engine deployments, steward tooling. Canvas is in the pack."
 
@@ -94,5 +96,5 @@ Follow `DEMO-SCRIPT.md`. Click path with the one line per leg:
   demand; downstream systems (our sibling Springforth does quorum-bound
   funding) allocate against it. The seam is data-only.
 - **"Team?"** — Assembled around this hackathon; engine, schema, validator
-  and demonstrator are Apache-2.0, ~2% custom code over a vendored OSS
+  and demonstrator are AGPL-3.0-only, ~2% custom code over a vendored OSS
   stack.

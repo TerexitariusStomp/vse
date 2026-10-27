@@ -35,7 +35,7 @@ export function Layout({ children }: { children: ReactNode }) {
         <p className="chapter-marker">{results.place.name} · assembled from real records</p>
         <p className="mx-auto mt-2 max-w-xl text-sm text-muted">{results._about}</p>
         <p className="mt-2 text-xs text-muted">
-          Value Structuring Engine · Apache-2.0 ·{' '}
+          Value Structuring Engine · AGPL-3.0 ·{' '}
           <a
             href={landing.ossUrl!}
             target="_blank"

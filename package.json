@@ -3,7 +3,7 @@
   "private": true,
   "type": "module",
   "description": "Value Structuring Engine — demonstrator, engine, and validation tooling.",
-  "license": "Apache-2.0",
+  "license": "AGPL-3.0-only",
   "scripts": {
     "validate": "for f in data/*_results.json; do node tools/validate-results.mjs \"$f\" || exit 1; done",
     "data:sync": "node tools/data-sync.mjs",

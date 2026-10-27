@@ -1,8 +1,10 @@
 # VSE — pitch (Sustainable Finance Live 2026, PS1)
 
+> **Status: DRAFT** — working document, not final.
+
 Live: **https://vse-demonstrator.pages.dev** · engine:
 `https://vse-engine.delta-git.workers.dev` (`/health`) · repo:
-github.com/TerexitariusStomp/vse (Apache-2.0)
+github.com/TerexitariusStomp/vse (AGPL-3.0-only)
 
 ## The problem
 
@@ -122,4 +124,4 @@ Deliverables: **BMC** (`BMC.md`) · **logical architecture**
 
 10 places · 191 stories · 283 verbatim excerpts · 60 signals ·
 51 interventions · ~7,150 LOC authored vs ≥400k deployed OSS (<2%) ·
-Apache-2.0 · zero third-party requests on the demonstrator.
+AGPL-3.0-only · zero third-party requests on the demonstrator.

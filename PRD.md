@@ -43,7 +43,7 @@ investment.
 - The demonstrator makes **zero external calls**: no AI calls, API keys,
   back-end services, database, or analytics. All content comes from the
   results file so the same site can later show another place.
-- Licence: **Apache-2.0**. Dependency licences follow `OSS-STACK.md`:
+- Licence: **AGPL-3.0-only**. Dependency licences follow `OSS-STACK.md`:
   permissive + copyleft acceptable; **no SSPL, BSL, or Elastic/source-available**;
   AI model weights must be commercially usable (Apache-2.0/MIT defaults).
 - Every load-bearing mechanism is anchored in the evidence base (§3) —
@@ -418,7 +418,7 @@ exclusively from the loaded results file — no copy hard-coded per place.
 | NFR-7 | **Mobile-first responsive**, WCAG 2.1 AA; axe-core gate at both viewports (springforth convention) | judges open the link on phones |
 | NFR-8 | **Memory-only visitor state** — no storage, no cookies | brief constraint; clean repeat demos |
 | NFR-9 | **Graceful engine degradation** — any channel down degrades to manual entry; LLM extraction down → analysts can still hand-enter claims | community work can't wait on a vendor |
-| NFR-10 | **Licence hygiene** — Apache-2.0 repo; deps audited to `OSS-STACK.md` (no SSPL/BSL/Elastic; model weights commercially usable) | consistency with the estate |
+| NFR-10 | **Licence hygiene** — AGPL-3.0-only repo; deps audited to `OSS-STACK.md` (no SSPL/BSL/Elastic; model weights commercially usable) | consistency with the estate |
 | NFR-11 | **State-plane simplicity** — D1 (structured) + R2 (media) + Queues (jobs) only; no new datastore classes | matches megaplan state-plane audit |
 | NFR-12 | **Optional privacy-bounded inference** — sensitive stories may route extraction through poi-compute INTERNAL lane instead of Workers AI | safeguarding lane already exists in the estate |
 | NFR-13 | **<5% custom code** — measured per `OSS-STACK.md` accounting; authored artifacts carry LOC caps | megaplan compose-don't-build doctrine |
@@ -505,7 +505,8 @@ Mirrors `data/utopia_results.json`; enforced by `schema/results.schema.json`.
 Internal assets reused from the estate: **poi-compute** (optional INTERNAL
 inference lane, NFR-12), **PlaceProof conventions** (manifest + OTS anchoring
 for publications), **Springforth** (downstream consumer via FR-E25;
-reuse-by-pattern only — AGPL-3.0 vs Apache-2.0 means no copied code), and the
+reuse-by-pattern only — no copied code even with matching AGPL-3.0
+licences), and the
 **wrangler/git gates** on this host (deploys and pushes are scanned — see
 `~/Documents/docker/AGENTS.md`).
 
@@ -621,10 +622,9 @@ considered and rejected.
    wording, Welsh-language handling, participant safeguarding, data
    retention, and withdrawal UX (FR-E26) need a one-page protocol. Not
    blocking P0–P1.
-9. **AGPL/Apache boundary** — Springforth is AGPL-3.0; this repo is
-   Apache-2.0. Reuse is pattern/protocol level only (the results-file seam).
-   Any code-level sharing needs an explicit dual-licence decision by the
-   owner.
+9. **Licence boundary** — this repo and Springforth are both AGPL-3.0.
+   Reuse is still pattern/protocol level only (the results-file seam). Any
+   code-level sharing needs an explicit owner decision.
 10. **Closest-neighbour convergence** — Talk to the City and Cortico are
     open-source and adjacent. Our durable edge is b+c+f (checked-by-tellers,
     commons gate, open artifact), not extraction quality — keep watching
@@ -652,7 +652,7 @@ considered and rejected.
 | §4 data-file field list | §7.2, FR-E1/E2 |
 | §5 palette, serif/sans, dark theme, phone | FR-D8, NFR-7 |
 | §7 judge flow + README + licence | §13.1–13.2, README, LICENSE |
-| §8 licence + repo home agreement | Apache-2.0 decided; §14.2 |
+| §8 licence + repo home agreement | AGPL-3.0-only decided; §14.2 |
 | Pipeline stages Listening→People check | §4.3–4.6 (FR-E4–E19, E26) |
 | "designed for thousands of stories" | FR-E24, NFR-9 |
 | "the people who told them check those signals" | §4.6, binding constraint, FR-E19 |

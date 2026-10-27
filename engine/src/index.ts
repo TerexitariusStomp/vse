@@ -58,6 +58,8 @@ analyst.post('/places/:placeId', async (c) => {
     .run()
   return c.json({ id }, 201)
 })
+// DRAFT: the ?springforth=1 seam emits draft-possibility artifacts for the
+// sibling Springforth project — experimental, not a committed interface.
 analyst.post('/publish/:placeId', async (c) => {
   try {
     return c.json(

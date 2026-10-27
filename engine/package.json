@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.1.0",
   "description": "VSE upstream engine — intake → extract → consolidate → check → structure → publish.",
-  "license": "Apache-2.0",
+  "license": "AGPL-3.0-only",
   "type": "module",
   "scripts": {
     "dev": "wrangler dev",

@@ -1,3 +1,5 @@
+// DRAFT — experimental seam, not a committed interface.
+//
 // FR-E25 — Springforth adapter. Maps a published results file into draft
 // Possibility records (the Springforth "I want to…" unit, see
 // ~/Documents/springforth/src/entities.ts `Possibility` zod schema).

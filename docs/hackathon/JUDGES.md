@@ -1,5 +1,7 @@
 # Reviewer's guide — VSE (Value Structuring Engine)
 
+> **Status: DRAFT** — working document, not final.
+
 Live: **https://vse-demonstrator.pages.dev** — everything below is live,
 no login, works offline after first load (PWA). Engine:
 `https://vse-engine.delta-git.workers.dev` (`GET /health`).
@@ -78,4 +80,4 @@ Deliverables: **BMC** (`BMC.md`) · **logical architecture**
 (`ARCHITECTURE.md` + `demo-assets/architecture.svg`) · **clickable demo**
 (live + `demo-assets/walkthrough.mp4`).
 
-Repo: github.com/TerexitariusStomp/vse — Apache-2.0.
+Repo: github.com/TerexitariusStomp/vse — AGPL-3.0-only.

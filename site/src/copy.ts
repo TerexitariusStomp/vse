@@ -87,7 +87,7 @@ export const landing = {
   realLabel: 'Real data',
   honesty:
     'Nine places are real — assembled from field records and clearly attributed public posts. Utopia is a fictional example, labelled dummy data wherever it appears. Nothing is priced against a community’s say; signals marked for the commons stay in the commons.',
-  footer: 'Apache-2.0 · works offline',
+  footer: 'AGPL-3.0 · works offline',
   oss: 'Built from open-source software',
   ossUrl: 'https://github.com/TerexitariusStomp/vse' as string | null,
   storiesLabel: 'stories',
